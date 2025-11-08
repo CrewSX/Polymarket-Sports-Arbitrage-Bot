@@ -1,9 +1,8 @@
 output.txt
 data/
 credentials.json
-*/credentials.json
-.env
-.env.*
+# .env - kept per user request (commented out to allow tracking)
+# .env.*
 positions/
 
 # Byte-compiled / optimized / DLL files
@@ -130,7 +129,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env - kept per user request
 .venv
 env/
 venv/
@@ -245,7 +244,7 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
+# .env - kept per user request
 .env.development.local
 .env.test.local
 .env.production.local
@@ -303,7 +302,7 @@ dist
 
 
 
-.env
+# .env - kept per user request
 env/
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -429,7 +428,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env - kept per user request
 .venv
 env/
 venv/

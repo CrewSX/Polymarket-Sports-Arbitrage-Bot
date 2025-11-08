@@ -1,157 +1,137 @@
-# Poly-Maker
+# poly-sports
 
-A market making bot for Polymarket prediction markets. This bot automates the process of providing liquidity to markets on Polymarket by maintaining orders on both sides of the book with configurable parameters. A summary of my experience running this bot is available [here](https://x.com/defiance_cr/status/1906774862254800934)
+A Python script to fetch all sports market data from Polymarket using the Gamma API and optionally enrich with CLOB data.
 
-## Overview
+## Features
 
-Poly-Maker is a comprehensive solution for automated market making on Polymarket. It includes:
+- Fetches all markets from Polymarket Gamma API
+- Filters markets by category (Sports)
+- Optionally enriches market data with CLOB data (prices, order books, spreads)
+- Exports data to both JSON and CSV formats
+- Test-driven development with comprehensive test coverage
 
-- Real-time order book monitoring via WebSockets
-- Position management with risk controls
-- Customizable trade parameters fetched from Google Sheets
-- Automated position merging functionality
-- Sophisticated spread and price management
+## Setup
 
-## Structure
+### Prerequisites
 
-The repository consists of several interconnected modules:
+- Python 3.9 or higher
+- pip or uv package manager
 
-- `poly_data`: Core data management and market making logic
-- `poly_merger`: Utility for merging positions (based on open-source Polymarket code)
-- `poly_stats`: Account statistics tracking
-- `poly_utils`: Shared utility functions
-- `data_updater`: Separate module for collecting market information
+### Installation
 
-## Requirements
-
-- Python 3.9.10 or higher
-- Node.js (for poly_merger)
-- Google Sheets API credentials
-- Polymarket account and API credentials
-
-## Installation
-
-This project uses UV for fast, reliable package management.
-
-### Install UV
-
+1. Install dependencies:
 ```bash
-# macOS/Linux
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Windows
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-# Or with pip
-pip install uv
+pip install py-clob-client requests python-dotenv pandas pytest pytest-mock
 ```
 
-### Install Dependencies
-
+Or if using uv:
 ```bash
-# Install all dependencies
-uv sync
-
-# Install with development dependencies (black, pytest)
-uv sync --extra dev
+uv pip install -e .
 ```
 
-### Quick Start
+### Configuration
 
-```bash
-# Run the market maker (recommended)
-uv run python main.py
+Create a `.env` file in the project root with the following settings:
 
-# Update market data
-uv run python update_markets.py
+```env
+# Gamma API Configuration
+GAMMA_API_URL=https://gamma-api.polymarket.com
 
-# Update statistics
-uv run python update_stats.py
+# CLOB API Configuration (Optional - for data enrichment)
+CLOB_HOST=https://clob.polymarket.com
+ENRICH_WITH_CLOB=false
+
+# Output Configuration (Optional)
+OUTPUT_DIR=data
 ```
 
-### Setup Steps
+**Required:**
+- `GAMMA_API_URL` - Base URL for Polymarket Gamma API (default: `https://gamma-api.polymarket.com`)
 
-#### 1. Clone the repository
+**Optional:**
+- `CLOB_HOST` - CLOB API host URL (default: `https://clob.polymarket.com`)
+- `ENRICH_WITH_CLOB` - Enable CLOB data enrichment (default: `false`)
+- `EXCLUDE_ENDED_MARKETS` - Exclude markets that have already ended (default: `true`)
+- `OUTPUT_DIR` - Directory to save output files (default: `data`)
 
-```bash
-git clone https://github.com/yourusername/poly-maker.git
-cd poly-maker
-```
+## Usage
 
-#### 2. Install Python dependencies
+### Basic Usage
 
-```bash
-uv sync
-```
-
-#### 3. Install Node.js dependencies for the merger
+Run the script to fetch all sports markets:
 
 ```bash
-cd poly_merger
-npm install
-cd ..
+python fetch_sports_markets.py
 ```
 
-#### 4. Set up environment variables
+This will:
+1. Fetch all markets from the Gamma API
+2. Filter for markets with `category == "Sports"`
+3. Save results to `data/sports_markets.json` and `data/sports_markets.csv`
+
+### With CLOB Enrichment
+
+To enrich markets with CLOB data (prices, order books, spreads), set `ENRICH_WITH_CLOB=true` in your `.env` file:
+
+```env
+ENRICH_WITH_CLOB=true
+```
+
+Then run:
+```bash
+python fetch_sports_markets.py
+```
+
+**Note:** CLOB enrichment requires the `py-clob-client` package to be installed.
+
+### Output Files
+
+All output files are saved to the `data/` directory by default:
+
+- `data/sports_markets.json` - Full market data in JSON format (pretty-printed)
+- `data/sports_markets.csv` - Flattened market data in CSV format
+- `data/arbitrage_data.json` - Extracted arbitrage-relevant data in JSON format
+- `data/arbitrage_data.csv` - Extracted arbitrage-relevant data in CSV format
+- `data/arbitrage_data_filtered.json` - Filtered match winner and draw markets (JSON)
+- `data/arbitrage_data_filtered.csv` - Filtered match winner and draw markets (CSV)
+
+## Testing
+
+Run the test suite:
 
 ```bash
-cp .env.example .env
+pytest tests/ -v
 ```
 
-#### 5. Configure your credentials in `.env`
+All tests should pass, confirming the code behaves as expected.
 
-Edit the `.env` file with your credentials:
-- `PK`: Your private key for Polymarket
-- `BROWSER_ADDRESS`: Your wallet address
+## How It Works
 
-**Important:** Make sure your wallet has done at least one trade through the UI so that the permissions are proper.
+1. **Gamma API Integration**: Fetches sports markets from the Polymarket Gamma API `/events` endpoint using sports series IDs
+2. **Series Filtering**: Uses predefined sports series IDs to fetch only sports-related events and markets
+3. **End Date Filtering**: By default, excludes markets that have already ended (using `end_date_max` parameter with current UTC time)
+4. **CLOB Enrichment** (optional): For each market, fetches:
+   - Midpoint price
+   - Buy/Sell prices
+   - Spread
+   - Order book (top 5 bids/asks)
+5. **Data Export**: Saves all market data to both JSON and CSV formats, including event metadata (event_id, event_title, event_slug, event_tags)
 
-#### 6. Set up Google Sheets integration
+## Error Handling
 
-- Create a Google Service Account and download credentials to the main directory
-- Copy the [sample Google Sheet](https://docs.google.com/spreadsheets/d/1Kt6yGY7CZpB75cLJJAdWo7LSp9Oz7pjqfuVWwgtn7Ns/edit?gid=1884499063#gid=1884499063)
-- Add your Google service account to the sheet with edit permissions
-- Update `SPREADSHEET_URL` in your `.env` file
+- API errors are caught and logged
+- CLOB enrichment failures are handled gracefully (continues with unenriched data)
+- Missing fields in market data are handled appropriately
+- Network errors include retry logic where applicable
 
-#### 7. Update market data
+## Future Enhancements
 
-Run the market data updater to fetch all available markets:
-
-```bash
-uv run python update_markets.py
-```
-
-This should run continuously in the background (preferably on a different IP than your trading bot).
-
-- Add markets you want to trade to the "Selected Markets" sheet
-- Select markets from the "Volatility Markets" sheet
-- Configure parameters in the "Hyperparameters" sheet (default parameters that worked well in November are included)
-
-#### 8. Start the market making bot
-
-```bash
-uv run python main.py
-```
-
-## Configuration
-
-The bot is configured via a Google Spreadsheet with several worksheets:
-
-- **Selected Markets**: Markets you want to trade
-- **All Markets**: Database of all markets on Polymarket
-- **Hyperparameters**: Configuration parameters for the trading logic
-
-
-## Poly Merger
-
-The `poly_merger` module is a particularly powerful utility that handles position merging on Polymarket. It's built on open-source Polymarket code and provides a smooth way to consolidate positions, reducing gas fees and improving capital efficiency.
-
-## Important Notes
-
-- This code interacts with real markets and can potentially lose real money
-- Test thoroughly with small amounts before deploying with significant capital
-- The `data_updater` is technically a separate repository but is included here for convenience
+- Continuous sync mode (watch for new markets)
+- Database storage option
+- Additional category filters
+- Scheduled execution
+- Rate limiting and retry logic improvements
 
 ## License
 
-MIT
+[Add your license here]
