@@ -3,8 +3,9 @@ import os
 import json
 from pathlib import Path
 from dotenv import load_dotenv
-from fetch_sports_markets import extract_arbitrage_data, fetch_sports_markets, save_to_json, save_to_csv
-from fetch_odds_data import fetch_odds_for_polymarket_events
+from poly_sports.data_fetching.fetch_sports_markets import extract_arbitrage_data, fetch_sports_markets, save_to_csv
+from poly_sports.utils.file_utils import save_json
+from poly_sports.data_fetching.fetch_odds_data import fetch_odds_for_polymarket_events
 
 # Load environment variables
 load_dotenv()
@@ -19,7 +20,8 @@ def main() -> None:
     odds_api_markets = os.getenv('ODDS_API_MARKETS', 'h2h').split(',')
     odds_api_format = os.getenv('ODDS_API_ODDS_FORMAT', 'american')
     output_dir = os.getenv('OUTPUT_DIR', 'data')
-    min_confidence = float(os.getenv('ODDS_API_MIN_CONFIDENCE', '0.5'))
+    min_confidence = float(os.getenv('ODDS_API_MIN_CONFIDENCE', '0.8'))
+    exclude_1h_moneyline = os.getenv('EXCLUDE_1H_MONEYLINE', 'false').lower() == 'true'
     
     if not odds_api_key:
         print("Error: ODDS_API_KEY not found in environment variables")
@@ -38,7 +40,9 @@ def main() -> None:
     
     # Step 2: Extract arbitrage data
     print("Extracting arbitrage data...")
-    arbitrage_data = extract_arbitrage_data(events)
+    if exclude_1h_moneyline:
+        print("  Excluding 1h moneyline bets")
+    arbitrage_data = extract_arbitrage_data(events, exclude_1h_moneyline=exclude_1h_moneyline)
     print(f"Extracted {len(arbitrage_data)} markets for arbitrage analysis")
     
     if not arbitrage_data:
@@ -72,7 +76,7 @@ def main() -> None:
     
     json_filename = output_path / 'arbitrage_comparison.json'
     print(f"Saving comparison data to {json_filename}...")
-    save_to_json(comparison_data, str(json_filename))
+    save_json(comparison_data, str(json_filename))
     
     csv_filename = output_path / 'arbitrage_comparison.csv'
     print(f"Saving comparison data to {csv_filename}...")
@@ -82,6 +86,8 @@ def main() -> None:
     print(f"\nSummary:")
     print(f"  Total Polymarket events: {len(events)}")
     print(f"  Total markets for arbitrage: {len(arbitrage_data)}")
+    if exclude_1h_moneyline:
+        print(f"  (1h moneyline bets excluded)")
     print(f"  Successfully matched events: {len(comparison_data)}")
     print(f"  Match rate: {len(comparison_data)/len(arbitrage_data)*100:.1f}%")
     print(f"  Comparison JSON: {json_filename}")
@@ -94,7 +100,7 @@ def main() -> None:
         print(f"  Polymarket: {sample.get('pm_homeTeamName', 'N/A')} vs {sample.get('pm_awayTeamName', 'N/A')}")
         print(f"  Sport: {sample.get('odds_api_sport_key', 'N/A')}")
         print(f"  Confidence: {sample.get('match_confidence', 0):.2f}")
-        print(f"  Bookmakers: {len(sample.get('bookmakers', []))}")
+        print(f"  Sportsbooks: {sample.get('sportsbook_count', 0)}")
 
 
 if __name__ == '__main__':

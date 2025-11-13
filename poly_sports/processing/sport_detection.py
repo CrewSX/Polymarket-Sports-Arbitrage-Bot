@@ -13,6 +13,7 @@ SERIES_TICKER_MAP = {
     'cwbb': 'basketball_ncaab',  # College Women's Basketball
     'cbb': 'basketball_ncaab',   # College Basketball
     'cfb': 'americanfootball_ncaaf',  # College Football
+    'ncaa-cbb': 'basketball_ncaab',  # College Basketball (with hyphen)
     'soccer': 'soccer_epl',  # Default to EPL, may need more specific mapping
     'ufc': 'mma_mixed_martial_arts',
     'mma': 'mma_mixed_martial_arts',
@@ -87,8 +88,23 @@ def detect_sport_key(event_data: Dict[str, Any]) -> Optional[str]:
     series_ticker = event_data.get('series_ticker', '')
     if series_ticker:
         ticker_lower = str(series_ticker).lower().strip()
+        
+        # Check exact match first
         if ticker_lower in SERIES_TICKER_MAP:
             return SERIES_TICKER_MAP[ticker_lower]
+        
+        # Check for patterns (e.g., "cfb-2025" should match "cfb")
+        # College Basketball: ncaa-cbb, ncaa_cbb (check this first to avoid false matches)
+        if 'ncaa-cbb' in ticker_lower or 'ncaa_cbb' in ticker_lower:
+            return 'basketball_ncaab'
+        
+        # College Football: cfb, cfb-*, cfb_* (e.g., "cfb-2025")
+        if ticker_lower.startswith('cfb'):
+            return 'americanfootball_ncaaf'
+        
+        # College Basketball: cbb-*, cbb_* (but not if it's part of ncaa-cbb, already handled above)
+        if ticker_lower.startswith('cbb-') or ticker_lower.startswith('cbb_'):
+            return 'basketball_ncaab'
     
     # Priority 2: Analyze team names
     home_team = str(event_data.get('homeTeamName', '')).lower()

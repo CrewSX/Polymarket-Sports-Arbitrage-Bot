@@ -5,7 +5,8 @@ import csv
 import os
 import tempfile
 from pathlib import Path
-from fetch_sports_markets import save_to_json, save_to_csv
+from poly_sports.data_fetching.fetch_sports_markets import save_to_csv
+from poly_sports.utils.file_utils import save_json
 
 
 class TestSaveToJson:
@@ -20,7 +21,7 @@ class TestSaveToJson:
         
         with tempfile.TemporaryDirectory() as tmpdir:
             filename = os.path.join(tmpdir, 'test.json')
-            save_to_json(data, filename)
+            save_json(data, filename)
             
             assert os.path.exists(filename)
             
@@ -37,7 +38,7 @@ class TestSaveToJson:
         
         with tempfile.TemporaryDirectory() as tmpdir:
             filename = os.path.join(tmpdir, 'test.json')
-            save_to_json(data, filename)
+            save_json(data, filename)
             
             with open(filename, 'r') as f:
                 content = f.read()
@@ -51,7 +52,7 @@ class TestSaveToJson:
         
         with tempfile.TemporaryDirectory() as tmpdir:
             filename = os.path.join(tmpdir, 'test.json')
-            save_to_json(data, filename)
+            save_json(data, filename)
             
             assert os.path.exists(filename)
             
@@ -78,7 +79,7 @@ class TestSaveToJson:
         
         with tempfile.TemporaryDirectory() as tmpdir:
             filename = os.path.join(tmpdir, 'test.json')
-            save_to_json(data, filename)
+            save_json(data, filename)
             
             with open(filename, 'r') as f:
                 loaded_data = json.load(f)

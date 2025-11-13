@@ -2,8 +2,9 @@
 import pytest
 from unittest.mock import Mock, patch
 import requests
-from fetch_odds_api import (
+from poly_sports.data_fetching.fetch_odds_api import (
     fetch_sports_list,
+    fetch_events,
     fetch_odds,
     fetch_event_odds,
 )
@@ -67,6 +68,69 @@ class TestFetchSportsList:
         mock_get.return_value = mock_response
         
         result = fetch_sports_list('test_api_key')
+        assert result == []
+
+
+class TestFetchEvents:
+    """Test fetching events from The Odds API."""
+    
+    @patch('fetch_odds_api.requests.get')
+    def test_fetch_events_success(self, mock_get):
+        """Test successful fetching of events."""
+        mock_response = Mock()
+        mock_response.json.return_value = [
+            {
+                'id': 'event1',
+                'sport_key': 'americanfootball_nfl',
+                'commence_time': '2024-01-15T20:00:00Z',
+                'home_team': 'New England Patriots',
+                'away_team': 'Kansas City Chiefs'
+            },
+            {
+                'id': 'event2',
+                'sport_key': 'americanfootball_nfl',
+                'commence_time': '2024-01-16T20:00:00Z',
+                'home_team': 'Los Angeles Rams',
+                'away_team': 'San Francisco 49ers'
+            }
+        ]
+        mock_response.headers = {
+            'x-requests-remaining': '100',
+            'x-requests-used': '0',
+            'x-requests-last': '0'
+        }
+        mock_response.raise_for_status = Mock()
+        mock_get.return_value = mock_response
+        
+        result = fetch_events('americanfootball_nfl', 'test_api_key')
+        
+        assert len(result) == 2
+        assert result[0]['id'] == 'event1'
+        assert result[0]['home_team'] == 'New England Patriots'
+        assert 'bookmakers' not in result[0]  # Events should not have bookmakers
+        mock_get.assert_called_once()
+        # Verify the correct endpoint was called
+        call_args = mock_get.call_args
+        assert '/v4/sports/americanfootball_nfl/events' in call_args[0][0]
+    
+    @patch('fetch_odds_api.requests.get')
+    def test_fetch_events_api_error(self, mock_get):
+        """Test handling of API errors."""
+        mock_get.side_effect = requests.exceptions.RequestException("API Error")
+        
+        with pytest.raises(requests.exceptions.RequestException):
+            fetch_events('americanfootball_nfl', 'test_api_key')
+    
+    @patch('fetch_odds_api.requests.get')
+    def test_fetch_events_empty_response(self, mock_get):
+        """Test handling of empty response."""
+        mock_response = Mock()
+        mock_response.json.return_value = []
+        mock_response.headers = {}
+        mock_response.raise_for_status = Mock()
+        mock_get.return_value = mock_response
+        
+        result = fetch_events('americanfootball_nfl', 'test_api_key')
         assert result == []
 
 

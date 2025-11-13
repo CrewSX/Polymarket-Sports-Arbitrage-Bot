@@ -5,16 +5,16 @@ import os
 import json
 import csv
 import tempfile
-from fetch_sports_markets import main
+from poly_sports.data_fetching.fetch_sports_markets import main
 
 
 class TestIntegration:
     """Test end-to-end integration."""
     
-    @patch('fetch_sports_markets.fetch_sports_markets')
-    @patch('fetch_sports_markets.enrich_markets_with_clob_data')
-    @patch('fetch_sports_markets.save_to_json')
-    @patch('fetch_sports_markets.save_to_csv')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.fetch_sports_markets')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.enrich_markets_with_clob_data')
+    @patch('poly_sports.utils.file_utils.save_json')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.save_to_csv')
     @patch.dict(os.environ, {
         'GAMMA_API_URL': 'https://gamma-api.polymarket.com',
         'ENRICH_WITH_CLOB': 'false'
@@ -57,10 +57,10 @@ class TestIntegration:
         assert len(json_call_args[0]) == 2
         assert len(csv_call_args[0]) == 2
     
-    @patch('fetch_sports_markets.fetch_sports_markets')
-    @patch('fetch_sports_markets.enrich_markets_with_clob_data')
-    @patch('fetch_sports_markets.save_to_json')
-    @patch('fetch_sports_markets.save_to_csv')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.fetch_sports_markets')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.enrich_markets_with_clob_data')
+    @patch('poly_sports.utils.file_utils.save_json')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.save_to_csv')
     @patch.dict(os.environ, {
         'GAMMA_API_URL': 'https://gamma-api.polymarket.com',
         'ENRICH_WITH_CLOB': 'true',
@@ -108,9 +108,9 @@ class TestIntegration:
         json_call_args = mock_save_json.call_args[0]
         assert 'clob_data' in json_call_args[0][0]
     
-    @patch('fetch_sports_markets.fetch_sports_markets')
-    @patch('fetch_sports_markets.save_to_json')
-    @patch('fetch_sports_markets.save_to_csv')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.fetch_sports_markets')
+    @patch('poly_sports.utils.file_utils.save_json')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.save_to_csv')
     @patch.dict(os.environ, {
         'GAMMA_API_URL': 'https://gamma-api.polymarket.com',
         'ENRICH_WITH_CLOB': 'false'
@@ -128,9 +128,9 @@ class TestIntegration:
         json_call_args = mock_save_json.call_args[0]
         assert len(json_call_args[0]) == 0
     
-    @patch('fetch_sports_markets.fetch_sports_markets')
-    @patch('fetch_sports_markets.save_to_json')
-    @patch('fetch_sports_markets.save_to_csv')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.fetch_sports_markets')
+    @patch('poly_sports.utils.file_utils.save_json')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.save_to_csv')
     @patch.dict(os.environ, {
         'GAMMA_API_URL': 'https://gamma-api.polymarket.com',
         'ENRICH_WITH_CLOB': 'false',
@@ -159,9 +159,9 @@ class TestIntegration:
         assert '/tmp/test_output' in json_call_args[1] or 'sports_markets.json' in json_call_args[1]
         assert '/tmp/test_output' in csv_call_args[1] or 'sports_markets.csv' in csv_call_args[1]
     
-    @patch('fetch_sports_markets.fetch_sports_markets')
-    @patch('fetch_sports_markets.save_to_json')
-    @patch('fetch_sports_markets.save_to_csv')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.fetch_sports_markets')
+    @patch('poly_sports.utils.file_utils.save_json')
+    @patch('poly_sports.data_fetching.fetch_sports_markets.save_to_csv')
     @patch.dict(os.environ, {
         'GAMMA_API_URL': 'https://gamma-api.polymarket.com',
         'ENRICH_WITH_CLOB': 'false'

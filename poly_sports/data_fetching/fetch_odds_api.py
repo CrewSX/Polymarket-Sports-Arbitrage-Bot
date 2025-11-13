@@ -42,6 +42,43 @@ def fetch_sports_list(api_key: Optional[str] = None) -> List[Dict[str, Any]]:
         raise requests.exceptions.RequestException(f"Error fetching sports list: {e}")
 
 
+def fetch_events(
+    sport_key: str,
+    api_key: Optional[str] = None
+) -> List[Dict[str, Any]]:
+    """
+    Fetch events for a specific sport from The Odds API (without odds).
+    
+    This endpoint returns event metadata (teams, dates, IDs) without odds data.
+    Use this for event matching, then fetch odds separately using fetch_odds().
+    
+    Args:
+        sport_key: The Odds API sport key (e.g., 'americanfootball_nfl')
+        api_key: The Odds API key. If None, reads from ODDS_API_KEY environment variable.
+        
+    Returns:
+        List of event dictionaries with event metadata (id, home_team, away_team, commence_time, etc.)
+        but without bookmakers/odds data
+        
+    Raises:
+        requests.exceptions.RequestException: If API request fails
+    """
+    if api_key is None:
+        api_key = os.getenv('ODDS_API_KEY')
+        if not api_key:
+            raise ValueError("ODDS_API_KEY not provided and not found in environment variables")
+    
+    url = f"{ODDS_API_BASE_URL}/v4/sports/{sport_key}/events"
+    params = {'apiKey': api_key}
+    
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        raise requests.exceptions.RequestException(f"Error fetching events for {sport_key}: {e}")
+
+
 def fetch_odds(
     sport_key: str,
     api_key: Optional[str] = None,

@@ -1,17 +1,18 @@
 """Tests for main odds data integration."""
 import pytest
 from unittest.mock import Mock, patch, MagicMock
-from fetch_odds_data import fetch_odds_for_polymarket_events
-from odds_utils import american_to_decimal, american_to_implied_prob
+from poly_sports.data_fetching.fetch_odds_data import fetch_odds_for_polymarket_events
+from poly_sports.utils.odds_utils import american_to_decimal, american_to_implied_prob
 
 
 class TestFetchOddsForPolymarketEvents:
     """Test main integration function."""
     
     @patch('fetch_odds_data.fetch_odds')
+    @patch('fetch_odds_data.fetch_events')
     @patch('fetch_odds_data.detect_sport_key')
     @patch('fetch_odds_data.match_events')
-    def test_fetch_odds_success(self, mock_match, mock_detect, mock_fetch_odds):
+    def test_fetch_odds_success(self, mock_match, mock_detect, mock_fetch_events, mock_fetch_odds):
         """Test successful fetching and matching of odds."""
         # Mock Polymarket events
         pm_events = [
@@ -29,7 +30,18 @@ class TestFetchOddsForPolymarketEvents:
         # Mock sport detection
         mock_detect.return_value = 'americanfootball_nfl'
         
-        # Mock Odds API response
+        # Mock Odds API events (without odds) for matching
+        mock_events = [
+            {
+                'id': 'odds1',
+                'home_team': 'New England Patriots',
+                'away_team': 'Kansas City Chiefs',
+                'commence_time': '2024-01-15T20:00:00Z'
+            }
+        ]
+        mock_fetch_events.return_value = mock_events
+        
+        # Mock Odds API response (with odds)
         mock_odds_events = [
             {
                 'id': 'odds1',
@@ -56,11 +68,11 @@ class TestFetchOddsForPolymarketEvents:
         ]
         mock_fetch_odds.return_value = mock_odds_events
         
-        # Mock event matching
+        # Mock event matching (returns events without odds)
         mock_match.return_value = [
             {
                 'pm_event': pm_events[0],
-                'odds_event': mock_odds_events[0],
+                'odds_event': mock_events[0],
                 'confidence': 0.95
             }
         ]
@@ -76,9 +88,10 @@ class TestFetchOddsForPolymarketEvents:
         assert result[0]['bookmakers'][0]['bookmaker_key'] == 'fanduel'
     
     @patch('fetch_odds_data.fetch_odds')
+    @patch('fetch_odds_data.fetch_events')
     @patch('fetch_odds_data.detect_sport_key')
     @patch('fetch_odds_data.match_events')
-    def test_multiple_events_multiple_bookmakers(self, mock_match, mock_detect, mock_fetch_odds):
+    def test_multiple_events_multiple_bookmakers(self, mock_match, mock_detect, mock_fetch_events, mock_fetch_odds):
         """Test handling multiple events with multiple bookmakers."""
         pm_events = [
             {
@@ -91,6 +104,17 @@ class TestFetchOddsForPolymarketEvents:
         ]
         
         mock_detect.return_value = 'americanfootball_nfl'
+        
+        # Mock events for matching
+        mock_events = [
+            {
+                'id': 'odds1',
+                'home_team': 'New England Patriots',
+                'away_team': 'Kansas City Chiefs',
+                'commence_time': '2024-01-15T20:00:00Z'
+            }
+        ]
+        mock_fetch_events.return_value = mock_events
         
         mock_odds_events = [
             {
@@ -119,7 +143,7 @@ class TestFetchOddsForPolymarketEvents:
         mock_match.return_value = [
             {
                 'pm_event': pm_events[0],
-                'odds_event': mock_odds_events[0],
+                'odds_event': mock_events[0],
                 'confidence': 0.95
             }
         ]
@@ -131,9 +155,10 @@ class TestFetchOddsForPolymarketEvents:
         assert len(result[0]['bookmakers']) == 2
     
     @patch('fetch_odds_data.fetch_odds')
+    @patch('fetch_odds_data.fetch_events')
     @patch('fetch_odds_data.detect_sport_key')
     @patch('fetch_odds_data.match_events')
-    def test_no_sport_detection_skips_event(self, mock_match, mock_detect, mock_fetch_odds):
+    def test_no_sport_detection_skips_event(self, mock_match, mock_detect, mock_fetch_events, mock_fetch_odds):
         """Test that events without sport detection are skipped."""
         pm_events = [
             {
@@ -151,12 +176,14 @@ class TestFetchOddsForPolymarketEvents:
         
         # Should skip events without sport detection
         assert len(result) == 0
+        mock_fetch_events.assert_not_called()
         mock_fetch_odds.assert_not_called()
     
     @patch('fetch_odds_data.fetch_odds')
+    @patch('fetch_odds_data.fetch_events')
     @patch('fetch_odds_data.detect_sport_key')
     @patch('fetch_odds_data.match_events')
-    def test_no_matches_returns_empty(self, mock_match, mock_detect, mock_fetch_odds):
+    def test_no_matches_returns_empty(self, mock_match, mock_detect, mock_fetch_events, mock_fetch_odds):
         """Test that events without matches are not included."""
         pm_events = [
             {
@@ -169,17 +196,20 @@ class TestFetchOddsForPolymarketEvents:
         ]
         
         mock_detect.return_value = 'americanfootball_nfl'
-        mock_fetch_odds.return_value = []
+        mock_fetch_events.return_value = []
         mock_match.return_value = []  # No matches
         
         result = fetch_odds_for_polymarket_events(pm_events, 'test_api_key')
         
         assert len(result) == 0
+        # Should not call fetch_odds if no matches
+        mock_fetch_odds.assert_not_called()
     
     @patch('fetch_odds_data.fetch_odds')
+    @patch('fetch_odds_data.fetch_events')
     @patch('fetch_odds_data.detect_sport_key')
     @patch('fetch_odds_data.match_events')
-    def test_odds_format_conversion(self, mock_match, mock_detect, mock_fetch_odds):
+    def test_odds_format_conversion(self, mock_match, mock_detect, mock_fetch_events, mock_fetch_odds):
         """Test that odds are converted to all formats."""
         pm_events = [
             {
@@ -192,6 +222,17 @@ class TestFetchOddsForPolymarketEvents:
         ]
         
         mock_detect.return_value = 'americanfootball_nfl'
+        
+        # Mock events for matching
+        mock_events = [
+            {
+                'id': 'odds1',
+                'home_team': 'New England Patriots',
+                'away_team': 'Kansas City Chiefs',
+                'commence_time': '2024-01-15T20:00:00Z'
+            }
+        ]
+        mock_fetch_events.return_value = mock_events
         
         mock_odds_events = [
             {
@@ -222,7 +263,7 @@ class TestFetchOddsForPolymarketEvents:
         mock_match.return_value = [
             {
                 'pm_event': pm_events[0],
-                'odds_event': mock_odds_events[0],
+                'odds_event': mock_events[0],
                 'confidence': 0.95
             }
         ]
@@ -237,4 +278,58 @@ class TestFetchOddsForPolymarketEvents:
         assert outcome['price_american'] == -110
         assert outcome['price_decimal'] == pytest.approx(american_to_decimal(-110), rel=1e-6)
         assert outcome['implied_probability'] == pytest.approx(american_to_implied_prob(-110), rel=1e-6)
+    
+    @patch('fetch_odds_data.fetch_odds')
+    @patch('fetch_odds_data.fetch_events')
+    @patch('fetch_odds_data.detect_sport_key')
+    @patch('fetch_odds_data.match_events')
+    def test_matched_event_without_odds_skipped(self, mock_match, mock_detect, mock_fetch_events, mock_fetch_odds):
+        """Test that matched events without odds are skipped."""
+        pm_events = [
+            {
+                'event_id': 'pm1',
+                'homeTeamName': 'New England Patriots',
+                'awayTeamName': 'Kansas City Chiefs',
+                'startTime': '2024-01-15T20:00:00Z',
+                'series_ticker': 'nfl'
+            }
+        ]
+        
+        mock_detect.return_value = 'americanfootball_nfl'
+        
+        # Mock events for matching
+        mock_events = [
+            {
+                'id': 'odds1',
+                'home_team': 'New England Patriots',
+                'away_team': 'Kansas City Chiefs',
+                'commence_time': '2024-01-15T20:00:00Z'
+            }
+        ]
+        mock_fetch_events.return_value = mock_events
+        
+        # Mock odds response - event odds1 is not in the odds response
+        mock_odds_events = [
+            {
+                'id': 'odds2',  # Different event ID
+                'home_team': 'Other Team A',
+                'away_team': 'Other Team B',
+                'commence_time': '2024-01-15T20:00:00Z',
+                'bookmakers': []
+            }
+        ]
+        mock_fetch_odds.return_value = mock_odds_events
+        
+        mock_match.return_value = [
+            {
+                'pm_event': pm_events[0],
+                'odds_event': mock_events[0],  # Matched to odds1
+                'confidence': 0.95
+            }
+        ]
+        
+        result = fetch_odds_for_polymarket_events(pm_events, 'test_api_key')
+        
+        # Should skip the matched event because it doesn't have odds
+        assert len(result) == 0
 

@@ -1,7 +1,7 @@
 """Tests for CLOB data enrichment."""
 import pytest
 from unittest.mock import Mock, patch, MagicMock
-from fetch_sports_markets import enrich_market_with_clob_data, enrich_markets_with_clob_data
+from poly_sports.data_fetching.fetch_sports_markets import enrich_market_with_clob_data, enrich_markets_with_clob_data
 
 
 class TestClobEnrichment:

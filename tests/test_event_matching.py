@@ -1,8 +1,9 @@
 """Tests for event matching between Polymarket and The Odds API."""
 import pytest
 from datetime import datetime, timezone, timedelta
-from event_matching import (
+from poly_sports.processing.event_matching import (
     normalize_team_name,
+    extract_school_names_from_outcomes,
     calculate_match_score,
     match_events,
 )
@@ -30,6 +31,76 @@ class TestNormalizeTeamName:
     def test_handle_none(self):
         """Test handling of None values."""
         assert normalize_team_name(None) == ""
+
+
+class TestExtractSchoolNamesFromOutcomes:
+    """Test school name extraction from market_outcomes for college football."""
+    
+    def test_extract_school_names_cfb(self):
+        """Test that school names are extracted for CFB events."""
+        pm_event = {
+            'series_ticker': 'cfb-2025',
+            'homeTeamName': 'Tigers',
+            'awayTeamName': 'Aggies',
+            'market_outcomes': '["Texas A&M", "Missouri"]'
+        }
+        school_home, school_away = extract_school_names_from_outcomes(pm_event)
+        assert school_home in ['Texas A&M', 'Missouri']
+        assert school_away in ['Texas A&M', 'Missouri']
+        assert school_home != school_away
+    
+    def test_extract_school_names_ncaaf(self):
+        """Test that school names are extracted for NCAAF events."""
+        pm_event = {
+            'series_ticker': 'ncaaf',
+            'homeTeamName': 'Black Knights',
+            'awayTeamName': 'Owls',
+            'market_outcomes': '["Temple", "Army"]'
+        }
+        school_home, school_away = extract_school_names_from_outcomes(pm_event)
+        assert school_home in ['Temple', 'Army']
+        assert school_away in ['Temple', 'Army']
+    
+    def test_no_extraction_for_non_cfb(self):
+        """Test that school names are not extracted for non-CFB events."""
+        pm_event = {
+            'series_ticker': 'nfl',
+            'homeTeamName': 'Patriots',
+            'awayTeamName': 'Chiefs',
+            'market_outcomes': '["New England Patriots", "Kansas City Chiefs"]'
+        }
+        school_home, school_away = extract_school_names_from_outcomes(pm_event)
+        assert school_home is None
+        assert school_away is None
+    
+    def test_no_extraction_without_outcomes(self):
+        """Test that None is returned when market_outcomes is missing."""
+        pm_event = {
+            'series_ticker': 'cfb-2025',
+            'homeTeamName': 'Tigers',
+            'awayTeamName': 'Aggies'
+        }
+        school_home, school_away = extract_school_names_from_outcomes(pm_event)
+        assert school_home is None
+        assert school_away is None
+    
+    def test_cfb_uses_school_names_for_matching(self):
+        """Test that CFB events use school names from outcomes for matching."""
+        pm_event = {
+            'series_ticker': 'cfb-2025',
+            'homeTeamName': 'Tigers',  # Generic team name
+            'awayTeamName': 'Aggies',  # Generic team name
+            'market_outcomes': '["Missouri", "Texas A&M"]',
+            'startTime': '2024-01-15T20:00:00Z'
+        }
+        odds_event = {
+            'home_team': 'Missouri',
+            'away_team': 'Texas A&M',
+            'commence_time': '2024-01-15T20:00:00Z'
+        }
+        score = calculate_match_score(pm_event, odds_event)
+        # Should get high score because school names match, even though team names don't
+        assert score >= 0.9
 
 
 class TestCalculateMatchScore:

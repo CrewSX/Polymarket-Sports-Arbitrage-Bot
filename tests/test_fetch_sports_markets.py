@@ -2,7 +2,7 @@
 import pytest
 from unittest.mock import Mock, patch, MagicMock
 import requests
-from fetch_sports_markets import fetch_sports_markets, filter_sports_markets
+from poly_sports.data_fetching.fetch_sports_markets import fetch_sports_markets, filter_sports_markets
 
 
 class TestFetchSportsMarkets:

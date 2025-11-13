@@ -29,6 +29,8 @@ except ImportError:
     ClobClient = None
 
 
+from poly_sports.utils.file_utils import save_json
+
 # Load environment variables
 load_dotenv()
 
@@ -253,22 +255,40 @@ def enrich_events_with_clob_data(clob_host: str, events: List[Dict[str, Any]]) -
     return enriched_events
 
 
-def save_to_json(data: List[Dict[str, Any]], filename: str) -> None:
+
+
+def is_1h_moneyline_bet(market: Dict[str, Any]) -> bool:
     """
-    Save data to JSON file with pretty printing.
+    Check if a market is a 1h (first half) moneyline bet.
     
     Args:
-        data: List of dictionaries to save
-        filename: Output file path
+        market: Market dictionary with 'question' and 'groupItemTitle' fields
+        
+    Returns:
+        True if the market is identified as a 1h moneyline bet, False otherwise
     """
-    output_path = Path(filename)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    question = str(market.get('question', '')).lower()
+    group_item_title = str(market.get('groupItemTitle', '')).lower()
     
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+    # Patterns that indicate 1h moneyline bets
+    patterns = [
+        '1h moneyline',
+        '1st half moneyline',
+        'first half moneyline',
+        '1h ml',
+        '1st half ml',
+        'first half ml',
+        ': 1h',
+        ': 1st half',
+        ': first half'
+    ]
+    
+    # Check if any pattern matches in question or groupItemTitle
+    text_to_check = f"{question} {group_item_title}"
+    return any(pattern in text_to_check for pattern in patterns)
 
 
-def extract_arbitrage_data(events: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def extract_arbitrage_data(events: List[Dict[str, Any]], exclude_1h_moneyline: bool = False) -> List[Dict[str, Any]]:
     """
     Extract arbitrage-relevant data from events for trading analysis.
     
@@ -292,6 +312,7 @@ def extract_arbitrage_data(events: List[Dict[str, Any]]) -> List[Dict[str, Any]]
     
     Args:
         events: List of event dictionaries from Gamma API
+        exclude_1h_moneyline: If True, exclude 1h (first half) moneyline bets. Default: False
         
     Returns:
         List of dictionaries with extracted arbitrage data, one per market.
@@ -337,6 +358,10 @@ def extract_arbitrage_data(events: List[Dict[str, Any]]) -> List[Dict[str, Any]]
         markets = event.get('markets', [])
         
         for market in markets:
+            # Skip 1h moneyline bets if option is enabled
+            if exclude_1h_moneyline and is_1h_moneyline_bet(market):
+                continue
+            
             market_data = {
                 # Event fields
                 'event_id': event_id,
@@ -529,7 +554,7 @@ def filter_arbitrage_json(input_file: str, output_dir: str = 'data') -> None:
     
     json_filename = output_path / 'arbitrage_data_filtered.json'
     print(f"Saving filtered data to {json_filename}...")
-    save_to_json(filtered_markets, str(json_filename))
+    save_json(filtered_markets, str(json_filename))
     
     csv_filename = output_path / 'arbitrage_data_filtered.csv'
     print(f"Saving filtered data to {csv_filename}...")
@@ -626,7 +651,7 @@ def main() -> None:
     # Save full events data to JSON
     json_filename = os.path.join(output_dir, 'sports_markets.json')
     print(f"Saving full data to {json_filename}...")
-    save_to_json(events, json_filename)
+    save_json(events, json_filename)
     
     # Save full events data to CSV
     csv_filename = os.path.join(output_dir, 'sports_markets.csv')
@@ -636,7 +661,7 @@ def main() -> None:
     # Save arbitrage data to JSON
     arbitrage_json_filename = os.path.join(output_dir, 'arbitrage_data.json')
     print(f"Saving arbitrage data to {arbitrage_json_filename}...")
-    save_to_json(arbitrage_data, arbitrage_json_filename)
+    save_json(arbitrage_data, arbitrage_json_filename)
     
     # Save arbitrage data to CSV
     arbitrage_csv_filename = os.path.join(output_dir, 'arbitrage_data.csv')
@@ -682,7 +707,7 @@ def extract_from_json_file(input_file: str, output_dir: str = 'data') -> None:
     # Save arbitrage data
     arbitrage_json_filename = os.path.join(output_dir, 'arbitrage_data.json')
     print(f"Saving arbitrage data to {arbitrage_json_filename}...")
-    save_to_json(arbitrage_data, arbitrage_json_filename)
+    save_json(arbitrage_data, arbitrage_json_filename)
     
     arbitrage_csv_filename = os.path.join(output_dir, 'arbitrage_data.csv')
     print(f"Saving arbitrage data to {arbitrage_csv_filename}...")

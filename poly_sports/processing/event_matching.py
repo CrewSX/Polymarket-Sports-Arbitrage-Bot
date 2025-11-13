@@ -1,5 +1,6 @@
 """Event matching between Polymarket and The Odds API events."""
-from typing import List, Dict, Any, Optional
+import json
+from typing import List, Dict, Any, Optional, Tuple, Callable
 from datetime import datetime, timezone
 from dateutil import parser as date_parser
 from rapidfuzz import fuzz
@@ -24,6 +25,46 @@ def normalize_team_name(name: Optional[str]) -> str:
     return str(name).lower().strip()
 
 
+def extract_school_names_from_outcomes(pm_event: Dict[str, Any]) -> Tuple[Optional[str], Optional[str]]:
+    """
+    Extract school names from market_outcomes for college football events.
+    
+    For college football, market_outcomes contains the full school names
+    (e.g., "Temple", "Army", "SMU Mustangs", "Boston College") which are
+    more accurate than the team names alone.
+    
+    Args:
+        pm_event: Polymarket event dictionary with market_outcomes and series_ticker
+        
+    Returns:
+        Tuple of (home_school_name, away_school_name) or (None, None) if not applicable
+    """
+    # Check if this is a college football event
+    series_ticker = str(pm_event.get('series_ticker', '')).lower()
+    if not ('cfb' in series_ticker or 'ncaaf' in series_ticker):
+        return (None, None)
+    
+    # Parse market_outcomes JSON string
+    market_outcomes_str = pm_event.get('market_outcomes', '')
+    if not market_outcomes_str:
+        return (None, None)
+    
+    try:
+        if isinstance(market_outcomes_str, str):
+            outcomes = json.loads(market_outcomes_str)
+        else:
+            outcomes = market_outcomes_str
+        
+        if not isinstance(outcomes, list) or len(outcomes) < 2:
+            return (None, None)
+        
+        # For college football, outcomes typically contain school names
+        # Return both outcomes (order may vary, matching logic will handle it)
+        return (outcomes[0], outcomes[1])
+    except (json.JSONDecodeError, TypeError, IndexError):
+        return (None, None)
+
+
 def calculate_match_score(pm_event: Dict[str, Any], odds_event: Dict[str, Any]) -> float:
     """
     Calculate matching confidence score between Polymarket and Odds API events.
@@ -39,9 +80,19 @@ def calculate_match_score(pm_event: Dict[str, Any], odds_event: Dict[str, Any]) 
     Returns:
         Confidence score between 0.0 and 1.0
     """
-    # Normalize team names
-    pm_home = normalize_team_name(pm_event.get('homeTeamName', ''))
-    pm_away = normalize_team_name(pm_event.get('awayTeamName', ''))
+    # For college football, use school names from market_outcomes instead of team names
+    # This is more accurate since team names can be duplicates (e.g., "Tigers", "Bulldogs")
+    school_home, school_away = extract_school_names_from_outcomes(pm_event)
+    
+    if school_home and school_away:
+        # Use school names from market_outcomes for college football
+        pm_home = normalize_team_name(school_home)
+        pm_away = normalize_team_name(school_away)
+    else:
+        # Use regular team names for other sports
+        pm_home = normalize_team_name(pm_event.get('homeTeamName', ''))
+        pm_away = normalize_team_name(pm_event.get('awayTeamName', ''))
+    
     odds_home = normalize_team_name(odds_event.get('home_team', ''))
     odds_away = normalize_team_name(odds_event.get('away_team', ''))
     
@@ -106,7 +157,7 @@ def calculate_match_score(pm_event: Dict[str, Any], odds_event: Dict[str, Any]) 
 def match_events(
     polymarket_events: List[Dict[str, Any]],
     odds_api_events: List[Dict[str, Any]],
-    min_confidence: float = 0.5
+    min_confidence: float = 0.8
 ) -> List[Dict[str, Any]]:
     """
     Match Polymarket events to The Odds API events.
@@ -118,7 +169,7 @@ def match_events(
     Args:
         polymarket_events: List of Polymarket event dictionaries
         odds_api_events: List of The Odds API event dictionaries
-        min_confidence: Minimum confidence score to include a match (default: 0.5)
+        min_confidence: Minimum confidence score to include a match (default: 0.8)
         
     Returns:
         List of match dictionaries, each containing:

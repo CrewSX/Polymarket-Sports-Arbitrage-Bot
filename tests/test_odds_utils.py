@@ -1,6 +1,6 @@
 """Tests for odds format conversion utilities."""
 import pytest
-from odds_utils import (
+from poly_sports.utils.odds_utils import (
     american_to_decimal,
     decimal_to_american,
     american_to_implied_prob,

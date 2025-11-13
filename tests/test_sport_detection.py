@@ -1,6 +1,6 @@
 """Tests for sport key auto-detection."""
 import pytest
-from sport_detection import detect_sport_key
+from poly_sports.processing.sport_detection import detect_sport_key
 
 
 class TestSportDetection:
