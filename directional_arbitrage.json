@@ -1,0 +1,345 @@
+[
+  {
+    "pm_event_id": "77746",
+    "pm_market_id": "674335",
+    "odds_api_event_id": "67671712e8c1ab13047feb17bfdbcc29",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.30982616643102534,
+    "profit_margin_absolute": 30.982616643102535,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Alabama A&M Bulldogs",
+        "sb_outcome": "Alabama A&M Bulldogs",
+        "pm_price": 0.495,
+        "sb_implied_prob": 0.6483639523833575,
+        "sb_price_decimal": 1.5449044607439388,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.51975,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.5445,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.594,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.6483639523833575,
+        "profit_percentage": 0.30982616643102534,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.79,
+    "pm_liquidity": 105.3376,
+    "sportsbook_count": 5
+  },
+  {
+    "pm_event_id": "77771",
+    "pm_market_id": "674359",
+    "odds_api_event_id": "98bbc25d23e95e00bd913f55cc9d5b32",
+    "match_confidence": 0.9766666666666666,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.4537512648507959,
+    "profit_margin_absolute": 45.37512648507959,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Presbyterian Blue Hose",
+        "sb_outcome": "Presbyterian Blue Hose",
+        "pm_price": 0.505,
+        "sb_implied_prob": 0.7341443887496519,
+        "sb_price_decimal": 1.3625471051730045,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.53025,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.5555000000000001,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.606,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.7341443887496519,
+        "profit_percentage": 0.4537512648507959,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.79,
+    "pm_liquidity": 106.7309,
+    "sportsbook_count": 4
+  },
+  {
+    "pm_event_id": "77713",
+    "pm_market_id": "674301",
+    "odds_api_event_id": "6edfc11b9678fb0a11c0c8b44a4c34fc",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.5206460590109155,
+    "profit_margin_absolute": 52.064605901091554,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Marist Red Foxes",
+        "sb_outcome": "Marist Red Foxes",
+        "pm_price": 0.47,
+        "sb_implied_prob": 0.7147036477351303,
+        "sb_price_decimal": 1.3992506436536878,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.4935,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.517,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.564,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.7147036477351303,
+        "profit_percentage": 0.5206460590109155,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.82,
+    "pm_liquidity": 59.8844,
+    "sportsbook_count": 8
+  },
+  {
+    "pm_event_id": "77715",
+    "pm_market_id": "674303",
+    "odds_api_event_id": "fad4dab088484a0b969c1d71a02ace09",
+    "match_confidence": 0.9749999999999999,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.30822320032095074,
+    "profit_margin_absolute": 30.822320032095075,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Cincinnati Bearcats",
+        "sb_outcome": "Cincinnati Bearcats",
+        "pm_price": 0.755,
+        "sb_implied_prob": 0.9877085162423178,
+        "sb_price_decimal": 1.0125,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.7927500000000001,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.8305000000000001,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.9059999999999999,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.9877085162423178,
+        "profit_percentage": 0.30822320032095074,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.41,
+    "pm_liquidity": 1666.7493,
+    "sportsbook_count": 2
+  },
+  {
+    "pm_event_id": "77753",
+    "pm_market_id": "674341",
+    "odds_api_event_id": "e3c8535b54d2b83397a7131de7f77634",
+    "match_confidence": 0.974390243902439,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 1.129245182582774,
+    "profit_margin_absolute": 112.9245182582774,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Western Kentucky Hilltoppers",
+        "sb_outcome": "Western Kentucky Hilltoppers",
+        "pm_price": 0.465,
+        "sb_implied_prob": 0.9900990099009901,
+        "sb_price_decimal": 1.01,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.4882500000000001,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.5115000000000001,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.558,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.9900990099009901,
+        "profit_percentage": 1.129245182582774,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.69,
+    "pm_liquidity": 79.308,
+    "sportsbook_count": 1
+  },
+  {
+    "pm_event_id": "77757",
+    "pm_market_id": "674345",
+    "odds_api_event_id": "4034c364551b1ccb6e141254f064b9b3",
+    "match_confidence": 0.8123611111111111,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.3251535559194304,
+    "profit_margin_absolute": 32.51535559194304,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Troy Trojans",
+        "sb_outcome": "Troy Trojans",
+        "pm_price": 0.495,
+        "sb_implied_prob": 0.655951010180118,
+        "sb_price_decimal": 1.5249948133452627,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.51975,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.5445,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.594,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.655951010180118,
+        "profit_percentage": 0.3251535559194304,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.67,
+    "pm_liquidity": 79.8779,
+    "sportsbook_count": 8
+  },
+  {
+    "pm_event_id": "76639",
+    "pm_market_id": "674806",
+    "odds_api_event_id": "6d209e0e637f3b116ec958e0634f2a02",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.3128320118381218,
+    "profit_margin_absolute": 31.28320118381218,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Eagles",
+        "sb_outcome": "Philadelphia Eagles",
+        "pm_price": 0.455,
+        "sb_implied_prob": 0.5973385653863454,
+        "sb_price_decimal": 1.6743901028618253,
+        "match_confidence": 0.3157894736842105
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.47775000000000006,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.5005000000000001,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.546,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.5973385653863454,
+        "profit_percentage": 0.3128320118381218,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.69,
+    "pm_liquidity": 85.1512,
+    "sportsbook_count": 9
+  }
+]

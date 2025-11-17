@@ -17,6 +17,12 @@ SERIES_TICKER_MAP = {
     'soccer': 'soccer_epl',  # Default to EPL, may need more specific mapping
     'ufc': 'mma_mixed_martial_arts',
     'mma': 'mma_mixed_martial_arts',
+    'uef-qualifiers': 'soccer_fifa_world_cup_qualifiers_europe',
+    'primera-divisin-argentina': 'soccer_argentina_primera_division',
+    'nba-2026': 'basketball_nba',
+    'odi': 'cricket_odi',
+    'cfb-2025': 'americanfootball_ncaaf',
+    'brazil-serie-a': 'soccer_brazil_campeonato'
 }
 
 # Known team name patterns for each sport
