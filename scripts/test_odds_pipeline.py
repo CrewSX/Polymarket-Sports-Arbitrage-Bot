@@ -172,6 +172,7 @@ def test_pipeline_with_mock_data():
     print("\n" + "=" * 60)
     print("Pipeline test completed successfully!")
     print("=" * 60)
+    save_json(merged_data, str(data_dir / 'arbitrage_comparison_results.json'))
 
 
 if __name__ == '__main__':

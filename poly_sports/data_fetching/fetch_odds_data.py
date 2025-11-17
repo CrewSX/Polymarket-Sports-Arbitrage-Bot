@@ -1,4 +1,5 @@
 """Main integration function for fetching and matching odds data."""
+import traceback
 from typing import List, Dict, Any, Optional
 from collections import defaultdict
 from poly_sports.processing.sport_detection import detect_sport_key
@@ -194,14 +195,23 @@ def fetch_odds_for_polymarket_events(
     # Process each sport
     for sport_key, pm_events in events_by_sport.items():
         try:
+            print(f"Processing sport: {sport_key} ({len(pm_events)} Polymarket events)")
+            
             # Step 1: Fetch events from The Odds API (without odds) for matching
             odds_events = fetch_events(sport_key, api_key=api_key)
+            print(f"  Fetched {len(odds_events)} events from The Odds API")
+
+            save_json(odds_events, f"data/sportsbook_data/events/{sport_key}.json")
+            print(f"  Saved JSON file: data/sportsbook_data/events/{sport_key}.json")
             
             # Step 2: Match Polymarket events to Odds API events
             matches = match_events(pm_events, odds_events, min_confidence=min_confidence)
+            print(f"  Found {len(matches)} matches (confidence >= {min_confidence})")
+            
             
             if not matches:
                 # No matches found, skip to next sport
+                print(f"  Skipping {sport_key}: No matches found")
                 continue
             
             # Step 3: Fetch odds from The Odds API for the sport
@@ -212,8 +222,9 @@ def fetch_odds_for_polymarket_events(
                 markets=markets,
                 odds_format=odds_format
             )
-
-            save_json(odds_with_bookmakers, f"data/{sport_key}_sb_data")
+            print(f"  Fetched odds for {len(odds_with_bookmakers)} events")
+            save_json(odds_with_bookmakers, f"data/sportsbook_data/odds/{sport_key}.json")
+            print(f"  Saved JSON file: data/sportsbook_data/odds/{sport_key}.json")
             
             # Step 4: Create a mapping of event_id -> odds_event (with bookmakers)
             odds_by_event_id = {event.get('id'): event for event in odds_with_bookmakers}
@@ -258,7 +269,8 @@ def fetch_odds_for_polymarket_events(
         
         except Exception as e:
             # Log error but continue with other sports
-            print(f"Error processing sport {sport_key}: {e}")
+            print(f"  Error processing sport {sport_key}: {e}")
+            print(f"  Traceback: {traceback.format_exc()}")
             continue
     
     return merged_data
