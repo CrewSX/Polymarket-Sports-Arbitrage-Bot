@@ -1,8 +1,7 @@
 output.txt
-data/
 credentials.json
-# .env - kept per user request (commented out to allow tracking)
-# .env.*
+.env - kept per user request (commented out to allow tracking)
+.env.*
 positions/
 
 # Byte-compiled / optimized / DLL files

@@ -177,6 +177,7 @@ def match_outcomes_by_name(
 def detect_arbitrage_opportunities(
     comparison_data: List[Dict[str, Any]],
     min_profit_threshold: float = 0.02,
+    min_liquidity: float = 1000,
     pm_fee: float = 0.0,
     sb_fee: float = 0.0
 ) -> List[Dict[str, Any]]:
@@ -287,6 +288,7 @@ def detect_arbitrage_opportunities(
                         'market_type': market_type,
                         'profit_margin': directional_result['potential_profit_percentage'],
                         'profit_margin_absolute': directional_result['potential_profit_absolute'],
+                        'liquidity': entry.get('pm_event_liquidity'),
                         
                         # Matched outcomes
                         'matched_outcomes': [matched_outcome_data],
@@ -307,7 +309,7 @@ def detect_arbitrage_opportunities(
             continue
     
     # Filter by profit threshold (double-check)
-    opportunities = [opp for opp in opportunities if opp.get('profit_margin', 0) >= min_profit_threshold]
+    opportunities = [opp for opp in opportunities if opp.get('profit_margin', 0) >= min_profit_threshold and opp.get('liquidity', 0) >= min_liquidity]
     
     return opportunities
 

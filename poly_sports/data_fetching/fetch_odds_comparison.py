@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from dotenv import load_dotenv
 from poly_sports.data_fetching.fetch_sports_markets import extract_arbitrage_data, fetch_sports_markets, save_to_csv
-from poly_sports.utils.file_utils import save_json
+from poly_sports.utils.file_utils import save_json, load_json
 from poly_sports.data_fetching.fetch_odds_data import fetch_odds_for_polymarket_events
 
 # Load environment variables
@@ -30,21 +30,23 @@ def main() -> None:
     
     print(f"Fetching sports markets from {gamma_api_url}...")
     
-    # Step 1: Fetch Polymarket sports markets
-    try:
-        events = fetch_sports_markets(gamma_api_url, limit=1500)
-        print(f"Found {len(events)} sports events")
-    except Exception as e:
-        print(f"Error fetching markets: {e}")
-        return
+    # # Step 1: Fetch Polymarket sports markets
+    # try:
+    #     events = fetch_sports_markets(gamma_api_url, limit=1500)
+    #     print(f"Found {len(events)} sports events")
+    # except Exception as e:
+    #     print(f"Error fetching markets: {e}")
+    #     return
     
-    # Step 2: Extract arbitrage data
-    print("Extracting arbitrage data...")
-    if exclude_1h_moneyline:
-        print("  Excluding 1h moneyline bets")
-    arbitrage_data = extract_arbitrage_data(events, exclude_1h_moneyline=exclude_1h_moneyline)
-    print(f"Extracted {len(arbitrage_data)} markets for arbitrage analysis")
+    # # Step 2: Extract arbitrage data
+    # print("Extracting arbitrage data...")
+    # if exclude_1h_moneyline:
+    #     print("  Excluding 1h moneyline bets")
+    # arbitrage_data = extract_arbitrage_data(events, exclude_1h_moneyline=exclude_1h_moneyline)
+    # print(f"Extracted {len(arbitrage_data)} markets for arbitrage analysis")
     
+    arbitrage_data = load_json("data/arbitrage_data_filtered.json")
+
     if not arbitrage_data:
         print("No arbitrage data found. Exiting.")
         return
@@ -84,7 +86,7 @@ def main() -> None:
     
     # Print summary
     print(f"\nSummary:")
-    print(f"  Total Polymarket events: {len(events)}")
+    # print(f"  Total Polymarket events: {len(events)}")
     print(f"  Total markets for arbitrage: {len(arbitrage_data)}")
     if exclude_1h_moneyline:
         print(f"  (1h moneyline bets excluded)")

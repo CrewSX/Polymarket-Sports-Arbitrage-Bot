@@ -1,0 +1,352 @@
+[
+  {
+    "pm_event_id": "77704",
+    "pm_market_id": "674292",
+    "odds_api_event_id": "5bcc6010742e9fd91b257c2d03364155",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.25588416649215706,
+    "profit_margin_absolute": 25.588416649215706,
+    "liquidity": 1694.4736,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Houston Cougars",
+        "sb_outcome": "Houston Cougars",
+        "pm_price": 0.73,
+        "sb_implied_prob": 0.9167954415392746,
+        "sb_price_decimal": 1.0910539712354594,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.7665,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.803,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.876,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.9167954415392746,
+        "profit_percentage": 0.25588416649215706,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.28,
+    "pm_liquidity": 1694.4736,
+    "sportsbook_count": 5
+  },
+  {
+    "pm_event_id": "77715",
+    "pm_market_id": "674303",
+    "odds_api_event_id": "fad4dab088484a0b969c1d71a02ace09",
+    "match_confidence": 0.9749999999999999,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.30822320032095074,
+    "profit_margin_absolute": 30.822320032095075,
+    "liquidity": 1672.7493,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Cincinnati Bearcats",
+        "sb_outcome": "Cincinnati Bearcats",
+        "pm_price": 0.755,
+        "sb_implied_prob": 0.9877085162423178,
+        "sb_price_decimal": 1.0125,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.7927500000000001,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.8305000000000001,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.9059999999999999,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.9877085162423178,
+        "profit_percentage": 0.30822320032095074,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.41,
+    "pm_liquidity": 1666.7493,
+    "sportsbook_count": 2
+  },
+  {
+    "pm_event_id": "77702",
+    "pm_market_id": "674290",
+    "odds_api_event_id": "0ea97fe909d989e0b454bcf971494efe",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.24354109797178336,
+    "profit_margin_absolute": 24.354109797178335,
+    "liquidity": 2467.1886,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Miami Hurricanes",
+        "sb_outcome": "Miami Hurricanes",
+        "pm_price": 0.155,
+        "sb_implied_prob": 0.19274887018562642,
+        "sb_price_decimal": 5.196249999999999,
+        "match_confidence": 1.0
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.16275,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.1705,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.186,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.19274887018562642,
+        "profit_percentage": 0.24354109797178336,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.19,
+    "pm_liquidity": 2467.1886,
+    "sportsbook_count": 8
+  },
+  {
+    "pm_event_id": "76638",
+    "pm_market_id": "672306",
+    "odds_api_event_id": "96ce7785b0980b03282c7e10d4c58d4a",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.2867574395560292,
+    "profit_margin_absolute": 28.675743955602922,
+    "liquidity": 450945.0446,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Broncos",
+        "sb_outcome": "Denver Broncos",
+        "pm_price": 0.335,
+        "sb_implied_prob": 0.4310637422512698,
+        "sb_price_decimal": 2.325,
+        "match_confidence": 0.5
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.35175000000000006,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.36850000000000005,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.402,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.4310637422512698,
+        "profit_percentage": 0.2867574395560292,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 309523.1576,
+    "sportsbook_count": 6
+  },
+  {
+    "pm_event_id": "76638",
+    "pm_market_id": "674811",
+    "odds_api_event_id": "96ce7785b0980b03282c7e10d4c58d4a",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.22536406123692487,
+    "profit_margin_absolute": 22.536406123692487,
+    "liquidity": 450945.0446,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Chiefs",
+        "sb_outcome": "Kansas City Chiefs",
+        "pm_price": 0.515,
+        "sb_implied_prob": 0.6310624915370163,
+        "sb_price_decimal": 1.5866828992663355,
+        "match_confidence": 0.3333333333333333
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.5407500000000001,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.5665000000000001,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.618,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.6310624915370163,
+        "profit_percentage": 0.22536406123692487,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.85,
+    "pm_liquidity": 59.1683,
+    "sportsbook_count": 6
+  },
+  {
+    "pm_event_id": "76639",
+    "pm_market_id": "674806",
+    "odds_api_event_id": "6d209e0e637f3b116ec958e0634f2a02",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.3128320118381218,
+    "profit_margin_absolute": 31.28320118381218,
+    "liquidity": 583904.9853,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Eagles",
+        "sb_outcome": "Philadelphia Eagles",
+        "pm_price": 0.455,
+        "sb_implied_prob": 0.5973385653863454,
+        "sb_price_decimal": 1.6743901028618253,
+        "match_confidence": 0.3157894736842105
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.47775000000000006,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.5005000000000001,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.546,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.5973385653863454,
+        "profit_percentage": 0.3128320118381218,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.69,
+    "pm_liquidity": 85.1512,
+    "sportsbook_count": 9
+  },
+  {
+    "pm_event_id": "62234",
+    "pm_market_id": "640515",
+    "odds_api_event_id": "cf25bf6aa40e9f9b0983c62757f6fed3",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.2090596486098108,
+    "profit_margin_absolute": 20.90596486098108,
+    "liquidity": 22604.6207,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Canucks",
+        "sb_outcome": "Vancouver Canucks",
+        "pm_price": 0.355,
+        "sb_implied_prob": 0.4292161752564828,
+        "sb_price_decimal": 2.33,
+        "match_confidence": 0.4117647058823529
+      }
+    ],
+    "sell_points": [
+      {
+        "target_price": 0.37274999999999997,
+        "profit_percentage": 0.05,
+        "confidence": "medium",
+        "description": "5% profit"
+      },
+      {
+        "target_price": 0.3905,
+        "profit_percentage": 0.1,
+        "confidence": "medium",
+        "description": "10% profit"
+      },
+      {
+        "target_price": 0.426,
+        "profit_percentage": 0.2,
+        "confidence": "medium",
+        "description": "20% profit"
+      },
+      {
+        "target_price": 0.4292161752564828,
+        "profit_percentage": 0.2090596486098108,
+        "confidence": "high",
+        "description": "Fair value"
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 22658.7832,
+    "sportsbook_count": 9
+  }
+]

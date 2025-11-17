@@ -10,6 +10,7 @@ from poly_sports.utils.odds_utils import (
     american_to_implied_prob,
     decimal_to_implied_prob,
 )
+from poly_sports.utils.file_utils import save_json
 
 
 def _enrich_outcome_with_formats(outcome: Dict[str, Any], odds_format: str) -> Dict[str, Any]:
@@ -211,6 +212,8 @@ def fetch_odds_for_polymarket_events(
                 markets=markets,
                 odds_format=odds_format
             )
+
+            save_json(odds_with_bookmakers, f"data/{sport_key}_sb_data")
             
             # Step 4: Create a mapping of event_id -> odds_event (with bookmakers)
             odds_by_event_id = {event.get('id'): event for event in odds_with_bookmakers}

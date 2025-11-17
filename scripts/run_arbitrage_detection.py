@@ -1,7 +1,7 @@
 """Run arbitrage detection on test data and display results."""
 from pathlib import Path
 from poly_sports.processing.arbitrage_calculation import detect_arbitrage_opportunities
-from poly_sports.utils.file_utils import load_json
+from poly_sports.utils.file_utils import load_json, save_json
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
     # Load comparison data
     # Get project root (parent of scripts directory)
     project_root = Path(__file__).parent.parent
-    data_file = project_root / 'data' / 'arbitrage_comparison_test.json'
+    data_file = project_root / 'data' / 'arbitrage_comparison.json'
     
     if not data_file.exists():
         print(f"Error: {data_file} not found")
@@ -28,6 +28,7 @@ def main():
     opportunities = detect_arbitrage_opportunities(
         comparison_data,
         min_profit_threshold=0.1,  # 1% minimum profit
+        min_liquidity=1000,
         pm_fee=0.0,
         sb_fee=0.0
     )
@@ -88,6 +89,7 @@ def main():
     print("\n" + "=" * 80)
     print("Analysis complete!")
     print("=" * 80)
+    save_json(directional, "./data/directional_arbitrage.json")
 
 
 if __name__ == '__main__':
