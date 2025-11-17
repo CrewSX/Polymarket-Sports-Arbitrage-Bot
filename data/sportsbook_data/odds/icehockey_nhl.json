@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "6163923c75ccb4b63b81a9da88c5383f",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2025-11-18T00:10:00Z",
+    "home_team": "Boston Bruins",
+    "away_team": "Carolina Hurricanes",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 150
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-17T06:58:46Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:46Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 160
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -194
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-11-17T06:59:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:10Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 154
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -176
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 154
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -176
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-17T06:59:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:23Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 150
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -190
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 150
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -185
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-17T06:58:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:58Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 146
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -181
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-17T06:59:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:13Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 163
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -190
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-11-17T06:58:47Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:47Z",
+            "outcomes": [
+              {
+                "name": "Boston Bruins",
+                "price": 159
+              },
+              {
+                "name": "Carolina Hurricanes",
+                "price": -185
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "46786832318bce38de2004994026ce66",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2025-11-18T00:10:00Z",
+    "home_team": "Buffalo Sabres",
+    "away_team": "Edmonton Oilers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 130
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -155
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-17T06:58:46Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:46Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 136
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -164
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-11-17T06:59:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:10Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 136
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -155
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 136
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -155
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-17T06:59:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:23Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 133
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -167
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 135
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -160
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-17T06:58:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:58Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 133
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -163
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-17T06:59:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:13Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 142
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -168
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-11-17T06:58:47Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:47Z",
+            "outcomes": [
+              {
+                "name": "Buffalo Sabres",
+                "price": 134
+              },
+              {
+                "name": "Edmonton Oilers",
+                "price": -155
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a05fc26e6fd5d6f212d550234fb8bbf3",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2025-11-18T00:10:00Z",
+    "home_team": "Florida Panthers",
+    "away_team": "Vancouver Canucks",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -290
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 235
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-17T06:58:46Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:46Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -280
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 225
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-17T06:59:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:23Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -286
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -285
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 225
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-17T06:58:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:58Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -295
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 228
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-17T06:59:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:13Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -290
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 240
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -270
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 232
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-11-17T06:59:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:10Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -270
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 232
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-11-17T06:58:47Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:47Z",
+            "outcomes": [
+              {
+                "name": "Florida Panthers",
+                "price": -270
+              },
+              {
+                "name": "Vancouver Canucks",
+                "price": 225
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "45d54dc6c11d254fd1b64ba6967ef453",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2025-11-18T00:10:00Z",
+    "home_team": "Washington Capitals",
+    "away_team": "Los Angeles Kings",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 110
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -130
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-17T06:58:46Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:46Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 106
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -128
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-11-17T06:59:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:10Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 112
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -127
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 112
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -127
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-17T06:59:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:23Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 104
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -129
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 105
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -125
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-17T06:58:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:58Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 111
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -136
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-17T06:59:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:13Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 112
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -133
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-11-17T06:58:47Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:47Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Kings",
+                "price": 105
+              },
+              {
+                "name": "Washington Capitals",
+                "price": -125
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "72b652d1685844741164b7b4ef3ac292",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2025-11-18T00:40:00Z",
+    "home_team": "Columbus Blue Jackets",
+    "away_team": "Montréal Canadiens",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -122
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 102
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-17T06:58:46Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:46Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -125
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 104
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-17T06:58:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:58Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -129
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 105
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -123
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 109
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-11-17T06:59:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:10Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -123
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 109
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-17T06:59:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:23Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -137
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 110
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -125
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 105
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-17T06:59:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:13Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -125
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 105
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-11-17T06:58:47Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:47Z",
+            "outcomes": [
+              {
+                "name": "Columbus Blue Jackets",
+                "price": -125
+              },
+              {
+                "name": "Montréal Canadiens",
+                "price": 105
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2392382b14879de3de2792928377422b",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2025-11-18T03:10:00Z",
+    "home_team": "Anaheim Ducks",
+    "away_team": "Utah Mammoth",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": -102
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -118
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-17T06:58:46Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:46Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": -110
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -110
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-17T06:58:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:58Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": -108
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -118
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 101
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -115
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-11-17T06:59:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:10Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 101
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -115
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-17T06:59:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:23Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": -108
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -115
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-17T06:59:35Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:35Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": -105
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -115
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-17T06:59:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:59:13Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": 105
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -125
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-11-17T06:58:47Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-17T06:58:47Z",
+            "outcomes": [
+              {
+                "name": "Anaheim Ducks",
+                "price": -105
+              },
+              {
+                "name": "Utah Mammoth",
+                "price": -115
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
