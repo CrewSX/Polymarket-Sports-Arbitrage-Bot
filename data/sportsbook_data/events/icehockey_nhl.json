@@ -1,50 +1,66 @@
 [
   {
-    "id": "6163923c75ccb4b63b81a9da88c5383f",
+    "id": "acbb4f37e799b2022a0e20dca8a62f00",
     "sport_key": "icehockey_nhl",
     "sport_title": "NHL",
-    "commence_time": "2025-11-18T00:10:00Z",
-    "home_team": "Boston Bruins",
-    "away_team": "Carolina Hurricanes"
+    "commence_time": "2025-11-19T00:00:00Z",
+    "home_team": "Detroit Red Wings",
+    "away_team": "Seattle Kraken"
   },
   {
-    "id": "46786832318bce38de2004994026ce66",
+    "id": "55afa01d1ca36eb6cc1184ba15130a2b",
     "sport_key": "icehockey_nhl",
     "sport_title": "NHL",
-    "commence_time": "2025-11-18T00:10:00Z",
-    "home_team": "Buffalo Sabres",
-    "away_team": "Edmonton Oilers"
+    "commence_time": "2025-11-19T00:00:00Z",
+    "home_team": "Tampa Bay Lightning",
+    "away_team": "New Jersey Devils"
   },
   {
-    "id": "a05fc26e6fd5d6f212d550234fb8bbf3",
+    "id": "bbb4773f9970bf1288d59ec80c886294",
     "sport_key": "icehockey_nhl",
     "sport_title": "NHL",
-    "commence_time": "2025-11-18T00:10:00Z",
-    "home_team": "Florida Panthers",
-    "away_team": "Vancouver Canucks"
+    "commence_time": "2025-11-19T00:00:00Z",
+    "home_team": "Toronto Maple Leafs",
+    "away_team": "St Louis Blues"
   },
   {
-    "id": "45d54dc6c11d254fd1b64ba6967ef453",
+    "id": "1f556c3f198c08b6b98c8e6dad21b371",
     "sport_key": "icehockey_nhl",
     "sport_title": "NHL",
-    "commence_time": "2025-11-18T00:10:00Z",
-    "home_team": "Washington Capitals",
-    "away_team": "Los Angeles Kings"
+    "commence_time": "2025-11-19T01:00:00Z",
+    "home_team": "Winnipeg Jets",
+    "away_team": "Columbus Blue Jackets"
   },
   {
-    "id": "72b652d1685844741164b7b4ef3ac292",
+    "id": "38c2607714ad9064f6e13e3dfc18a520",
     "sport_key": "icehockey_nhl",
     "sport_title": "NHL",
-    "commence_time": "2025-11-18T00:40:00Z",
-    "home_team": "Columbus Blue Jackets",
-    "away_team": "Montréal Canadiens"
+    "commence_time": "2025-11-19T01:00:00Z",
+    "home_team": "Dallas Stars",
+    "away_team": "New York Islanders"
   },
   {
-    "id": "2392382b14879de3de2792928377422b",
+    "id": "8cdf01ab36798f37e2d3333e4cc0c278",
     "sport_key": "icehockey_nhl",
     "sport_title": "NHL",
-    "commence_time": "2025-11-18T03:10:00Z",
-    "home_team": "Anaheim Ducks",
+    "commence_time": "2025-11-19T01:30:00Z",
+    "home_team": "Chicago Blackhawks",
+    "away_team": "Calgary Flames"
+  },
+  {
+    "id": "2e3b25e5ce0918896adbb48636bad71e",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2025-11-19T03:00:00Z",
+    "home_team": "Vegas Golden Knights",
+    "away_team": "New York Rangers"
+  },
+  {
+    "id": "8b9eb8afec98d44d152bd040a4bc718f",
+    "sport_key": "icehockey_nhl",
+    "sport_title": "NHL",
+    "commence_time": "2025-11-19T03:00:00Z",
+    "home_team": "San Jose Sharks",
     "away_team": "Utah Mammoth"
   }
 ]

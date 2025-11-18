@@ -128,14 +128,6 @@
     "away_team": "Rutgers Scarlet Knights"
   },
   {
-    "id": "125e9c0f6043227f58577c41cbd0e85b",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-11-22T17:00:00Z",
-    "home_team": "Oregon Ducks",
-    "away_team": "USC Trojans"
-  },
-  {
     "id": "e94477e5dd3cf352113919093803aa2a",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
@@ -294,6 +286,14 @@
     "commence_time": "2025-11-22T20:30:00Z",
     "home_team": "Notre Dame Fighting Irish",
     "away_team": "Syracuse Orange"
+  },
+  {
+    "id": "125e9c0f6043227f58577c41cbd0e85b",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-11-22T20:30:00Z",
+    "home_team": "Oregon Ducks",
+    "away_team": "USC Trojans"
   },
   {
     "id": "9ecbb88fcab392aaa87a855d9b592269",
