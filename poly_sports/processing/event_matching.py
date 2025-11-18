@@ -4,6 +4,7 @@ from typing import List, Dict, Any, Optional, Tuple, Callable
 from datetime import datetime, timezone
 from dateutil import parser as date_parser
 from rapidfuzz import fuzz
+from poly_sports.processing.sport_detection import detect_sport_key
 
 
 def normalize_team_name(name: Optional[str]) -> str:
@@ -80,14 +81,24 @@ def calculate_match_score(pm_event: Dict[str, Any], odds_event: Dict[str, Any]) 
     Returns:
         Confidence score between 0.0 and 1.0
     """
+    # First, check if sports match - if not, return 0.0 immediately
+    pm_sport_key = detect_sport_key(pm_event)
+    odds_sport_key = odds_event.get('sport_key', '')
+    
+    if pm_sport_key and odds_sport_key:
+        if pm_sport_key != odds_sport_key:
+            return 0.0
+    
     # For college football, use school names from market_outcomes instead of team names
     # This is more accurate since team names can be duplicates (e.g., "Tigers", "Bulldogs")
     school_home, school_away = extract_school_names_from_outcomes(pm_event)
     
     if school_home and school_away:
         # Use school names from market_outcomes for college football
-        pm_home = normalize_team_name(school_home + " " + pm_event.get('homeTeamName', ''))
-        pm_away = normalize_team_name(school_away + " " + pm_event.get('awayTeamName', ''))
+        # The order of market_outcomes may not match homeTeamName/awayTeamName order,
+        # so we use school names directly and let fuzzy matching try both orders
+        pm_home = normalize_team_name(school_home)
+        pm_away = normalize_team_name(school_away)
     else:
         # Use regular team names for other sports
         # Try market_outcomes first, fallback to homeTeamName/awayTeamName if outcomes are "Yes"/"No"
