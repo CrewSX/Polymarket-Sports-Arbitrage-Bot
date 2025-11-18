@@ -1,5 +1,6 @@
 """Main integration function for fetching and matching odds data."""
 import traceback
+from pathlib import Path
 from typing import List, Dict, Any, Optional
 from collections import defaultdict
 from poly_sports.processing.sport_detection import detect_sport_key
@@ -11,7 +12,7 @@ from poly_sports.utils.odds_utils import (
     american_to_implied_prob,
     decimal_to_implied_prob,
 )
-from poly_sports.utils.file_utils import save_json
+from poly_sports.utils.file_utils import save_json, load_json
 
 
 def _enrich_outcome_with_formats(outcome: Dict[str, Any], odds_format: str) -> Dict[str, Any]:
@@ -141,20 +142,43 @@ def _consolidate_bookmakers(bookmakers: List[Dict[str, Any]]) -> Dict[str, Any]:
     }
 
 
+def load_events_from_file(sport_key: str, events_dir: str = 'data/sportsbook_data/events') -> Optional[List[Dict[str, Any]]]:
+    """
+    Load events from stored JSON file if it exists.
+    
+    Args:
+        sport_key: The Odds API sport key (e.g., 'americanfootball_nfl')
+        events_dir: Directory containing event JSON files
+        
+    Returns:
+        List of event dictionaries if file exists, None otherwise
+    """
+    events_path = Path(events_dir) / f"{sport_key}.json"
+    if events_path.exists():
+        try:
+            return load_json(str(events_path))
+        except Exception as e:
+            print(f"  Warning: Could not load events from {events_path}: {e}")
+            return None
+    return None
+
+
 def fetch_odds_for_polymarket_events(
     arbitrage_data: List[Dict[str, Any]],
     api_key: Optional[str] = None,
     regions: List[str] = None,
     markets: List[str] = None,
     odds_format: str = 'american',
-    min_confidence: float = 0.8
+    min_confidence: float = 0.8,
+    use_stored_events: bool = False,
+    events_dir: str = 'data/sportsbook_data/events'
 ) -> List[Dict[str, Any]]:
     """
     Fetch odds from The Odds API for Polymarket events and create merged comparison dataset.
     
     Process:
     1. Group Polymarket events by sport (using auto-detection)
-    2. For each sport, fetch events from The Odds API (without odds)
+    2. For each sport, load events from stored file (if use_stored_events=True) or fetch from The Odds API
     3. Match Polymarket events to The Odds API events
     4. Fetch odds from The Odds API for the sport
     5. Merge matched events with odds data by matching event IDs
@@ -168,6 +192,8 @@ def fetch_odds_for_polymarket_events(
         markets: List of markets to fetch (e.g., ['h2h', 'spreads']). Default: ['h2h']
         odds_format: Odds format to request from API - 'american' or 'decimal'. Default: 'american'
         min_confidence: Minimum confidence score for matching events. Default: 0.8
+        use_stored_events: If True, load events from stored JSON files if available. Default: True
+        events_dir: Directory containing stored event JSON files. Default: 'data/sportsbook_data/events'
         
     Returns:
         List of merged comparison dictionaries, each containing:
@@ -197,12 +223,24 @@ def fetch_odds_for_polymarket_events(
         try:
             print(f"Processing sport: {sport_key} ({len(pm_events)} Polymarket events)")
             
-            # Step 1: Fetch events from The Odds API (without odds) for matching
-            odds_events = fetch_events(sport_key, api_key=api_key)
-            print(f"  Fetched {len(odds_events)} events from The Odds API")
-
-            save_json(odds_events, f"data/sportsbook_data/events/{sport_key}.json")
-            print(f"  Saved JSON file: data/sportsbook_data/events/{sport_key}.json")
+            # Step 1: Load events from stored file or fetch from The Odds API
+            odds_events = None
+            if use_stored_events:
+                odds_events = load_events_from_file(sport_key, events_dir)
+                if odds_events is not None:
+                    print(f"  Loaded {len(odds_events)} events from stored file")
+                continue
+            
+            if odds_events is None:
+                # File doesn't exist or use_stored_events=False, fetch from API
+                odds_events = fetch_events(sport_key, api_key=api_key)
+                print(f"  Fetched {len(odds_events)} events from The Odds API")
+                
+                # Save fetched events for future use
+                events_path = Path(events_dir) / f"{sport_key}.json"
+                events_path.parent.mkdir(parents=True, exist_ok=True)
+                save_json(odds_events, str(events_path))
+                print(f"  Saved JSON file: {events_path}")
             
             # Step 2: Match Polymarket events to Odds API events
             matches = match_events(pm_events, odds_events, min_confidence=min_confidence)

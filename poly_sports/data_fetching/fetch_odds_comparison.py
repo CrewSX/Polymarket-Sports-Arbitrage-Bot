@@ -22,6 +22,8 @@ def main() -> None:
     output_dir = os.getenv('OUTPUT_DIR', 'data')
     min_confidence = float(os.getenv('ODDS_API_MIN_CONFIDENCE', '0.8'))
     exclude_1h_moneyline = os.getenv('EXCLUDE_1H_MONEYLINE', 'false').lower() == 'true'
+    use_stored_events = os.getenv('USE_STORED_EVENTS', 'true').lower() == 'true'
+    events_dir = os.getenv('EVENTS_DIR', 'data/sportsbook_data/events')
     
     if not odds_api_key:
         print("Error: ODDS_API_KEY not found in environment variables")
@@ -57,6 +59,9 @@ def main() -> None:
     print(f"  Markets: {odds_api_markets}")
     print(f"  Format: {odds_api_format}")
     print(f"  Min confidence: {min_confidence}")
+    print(f"  Use stored events: {use_stored_events}")
+    if use_stored_events:
+        print(f"  Events directory: {events_dir}")
     
     try:
         comparison_data = fetch_odds_for_polymarket_events(
@@ -65,7 +70,9 @@ def main() -> None:
             regions=odds_api_regions,
             markets=odds_api_markets,
             odds_format=odds_api_format,
-            min_confidence=min_confidence
+            min_confidence=min_confidence,
+            use_stored_events=use_stored_events,
+            events_dir=events_dir
         )
         print(f"Successfully matched {len(comparison_data)} events with sportsbook odds")
     except Exception as e:
