@@ -15,7 +15,6 @@ SERIES_TICKER_MAP = {
     'cfb': 'americanfootball_ncaaf',  # College Football
     'ncaa-cbb': 'basketball_ncaab',  # College Basketball (with hyphen)
     'soccer': 'soccer_epl',  # Default to EPL, may need more specific mapping
-    'ufc': 'mma_mixed_martial_arts',
     'mma': 'mma_mixed_martial_arts',
     'uef-qualifiers': 'soccer_fifa_world_cup_qualifiers_europe',
     'primera-divisin-argentina': 'soccer_argentina_primera_division',
