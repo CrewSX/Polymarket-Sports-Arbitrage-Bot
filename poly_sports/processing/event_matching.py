@@ -41,7 +41,7 @@ def extract_school_names_from_outcomes(pm_event: Dict[str, Any]) -> Tuple[Option
     """
     # Check if this is a college football event
     series_ticker = str(pm_event.get('series_ticker', '')).lower()
-    if not ('cfb' in series_ticker or 'ncaaf' in series_ticker):
+    if not ('cfb' in series_ticker or 'ncaaf' in series_ticker or 'cwbb' in series_ticker):
         return (None, None)
     
     # Parse market_outcomes JSON string
@@ -86,19 +86,53 @@ def calculate_match_score(pm_event: Dict[str, Any], odds_event: Dict[str, Any]) 
     
     if school_home and school_away:
         # Use school names from market_outcomes for college football
-        pm_home = normalize_team_name(school_home)
-        pm_away = normalize_team_name(school_away)
+        pm_home = normalize_team_name(school_home + " " + pm_event.get('homeTeamName', ''))
+        pm_away = normalize_team_name(school_away + " " + pm_event.get('awayTeamName', ''))
     else:
         # Use regular team names for other sports
-        pm_home = normalize_team_name(pm_event.get('homeTeamName', ''))
-        pm_away = normalize_team_name(pm_event.get('awayTeamName', ''))
-    
+        # Try market_outcomes first, fallback to homeTeamName/awayTeamName if outcomes are "Yes"/"No"
+        try:
+            outcomes = json.loads(pm_event.get('market_outcomes', '')) if isinstance(pm_event.get('market_outcomes', ''), str) else pm_event.get('market_outcomes', [])
+            outcome1 = str(outcomes[0]).strip().lower()
+            outcome2 = str(outcomes[1]).strip().lower()
+            # If outcomes are "Yes"/"No", use homeTeamName/awayTeamName instead (only if they exist)
+            if outcome1 in ('yes', 'no') or outcome2 in ('yes', 'no'):
+                pm_home = normalize_team_name(pm_event.get('homeTeamName', ''))
+                pm_away = normalize_team_name(pm_event.get('awayTeamName', ''))
+                # If homeTeamName/awayTeamName are empty, we can't match - return 0 score
+                if not pm_home or not pm_away:
+                    return 0.0
+            else:
+                pm_home = normalize_team_name(outcomes[0])
+                pm_away = normalize_team_name(outcomes[1])
+        except (json.JSONDecodeError, TypeError, IndexError):
+            pm_home = normalize_team_name(pm_event.get('homeTeamName', ''))
+            pm_away = normalize_team_name(pm_event.get('awayTeamName', ''))
+            # If homeTeamName/awayTeamName are empty, we can't match - return 0 score
+            if not pm_home or not pm_away:
+                return 0.0
+        
     odds_home = normalize_team_name(odds_event.get('home_team', ''))
     odds_away = normalize_team_name(odds_event.get('away_team', ''))
+    
+    # Check if this is an NBA event
+    is_nba = False
+    pm_series_ticker = str(pm_event.get('series_ticker', '')).lower()
+    odds_sport_key = str(odds_event.get('sport_key', '')).lower()
+    if 'nba' in pm_series_ticker or 'basketball_nba' or 'nhl' in pm_series_ticker or 'icehockey_nhl' in odds_sport_key:
+        is_nba = True
     
     # Check for exact matches first
     exact_match1 = (pm_home == odds_home and pm_away == odds_away)
     exact_match2 = (pm_home == odds_away and pm_away == odds_home)
+    
+    # For NBA events, also check if Polymarket team name is a subset of Odds API name
+    # (e.g., "lakers" should match "los angeles lakers")
+    if is_nba and not (exact_match1 or exact_match2):
+        subset_match1 = (pm_home in odds_home and pm_away in odds_away)
+        subset_match2 = (pm_home in odds_away and pm_away in odds_home)
+        if subset_match1 or subset_match2:
+            exact_match1 = True  # Treat as exact match
     
     if exact_match1 or exact_match2:
         team_similarity = 1.0
