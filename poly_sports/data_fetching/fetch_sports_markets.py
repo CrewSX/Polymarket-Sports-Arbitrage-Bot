@@ -53,9 +53,11 @@ def filter_sports_markets(markets: List[Dict[str, Any]]) -> List[Dict[str, Any]]
     return sports_markets
 
 
-def fetch_sports_markets(api_url: str, limit: int = 1500, series_ids: Optional[List[int]] = None) -> List[Dict[str, Any]]:
+def _fetch_sports_markets_v1(api_url: str, limit: int = 1500, series_ids: Optional[List[int]] = None) -> List[Dict[str, Any]]:
     """
-    Fetch all sports markets from Gamma API using events endpoint with series_id filters.
+    [DEPRECATED] Original implementation using events endpoint with series_id filters.
+    
+    This function is kept for comparison purposes only. Use fetch_sports_markets() instead.
     
     Args:
         api_url: Base URL for Gamma API
@@ -112,6 +114,139 @@ def fetch_sports_markets(api_url: str, limit: int = 1500, series_ids: Optional[L
         raise requests.exceptions.RequestException(f"Error fetching markets: {e}")
     
     return events
+
+
+def _fetch_sports_markets_v2(api_url: str, limit_per_page: int = 50, max_events: Optional[int] = None) -> List[Dict[str, Any]]:
+    """
+    Fetch all sports markets from Gamma API using events/pagination endpoint with tag_slug filter.
+    
+    This version uses the pagination endpoint with tag_slug=sports, which may retrieve
+    different or more events than the series_id-based approach.
+    
+    Args:
+        api_url: Base URL for Gamma API
+        limit_per_page: Number of events to fetch per page (default: 50, matching website)
+        max_events: Maximum total events to fetch. If None, fetches all available.
+        
+    Returns:
+        List of sports market dictionaries with all available fields
+    """
+    all_events = []
+    
+    # Use events/pagination endpoint
+    url = f"{api_url}/events/pagination"
+    
+    # Headers matching the curl command
+    headers = {
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'en,ar;q=0.9,zh-TW;q=0.8,zh;q=0.7,en-US;q=0.6',
+        'Connection': 'keep-alive',
+        'Origin': 'https://polymarket.com',
+        'Sec-Fetch-Dest': 'empty',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'same-site',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+        'sec-ch-ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"macOS"'
+    }
+    
+    # Request parameters matching the curl command
+    request_params = {
+        'limit': limit_per_page,
+        'active': 'true',
+        'archived': 'false',
+        'tag_slug': 'sports',
+        'closed': 'false',
+        'order': 'volume',
+        'ascending': 'false'
+    }
+    
+    page = 0
+    has_more = True
+    cursor = None
+    
+    try:
+        while has_more:
+            # Add cursor for pagination if we have one from previous request
+            current_params = request_params.copy()
+            if cursor:
+                current_params['cursor'] = cursor
+            elif page > 0:
+                # If no cursor but we're past first page, try offset-based pagination
+                current_params['offset'] = page * limit_per_page
+            
+            response = requests.get(url, params=current_params, headers=headers)
+            response.raise_for_status()
+            data = response.json()
+            
+            # Handle different response formats
+            if isinstance(data, list):
+                events = data
+                has_more = len(events) == limit_per_page and len(events) > 0
+                cursor = None  # No cursor for list responses
+            elif isinstance(data, dict):
+                # Pagination endpoints often return {data: [...], cursor: ..., hasMore: ...}
+                events = data.get('data', [])
+                cursor = data.get('cursor') or data.get('nextCursor')
+                has_more = data.get('hasMore', False) or (cursor is not None and len(events) == limit_per_page)
+                
+                # If no explicit hasMore flag, infer from response
+                if 'hasMore' not in data and cursor is None:
+                    has_more = len(events) == limit_per_page
+            else:
+                events = []
+                has_more = False
+                cursor = None
+            
+            all_events.extend(events)
+            
+            # Check if we've reached max_events limit
+            if max_events and len(all_events) >= max_events:
+                all_events = all_events[:max_events]
+                has_more = False
+                break
+            
+            # If we got fewer events than requested and no cursor, we're done
+            if len(events) < limit_per_page and cursor is None:
+                has_more = False
+            
+            page += 1
+            
+            # Safety limit to prevent infinite loops
+            if page > 1000:
+                print(f"Warning: Reached pagination limit (1000 pages), stopping")
+                break
+        
+    except requests.exceptions.RequestException as e:
+        raise requests.exceptions.RequestException(f"Error fetching markets via pagination: {e}")
+    
+    return all_events
+
+
+def fetch_sports_markets(api_url: str, limit: int = 9999, series_ids: Optional[List[int]] = None) -> List[Dict[str, Any]]:
+    """
+    Fetch all sports markets from Gamma API using events/pagination endpoint with tag_slug filter.
+    
+    This function now uses the pagination endpoint (v2 implementation) which retrieves more events
+    than the previous series_id-based approach. The function signature is maintained for backwards
+    compatibility, but the `limit` and `series_ids` parameters are adapted to work with the new
+    pagination-based implementation.
+    
+    Args:
+        api_url: Base URL for Gamma API
+        limit: Maximum number of events to fetch (default: 1500). Used as max_events for pagination.
+        series_ids: [DEPRECATED] This parameter is ignored. The new implementation uses tag_slug=sports
+                   instead of series_id filters to retrieve all sports events.
+        
+    Returns:
+        List of sports event dictionaries with all available fields
+    """
+    # Convert limit to max_events for v2 implementation
+    max_events = limit if limit > 0 else None
+    
+    # Use v2 implementation (pagination with tag_slug)
+    return _fetch_sports_markets_v2(api_url, limit_per_page=50, max_events=max_events)
 
 
 def enrich_market_with_clob_data(client: ClobClient, market: Dict[str, Any]) -> Dict[str, Any]:
@@ -288,7 +423,7 @@ def is_1h_moneyline_bet(market: Dict[str, Any]) -> bool:
     return any(pattern in text_to_check for pattern in patterns)
 
 
-def extract_arbitrage_data(events: List[Dict[str, Any]], exclude_1h_moneyline: bool = False) -> List[Dict[str, Any]]:
+def extract_arbitrage_data(events: List[Dict[str, Any]], exclude_1h_moneyline: bool = True) -> List[Dict[str, Any]]:
     """
     Extract arbitrage-relevant data from events for trading analysis.
     
@@ -615,6 +750,248 @@ def save_to_csv(data: List[Dict[str, Any]], filename: str) -> None:
             writer.writerow(row)
 
 
+def compare_fetch_methods(api_url: str, output_dir: str = 'data') -> None:
+    """
+    Compare the two fetch methods (v1: series_id-based, v2: tag_slug-based pagination).
+    
+    Args:
+        api_url: Base URL for Gamma API
+        output_dir: Directory to save comparison results
+    """
+    print("=" * 80)
+    print("COMPARING FETCH METHODS")
+    print("=" * 80)
+    
+    # Fetch using method 1 (original: series_id-based)
+    print("\n[Method 1] Fetching using events endpoint with series_id filters...")
+    try:
+        events_v1 = _fetch_sports_markets_v1(api_url, limit=1500)
+        print(f"✓ Method 1 retrieved {len(events_v1)} events")
+    except Exception as e:
+        print(f"✗ Method 1 failed: {e}")
+        events_v1 = []
+    
+    # Fetch using method 2 (new: tag_slug-based pagination)
+    print("\n[Method 2] Fetching using events/pagination endpoint with tag_slug=sports...")
+    try:
+        events_v2 = _fetch_sports_markets_v2(api_url, limit_per_page=50)
+        print(f"✓ Method 2 retrieved {len(events_v2)} events")
+    except Exception as e:
+        print(f"✗ Method 2 failed: {e}")
+        events_v2 = []
+    
+    # Extract event IDs for comparison
+    event_ids_v1 = {event.get('id') for event in events_v1 if event.get('id')}
+    event_ids_v2 = {event.get('id') for event in events_v2 if event.get('id')}
+    
+    # Calculate differences
+    only_in_v1 = event_ids_v1 - event_ids_v2
+    only_in_v2 = event_ids_v2 - event_ids_v1
+    in_both = event_ids_v1 & event_ids_v2
+    
+    # Print comparison results
+    print("\n" + "=" * 80)
+    print("COMPARISON RESULTS")
+    print("=" * 80)
+    print(f"Method 1 (series_id-based):     {len(events_v1)} events ({len(event_ids_v1)} unique IDs)")
+    print(f"Method 2 (tag_slug pagination): {len(events_v2)} events ({len(event_ids_v2)} unique IDs)")
+    print(f"\nEvents in both methods:        {len(in_both)}")
+    print(f"Events only in Method 1:        {len(only_in_v1)}")
+    print(f"Events only in Method 2:        {len(only_in_v2)}")
+    
+    # Extract arbitrage data for comparison
+    print("\nExtracting arbitrage data for comparison...")
+    arbitrage_v1 = extract_arbitrage_data(events_v1) if events_v1 else []
+    arbitrage_v2 = extract_arbitrage_data(events_v2) if events_v2 else []
+    
+    print(f"Method 1 arbitrage markets:     {len(arbitrage_v1)}")
+    print(f"Method 2 arbitrage markets:     {len(arbitrage_v2)}")
+    
+    # Save comparison results
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+    
+    # Save Method 1 results
+    print(f"\nSaving Method 1 results...")
+    save_json(events_v1, str(output_path / 'sports_markets_v1.json'))
+    save_json(arbitrage_v1, str(output_path / 'arbitrage_data_v1.json'))
+    save_to_csv(events_v1, str(output_path / 'sports_markets_v1.csv'))
+    save_to_csv(arbitrage_v1, str(output_path / 'arbitrage_data_v1.csv'))
+    
+    # Save Method 2 results
+    print(f"Saving Method 2 results...")
+    save_json(events_v2, str(output_path / 'sports_markets_v2.json'))
+    save_json(arbitrage_v2, str(output_path / 'arbitrage_data_v2.json'))
+    save_to_csv(events_v2, str(output_path / 'sports_markets_v2.csv'))
+    save_to_csv(arbitrage_v2, str(output_path / 'arbitrage_data_v2.csv'))
+    
+    # Save comparison summary
+    comparison_summary = {
+        'method1': {
+            'total_events': len(events_v1),
+            'unique_event_ids': len(event_ids_v1),
+            'arbitrage_markets': len(arbitrage_v1)
+        },
+        'method2': {
+            'total_events': len(events_v2),
+            'unique_event_ids': len(event_ids_v2),
+            'arbitrage_markets': len(arbitrage_v2)
+        },
+        'comparison': {
+            'events_in_both': len(in_both),
+            'events_only_in_method1': len(only_in_v1),
+            'events_only_in_method2': len(only_in_v2),
+            'method2_has_more': len(events_v2) > len(events_v1),
+            'method2_has_more_unique': len(event_ids_v2) > len(event_ids_v1)
+        },
+        'event_ids_only_in_method1': list(only_in_v1),
+        'event_ids_only_in_method2': list(only_in_v2)
+    }
+    
+    comparison_file = output_path / 'fetch_comparison.json'
+    save_json(comparison_summary, str(comparison_file))
+    print(f"\nComparison summary saved to: {comparison_file}")
+    
+    # Analyze event characteristics
+    print("\nAnalyzing event characteristics...")
+    
+    # Analyze series/tickers
+    series_v1 = {}
+    series_v2 = {}
+    for event in events_v1:
+        series_list = event.get('series', [])
+        if series_list:
+            ticker = series_list[0].get('ticker', 'Unknown')
+            series_v1[ticker] = series_v1.get(ticker, 0) + 1
+    
+    for event in events_v2:
+        series_list = event.get('series', [])
+        if series_list:
+            ticker = series_list[0].get('ticker', 'Unknown')
+            series_v2[ticker] = series_v2.get(ticker, 0) + 1
+    
+    # Analyze markets per event
+    markets_per_event_v1 = [len(event.get('markets', [])) for event in events_v1]
+    markets_per_event_v2 = [len(event.get('markets', [])) for event in events_v2]
+    avg_markets_v1 = sum(markets_per_event_v1) / len(markets_per_event_v1) if markets_per_event_v1 else 0
+    avg_markets_v2 = sum(markets_per_event_v2) / len(markets_per_event_v2) if markets_per_event_v2 else 0
+    
+    # Analyze live vs upcoming events
+    live_v1 = sum(1 for event in events_v1 if event.get('live', False))
+    live_v2 = sum(1 for event in events_v2 if event.get('live', False))
+    ended_v1 = sum(1 for event in events_v1 if event.get('ended', False))
+    ended_v2 = sum(1 for event in events_v2 if event.get('ended', False))
+    
+    # Generate detailed report
+    report = {
+        'timestamp': datetime.now(timezone.utc).isoformat(),
+        'summary': {
+            'method1_events': len(events_v1),
+            'method2_events': len(events_v2),
+            'method1_unique_ids': len(event_ids_v1),
+            'method2_unique_ids': len(event_ids_v2),
+            'events_in_both': len(in_both),
+            'events_only_in_method1': len(only_in_v1),
+            'events_only_in_method2': len(only_in_v2),
+            'method1_arbitrage_markets': len(arbitrage_v1),
+            'method2_arbitrage_markets': len(arbitrage_v2)
+        },
+        'comparison': {
+            'total_events_difference': len(events_v2) - len(events_v1),
+            'unique_events_difference': len(event_ids_v2) - len(event_ids_v1),
+            'arbitrage_markets_difference': len(arbitrage_v2) - len(arbitrage_v1),
+            'method2_has_more_events': len(events_v2) > len(events_v1),
+            'method2_has_more_unique': len(event_ids_v2) > len(event_ids_v1),
+            'method2_has_more_arbitrage': len(arbitrage_v2) > len(arbitrage_v1)
+        },
+        'event_characteristics': {
+            'method1': {
+                'average_markets_per_event': round(avg_markets_v1, 2),
+                'total_markets': sum(markets_per_event_v1),
+                'live_events': live_v1,
+                'ended_events': ended_v1,
+                'upcoming_events': len(events_v1) - live_v1 - ended_v1,
+                'unique_series_count': len(series_v1),
+                'top_series': dict(sorted(series_v1.items(), key=lambda x: x[1], reverse=True)[:10])
+            },
+            'method2': {
+                'average_markets_per_event': round(avg_markets_v2, 2),
+                'total_markets': sum(markets_per_event_v2),
+                'live_events': live_v2,
+                'ended_events': ended_v2,
+                'upcoming_events': len(events_v2) - live_v2 - ended_v2,
+                'unique_series_count': len(series_v2),
+                'top_series': dict(sorted(series_v2.items(), key=lambda x: x[1], reverse=True)[:10])
+            }
+        },
+        'event_ids': {
+            'only_in_method1': list(only_in_v1)[:100],  # Limit to first 100 for readability
+            'only_in_method2': list(only_in_v2)[:100],
+            'only_in_method1_count': len(only_in_v1),
+            'only_in_method2_count': len(only_in_v2)
+        }
+    }
+    
+    # Save detailed report
+    report_file = output_path / 'fetch_comparison_report.json'
+    save_json(report, str(report_file))
+    
+    # Print conclusion
+    print("\n" + "=" * 80)
+    print("CONCLUSION")
+    print("=" * 80)
+    if len(events_v2) > len(events_v1):
+        print(f"✓ Method 2 (pagination) retrieved MORE events: +{len(events_v2) - len(events_v1)} events ({((len(events_v2) - len(events_v1)) / len(events_v1) * 100):.1f}% more)")
+    elif len(events_v1) > len(events_v2):
+        print(f"✓ Method 1 (series_id) retrieved MORE events: +{len(events_v1) - len(events_v2)} events ({((len(events_v1) - len(events_v2)) / len(events_v2) * 100):.1f}% more)")
+    else:
+        print("= Both methods retrieved the same number of events")
+    
+    if len(event_ids_v2) > len(event_ids_v1):
+        print(f"✓ Method 2 has MORE unique events: +{len(event_ids_v2) - len(event_ids_v1)} unique IDs ({((len(event_ids_v2) - len(event_ids_v1)) / len(event_ids_v1) * 100):.1f}% more)")
+    elif len(event_ids_v1) > len(event_ids_v2):
+        print(f"✓ Method 1 has MORE unique events: +{len(event_ids_v1) - len(event_ids_v2)} unique IDs ({((len(event_ids_v1) - len(event_ids_v2)) / len(event_ids_v2) * 100):.1f}% more)")
+    else:
+        print("= Both methods have the same number of unique events")
+    
+    if len(arbitrage_v2) > len(arbitrage_v1):
+        print(f"✓ Method 2 has MORE arbitrage markets: +{len(arbitrage_v2) - len(arbitrage_v1)} markets ({((len(arbitrage_v2) - len(arbitrage_v1)) / len(arbitrage_v1) * 100):.1f}% more)")
+    elif len(arbitrage_v1) > len(arbitrage_v2):
+        print(f"✓ Method 1 has MORE arbitrage markets: +{len(arbitrage_v1) - len(arbitrage_v2)} markets ({((len(arbitrage_v1) - len(arbitrage_v2)) / len(arbitrage_v2) * 100):.1f}% more)")
+    else:
+        print("= Both methods have the same number of arbitrage markets")
+    
+    print("\n" + "=" * 80)
+    print("DETAILED REPORT")
+    print("=" * 80)
+    print(f"\nEvent Characteristics:")
+    print(f"  Method 1: {len(events_v1)} events, {sum(markets_per_event_v1)} total markets, {avg_markets_v1:.2f} avg markets/event")
+    print(f"  Method 2: {len(events_v2)} events, {sum(markets_per_event_v2)} total markets, {avg_markets_v2:.2f} avg markets/event")
+    print(f"\nEvent Status:")
+    print(f"  Method 1: {live_v1} live, {ended_v1} ended, {len(events_v1) - live_v1 - ended_v1} upcoming")
+    print(f"  Method 2: {live_v2} live, {ended_v2} ended, {len(events_v2) - live_v2 - ended_v2} upcoming")
+    print(f"\nSeries Coverage:")
+    print(f"  Method 1: {len(series_v1)} unique series")
+    print(f"  Method 2: {len(series_v2)} unique series")
+    
+    if series_v1 or series_v2:
+        print(f"\nTop Series in Method 1:")
+        for ticker, count in list(sorted(series_v1.items(), key=lambda x: x[1], reverse=True))[:5]:
+            print(f"    {ticker}: {count} events")
+        print(f"\nTop Series in Method 2:")
+        for ticker, count in list(sorted(series_v2.items(), key=lambda x: x[1], reverse=True))[:5]:
+            print(f"    {ticker}: {count} events")
+    
+    print(f"\nUnique Events:")
+    print(f"  Only in Method 1: {len(only_in_v1)} events")
+    print(f"  Only in Method 2: {len(only_in_v2)} events")
+    print(f"  In both methods: {len(in_both)} events")
+    
+    print(f"\n" + "=" * 80)
+    print(f"Detailed report saved to: {report_file}")
+    print("=" * 80)
+
+
 def main() -> None:
     """Main execution function."""
     # Load configuration from environment
@@ -625,9 +1002,9 @@ def main() -> None:
     
     print(f"Fetching sports markets from {gamma_api_url}...")
     
-    # Fetch sports markets using events endpoint with sports series IDs
+    # Fetch sports markets using pagination endpoint with tag_slug=sports
     try:
-        events = fetch_sports_markets(gamma_api_url, limit=1500)
+        events = fetch_sports_markets(gamma_api_url, limit=9999)
         print(f"Found {len(events)} sports events")
     except Exception as e:
         print(f"Error fetching markets: {e}")
@@ -731,6 +1108,11 @@ if __name__ == '__main__':
             input_file = 'data/arbitrage_data.json'
         output_dir = sys.argv[3] if len(sys.argv) > 3 else 'data'
         filter_arbitrage_json(input_file, output_dir)
+    elif len(sys.argv) > 1 and sys.argv[1] == 'compare':
+        # Compare mode: compare the two fetch methods
+        gamma_api_url = os.getenv('GAMMA_API_URL', 'https://gamma-api.polymarket.com')
+        output_dir = sys.argv[2] if len(sys.argv) > 2 else 'data'
+        compare_fetch_methods(gamma_api_url, output_dir)
     elif len(sys.argv) > 1:
         # Extract mode: extract from events JSON file
         input_file = sys.argv[1]
