@@ -1,28 +1,28 @@
 [
   {
-    "id": "04fbe3095124f4e2e8417e38c0f2c6fc",
+    "id": "bcc604b0a417a6031f938dd5b75da25a",
     "sport_key": "cricket_odi",
     "sport_title": "One Day Internationals",
-    "commence_time": "2025-11-19T01:00:00Z",
+    "commence_time": "2025-11-22T01:00:00Z",
     "home_team": "New Zealand",
     "away_team": "West Indies",
     "bookmakers": [
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-18T06:37:34Z",
+        "last_update": "2025-11-20T04:09:03Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:37:34Z",
+            "last_update": "2025-11-20T04:09:03Z",
             "outcomes": [
               {
                 "name": "New Zealand",
-                "price": -425
+                "price": -340
               },
               {
                 "name": "West Indies",
-                "price": 310
+                "price": 250
               }
             ]
           }

@@ -1,582 +1,299 @@
 [
   {
-    "id": "12aebc1081f4713b9ad2705d5364df58",
+    "id": "0bba63ebea7fd06ccc1a76376361195c",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-11-19T00:10:00Z",
+    "commence_time": "2025-11-20T02:48:08Z",
+    "home_team": "Dallas Mavericks",
+    "away_team": "New York Knicks",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:45Z",
+            "outcomes": [
+              {
+                "name": "Dallas Mavericks",
+                "price": 200
+              },
+              {
+                "name": "New York Knicks",
+                "price": -270
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:08:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:58Z",
+            "outcomes": [
+              {
+                "name": "Dallas Mavericks",
+                "price": 215
+              },
+              {
+                "name": "New York Knicks",
+                "price": -290
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:08:33Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:33Z",
+            "outcomes": [
+              {
+                "name": "Dallas Mavericks",
+                "price": 225
+              },
+              {
+                "name": "New York Knicks",
+                "price": -335
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-20T04:07:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:07:41Z",
+            "outcomes": [
+              {
+                "name": "Dallas Mavericks",
+                "price": 275
+              },
+              {
+                "name": "New York Knicks",
+                "price": -400
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:58Z",
+            "outcomes": [
+              {
+                "name": "Dallas Mavericks",
+                "price": 220
+              },
+              {
+                "name": "New York Knicks",
+                "price": -295
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:09:01Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:01Z",
+            "outcomes": [
+              {
+                "name": "Dallas Mavericks",
+                "price": 230
+              },
+              {
+                "name": "New York Knicks",
+                "price": -325
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "27a47dd17db5b4e2788c58cb75b827df",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-11-20T03:11:00Z",
+    "home_team": "Portland Trail Blazers",
+    "away_team": "Chicago Bulls",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:08:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:58Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": -245
+              },
+              {
+                "name": "Portland Trail Blazers",
+                "price": 186
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-20T04:07:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:07:41Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": -333
+              },
+              {
+                "name": "Portland Trail Blazers",
+                "price": 240
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:45Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": -238
+              },
+              {
+                "name": "Portland Trail Blazers",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:58Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": -235
+              },
+              {
+                "name": "Portland Trail Blazers",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:08:33Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:33Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": -240
+              },
+              {
+                "name": "Portland Trail Blazers",
+                "price": 170
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:09:01Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:01Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bulls",
+                "price": -240
+              },
+              {
+                "name": "Portland Trail Blazers",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ff24293a6e10588cf0464c3b15faec80",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-11-21T00:10:00Z",
     "home_team": "Orlando Magic",
-    "away_team": "Golden State Warriors",
+    "away_team": "Los Angeles Clippers",
     "bookmakers": [
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-18T06:37:31Z",
+        "last_update": "2025-11-20T04:08:58Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:37:31Z",
+            "last_update": "2025-11-20T04:08:58Z",
             "outcomes": [
               {
-                "name": "Golden State Warriors",
-                "price": -174
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 146
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-18T06:36:38Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:38Z",
-            "outcomes": [
-              {
-                "name": "Golden State Warriors",
-                "price": -162
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 136
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-11-18T06:37:30Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:30Z",
-            "outcomes": [
-              {
-                "name": "Golden State Warriors",
-                "price": -169
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 138
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Golden State Warriors",
-                "price": -167
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 135
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Golden State Warriors",
-                "price": -165
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 146
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-18T06:37:18Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:18Z",
-            "outcomes": [
-              {
-                "name": "Golden State Warriors",
-                "price": -165
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 145
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-18T06:35:46Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:35:46Z",
-            "outcomes": [
-              {
-                "name": "Golden State Warriors",
-                "price": -170
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 140
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-11-18T06:36:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:54Z",
-            "outcomes": [
-              {
-                "name": "Golden State Warriors",
-                "price": -170
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 145
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-11-18T06:36:51Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:51Z",
-            "outcomes": [
-              {
-                "name": "Golden State Warriors",
-                "price": -170
-              },
-              {
-                "name": "Orlando Magic",
-                "price": 146
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "b4b0491751ea1e073d53d393d72cfc2d",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-11-19T00:40:00Z",
-    "home_team": "Brooklyn Nets",
-    "away_team": "Boston Celtics",
-    "bookmakers": [
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-18T06:37:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:31Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -500
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 385
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -542
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 423
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-18T06:37:18Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:18Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -550
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 415
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-18T06:36:38Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:38Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -550
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 410
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-11-18T06:37:30Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:30Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -556
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 402
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -590
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 410
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-11-18T06:36:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:54Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -525
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 375
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-18T06:35:46Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:35:46Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -600
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 425
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-11-18T06:36:51Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:51Z",
-            "outcomes": [
-              {
-                "name": "Boston Celtics",
-                "price": -550
-              },
-              {
-                "name": "Brooklyn Nets",
-                "price": 425
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "0e5d47b1a4c507af55eafadbd01f0e9d",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-11-19T01:10:00Z",
-    "home_team": "Atlanta Hawks",
-    "away_team": "Detroit Pistons",
-    "bookmakers": [
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-18T06:37:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:31Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Hawks",
-                "price": 100
-              },
-              {
-                "name": "Detroit Pistons",
-                "price": -118
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-18T06:36:38Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:38Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Hawks",
-                "price": -110
-              },
-              {
-                "name": "Detroit Pistons",
-                "price": -110
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Hawks",
-                "price": -103
-              },
-              {
-                "name": "Detroit Pistons",
-                "price": -121
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Hawks",
-                "price": 100
-              },
-              {
-                "name": "Detroit Pistons",
-                "price": -116
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-18T06:37:18Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:18Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Hawks",
-                "price": -102
-              },
-              {
-                "name": "Detroit Pistons",
-                "price": -118
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-18T06:35:46Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:35:46Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Hawks",
-                "price": -102
-              },
-              {
-                "name": "Detroit Pistons",
-                "price": -118
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-11-18T06:36:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:54Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Hawks",
-                "price": -110
-              },
-              {
-                "name": "Detroit Pistons",
-                "price": -110
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "21a2823d808c3891e6bec16cbc206cb2",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-11-19T01:10:00Z",
-    "home_team": "San Antonio Spurs",
-    "away_team": "Memphis Grizzlies",
-    "bookmakers": [
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-18T06:37:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:31Z",
-            "outcomes": [
-              {
-                "name": "Memphis Grizzlies",
+                "name": "Los Angeles Clippers",
                 "price": 190
               },
               {
-                "name": "San Antonio Spurs",
+                "name": "Orlando Magic",
                 "price": -230
               }
             ]
@@ -584,20 +301,20 @@
         ]
       },
       {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-18T06:36:38Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-20T04:07:41Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:36:38Z",
+            "last_update": "2025-11-20T04:07:41Z",
             "outcomes": [
               {
-                "name": "Memphis Grizzlies",
-                "price": 195
+                "name": "Los Angeles Clippers",
+                "price": 189
               },
               {
-                "name": "San Antonio Spurs",
+                "name": "Orlando Magic",
                 "price": -238
               }
             ]
@@ -607,61 +324,40 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
+        "last_update": "2025-11-20T04:08:33Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
+            "last_update": "2025-11-20T04:08:33Z",
             "outcomes": [
               {
-                "name": "Memphis Grizzlies",
+                "name": "Los Angeles Clippers",
+                "price": 170
+              },
+              {
+                "name": "Orlando Magic",
+                "price": -215
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:45Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Clippers",
                 "price": 195
               },
               {
-                "name": "San Antonio Spurs",
-                "price": -250
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Memphis Grizzlies",
-                "price": 202
-              },
-              {
-                "name": "San Antonio Spurs",
+                "name": "Orlando Magic",
                 "price": -238
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-18T06:37:18Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:18Z",
-            "outcomes": [
-              {
-                "name": "Memphis Grizzlies",
-                "price": 200
-              },
-              {
-                "name": "San Antonio Spurs",
-                "price": -240
               }
             ]
           }
@@ -670,18 +366,39 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-18T06:35:46Z",
+        "last_update": "2025-11-20T04:08:58Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:35:46Z",
+            "last_update": "2025-11-20T04:08:58Z",
             "outcomes": [
               {
-                "name": "Memphis Grizzlies",
+                "name": "Los Angeles Clippers",
                 "price": 190
               },
               {
-                "name": "San Antonio Spurs",
+                "name": "Orlando Magic",
+                "price": -235
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-11-20T04:07:55Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:07:55Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Clippers",
+                "price": 200
+              },
+              {
+                "name": "Orlando Magic",
                 "price": -235
               }
             ]
@@ -691,61 +408,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-18T06:36:54Z",
+        "last_update": "2025-11-20T04:09:01Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:36:54Z",
+            "last_update": "2025-11-20T04:09:01Z",
             "outcomes": [
               {
-                "name": "Memphis Grizzlies",
-                "price": 195
+                "name": "Los Angeles Clippers",
+                "price": 190
               },
               {
-                "name": "San Antonio Spurs",
-                "price": -235
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-11-18T06:37:30Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:30Z",
-            "outcomes": [
-              {
-                "name": "Memphis Grizzlies",
-                "price": 193
-              },
-              {
-                "name": "San Antonio Spurs",
-                "price": -244
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-11-18T06:36:51Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:51Z",
-            "outcomes": [
-              {
-                "name": "Memphis Grizzlies",
-                "price": 203
-              },
-              {
-                "name": "San Antonio Spurs",
-                "price": -240
+                "name": "Orlando Magic",
+                "price": -230
               }
             ]
           }
@@ -754,29 +429,71 @@
     ]
   },
   {
-    "id": "9c3c19beca914238f77162f180beba5b",
+    "id": "79339c63d557efe85f89187c10bd15c4",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-11-19T03:40:00Z",
-    "home_team": "Los Angeles Lakers",
-    "away_team": "Utah Jazz",
+    "commence_time": "2025-11-21T01:10:00Z",
+    "home_team": "San Antonio Spurs",
+    "away_team": "Atlanta Hawks",
     "bookmakers": [
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-18T06:37:31Z",
+        "last_update": "2025-11-20T04:08:58Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:37:31Z",
+            "last_update": "2025-11-20T04:08:58Z",
             "outcomes": [
               {
-                "name": "Los Angeles Lakers",
-                "price": -590
+                "name": "Atlanta Hawks",
+                "price": -102
               },
               {
-                "name": "Utah Jazz",
-                "price": 440
+                "name": "San Antonio Spurs",
+                "price": -116
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-20T04:07:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:07:41Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": -101
+              },
+              {
+                "name": "San Antonio Spurs",
+                "price": -120
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:08:33Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:33Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Hawks",
+                "price": 100
+              },
+              {
+                "name": "San Antonio Spurs",
+                "price": -124
               }
             ]
           }
@@ -785,61 +502,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-18T06:36:38Z",
+        "last_update": "2025-11-20T04:08:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:36:38Z",
+            "last_update": "2025-11-20T04:08:45Z",
             "outcomes": [
               {
-                "name": "Los Angeles Lakers",
-                "price": -625
+                "name": "Atlanta Hawks",
+                "price": -105
               },
               {
-                "name": "Utah Jazz",
-                "price": 455
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Los Angeles Lakers",
-                "price": -591
-              },
-              {
-                "name": "Utah Jazz",
-                "price": 456
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-18T06:37:18Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:18Z",
-            "outcomes": [
-              {
-                "name": "Los Angeles Lakers",
-                "price": -600
-              },
-              {
-                "name": "Utah Jazz",
-                "price": 446
+                "name": "San Antonio Spurs",
+                "price": -115
               }
             ]
           }
@@ -848,19 +523,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-18T06:35:46Z",
+        "last_update": "2025-11-20T04:08:58Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:35:46Z",
+            "last_update": "2025-11-20T04:08:58Z",
             "outcomes": [
               {
-                "name": "Los Angeles Lakers",
-                "price": -700
+                "name": "Atlanta Hawks",
+                "price": -102
               },
               {
-                "name": "Utah Jazz",
-                "price": 500
+                "name": "San Antonio Spurs",
+                "price": -118
               }
             ]
           }
@@ -869,82 +544,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-18T06:36:54Z",
+        "last_update": "2025-11-20T04:09:01Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:36:54Z",
+            "last_update": "2025-11-20T04:09:01Z",
             "outcomes": [
               {
-                "name": "Los Angeles Lakers",
-                "price": -625
+                "name": "Atlanta Hawks",
+                "price": -105
               },
               {
-                "name": "Utah Jazz",
-                "price": 430
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Los Angeles Lakers",
-                "price": -625
-              },
-              {
-                "name": "Utah Jazz",
-                "price": 430
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-11-18T06:37:30Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:30Z",
-            "outcomes": [
-              {
-                "name": "Los Angeles Lakers",
-                "price": -625
-              },
-              {
-                "name": "Utah Jazz",
-                "price": 441
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-11-18T06:36:51Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:36:51Z",
-            "outcomes": [
-              {
-                "name": "Los Angeles Lakers",
-                "price": -630
-              },
-              {
-                "name": "Utah Jazz",
-                "price": 465
+                "name": "San Antonio Spurs",
+                "price": -115
               }
             ]
           }
@@ -953,50 +565,50 @@
     ]
   },
   {
-    "id": "e2ca3fc2c1c2fe0fac1d9fe069fe0779",
+    "id": "088f5bc93c60e40ff3b46827e155d74a",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-11-19T04:10:00Z",
-    "home_team": "Portland Trail Blazers",
-    "away_team": "Phoenix Suns",
+    "commence_time": "2025-11-21T01:10:00Z",
+    "home_team": "Memphis Grizzlies",
+    "away_team": "Sacramento Kings",
     "bookmakers": [
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-18T06:37:31Z",
+        "last_update": "2025-11-20T04:08:58Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:37:31Z",
+            "last_update": "2025-11-20T04:08:58Z",
             "outcomes": [
               {
-                "name": "Phoenix Suns",
-                "price": 112
+                "name": "Memphis Grizzlies",
+                "price": -148
               },
               {
-                "name": "Portland Trail Blazers",
-                "price": -132
+                "name": "Sacramento Kings",
+                "price": 126
               }
             ]
           }
         ]
       },
       {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-18T06:36:38Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-20T04:07:41Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:36:38Z",
+            "last_update": "2025-11-20T04:07:41Z",
             "outcomes": [
               {
-                "name": "Phoenix Suns",
-                "price": 124
+                "name": "Memphis Grizzlies",
+                "price": -141
               },
               {
-                "name": "Portland Trail Blazers",
-                "price": -148
+                "name": "Sacramento Kings",
+                "price": 115
               }
             ]
           }
@@ -1005,60 +617,154 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
+        "last_update": "2025-11-20T04:08:33Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
+            "last_update": "2025-11-20T04:08:33Z",
             "outcomes": [
               {
-                "name": "Phoenix Suns",
-                "price": 115
+                "name": "Memphis Grizzlies",
+                "price": -148
               },
               {
-                "name": "Portland Trail Blazers",
-                "price": -143
+                "name": "Sacramento Kings",
+                "price": 120
               }
             ]
           }
         ]
       },
       {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-18T06:37:04Z",
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
+            "last_update": "2025-11-20T04:08:45Z",
             "outcomes": [
               {
-                "name": "Phoenix Suns",
-                "price": 112
+                "name": "Memphis Grizzlies",
+                "price": -142
               },
               {
-                "name": "Portland Trail Blazers",
-                "price": -128
+                "name": "Sacramento Kings",
+                "price": 120
               }
             ]
           }
         ]
       },
       {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-18T06:37:18Z",
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:58Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:37:18Z",
+            "last_update": "2025-11-20T04:08:58Z",
             "outcomes": [
               {
-                "name": "Phoenix Suns",
+                "name": "Memphis Grizzlies",
+                "price": -145
+              },
+              {
+                "name": "Sacramento Kings",
+                "price": 120
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "613d151e38c4eba00ae07b8a72960d12",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2025-11-21T01:10:00Z",
+    "home_team": "Milwaukee Bucks",
+    "away_team": "Philadelphia 76ers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:08:58Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:58Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
                 "price": 110
               },
               {
-                "name": "Portland Trail Blazers",
+                "name": "Philadelphia 76ers",
+                "price": -130
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-20T04:07:41Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:07:41Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 106
+              },
+              {
+                "name": "Philadelphia 76ers",
+                "price": -130
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:08:33Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:33Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 100
+              },
+              {
+                "name": "Philadelphia 76ers",
+                "price": -124
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:45Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Bucks",
+                "price": 110
+              },
+              {
+                "name": "Philadelphia 76ers",
                 "price": -130
               }
             ]
@@ -1068,18 +774,18 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-18T06:35:46Z",
+        "last_update": "2025-11-20T04:08:58Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:35:46Z",
+            "last_update": "2025-11-20T04:08:58Z",
             "outcomes": [
               {
-                "name": "Phoenix Suns",
+                "name": "Milwaukee Bucks",
                 "price": 110
               },
               {
-                "name": "Portland Trail Blazers",
+                "name": "Philadelphia 76ers",
                 "price": -135
               }
             ]
@@ -1089,133 +795,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-18T06:36:54Z",
+        "last_update": "2025-11-20T04:09:01Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-18T06:36:54Z",
+            "last_update": "2025-11-20T04:09:01Z",
             "outcomes": [
               {
-                "name": "Phoenix Suns",
-                "price": 115
-              },
-              {
-                "name": "Portland Trail Blazers",
-                "price": -135
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-11-18T06:37:30Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:30Z",
-            "outcomes": [
-              {
-                "name": "Phoenix Suns",
+                "name": "Milwaukee Bucks",
                 "price": 105
               },
               {
-                "name": "Portland Trail Blazers",
-                "price": -128
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f557c9173a46a3c7c87afb4bd68f6644",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-25T17:00:00Z",
-    "home_team": "New York Knicks",
-    "away_team": "Cleveland Cavaliers",
-    "bookmakers": [
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Cleveland Cavaliers",
-                "price": 117
-              },
-              {
-                "name": "New York Knicks",
-                "price": -143
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "9010f7d8f26d5880c63b67355800f997",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-25T22:00:00Z",
-    "home_team": "Golden State Warriors",
-    "away_team": "Dallas Mavericks",
-    "bookmakers": [
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Dallas Mavericks",
-                "price": 150
-              },
-              {
-                "name": "Golden State Warriors",
-                "price": -195
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "6b9d46fb1b22af30b771b5f6b8a4c6f8",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-26T03:30:00Z",
-    "home_team": "Denver Nuggets",
-    "away_team": "Minnesota Timberwolves",
-    "bookmakers": [
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-18T06:37:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-18T06:37:04Z",
-            "outcomes": [
-              {
-                "name": "Denver Nuggets",
-                "price": -220
-              },
-              {
-                "name": "Minnesota Timberwolves",
-                "price": 175
+                "name": "Philadelphia 76ers",
+                "price": -125
               }
             ]
           }

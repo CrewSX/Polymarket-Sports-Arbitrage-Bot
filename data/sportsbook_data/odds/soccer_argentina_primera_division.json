@@ -1,0 +1,1057 @@
+[
+  {
+    "id": "8aff09f2553dec02e6ee999b9b2e6bf3",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-22T23:00:00Z",
+    "home_team": "Velez Sarsfield BA",
+    "away_team": "Argentinos Juniors",
+    "bookmakers": [
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:23Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": 175
+              },
+              {
+                "name": "Velez Sarsfield BA",
+                "price": 165
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:05:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:05:23Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": 195
+              },
+              {
+                "name": "Velez Sarsfield BA",
+                "price": 165
+              },
+              {
+                "name": "Draw",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:09:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:02Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": 210
+              },
+              {
+                "name": "Velez Sarsfield BA",
+                "price": 150
+              },
+              {
+                "name": "Draw",
+                "price": 188
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:10Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": 190
+              },
+              {
+                "name": "Velez Sarsfield BA",
+                "price": 165
+              },
+              {
+                "name": "Draw",
+                "price": 185
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": 185
+              },
+              {
+                "name": "Velez Sarsfield BA",
+                "price": 170
+              },
+              {
+                "name": "Draw",
+                "price": 190
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8c963fe6febe2114d1912bd331090c91",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-23T01:00:00Z",
+    "home_team": "Central Córdoba",
+    "away_team": "San Lorenzo",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:05:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:05:23Z",
+            "outcomes": [
+              {
+                "name": "Central Córdoba",
+                "price": 150
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 220
+              },
+              {
+                "name": "Draw",
+                "price": 170
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:23Z",
+            "outcomes": [
+              {
+                "name": "Central Córdoba",
+                "price": 145
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 240
+              },
+              {
+                "name": "Draw",
+                "price": 170
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:09:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:02Z",
+            "outcomes": [
+              {
+                "name": "Central Córdoba",
+                "price": 145
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 240
+              },
+              {
+                "name": "Draw",
+                "price": 175
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:10Z",
+            "outcomes": [
+              {
+                "name": "Central Córdoba",
+                "price": 150
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 240
+              },
+              {
+                "name": "Draw",
+                "price": 170
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Central Córdoba",
+                "price": 145
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 240
+              },
+              {
+                "name": "Draw",
+                "price": 170
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d949014de3350107480405c70f7e1567",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-23T20:30:00Z",
+    "home_team": "Rosario Central",
+    "away_team": "Estudiantes",
+    "bookmakers": [
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:23Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 270
+              },
+              {
+                "name": "Rosario Central",
+                "price": 115
+              },
+              {
+                "name": "Draw",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:05:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:05:23Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 290
+              },
+              {
+                "name": "Rosario Central",
+                "price": 110
+              },
+              {
+                "name": "Draw",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:09:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:02Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 310
+              },
+              {
+                "name": "Rosario Central",
+                "price": 100
+              },
+              {
+                "name": "Draw",
+                "price": 210
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:10Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 275
+              },
+              {
+                "name": "Rosario Central",
+                "price": 105
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 280
+              },
+              {
+                "name": "Rosario Central",
+                "price": 110
+              },
+              {
+                "name": "Draw",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0c5c1c369c76cc51614d170b4a6a5d26",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-23T23:00:00Z",
+    "home_team": "Boca Juniors",
+    "away_team": "Talleres",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:05:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:05:23Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -165
+              },
+              {
+                "name": "Talleres",
+                "price": 500
+              },
+              {
+                "name": "Draw",
+                "price": 250
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:09:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:02Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -155
+              },
+              {
+                "name": "Talleres",
+                "price": 500
+              },
+              {
+                "name": "Draw",
+                "price": 245
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:10Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -160
+              },
+              {
+                "name": "Talleres",
+                "price": 475
+              },
+              {
+                "name": "Draw",
+                "price": 240
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -157
+              },
+              {
+                "name": "Talleres",
+                "price": 475
+              },
+              {
+                "name": "Draw",
+                "price": 245
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:23Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -155
+              },
+              {
+                "name": "Talleres",
+                "price": 475
+              },
+              {
+                "name": "Draw",
+                "price": 240
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b78ac23d916da09974efe5b3fce26e0c",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-24T20:00:00Z",
+    "home_team": "Deportivo Riestra",
+    "away_team": "Barracas Central",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:05:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:05:23Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 280
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 120
+              },
+              {
+                "name": "Draw",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:09:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:02Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 265
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 125
+              },
+              {
+                "name": "Draw",
+                "price": 188
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:10Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 270
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 120
+              },
+              {
+                "name": "Draw",
+                "price": 175
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 275
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 125
+              },
+              {
+                "name": "Draw",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:23Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 250
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 125
+              },
+              {
+                "name": "Draw",
+                "price": 188
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "766f532741f6b312391ff1f7808cb215",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-24T22:15:00Z",
+    "home_team": "Racing Club",
+    "away_team": "River Plate",
+    "bookmakers": [
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:09:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:02Z",
+            "outcomes": [
+              {
+                "name": "Racing Club",
+                "price": 138
+              },
+              {
+                "name": "River Plate",
+                "price": 210
+              },
+              {
+                "name": "Draw",
+                "price": 210
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:23Z",
+            "outcomes": [
+              {
+                "name": "Racing Club",
+                "price": 160
+              },
+              {
+                "name": "River Plate",
+                "price": 170
+              },
+              {
+                "name": "Draw",
+                "price": 210
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:05:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:05:23Z",
+            "outcomes": [
+              {
+                "name": "Racing Club",
+                "price": 155
+              },
+              {
+                "name": "River Plate",
+                "price": 180
+              },
+              {
+                "name": "Draw",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Racing Club",
+                "price": 155
+              },
+              {
+                "name": "River Plate",
+                "price": 180
+              },
+              {
+                "name": "Draw",
+                "price": 210
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:10Z",
+            "outcomes": [
+              {
+                "name": "Racing Club",
+                "price": 160
+              },
+              {
+                "name": "River Plate",
+                "price": 175
+              },
+              {
+                "name": "Draw",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d92c8d70cc564ca0304402c9419c364e",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-25T01:00:00Z",
+    "home_team": "Union Santa Fe",
+    "away_team": "Gimnasia La Plata",
+    "bookmakers": [
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:09:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:02Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 400
+              },
+              {
+                "name": "Union Santa Fe",
+                "price": -122
+              },
+              {
+                "name": "Draw",
+                "price": 215
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:05:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:05:23Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 420
+              },
+              {
+                "name": "Union Santa Fe",
+                "price": -135
+              },
+              {
+                "name": "Draw",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-20T04:08:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:23Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 425
+              },
+              {
+                "name": "Union Santa Fe",
+                "price": -130
+              },
+              {
+                "name": "Draw",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 420
+              },
+              {
+                "name": "Union Santa Fe",
+                "price": -132
+              },
+              {
+                "name": "Draw",
+                "price": 225
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:10Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 400
+              },
+              {
+                "name": "Union Santa Fe",
+                "price": -135
+              },
+              {
+                "name": "Draw",
+                "price": 225
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "315f3e5613ab95dab49a8253dbab886f",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-27T00:30:00Z",
+    "home_team": "Lanus",
+    "away_team": "CA Tigre BA",
+    "bookmakers": [
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-20T04:09:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:09:02Z",
+            "outcomes": [
+              {
+                "name": "CA Tigre BA",
+                "price": 280
+              },
+              {
+                "name": "Lanus",
+                "price": 120
+              },
+              {
+                "name": "Draw",
+                "price": 188
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-11-20T04:05:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:05:23Z",
+            "outcomes": [
+              {
+                "name": "CA Tigre BA",
+                "price": 310
+              },
+              {
+                "name": "Lanus",
+                "price": 100
+              },
+              {
+                "name": "Draw",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-11-20T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "CA Tigre BA",
+                "price": 340
+              },
+              {
+                "name": "Lanus",
+                "price": -105
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-11-20T04:08:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-20T04:08:10Z",
+            "outcomes": [
+              {
+                "name": "CA Tigre BA",
+                "price": 300
+              },
+              {
+                "name": "Lanus",
+                "price": 105
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
