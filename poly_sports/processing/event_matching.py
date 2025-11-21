@@ -104,16 +104,15 @@ def calculate_match_score(pm_event: Dict[str, Any], odds_event: Dict[str, Any]) 
         else:
             pm_away = normalized_school_away + " " + normalized_away_team
     else:
-        try:
-            outcomes = json.loads(pm_event.get('market_outcomes', ''))
-            pm_home = normalize_team_name(outcomes[0])
-            pm_away = normalize_team_name(outcomes[1])
-            # If outcomes are "Yes"/"No", use homeTeamName/awayTeamName instead (only if they exist)
-            if not pm_home or not pm_away or pm_home in ('yes', 'no') or pm_away in ('yes', 'no'):
-                pm_home = normalize_team_name(pm_event.get('homeTeamName', ''))
-                pm_away = normalize_team_name(pm_event.get('awayTeamName', ''))
-                if not pm_home or not pm_away:
-                    return 0.0
+        outcomes = json.loads(pm_event.get('market_outcomes', ''))
+        pm_home = normalize_team_name(outcomes[0])
+        pm_away = normalize_team_name(outcomes[1])
+        # If outcomes are "Yes"/"No", use homeTeamName/awayTeamName instead (only if they exist)
+        if not pm_home or not pm_away or pm_home in ('yes', 'no') or pm_away in ('yes', 'no'):
+            pm_home = normalize_team_name(pm_event.get('homeTeamName', ''))
+            pm_away = normalize_team_name(pm_event.get('awayTeamName', ''))
+            if not pm_home or not pm_away:
+                return 0.0
         
     odds_home = normalize_team_name(odds_event.get('home_team', ''))
     odds_away = normalize_team_name(odds_event.get('away_team', ''))
