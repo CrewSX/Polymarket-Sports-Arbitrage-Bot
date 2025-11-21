@@ -5,9 +5,13 @@ from typing import Dict, Any, Optional
 # Mapping of Polymarket series tickers to The Odds API sport keys
 SERIES_TICKER_MAP = {
     'nfl': 'americanfootball_nfl',
+    'nfl-2025': 'americanfootball_nfl',
     'nba': 'basketball_nba',
+    'nba-2026': 'basketball_nba',
     'mlb': 'baseball_mlb',
+    'mlb-2026': 'baseball_mlb',
     'nhl': 'icehockey_nhl',
+    'nhl-2026': 'icehockey_nhl',
     'ncaaf': 'americanfootball_ncaaf',
     'ncaab': 'basketball_ncaab',
     'cwbb': 'basketball_ncaab',  # College Women's Basketball
@@ -115,30 +119,6 @@ def detect_sport_key(event_data: Dict[str, Any]) -> Optional[str]:
     home_team = str(event_data.get('homeTeamName', '')).lower()
     away_team = str(event_data.get('awayTeamName', '')).lower()
     all_teams_text = f"{home_team} {away_team}"
-    
-    # Check NFL teams
-    if any(team in all_teams_text for team in NFL_TEAMS):
-        return 'americanfootball_nfl'
-    
-    # Check NBA teams
-    if any(team in all_teams_text for team in NBA_TEAMS):
-        return 'basketball_nba'
-    
-    # Check MLB teams
-    if any(team in all_teams_text for team in MLB_TEAMS):
-        return 'baseball_mlb'
-    
-    # Check NHL teams
-    if any(team in all_teams_text for team in NHL_TEAMS):
-        return 'icehockey_nhl'
-    
-    # Check NCAAF teams
-    if any(team in all_teams_text for team in NCAF_TEAMS):
-        return 'americanfootball_ncaaf'
-    
-    # Check NCAAB teams
-    if any(team in all_teams_text for team in NCAB_TEAMS):
-        return 'basketball_ncaab'
     
     # Priority 3: Check question/description for keywords
     question = str(event_data.get('question', '')).lower()
