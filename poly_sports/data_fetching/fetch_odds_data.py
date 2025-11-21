@@ -229,9 +229,7 @@ def fetch_odds_for_polymarket_events(
                 odds_events = load_events_from_file(sport_key, events_dir)
                 if odds_events is not None:
                     print(f"  Loaded {len(odds_events)} events from stored file")
-                continue
-            
-            if odds_events is None:
+            else:
                 # File doesn't exist or use_stored_events=False, fetch from API
                 odds_events = fetch_events(sport_key, api_key=api_key)
                 print(f"  Fetched {len(odds_events)} events from The Odds API")
@@ -253,13 +251,19 @@ def fetch_odds_for_polymarket_events(
                 continue
             
             # Step 3: Fetch odds from The Odds API for the sport
-            odds_with_bookmakers = fetch_odds(
-                sport_key,
-                api_key=api_key,
-                regions=regions,
-                markets=markets,
-                odds_format=odds_format
-            )
+            odds_with_bookmakers = None
+            if use_stored_events:
+                odds_with_bookmakers = load_json(f"data/sportsbook_data/odds/{sport_key}.json")
+                if odds_with_bookmakers is not None:
+                    print(f"  Loaded {len(odds_with_bookmakers)} events from stored file")
+            else:
+                odds_with_bookmakers = fetch_odds(
+                    sport_key,
+                    api_key=api_key,
+                    regions=regions,
+                    markets=markets,
+                    odds_format=odds_format
+                )
             print(f"  Fetched odds for {len(odds_with_bookmakers)} events")
             save_json(odds_with_bookmakers, f"data/sportsbook_data/odds/{sport_key}.json")
             print(f"  Saved JSON file: data/sportsbook_data/odds/{sport_key}.json")

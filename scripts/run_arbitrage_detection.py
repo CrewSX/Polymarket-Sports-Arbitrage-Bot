@@ -1,11 +1,51 @@
 """Run arbitrage detection on test data and display results."""
+import argparse
 from pathlib import Path
 from poly_sports.processing.arbitrage_calculation import detect_arbitrage_opportunities
 from poly_sports.utils.file_utils import load_json, save_json
 
 
+def sort_opportunities(opportunities: list, sort_by: str = None) -> list:
+    """
+    Sort opportunities by specified field.
+    
+    Args:
+        opportunities: List of opportunity dictionaries
+        sort_by: Field to sort by ('profit_margin' or 'delta_difference'), or None for no sorting
+        
+    Returns:
+        Sorted list of opportunities (descending order)
+    """
+    if not sort_by or not opportunities:
+        return opportunities
+    
+    valid_fields = ['profit_margin', 'delta_difference']
+    if sort_by not in valid_fields:
+        raise ValueError(f"sort_by must be one of {valid_fields} or None, got: {sort_by}")
+    
+    # Sort in descending order (highest values first)
+    sorted_opps = sorted(
+        opportunities,
+        key=lambda x: x.get(sort_by, 0),
+        reverse=True
+    )
+    
+    return sorted_opps
+
+
 def main():
     """Load test data and run arbitrage detection."""
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Run arbitrage detection on comparison data')
+    parser.add_argument(
+        '--sort-by',
+        type=str,
+        choices=['profit_margin', 'delta_difference'],
+        default=None,
+        help='Sort opportunities by field before saving (profit_margin or delta_difference)'
+    )
+    args = parser.parse_args()
+    
     # Load comparison data
     # Get project root (parent of scripts directory)
     project_root = Path(__file__).parent.parent
@@ -43,6 +83,12 @@ def main():
     
     # All opportunities are directional (traditional arbitrage not applicable)
     directional = opportunities
+    
+    # Sort opportunities if requested (before displaying)
+    if args.sort_by:
+        print(f"\nSorting opportunities by {args.sort_by} (descending)...")
+        directional = sort_opportunities(directional, args.sort_by)
+        print(f"Sorted {len(directional)} opportunities")
     
     print(f"\nDirectional Opportunities: {len(directional)}")
     print("\n" + "=" * 80)
@@ -89,6 +135,7 @@ def main():
     print("\n" + "=" * 80)
     print("Analysis complete!")
     print("=" * 80)
+    
     save_json(directional, "./data/directional_arbitrage.json")
 
 
