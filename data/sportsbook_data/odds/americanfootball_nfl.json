@@ -1,204 +1,5 @@
 [
   {
-    "id": "cd2e0964817c30ad3f5144ea49b55f2b",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL",
-    "commence_time": "2025-11-21T01:15:00Z",
-    "home_team": "Houston Texans",
-    "away_team": "Buffalo Bills",
-    "bookmakers": [
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -290
-              },
-              {
-                "name": "Houston Texans",
-                "price": 235
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -290
-              },
-              {
-                "name": "Houston Texans",
-                "price": 235
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -294
-              },
-              {
-                "name": "Houston Texans",
-                "price": 232
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -285
-              },
-              {
-                "name": "Houston Texans",
-                "price": 234
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -285
-              },
-              {
-                "name": "Houston Texans",
-                "price": 234
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -285
-              },
-              {
-                "name": "Houston Texans",
-                "price": 238
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -295
-              },
-              {
-                "name": "Houston Texans",
-                "price": 225
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -285
-              },
-              {
-                "name": "Houston Texans",
-                "price": 230
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
-            "outcomes": [
-              {
-                "name": "Buffalo Bills",
-                "price": -280
-              },
-              {
-                "name": "Houston Texans",
-                "price": 230
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "7159d60c7a31c7d593167637723d7663",
     "sport_key": "americanfootball_nfl",
     "sport_title": "NFL",
@@ -209,11 +10,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
@@ -230,19 +31,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
-                "price": -1200
+                "price": -1500
               },
               {
                 "name": "New York Jets",
-                "price": 750
+                "price": 870
               }
             ]
           }
@@ -251,19 +52,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
-                "price": -1099
+                "price": -1262
               },
               {
                 "name": "New York Jets",
-                "price": 600
+                "price": 693
               }
             ]
           }
@@ -272,19 +73,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
-                "price": -1100
+                "price": -1200
               },
               {
                 "name": "New York Jets",
-                "price": 709
+                "price": 754
               }
             ]
           }
@@ -293,19 +94,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
-                "price": -1100
+                "price": -1200
               },
               {
                 "name": "New York Jets",
-                "price": 709
+                "price": 754
               }
             ]
           }
@@ -314,11 +115,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
@@ -335,11 +136,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
@@ -356,19 +157,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
-                "price": -900
+                "price": -1000
               },
               {
                 "name": "New York Jets",
-                "price": 600
+                "price": 650
               }
             ]
           }
@@ -377,11 +178,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
@@ -408,11 +209,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
@@ -429,19 +230,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
-                "price": -144
+                "price": -146
               },
               {
                 "name": "Pittsburgh Steelers",
-                "price": 122
+                "price": 124
               }
             ]
           }
@@ -450,19 +251,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
-                "price": -150
+                "price": -146
               },
               {
                 "name": "Pittsburgh Steelers",
-                "price": 118
+                "price": 119
               }
             ]
           }
@@ -471,19 +272,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
-                "price": -140
+                "price": -145
               },
               {
                 "name": "Pittsburgh Steelers",
-                "price": 120
+                "price": 125
               }
             ]
           }
@@ -492,19 +293,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
-                "price": -140
+                "price": -145
               },
               {
                 "name": "Pittsburgh Steelers",
-                "price": 120
+                "price": 125
               }
             ]
           }
@@ -513,15 +314,36 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
-                "price": -140
+                "price": -145
+              },
+              {
+                "name": "Pittsburgh Steelers",
+                "price": 125
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bears",
+                "price": -152
               },
               {
                 "name": "Pittsburgh Steelers",
@@ -532,34 +354,13 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
-            "outcomes": [
-              {
-                "name": "Chicago Bears",
-                "price": -165
-              },
-              {
-                "name": "Pittsburgh Steelers",
-                "price": 128
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
@@ -576,11 +377,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
@@ -607,19 +408,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
-                "price": 295
+                "price": 270
               },
               {
                 "name": "New England Patriots",
-                "price": -375
+                "price": -340
               }
             ]
           }
@@ -628,19 +429,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
-                "price": 325
+                "price": 275
               },
               {
                 "name": "New England Patriots",
-                "price": -410
+                "price": -340
               }
             ]
           }
@@ -649,11 +450,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
@@ -670,19 +471,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
-                "price": 275
+                "price": 264
               },
               {
                 "name": "New England Patriots",
-                "price": -377
+                "price": -348
               }
             ]
           }
@@ -691,19 +492,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
-                "price": 310
+                "price": 260
               },
               {
                 "name": "New England Patriots",
-                "price": -390
+                "price": -320
               }
             ]
           }
@@ -712,19 +513,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
-                "price": 310
+                "price": 260
               },
               {
                 "name": "New England Patriots",
-                "price": -390
+                "price": -320
               }
             ]
           }
@@ -733,19 +534,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
-                "price": 290
+                "price": 240
               },
               {
                 "name": "New England Patriots",
-                "price": -400
+                "price": -335
               }
             ]
           }
@@ -754,19 +555,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
-                "price": 300
+                "price": 260
               },
               {
                 "name": "New England Patriots",
-                "price": -375
+                "price": -325
               }
             ]
           }
@@ -775,19 +576,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Cincinnati Bengals",
-                "price": 310
+                "price": 265
               },
               {
                 "name": "New England Patriots",
-                "price": -415
+                "price": -330
               }
             ]
           }
@@ -806,19 +607,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -575
+                "price": -900
               },
               {
                 "name": "New York Giants",
-                "price": 425
+                "price": 600
               }
             ]
           }
@@ -827,19 +628,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -560
+                "price": -900
               },
               {
                 "name": "New York Giants",
-                "price": 420
+                "price": 610
               }
             ]
           }
@@ -848,19 +649,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -575
+                "price": -847
               },
               {
                 "name": "New York Giants",
-                "price": 380
+                "price": 550
               }
             ]
           }
@@ -869,19 +670,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -550
+                "price": -800
               },
               {
                 "name": "New York Giants",
-                "price": 415
+                "price": 561
               }
             ]
           }
@@ -890,19 +691,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -550
+                "price": -800
               },
               {
                 "name": "New York Giants",
-                "price": 415
+                "price": 561
               }
             ]
           }
@@ -911,19 +712,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -550
+                "price": -900
               },
               {
                 "name": "New York Giants",
-                "price": 425
+                "price": 600
               }
             ]
           }
@@ -932,19 +733,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -715
+                "price": -835
               },
               {
                 "name": "New York Giants",
-                "price": 450
+                "price": 510
               }
             ]
           }
@@ -953,19 +754,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -625
+                "price": -750
               },
               {
                 "name": "New York Giants",
-                "price": 450
+                "price": 525
               }
             ]
           }
@@ -974,19 +775,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -585
+                "price": -900
               },
               {
                 "name": "New York Giants",
-                "price": 410
+                "price": 575
               }
             ]
           }
@@ -1005,11 +806,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
@@ -1026,19 +827,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
-                "price": -285
+                "price": -280
               },
               {
                 "name": "Minnesota Vikings",
-                "price": 238
+                "price": 235
               }
             ]
           }
@@ -1047,11 +848,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
@@ -1068,19 +869,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
-                "price": -295
+                "price": -300
               },
               {
                 "name": "Minnesota Vikings",
-                "price": 240
+                "price": 245
               }
             ]
           }
@@ -1089,19 +890,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
-                "price": -300
+                "price": -290
               },
               {
                 "name": "Minnesota Vikings",
-                "price": 224
+                "price": 228
               }
             ]
           }
@@ -1110,19 +911,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
-                "price": -285
+                "price": -280
               },
               {
                 "name": "Minnesota Vikings",
-                "price": 234
+                "price": 230
               }
             ]
           }
@@ -1131,19 +932,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
-                "price": -285
+                "price": -280
               },
               {
                 "name": "Minnesota Vikings",
-                "price": 234
+                "price": 230
               }
             ]
           }
@@ -1152,11 +953,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
@@ -1173,11 +974,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Green Bay Packers",
@@ -1204,11 +1005,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Indianapolis Colts",
@@ -1225,19 +1026,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Indianapolis Colts",
-                "price": 150
+                "price": 155
               },
               {
                 "name": "Kansas City Chiefs",
-                "price": -175
+                "price": -180
               }
             ]
           }
@@ -1246,15 +1047,36 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Indianapolis Colts",
-                "price": 156
+                "price": 152
+              },
+              {
+                "name": "Kansas City Chiefs",
+                "price": -180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Indianapolis Colts",
+                "price": 150
               },
               {
                 "name": "Kansas City Chiefs",
@@ -1265,42 +1087,21 @@
         ]
       },
       {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
-            "outcomes": [
-              {
-                "name": "Indianapolis Colts",
-                "price": 147
-              },
-              {
-                "name": "Kansas City Chiefs",
-                "price": -190
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Indianapolis Colts",
-                "price": 152
+                "price": 161
               },
               {
                 "name": "Kansas City Chiefs",
-                "price": -173
+                "price": -185
               }
             ]
           }
@@ -1309,19 +1110,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Indianapolis Colts",
-                "price": 152
+                "price": 161
               },
               {
                 "name": "Kansas City Chiefs",
-                "price": -173
+                "price": -185
               }
             ]
           }
@@ -1330,11 +1131,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Indianapolis Colts",
@@ -1351,19 +1152,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Indianapolis Colts",
-                "price": 145
+                "price": 154
               },
               {
                 "name": "Kansas City Chiefs",
-                "price": -175
+                "price": -185
               }
             ]
           }
@@ -1372,19 +1173,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Indianapolis Colts",
-                "price": 150
+                "price": 155
               },
               {
                 "name": "Kansas City Chiefs",
-                "price": -175
+                "price": -180
               }
             ]
           }
@@ -1403,19 +1204,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
-                "price": -950
+                "price": -900
               },
               {
                 "name": "Tennessee Titans",
-                "price": 625
+                "price": 600
               }
             ]
           }
@@ -1424,11 +1225,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
@@ -1445,11 +1246,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
@@ -1466,19 +1267,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
-                "price": -1205
+                "price": -1099
               },
               {
                 "name": "Tennessee Titans",
-                "price": 620
+                "price": 650
               }
             ]
           }
@@ -1487,11 +1288,11 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
@@ -1508,11 +1309,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
@@ -1529,11 +1330,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
@@ -1550,11 +1351,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
@@ -1571,19 +1372,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Seattle Seahawks",
-                "price": -950
+                "price": -1200
               },
               {
                 "name": "Tennessee Titans",
-                "price": 600
+                "price": 700
               }
             ]
           }
@@ -1602,19 +1403,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 140
+                "price": 124
               },
               {
                 "name": "Jacksonville Jaguars",
-                "price": -166
+                "price": -148
               }
             ]
           }
@@ -1623,19 +1424,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 138
+                "price": 125
               },
               {
                 "name": "Jacksonville Jaguars",
-                "price": -160
+                "price": -145
               }
             ]
           }
@@ -1644,19 +1445,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 130
+                "price": 134
               },
               {
                 "name": "Jacksonville Jaguars",
-                "price": -154
+                "price": -158
               }
             ]
           }
@@ -1665,19 +1466,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 141
+                "price": 125
               },
               {
                 "name": "Jacksonville Jaguars",
-                "price": -182
+                "price": -153
               }
             ]
           }
@@ -1686,19 +1487,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 140
+                "price": 126
               },
               {
                 "name": "Jacksonville Jaguars",
-                "price": -160
+                "price": -146
               }
             ]
           }
@@ -1707,19 +1508,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 140
+                "price": 126
               },
               {
                 "name": "Jacksonville Jaguars",
-                "price": -160
+                "price": -146
               }
             ]
           }
@@ -1728,19 +1529,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 123
+                "price": 128
               },
               {
                 "name": "Jacksonville Jaguars",
-                "price": -157
+                "price": -162
               }
             ]
           }
@@ -1749,11 +1550,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
@@ -1770,19 +1571,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 140
+                "price": 130
               },
               {
                 "name": "Jacksonville Jaguars",
-                "price": -165
+                "price": -150
               }
             ]
           }
@@ -1801,19 +1602,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
-                "price": 170
+                "price": 164
               },
               {
                 "name": "Las Vegas Raiders",
-                "price": -205
+                "price": -198
               }
             ]
           }
@@ -1822,11 +1623,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
@@ -1843,19 +1644,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
-                "price": 176
+                "price": 168
               },
               {
                 "name": "Las Vegas Raiders",
-                "price": -210
+                "price": -200
               }
             ]
           }
@@ -1864,19 +1665,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
-                "price": 167
+                "price": 166
               },
               {
                 "name": "Las Vegas Raiders",
-                "price": -218
+                "price": -206
               }
             ]
           }
@@ -1885,19 +1686,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
-                "price": 177
+                "price": 179
               },
               {
                 "name": "Las Vegas Raiders",
-                "price": -205
+                "price": -208
               }
             ]
           }
@@ -1906,19 +1707,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
-                "price": 177
+                "price": 179
               },
               {
                 "name": "Las Vegas Raiders",
-                "price": -205
+                "price": -208
               }
             ]
           }
@@ -1927,11 +1728,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
@@ -1948,11 +1749,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
@@ -1969,19 +1770,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
-                "price": 175
+                "price": 170
               },
               {
                 "name": "Las Vegas Raiders",
-                "price": -210
+                "price": -200
               }
             ]
           }
@@ -2000,19 +1801,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
-                "price": 110
+                "price": 114
               },
               {
                 "name": "New Orleans Saints",
-                "price": -130
+                "price": -135
               }
             ]
           }
@@ -2021,19 +1822,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
-                "price": 110
+                "price": 114
               },
               {
                 "name": "New Orleans Saints",
-                "price": -130
+                "price": -134
               }
             ]
           }
@@ -2042,19 +1843,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
-                "price": 103
+                "price": 111
               },
               {
                 "name": "New Orleans Saints",
-                "price": -131
+                "price": -136
               }
             ]
           }
@@ -2063,19 +1864,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
-                "price": 110
+                "price": 115
               },
               {
                 "name": "New Orleans Saints",
-                "price": -130
+                "price": -135
               }
             ]
           }
@@ -2084,11 +1885,74 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Falcons",
+                "price": 115
+              },
+              {
+                "name": "New Orleans Saints",
+                "price": -135
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-11-22T02:27:05Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:27:05Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Falcons",
+                "price": 115
+              },
+              {
+                "name": "New Orleans Saints",
+                "price": -135
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Falcons",
+                "price": 108
+              },
+              {
+                "name": "New Orleans Saints",
+                "price": -137
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-22T02:25:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
@@ -2103,84 +1967,21 @@
         ]
       },
       {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Falcons",
-                "price": 105
-              },
-              {
-                "name": "New Orleans Saints",
-                "price": -125
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Falcons",
-                "price": -104
-              },
-              {
-                "name": "New Orleans Saints",
-                "price": -122
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
-            "outcomes": [
-              {
-                "name": "Atlanta Falcons",
-                "price": 105
-              },
-              {
-                "name": "New Orleans Saints",
-                "price": -125
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
-                "price": 105
+                "price": 110
               },
               {
                 "name": "New Orleans Saints",
-                "price": -125
+                "price": -130
               }
             ]
           }
@@ -2199,11 +2000,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
@@ -2220,19 +2021,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
-                "price": 155
+                "price": 145
               },
               {
                 "name": "Philadelphia Eagles",
-                "price": -190
+                "price": -175
               }
             ]
           }
@@ -2241,19 +2042,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
-                "price": 144
+                "price": 148
               },
               {
                 "name": "Philadelphia Eagles",
-                "price": -174
+                "price": -176
               }
             ]
           }
@@ -2262,19 +2063,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
-                "price": 141
+                "price": 139
               },
               {
                 "name": "Philadelphia Eagles",
-                "price": -182
+                "price": -171
               }
             ]
           }
@@ -2283,19 +2084,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
-                "price": 149
+                "price": 145
               },
               {
                 "name": "Philadelphia Eagles",
-                "price": -170
+                "price": -165
               }
             ]
           }
@@ -2304,19 +2105,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
-                "price": 149
+                "price": 145
               },
               {
                 "name": "Philadelphia Eagles",
-                "price": -170
+                "price": -165
               }
             ]
           }
@@ -2325,11 +2126,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
@@ -2346,11 +2147,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
@@ -2367,19 +2168,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
-                "price": 150
+                "price": 140
               },
               {
                 "name": "Philadelphia Eagles",
-                "price": -175
+                "price": -165
               }
             ]
           }
@@ -2398,11 +2199,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:06Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
@@ -2419,19 +2220,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
-                "price": -320
+                "price": -330
               },
               {
                 "name": "Tampa Bay Buccaneers",
-                "price": 260
+                "price": 270
               }
             ]
           }
@@ -2440,19 +2241,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
-                "price": -330
+                "price": -340
               },
               {
                 "name": "Tampa Bay Buccaneers",
-                "price": 265
+                "price": 275
               }
             ]
           }
@@ -2461,19 +2262,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
+            "last_update": "2025-11-22T02:25:18Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
-                "price": -319
+                "price": -381
               },
               {
                 "name": "Tampa Bay Buccaneers",
-                "price": 234
+                "price": 286
               }
             ]
           }
@@ -2482,19 +2283,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
+        "last_update": "2025-11-22T02:26:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
+            "last_update": "2025-11-22T02:26:26Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
-                "price": -320
+                "price": -330
               },
               {
                 "name": "Tampa Bay Buccaneers",
-                "price": 260
+                "price": 267
               }
             ]
           }
@@ -2503,19 +2304,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
+        "last_update": "2025-11-22T02:26:40Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:26:40Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
-                "price": -320
+                "price": -330
               },
               {
                 "name": "Tampa Bay Buccaneers",
-                "price": 260
+                "price": 267
               }
             ]
           }
@@ -2524,11 +2325,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
@@ -2545,11 +2346,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
@@ -2566,19 +2367,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Los Angeles Rams",
-                "price": -330
+                "price": -370
               },
               {
                 "name": "Tampa Bay Buccaneers",
-                "price": 265
+                "price": 285
               }
             ]
           }
@@ -2597,19 +2398,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Carolina Panthers",
-                "price": 275
+                "price": 295
               },
               {
                 "name": "San Francisco 49ers",
-                "price": -345
+                "price": -375
               }
             ]
           }
@@ -2618,19 +2419,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-11-20T04:08:25Z",
+        "last_update": "2025-11-22T02:27:05Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
+            "last_update": "2025-11-22T02:27:05Z",
             "outcomes": [
               {
                 "name": "Carolina Panthers",
-                "price": 275
+                "price": 300
               },
               {
                 "name": "San Francisco 49ers",
-                "price": -340
+                "price": -375
               }
             ]
           }
@@ -2639,11 +2440,116 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
+            "outcomes": [
+              {
+                "name": "Carolina Panthers",
+                "price": 300
+              },
+              {
+                "name": "San Francisco 49ers",
+                "price": -375
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Carolina Panthers",
+                "price": 304
+              },
+              {
+                "name": "San Francisco 49ers",
+                "price": -396
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-11-22T02:26:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:26Z",
+            "outcomes": [
+              {
+                "name": "Carolina Panthers",
+                "price": 299
+              },
+              {
+                "name": "San Francisco 49ers",
+                "price": -375
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-11-22T02:26:40Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:40Z",
+            "outcomes": [
+              {
+                "name": "Carolina Panthers",
+                "price": 299
+              },
+              {
+                "name": "San Francisco 49ers",
+                "price": -375
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
+            "outcomes": [
+              {
+                "name": "Carolina Panthers",
+                "price": 270
+              },
+              {
+                "name": "San Francisco 49ers",
+                "price": -375
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-22T02:25:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Carolina Panthers",
@@ -2658,118 +2564,13 @@
         ]
       },
       {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-11-20T04:07:32Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:07:32Z",
-            "outcomes": [
-              {
-                "name": "Carolina Panthers",
-                "price": 276
-              },
-              {
-                "name": "San Francisco 49ers",
-                "price": -396
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-20T04:07:06Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:07:06Z",
-            "outcomes": [
-              {
-                "name": "Carolina Panthers",
-                "price": 274
-              },
-              {
-                "name": "San Francisco 49ers",
-                "price": -340
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-20T04:08:24Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:24Z",
-            "outcomes": [
-              {
-                "name": "Carolina Panthers",
-                "price": 274
-              },
-              {
-                "name": "San Francisco 49ers",
-                "price": -340
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
-            "outcomes": [
-              {
-                "name": "Carolina Panthers",
-                "price": 260
-              },
-              {
-                "name": "San Francisco 49ers",
-                "price": -375
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-20T04:08:11Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:08:11Z",
-            "outcomes": [
-              {
-                "name": "Carolina Panthers",
-                "price": 275
-              },
-              {
-                "name": "San Francisco 49ers",
-                "price": -350
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-11-20T04:08:52Z",
+        "last_update": "2025-11-22T02:27:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:52Z",
+            "last_update": "2025-11-22T02:27:22Z",
             "outcomes": [
               {
                 "name": "Carolina Panthers",
@@ -2796,19 +2597,40 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -170
+                "price": -175
               },
               {
                 "name": "Green Bay Packers",
-                "price": 142
+                "price": 145
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-22T02:25:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:17Z",
+            "outcomes": [
+              {
+                "name": "Detroit Lions",
+                "price": -165
+              },
+              {
+                "name": "Green Bay Packers",
+                "price": 140
               }
             ]
           }
@@ -2817,19 +2639,40 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -164
+                "price": -162
               },
               {
                 "name": "Green Bay Packers",
-                "price": 138
+                "price": 136
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Detroit Lions",
+                "price": -172
+              },
+              {
+                "name": "Green Bay Packers",
+                "price": 134
               }
             ]
           }
@@ -2838,19 +2681,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Detroit Lions",
-                "price": -162
+                "price": -167
               },
               {
                 "name": "Green Bay Packers",
-                "price": 128
+                "price": 132
               }
             ]
           }
@@ -2869,11 +2712,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
@@ -2890,11 +2733,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
@@ -2909,13 +2752,55 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Dallas Cowboys",
+                "price": 156
+              },
+              {
+                "name": "Kansas City Chiefs",
+                "price": -202
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-22T02:25:17Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:17Z",
+            "outcomes": [
+              {
+                "name": "Dallas Cowboys",
+                "price": 165
+              },
+              {
+                "name": "Kansas City Chiefs",
+                "price": -200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Dallas Cowboys",
@@ -2942,11 +2827,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
@@ -2961,21 +2846,42 @@
         ]
       },
       {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-11-22T02:25:17Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:25:17Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
-                "price": -450
+                "price": -375
               },
               {
                 "name": "Cincinnati Bengals",
-                "price": 350
+                "price": 300
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Baltimore Ravens",
+                "price": -415
+              },
+              {
+                "name": "Cincinnati Bengals",
+                "price": 292
               }
             ]
           }
@@ -2984,11 +2890,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Baltimore Ravens",
@@ -3015,19 +2921,40 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
-                "price": 285
+                "price": 295
               },
               {
                 "name": "Philadelphia Eagles",
-                "price": -360
+                "price": -375
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bears",
+                "price": 255
+              },
+              {
+                "name": "Philadelphia Eagles",
+                "price": -350
               }
             ]
           }
@@ -3036,11 +2963,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
@@ -3057,11 +2984,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Chicago Bears",
@@ -3069,7 +2996,7 @@
               },
               {
                 "name": "Philadelphia Eagles",
-                "price": -360
+                "price": -345
               }
             ]
           }
@@ -3088,19 +3015,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
-                "price": 235
+                "price": 230
               },
               {
                 "name": "Tampa Bay Buccaneers",
-                "price": -290
+                "price": -285
               }
             ]
           }
@@ -3109,11 +3036,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
@@ -3128,13 +3055,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Arizona Cardinals",
+                "price": 204
+              },
+              {
+                "name": "Tampa Bay Buccaneers",
+                "price": -285
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Arizona Cardinals",
@@ -3161,11 +3109,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
@@ -3182,11 +3130,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
@@ -3201,13 +3149,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Falcons",
+                "price": -128
+              },
+              {
+                "name": "New York Jets",
+                "price": -103
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Atlanta Falcons",
@@ -3234,19 +3203,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Carolina Panthers",
-                "price": 370
+                "price": 360
               },
               {
                 "name": "Los Angeles Rams",
-                "price": -485
+                "price": -470
               }
             ]
           }
@@ -3255,11 +3224,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Carolina Panthers",
@@ -3274,13 +3243,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Carolina Panthers",
+                "price": 320
+              },
+              {
+                "name": "Los Angeles Rams",
+                "price": -500
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Carolina Panthers",
@@ -3307,19 +3297,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
-                "price": 245
+                "price": 240
               },
               {
                 "name": "San Francisco 49ers",
-                "price": -305
+                "price": -298
               }
             ]
           }
@@ -3328,19 +3318,40 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
-                "price": 275
+                "price": 290
               },
               {
                 "name": "San Francisco 49ers",
-                "price": -340
+                "price": -360
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Browns",
+                "price": 232
+              },
+              {
+                "name": "San Francisco 49ers",
+                "price": -330
               }
             ]
           }
@@ -3349,11 +3360,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Cleveland Browns",
@@ -3380,19 +3391,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Houston Texans",
-                "price": 170
+                "price": 145
               },
               {
                 "name": "Indianapolis Colts",
-                "price": -205
+                "price": -175
               }
             ]
           }
@@ -3401,19 +3412,40 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Houston Texans",
-                "price": 162
+                "price": 152
               },
               {
                 "name": "Indianapolis Colts",
-                "price": -194
+                "price": -180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Houston Texans",
+                "price": 142
+              },
+              {
+                "name": "Indianapolis Colts",
+                "price": -191
               }
             ]
           }
@@ -3422,19 +3454,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Houston Texans",
-                "price": 160
+                "price": 140
               },
               {
                 "name": "Indianapolis Colts",
-                "price": -205
+                "price": -180
               }
             ]
           }
@@ -3453,19 +3485,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Jacksonville Jaguars",
-                "price": -310
+                "price": -305
               },
               {
                 "name": "Tennessee Titans",
-                "price": 250
+                "price": 245
               }
             ]
           }
@@ -3474,11 +3506,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Jacksonville Jaguars",
@@ -3493,13 +3525,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Jacksonville Jaguars",
+                "price": -370
+              },
+              {
+                "name": "Tennessee Titans",
+                "price": 255
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Jacksonville Jaguars",
@@ -3526,11 +3579,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:04Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Miami Dolphins",
@@ -3547,11 +3600,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Miami Dolphins",
@@ -3566,13 +3619,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Miami Dolphins",
+                "price": -234
+              },
+              {
+                "name": "New Orleans Saints",
+                "price": 171
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Miami Dolphins",
@@ -3599,19 +3673,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:05Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Minnesota Vikings",
-                "price": 295
+                "price": 285
               },
               {
                 "name": "Seattle Seahawks",
-                "price": -375
+                "price": -360
               }
             ]
           }
@@ -3620,11 +3694,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Minnesota Vikings",
@@ -3639,13 +3713,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Minnesota Vikings",
+                "price": 285
+              },
+              {
+                "name": "Seattle Seahawks",
+                "price": -429
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Minnesota Vikings",
@@ -3672,19 +3767,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:05Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Buffalo Bills",
-                "price": -205
+                "price": -192
               },
               {
                 "name": "Pittsburgh Steelers",
-                "price": 170
+                "price": 160
               }
             ]
           }
@@ -3693,19 +3788,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Buffalo Bills",
-                "price": -215
+                "price": -186
               },
               {
                 "name": "Pittsburgh Steelers",
-                "price": 180
+                "price": 156
               }
             ]
           }
@@ -3714,19 +3809,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Buffalo Bills",
-                "price": -210
+                "price": -195
               },
               {
                 "name": "Pittsburgh Steelers",
-                "price": 163
+                "price": 148
               }
             ]
           }
@@ -3745,11 +3840,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:05Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Las Vegas Raiders",
@@ -3766,11 +3861,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Las Vegas Raiders",
@@ -3785,13 +3880,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Las Vegas Raiders",
+                "price": 310
+              },
+              {
+                "name": "Los Angeles Chargers",
+                "price": -469
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Las Vegas Raiders",
@@ -3818,19 +3934,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:05Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "Denver Broncos",
-                "price": -290
+                "price": -298
               },
               {
                 "name": "Washington Commanders",
-                "price": 235
+                "price": 240
               }
             ]
           }
@@ -3839,11 +3955,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
+        "last_update": "2025-11-22T02:27:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:19Z",
             "outcomes": [
               {
                 "name": "Denver Broncos",
@@ -3858,13 +3974,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "Denver Broncos",
+                "price": -330
+              },
+              {
+                "name": "Washington Commanders",
+                "price": 228
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-11-22T02:26:45Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "Denver Broncos",
@@ -3891,32 +4028,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-20T04:09:05Z",
+        "last_update": "2025-11-22T02:27:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:09:05Z",
-            "outcomes": [
-              {
-                "name": "New England Patriots",
-                "price": -360
-              },
-              {
-                "name": "New York Giants",
-                "price": 285
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-20T04:09:02Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-20T04:09:02Z",
+            "last_update": "2025-11-22T02:27:07Z",
             "outcomes": [
               {
                 "name": "New England Patriots",
@@ -3924,7 +4040,28 @@
               },
               {
                 "name": "New York Giants",
-                "price": 300
+                "price": 295
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-11-22T02:25:18Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-11-22T02:25:18Z",
+            "outcomes": [
+              {
+                "name": "New England Patriots",
+                "price": -410
+              },
+              {
+                "name": "New York Giants",
+                "price": 275
               }
             ]
           }
@@ -3933,11 +4070,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-20T04:08:51Z",
+        "last_update": "2025-11-22T02:26:45Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-20T04:08:51Z",
+            "last_update": "2025-11-22T02:26:45Z",
             "outcomes": [
               {
                 "name": "New England Patriots",

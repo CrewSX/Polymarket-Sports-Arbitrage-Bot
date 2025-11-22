@@ -1,17 +1,9 @@
 [
   {
-    "id": "425bbfaa3561f07998f8e4c4ae3159be",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-11-21T00:30:00Z",
-    "home_team": "Arkansas State Red Wolves",
-    "away_team": "Louisiana Ragin Cajuns"
-  },
-  {
     "id": "da5a19b5f8e8746e71279c368fddfec8",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
-    "commence_time": "2025-11-22T01:00:00Z",
+    "commence_time": "2025-11-22T01:06:34Z",
     "home_team": "NC State Wolfpack",
     "away_team": "Florida State Seminoles"
   },
@@ -158,6 +150,14 @@
     "commence_time": "2025-11-22T19:00:00Z",
     "home_team": "Wyoming Cowboys",
     "away_team": "Nevada Wolf Pack"
+  },
+  {
+    "id": "096152d72e2b70bde57ad5d547decab0",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-11-22T19:02:00Z",
+    "home_team": "Alabama Crimson Tide",
+    "away_team": "Eastern Illinois Panthers"
   },
   {
     "id": "49a93417406ae5adb273a66f6afb7865",
@@ -336,6 +336,14 @@
     "away_team": "Coastal Carolina Chanticleers"
   },
   {
+    "id": "3f3198d8ec7bd7e458a37b922f1b8c48",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-11-22T21:30:00Z",
+    "home_team": "Clemson Tigers",
+    "away_team": "Furman Paladins"
+  },
+  {
     "id": "e07a0fd751788ee54312e351723fba5f",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
@@ -512,20 +520,20 @@
     "away_team": "Texas A&M Aggies"
   },
   {
+    "id": "eef629c46747c4f201a425717b019fde",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-11-29T02:00:00Z",
+    "home_team": "Arizona State Sun Devils",
+    "away_team": "Arizona Wildcats"
+  },
+  {
     "id": "c739b05669e6035797b50a66f2c23ce0",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
     "commence_time": "2025-11-29T17:00:00Z",
     "home_team": "South Carolina Gamecocks",
     "away_team": "Clemson Tigers"
-  },
-  {
-    "id": "48712c446fe47c5fa3e18038bdd703e8",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-11-29T17:00:00Z",
-    "home_team": "Florida Gators",
-    "away_team": "Florida State Seminoles"
   },
   {
     "id": "f64071bbf06bf34a684c347ad45f82a9",
@@ -598,22 +606,6 @@
     "commence_time": "2025-11-29T20:30:00Z",
     "home_team": "Tennessee Volunteers",
     "away_team": "Vanderbilt Commodores"
-  },
-  {
-    "id": "48a0d56354caf6da69d210132615c809",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-11-30T00:30:00Z",
-    "home_team": "NC State Wolfpack",
-    "away_team": "North Carolina Tar Heels"
-  },
-  {
-    "id": "4e2c6842ce33619ecb4c77938e3093bc",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-11-30T03:30:00Z",
-    "home_team": "Stanford Cardinal",
-    "away_team": "Notre Dame Fighting Irish"
   },
   {
     "id": "ed821485171f0486828ac8bfae9537a3",
