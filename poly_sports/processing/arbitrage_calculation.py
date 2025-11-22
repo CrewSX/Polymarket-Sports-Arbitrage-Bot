@@ -23,7 +23,7 @@ def detect_market_type(outcomes: List[str]) -> str:
         return "3-way"
     else:
         # Handle edge cases - default to 2-way for now
-        return "2-way" if count >= 2 else "2-way"
+        raise ValueError("Invalid market type")
 
 
 def calculate_directional_opportunity(
@@ -47,19 +47,16 @@ def calculate_directional_opportunity(
     Returns:
         Dictionary with directional opportunity details if exists, None otherwise
     """
-    # Check if PM price is lower than SB implied probability
-    if pm_price >= sb_implied_prob:
-        return None
-    
     # Calculate expected price movement
     expected_movement = sb_implied_prob - pm_price
     
     # Calculate potential profit percentage if price moves to fair value
     # Profit = (target_price - buy_price) / buy_price
     potential_profit = (sb_implied_prob - pm_price) / pm_price
+    delta_difference = abs(expected_movement)
     
     # Check if profit meets threshold
-    if potential_profit < min_profit_threshold:
+    if potential_profit < min_profit_threshold or delta_difference > 0.03:
         return None
     
     return {
@@ -70,59 +67,9 @@ def calculate_directional_opportunity(
         "target_price": sb_implied_prob,
         "expected_price_movement": expected_movement,
         "potential_profit_percentage": potential_profit,
-        "potential_profit_absolute": potential_profit * 100.0  # For $100 stake
+        "potential_profit_absolute": potential_profit * 100.0,  # For $100 stake
+        "delta_difference": delta_difference
     }
-
-
-def calculate_sell_points(
-    buy_price: float,
-    sb_implied_prob: float,
-    target_profits: List[float] = [0.05, 0.10, 0.20]
-) -> List[Dict[str, Any]]:
-    """
-    Calculate recommended sell points for directional opportunities.
-    
-    Since Polymarket prices are dynamic like stocks, recommend multiple exit points:
-    - Fair value: When price reaches sportsbook implied probability (conservative)
-    - Profit thresholds: At specified profit percentages (aggressive)
-    
-    Args:
-        buy_price: Price at which to buy (decimal probability 0-1)
-        sb_implied_prob: Sportsbook implied probability (target fair value)
-        target_profits: List of profit percentages for sell points (default [5%, 10%, 20%])
-        
-    Returns:
-        List of sell point dictionaries with target_price, profit_percentage, confidence, description
-    """
-    sell_points = []
-    
-    # Fair value sell point (conservative, high confidence)
-    if sb_implied_prob > buy_price:
-        fair_value_profit = (sb_implied_prob - buy_price) / buy_price
-        sell_points.append({
-            "target_price": sb_implied_prob,
-            "profit_percentage": fair_value_profit,
-            "confidence": "high",
-            "description": "Fair value"
-        })
-    
-    # Profit threshold sell points (aggressive, medium confidence)
-    for profit_target in target_profits:
-        target_price = buy_price * (1 + profit_target)
-        
-        # Only add if target price is reasonable (not above 1.0 for probabilities)
-        if target_price <= 1.0:
-            sell_points.append({
-                "target_price": target_price,
-                "profit_percentage": profit_target,
-                "confidence": "medium",
-                "description": f"{int(profit_target * 100)}% profit"
-            })
-    
-    # Sort by target price (ascending)
-    sell_points.sort(key=lambda x: x["target_price"])
-    
-    return sell_points
 
 
 def match_outcomes_by_name(
@@ -146,34 +93,15 @@ def match_outcomes_by_name(
     
     for pm_outcome in pm_outcomes:
         pm_outcome_lower = pm_outcome.lower()
-        
-        # Try to find best match in SB outcomes
-        best_match = None
-        best_score = 0
-        
         for sb_outcome in sb_outcomes:
             sb_name = sb_outcome.get('name', '')
             sb_name_lower = sb_name.lower()
-            
             # Check if PM outcome name appears in SB outcome name or vice versa
             if pm_outcome_lower in sb_name_lower or sb_name_lower in pm_outcome_lower:
-                # Calculate simple match score (length of common substring)
-                common_length = min(len(pm_outcome_lower), len(sb_name_lower))
-                if pm_outcome_lower in sb_name_lower:
-                    score = len(pm_outcome_lower) / len(sb_name_lower)
-                else:
-                    score = len(sb_name_lower) / len(pm_outcome_lower)
-                
-                if score > best_score:
-                    best_score = score
-                    best_match = sb_outcome
+                matched[pm_outcome] = {
+                    'sb_outcome': sb_outcome
+                }
         
-        if best_match:
-            matched[pm_outcome] = {
-                'sb_outcome': best_match,
-                'match_confidence': best_score  # Use score as confidence
-            }
-    
     return matched
 
 
@@ -242,7 +170,6 @@ def detect_arbitrage_opportunities(
                 
                 sb_outcome = match_data['sb_outcome']
                 sb_implied_prob = sb_outcome.get('avg_implied_probability')
-                sb_price_decimal = sb_outcome.get('avg_price_decimal')
                 
                 if sb_implied_prob is None:
                     continue
@@ -252,7 +179,6 @@ def detect_arbitrage_opportunities(
                     'sb_outcome': sb_outcome.get('name', ''),
                     'pm_price': pm_price,
                     'sb_implied_prob': sb_implied_prob,
-                    'sb_price_decimal': sb_price_decimal,
                     'match_confidence': match_data['match_confidence']
                 })
             
@@ -276,8 +202,6 @@ def detect_arbitrage_opportunities(
                 )
                 
                 if directional_result:
-                    # Calculate sell points
-                    sell_points = calculate_sell_points(pm_price, sb_implied_prob)
                     
                     opportunity = {
                         # Original data
@@ -291,14 +215,12 @@ def detect_arbitrage_opportunities(
                         'market_type': market_type,
                         'profit_margin': directional_result['potential_profit_percentage'],
                         'profit_margin_absolute': directional_result['potential_profit_absolute'],
-                        'delta_difference': sb_implied_prob - pm_price,
+                        'delta_difference': directional_result['delta_difference'],
                         'liquidity': entry.get('pm_event_liquidity'),
+                        'volume': entry.get('pm_market_volume'),
                         
                         # Matched outcomes
                         'matched_outcomes': [matched_outcome_data],
-                        
-                        # Sell points
-                        'sell_points': sell_points,
                         
                         # Additional context
                         'pm_spread': entry.get('pm_spread'),
@@ -369,7 +291,6 @@ def find_max_delta_by_sportsbook(
                 if event_id:
                     odds_by_event_id[event_id] = event
         except Exception:
-            # Skip files that can't be loaded
             continue
     
     # Step 2: Process each event in comparison_data
@@ -403,23 +324,9 @@ def find_max_delta_by_sportsbook(
             if len(pm_outcomes) != len(pm_prices):
                 continue
             
-            # Step 3: First, collect all unique sportsbook outcomes from all bookmakers
-            # This creates a consolidated list of outcomes (by name) to match against
-            all_sb_outcomes = []
-            sb_outcome_names_seen = set()
-            
-            for bookmaker in raw_odds_event.get('bookmakers', []):
-                for market in bookmaker.get('markets', []):
-                    for outcome in market.get('outcomes', []):
-                        sb_outcome_name = outcome.get('name', '')
-                        if sb_outcome_name and sb_outcome_name not in sb_outcome_names_seen:
-                            sb_outcome_names_seen.add(sb_outcome_name)
-                            all_sb_outcomes.append({'name': sb_outcome_name})
-            
             # Step 4: Match Polymarket outcomes to sportsbook outcomes using existing matching function
             # This ensures we're matching the correct outcomes within the same event
-            matched_outcomes = match_outcomes_by_name(pm_outcomes, all_sb_outcomes)
-            print(matched_outcomes)
+            matched_outcomes = match_outcomes_by_name(pm_outcomes, raw_odds_event.get('bookmakers', []).get('markets', []).get('outcomes', []).get('name', ''))
             
             if not matched_outcomes:
                 continue
@@ -483,7 +390,7 @@ def find_max_delta_by_sportsbook(
                                     continue
                                 
                                 # Calculate delta_difference
-                                delta_difference = sb_implied_prob - pm_price
+                                delta_difference = abs(sb_implied_prob - pm_price)
                                 
                                 # Track maximum delta_difference
                                 if delta_difference > max_delta_value:

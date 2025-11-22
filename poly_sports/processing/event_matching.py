@@ -5,60 +5,8 @@ from datetime import datetime, timezone
 from dateutil import parser as date_parser
 from rapidfuzz import fuzz
 from poly_sports.processing.sport_detection import detect_sport_key
-
-
-def normalize_team_name(name: Optional[str]) -> str:
-    """
-    Normalize team name for comparison.
-    
-    - Convert to lowercase
-    - Strip whitespace
-    - Handle None/empty values
-    
-    Args:
-        name: Team name string or None
-        
-    Returns:
-        Normalized team name string
-    """
-    if not name:
-        return ""
-    return str(name).lower().strip()
-
-
-def extract_school_names_from_outcomes(pm_event: Dict[str, Any]) -> Tuple[Optional[str], Optional[str]]:
-    """
-    Extract school names from market_outcomes for college football events.
-    
-    For college sports, market_outcomes contains the full school names
-    (e.g., "Temple", "Army", "SMU Mustangs", "Boston College") which are
-    more accurate than the team names alone.
-    
-    Args:
-        pm_event: Polymarket event dictionary with market_outcomes and series_ticker
-        
-    Returns:
-        Tuple of (home_school_name, away_school_name) or (None, None) if not applicable
-    """
-    # Check if this is a college football event
-    series_ticker = str(pm_event.get('series_ticker', '')).lower()
-    if not ('cfb' in series_ticker):
-        return (None, None)
-    
-    # Parse market_outcomes JSON string
-    market_outcomes_str = pm_event.get('market_outcomes', '')
-    if not market_outcomes_str:
-        return (None, None)
-    
-    if isinstance(market_outcomes_str, str):
-        outcomes = json.loads(market_outcomes_str)
-    else:
-        outcomes = market_outcomes_str
-    
-    if not isinstance(outcomes, list) or len(outcomes) < 2:
-        return (None, None)
-    
-    return (outcomes[0], outcomes[1])
+from poly_sports.processing.extractors import get_team_name_extractor
+from poly_sports.processing.extractors.utils import normalize_team_name
 
 
 def calculate_match_score(pm_event: Dict[str, Any], odds_event: Dict[str, Any]) -> float:
@@ -84,57 +32,28 @@ def calculate_match_score(pm_event: Dict[str, Any], odds_event: Dict[str, Any]) 
         if pm_sport_key != odds_sport_key:
             return 0.0
     
-    # For college football, use school names from market_outcomes instead of team names
-    # This is more accurate since team names can be duplicates (e.g., "Tigers", "Bulldogs")
-    school_away, school_home = extract_school_names_from_outcomes(pm_event)
+    # Get the appropriate extractor based on series_ticker
+    series_ticker = pm_event.get('series_ticker', '')
+    extractor = get_team_name_extractor(series_ticker)
     
-    if school_home and school_away:
-        # Use school names from market_outcomes for college football
-        normalized_school_home = normalize_team_name(school_home)
-        normalized_home_team = normalize_team_name(pm_event.get('homeTeamName', ''))
-        if normalized_school_home and normalized_home_team and normalized_school_home.endswith(normalized_home_team):
-            pm_home = normalized_school_home
-        else:
-            pm_home = normalized_school_home + " " + normalized_home_team
-
-        normalized_school_away = normalize_team_name(school_away)
-        normalized_away_team = normalize_team_name(pm_event.get('awayTeamName', ''))
-        if normalized_school_away and normalized_away_team and normalized_school_away.endswith(normalized_away_team):
-            pm_away = normalized_school_away
-        else:
-            pm_away = normalized_school_away + " " + normalized_away_team
-    else:
-        outcomes = json.loads(pm_event.get('market_outcomes', ''))
-        pm_home = normalize_team_name(outcomes[0])
-        pm_away = normalize_team_name(outcomes[1])
-        # If outcomes are "Yes"/"No", use homeTeamName/awayTeamName instead (only if they exist)
-        if not pm_home or not pm_away or pm_home in ('yes', 'no') or pm_away in ('yes', 'no'):
-            pm_home = normalize_team_name(pm_event.get('homeTeamName', ''))
-            pm_away = normalize_team_name(pm_event.get('awayTeamName', ''))
-            if not pm_home or not pm_away:
-                return 0.0
+    # Extract team names using the sport-specific extractor
+    pm_home, pm_away = extractor.extract_team_names(pm_event)
+    
+    # If extraction failed (empty strings), return 0.0
+    if not pm_home or not pm_away:
+        return 0.0
         
     odds_home = normalize_team_name(odds_event.get('home_team', ''))
     odds_away = normalize_team_name(odds_event.get('away_team', ''))
+    if series_ticker == 'ufc':
+        odds_home = normalize_team_name(odds_event.get('home_team', '')).split()[-1]
+        odds_away = normalize_team_name(odds_event.get('away_team', '')).split()[-1]
+        pm_home = pm_home.split()[-1]
+        pm_away = pm_away.split()[-1]
     
-    # Check if this is an NBA event
-    is_nba = False
-    pm_series_ticker = str(pm_event.get('series_ticker', '')).lower()
-    odds_sport_key = str(odds_event.get('sport_key', '')).lower()
-    if 'nba' in pm_series_ticker or 'basketball_nba' or 'nhl' in pm_series_ticker or 'icehockey_nhl' in odds_sport_key:
-        is_nba = True
-    
-    # Check for exact matches first
-    exact_match1 = (pm_home == odds_home and pm_away == odds_away)
-    exact_match2 = (pm_home == odds_away and pm_away == odds_home)
-    
-    # For NBA events, also check if Polymarket team name is a subset of Odds API name
-    # (e.g., "lakers" should match "los angeles lakers")
-    if is_nba and not (exact_match1 or exact_match2):
-        subset_match1 = (pm_home in odds_home and pm_away in odds_away)
-        subset_match2 = (pm_home in odds_away and pm_away in odds_home)
-        if subset_match1 or subset_match2:
-            exact_match1 = True  # Treat as exact match
+    # Check for exact or subset matches first
+    exact_match1 = (pm_home in odds_home and pm_away in odds_away)
+    exact_match2 = (pm_home in odds_away and pm_away in odds_home)
     
     if exact_match1 or exact_match2:
         team_similarity = 1.0

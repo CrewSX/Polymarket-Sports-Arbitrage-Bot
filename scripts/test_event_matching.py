@@ -47,7 +47,7 @@ def display_match_summary(matches: List[Dict[str, Any]]):
     print("-" * 80)
     sorted_matches = sorted(matches, key=lambda x: x['confidence'], reverse=True)
     
-    for i, match in enumerate(sorted_matches[:10], 1):
+    for i, match in enumerate(sorted_matches, 1):
         pm_event = match['pm_event']
         odds_event = match['odds_event']
         confidence = match['confidence']
@@ -109,10 +109,41 @@ def display_detailed_match(match: Dict[str, Any]):
     # Note: The calculate_match_score doesn't return breakdown, but we can show the overall
 
 
+def display_unmatched_odds_events(
+    matches: List[Dict[str, Any]],
+    all_odds_events: List[Dict[str, Any]]
+):
+    """Display odds events that were not matched to any Polymarket event."""
+    # Get set of matched odds event IDs
+    matched_odds_ids = {match['odds_event'].get('id') for match in matches if match['odds_event'].get('id')}
+    
+    # Find unmatched odds events
+    unmatched = [
+        event for event in all_odds_events
+        if event.get('id') not in matched_odds_ids
+    ]
+    
+    if not unmatched:
+        print("\n✅ All odds events were matched!")
+        return
+    
+    print("\n" + "=" * 80)
+    print(f"❌ UNMATCHED ODDS EVENTS ({len(unmatched)} total)")
+    print("=" * 80)
+    
+    for i, event in enumerate(unmatched, 1):
+        print(f"\n{i}. Odds Event ID: {event.get('id', 'N/A')}")
+        print(f"   Sport Key:     {event.get('sport_key', 'N/A')}")
+        print(f"   Sport Title:   {event.get('sport_title', 'N/A')}")
+        print(f"   Home Team:     {event.get('home_team', 'N/A')}")
+        print(f"   Away Team:     {event.get('away_team', 'N/A')}")
+        print(f"   Commence Time: {event.get('commence_time', 'N/A')}")
+
+
 def test_event_matching(
     odds_file: str,
     arbitrage_file: str = None,
-    min_confidence: float = 0.1,
+    min_confidence: float = 0.5,
     detailed: bool = False,
     save_results: bool = False
 ):
@@ -202,6 +233,9 @@ def test_event_matching(
             print(f"\n💾 Results saved to: {output_file}")
         except Exception as e:
             print(f"\n❌ Error saving results: {e}")
+    
+    # Display unmatched odds events
+    display_unmatched_odds_events(matches, odds_data)
     
     print("\n" + "=" * 80)
     print("Matching test completed!")
