@@ -78,7 +78,7 @@
       "pm_price": 0.265,
       "sb_implied_prob": 0.9130434782608695,
       "sb_outcome_name": "Utah Utes",
-      "match_confidence": 1.0
+      "match_confidence": 0
     }
   },
   {
@@ -160,7 +160,277 @@
       "pm_price": 0.395,
       "sb_implied_prob": 0.7468354430379747,
       "sb_outcome_name": "Buffalo Bills",
-      "match_confidence": 0.38461538461538464
+      "match_confidence": 0
+    }
+  },
+  {
+    "pm_event_id": "84727",
+    "pm_event_endDate": "2025-11-22T23:00:00Z",
+    "pm_event_active": true,
+    "pm_event_liquidity": 28837.4789,
+    "pm_event_volume": 56.872419,
+    "pm_event_volume1wk": 56.872419,
+    "pm_event_volume1mo": 56.872419,
+    "pm_event_volume1yr": 56.872419,
+    "pm_homeTeamName": "CA Vélez Sarsfield",
+    "pm_awayTeamName": "AA Argentinos Juniors",
+    "pm_gameId": 90102798,
+    "pm_live": false,
+    "pm_ended": false,
+    "pm_score": "",
+    "pm_startTime": "2025-11-22T23:00:00Z",
+    "pm_eventDate": "2025-11-22",
+    "pm_period": "",
+    "pm_elapsed": "",
+    "pm_competitive": 0.9765386587241522,
+    "pm_series_id": "10312",
+    "pm_series_ticker": "primera-divisin-argentina",
+    "pm_market_id": "689896",
+    "pm_market_liquidityNum": 9423.7086,
+    "pm_market_outcomes": "[\"Yes\", \"No\"]",
+    "pm_market_outcomePrices": "[\"0.335\", \"0.665\"]",
+    "pm_market_volumeNum": 37.983188,
+    "pm_market_volume1wk": 37.983188,
+    "pm_market_volume1mo": 37.983188,
+    "pm_market_volume1yr": 37.983188,
+    "pm_market_volumeClob": 37.983188,
+    "pm_groupItemTitle": "AA Argentinos Juniors",
+    "pm_groupItemThreshold": "2",
+    "pm_spread": 0.03,
+    "pm_oneDayPriceChange": 0.01,
+    "pm_oneHourPriceChange": -0.005,
+    "pm_oneWeekPriceChange": null,
+    "pm_lastTradePrice": 0.35,
+    "pm_bestBid": 0.32,
+    "pm_bestAsk": 0.35,
+    "pm_question": "Will AA Argentinos Juniors win on 2025-11-22?",
+    "pm_conditionId": "0x1a07860c7d41d00ce12f5458894c0f654c4518c38c695f5e03dc018cc98ada21",
+    "pm_clobTokenIds": "[\"31744052745219101867181301193886969990876297209927625200383363966804415189160\", \"28138169776568431032705147278067193259654087306949832337238010198272230261021\"]",
+    "pm_market_active": true,
+    "pm_market_closed": false,
+    "pm_market_endDate": "2025-11-22T23:00:00Z",
+    "pm_market_endDateIso": "2025-11-22",
+    "pm_liquidityClob": 9423.7086,
+    "pm_acceptingOrders": true,
+    "odds_api_event_id": "8aff09f2553dec02e6ee999b9b2e6bf3",
+    "odds_api_sport_key": "soccer_argentina_primera_division",
+    "match_confidence": 0.746474358974359,
+    "sportsbook_count": 5,
+    "sportsbook_outcomes": [
+      {
+        "name": "Argentinos Juniors",
+        "avg_price_decimal": 2.91,
+        "avg_implied_probability": 0.3441809677668929,
+        "min_price_decimal": 2.75,
+        "max_price_decimal": 3.1,
+        "bookmaker_count": 5
+      },
+      {
+        "name": "Velez Sarsfield BA",
+        "avg_price_decimal": 2.63,
+        "avg_implied_probability": 0.38048916841369673,
+        "min_price_decimal": 2.5,
+        "max_price_decimal": 2.7,
+        "bookmaker_count": 5
+      },
+      {
+        "name": "Draw",
+        "avg_price_decimal": 2.876,
+        "avg_implied_probability": 0.34781058188037794,
+        "min_price_decimal": 2.8,
+        "max_price_decimal": 2.95,
+        "bookmaker_count": 5
+      }
+    ],
+    "max_delta": {
+      "sportsbook_name": "betrivers",
+      "sportsbook_title": "BetRivers",
+      "delta_difference": 0.3424193548387097,
+      "outcome_name": "No",
+      "pm_price": 0.665,
+      "sb_implied_prob": 0.3225806451612903,
+      "sb_outcome_name": "Argentinos Juniors",
+      "match_confidence": 0
+    }
+  },
+  {
+    "pm_event_id": "84727",
+    "pm_event_endDate": "2025-11-22T23:00:00Z",
+    "pm_event_active": true,
+    "pm_event_liquidity": 28837.4789,
+    "pm_event_volume": 56.872419,
+    "pm_event_volume1wk": 56.872419,
+    "pm_event_volume1mo": 56.872419,
+    "pm_event_volume1yr": 56.872419,
+    "pm_homeTeamName": "CA Vélez Sarsfield",
+    "pm_awayTeamName": "AA Argentinos Juniors",
+    "pm_gameId": 90102798,
+    "pm_live": false,
+    "pm_ended": false,
+    "pm_score": "",
+    "pm_startTime": "2025-11-22T23:00:00Z",
+    "pm_eventDate": "2025-11-22",
+    "pm_period": "",
+    "pm_elapsed": "",
+    "pm_competitive": 0.9765386587241522,
+    "pm_series_id": "10312",
+    "pm_series_ticker": "primera-divisin-argentina",
+    "pm_market_id": "689894",
+    "pm_market_liquidityNum": 9949.5234,
+    "pm_market_outcomes": "[\"Yes\", \"No\"]",
+    "pm_market_outcomePrices": "[\"0.345\", \"0.655\"]",
+    "pm_market_volumeNum": 16.023562,
+    "pm_market_volume1wk": 16.023562,
+    "pm_market_volume1mo": 16.023562,
+    "pm_market_volume1yr": 16.023562,
+    "pm_market_volumeClob": 16.023562,
+    "pm_groupItemTitle": "CA Vélez Sarsfield",
+    "pm_groupItemThreshold": "0",
+    "pm_spread": 0.03,
+    "pm_oneDayPriceChange": -0.01,
+    "pm_oneHourPriceChange": null,
+    "pm_oneWeekPriceChange": null,
+    "pm_lastTradePrice": 0.38,
+    "pm_bestBid": 0.33,
+    "pm_bestAsk": 0.36,
+    "pm_question": "Will CA Vélez Sarsfield win on 2025-11-22?",
+    "pm_conditionId": "0x6658b7f84a9ce991b60e8addf0bb989aae54d3bce84223e1fa69394708677395",
+    "pm_clobTokenIds": "[\"71183059685269949589522640695656812443726043046952904199111575490595065428572\", \"76142338771360379781144715554977926480398614348223936256653048123577272302622\"]",
+    "pm_market_active": true,
+    "pm_market_closed": false,
+    "pm_market_endDate": "2025-11-22T23:00:00Z",
+    "pm_market_endDateIso": "2025-11-22",
+    "pm_liquidityClob": 9949.5234,
+    "pm_acceptingOrders": true,
+    "odds_api_event_id": "8aff09f2553dec02e6ee999b9b2e6bf3",
+    "odds_api_sport_key": "soccer_argentina_primera_division",
+    "match_confidence": 0.746474358974359,
+    "sportsbook_count": 5,
+    "sportsbook_outcomes": [
+      {
+        "name": "Argentinos Juniors",
+        "avg_price_decimal": 2.91,
+        "avg_implied_probability": 0.3441809677668929,
+        "min_price_decimal": 2.75,
+        "max_price_decimal": 3.1,
+        "bookmaker_count": 5
+      },
+      {
+        "name": "Velez Sarsfield BA",
+        "avg_price_decimal": 2.63,
+        "avg_implied_probability": 0.38048916841369673,
+        "min_price_decimal": 2.5,
+        "max_price_decimal": 2.7,
+        "bookmaker_count": 5
+      },
+      {
+        "name": "Draw",
+        "avg_price_decimal": 2.876,
+        "avg_implied_probability": 0.34781058188037794,
+        "min_price_decimal": 2.8,
+        "max_price_decimal": 2.95,
+        "bookmaker_count": 5
+      }
+    ],
+    "max_delta": {
+      "sportsbook_name": "betrivers",
+      "sportsbook_title": "BetRivers",
+      "delta_difference": 0.3324193548387097,
+      "outcome_name": "No",
+      "pm_price": 0.655,
+      "sb_implied_prob": 0.3225806451612903,
+      "sb_outcome_name": "Argentinos Juniors",
+      "match_confidence": 0
+    }
+  },
+  {
+    "pm_event_id": "84727",
+    "pm_event_endDate": "2025-11-22T23:00:00Z",
+    "pm_event_active": true,
+    "pm_event_liquidity": 28837.4789,
+    "pm_event_volume": 56.872419,
+    "pm_event_volume1wk": 56.872419,
+    "pm_event_volume1mo": 56.872419,
+    "pm_event_volume1yr": 56.872419,
+    "pm_homeTeamName": "CA Vélez Sarsfield",
+    "pm_awayTeamName": "AA Argentinos Juniors",
+    "pm_gameId": 90102798,
+    "pm_live": false,
+    "pm_ended": false,
+    "pm_score": "",
+    "pm_startTime": "2025-11-22T23:00:00Z",
+    "pm_eventDate": "2025-11-22",
+    "pm_period": "",
+    "pm_elapsed": "",
+    "pm_competitive": 0.9765386587241522,
+    "pm_series_id": "10312",
+    "pm_series_ticker": "primera-divisin-argentina",
+    "pm_market_id": "689895",
+    "pm_market_liquidityNum": 9536.5249,
+    "pm_market_outcomes": "[\"Yes\", \"No\"]",
+    "pm_market_outcomePrices": "[\"0.345\", \"0.655\"]",
+    "pm_market_volumeNum": 2.865669,
+    "pm_market_volume1wk": 2.865669,
+    "pm_market_volume1mo": 2.865669,
+    "pm_market_volume1yr": 2.865669,
+    "pm_market_volumeClob": 2.865669,
+    "pm_groupItemTitle": "Draw (CA Vélez Sarsfield vs. AA Argentinos Juniors)",
+    "pm_groupItemThreshold": "1",
+    "pm_spread": 0.03,
+    "pm_oneDayPriceChange": 0.005,
+    "pm_oneHourPriceChange": null,
+    "pm_oneWeekPriceChange": null,
+    "pm_lastTradePrice": null,
+    "pm_bestBid": 0.33,
+    "pm_bestAsk": 0.36,
+    "pm_question": "Will CA Vélez Sarsfield vs. AA Argentinos Juniors end in a draw?",
+    "pm_conditionId": "0xeba7dccd908e25687b9eb66df7ea71f2d35ec022b4f6c1b0feb17c795b973679",
+    "pm_clobTokenIds": "[\"115590865492439696502991349532985024826355392712556585202131670334424482081256\", \"56765606991871121737914968450117916654104662418994618219534223305163046176575\"]",
+    "pm_market_active": true,
+    "pm_market_closed": false,
+    "pm_market_endDate": "2025-11-22T23:00:00Z",
+    "pm_market_endDateIso": "2025-11-22",
+    "pm_liquidityClob": 9536.5249,
+    "pm_acceptingOrders": true,
+    "odds_api_event_id": "8aff09f2553dec02e6ee999b9b2e6bf3",
+    "odds_api_sport_key": "soccer_argentina_primera_division",
+    "match_confidence": 0.746474358974359,
+    "sportsbook_count": 5,
+    "sportsbook_outcomes": [
+      {
+        "name": "Argentinos Juniors",
+        "avg_price_decimal": 2.91,
+        "avg_implied_probability": 0.3441809677668929,
+        "min_price_decimal": 2.75,
+        "max_price_decimal": 3.1,
+        "bookmaker_count": 5
+      },
+      {
+        "name": "Velez Sarsfield BA",
+        "avg_price_decimal": 2.63,
+        "avg_implied_probability": 0.38048916841369673,
+        "min_price_decimal": 2.5,
+        "max_price_decimal": 2.7,
+        "bookmaker_count": 5
+      },
+      {
+        "name": "Draw",
+        "avg_price_decimal": 2.876,
+        "avg_implied_probability": 0.34781058188037794,
+        "min_price_decimal": 2.8,
+        "max_price_decimal": 2.95,
+        "bookmaker_count": 5
+      }
+    ],
+    "max_delta": {
+      "sportsbook_name": "betrivers",
+      "sportsbook_title": "BetRivers",
+      "delta_difference": 0.3324193548387097,
+      "outcome_name": "No",
+      "pm_price": 0.655,
+      "sb_implied_prob": 0.3225806451612903,
+      "sb_outcome_name": "Argentinos Juniors",
+      "match_confidence": 0
     }
   },
   {
@@ -242,7 +512,7 @@
       "pm_price": 0.39,
       "sb_implied_prob": 0.696969696969697,
       "sb_outcome_name": "Colorado Avalanche",
-      "match_confidence": 0.5
+      "match_confidence": 0
     }
   },
   {
@@ -324,7 +594,7 @@
       "pm_price": 0.225,
       "sb_implied_prob": 0.5,
       "sb_outcome_name": "Milwaukee Bucks",
-      "match_confidence": 0.3333333333333333
+      "match_confidence": 0
     }
   },
   {
@@ -406,7 +676,7 @@
       "pm_price": 0.265,
       "sb_implied_prob": 0.5238095238095238,
       "sb_outcome_name": "Utah Mammoth",
-      "match_confidence": 0.3333333333333333
+      "match_confidence": 0
     }
   },
   {
@@ -488,7 +758,7 @@
       "pm_price": 0.335,
       "sb_implied_prob": 0.5934959349593496,
       "sb_outcome_name": "Arkansas State Red Wolves",
-      "match_confidence": 0.56
+      "match_confidence": 0
     }
   },
   {
@@ -570,7 +840,7 @@
       "pm_price": 0.595,
       "sb_implied_prob": 0.8387096774193549,
       "sb_outcome_name": "Texas Tech Red Raiders",
-      "match_confidence": 1.0
+      "match_confidence": 0
     }
   },
   {
@@ -652,7 +922,7 @@
       "pm_price": 0.44,
       "sb_implied_prob": 0.6428571428571429,
       "sb_outcome_name": "Los Angeles Kings",
-      "match_confidence": 0.29411764705882354
+      "match_confidence": 0
     }
   },
   {
@@ -734,7 +1004,89 @@
       "pm_price": 0.285,
       "sb_implied_prob": 0.4444444444444444,
       "sb_outcome_name": "Vancouver Canucks",
-      "match_confidence": 0.4117647058823529
+      "match_confidence": 0
+    }
+  },
+  {
+    "pm_event_id": "84827",
+    "pm_event_endDate": "2025-11-23T04:59:59.999Z",
+    "pm_event_active": true,
+    "pm_event_liquidity": 120413.8798,
+    "pm_event_volume": 97251.420214,
+    "pm_event_volume1wk": 81426.18492099998,
+    "pm_event_volume1mo": 81426.18492099998,
+    "pm_event_volume1yr": 81426.18492099998,
+    "pm_homeTeamName": "",
+    "pm_awayTeamName": "",
+    "pm_gameId": 10125,
+    "pm_live": false,
+    "pm_ended": false,
+    "pm_score": "",
+    "pm_startTime": "2025-11-22T15:00:00Z",
+    "pm_eventDate": "2025-11-22",
+    "pm_period": "R0",
+    "pm_elapsed": "00:00",
+    "pm_competitive": 0.9999750006249843,
+    "pm_series_id": "38",
+    "pm_series_ticker": "ufc",
+    "pm_market_id": "690296",
+    "pm_market_liquidityNum": 80554.7575,
+    "pm_market_outcomes": "[\"Spivac\", \"Gaziev\"]",
+    "pm_market_outcomePrices": "[\"0.495\", \"0.505\"]",
+    "pm_market_volumeNum": 94326.331935,
+    "pm_market_volume1wk": 78521.09664199997,
+    "pm_market_volume1mo": 78521.09664199997,
+    "pm_market_volume1yr": 78521.09664199997,
+    "pm_market_volumeClob": 94326.331935,
+    "pm_groupItemTitle": "Spivac vs. Gaziev",
+    "pm_groupItemThreshold": "0",
+    "pm_spread": 0.01,
+    "pm_oneDayPriceChange": 0.06,
+    "pm_oneHourPriceChange": null,
+    "pm_oneWeekPriceChange": null,
+    "pm_lastTradePrice": 0.5,
+    "pm_bestBid": 0.49,
+    "pm_bestAsk": 0.5,
+    "pm_question": "UFC Fight Night: Spivac vs. Gaziev (Heavyweight, Main Card)",
+    "pm_conditionId": "0x0457a58956b9cf982a2b22cdde853fd83b9a3f91585f31b4f16a9825433e18d4",
+    "pm_clobTokenIds": "[\"16649840396852566330951613351010603579013293619967200938916700947852098919988\", \"78808965178515047867771133140330337031008861542781938376922748964242908851542\"]",
+    "pm_market_active": true,
+    "pm_market_closed": false,
+    "pm_market_endDate": "2025-11-23T04:59:59.999Z",
+    "pm_market_endDateIso": "2025-11-23",
+    "pm_liquidityClob": 80554.7575,
+    "pm_acceptingOrders": true,
+    "odds_api_event_id": "2358b25c12cf46aa344eca7fec2c1447",
+    "odds_api_sport_key": "mma_mixed_martial_arts",
+    "match_confidence": 0.7791666666666667,
+    "sportsbook_count": 4,
+    "sportsbook_outcomes": [
+      {
+        "name": "Sergey Spivak",
+        "avg_price_decimal": 2.1975,
+        "avg_implied_probability": 0.4552756581137789,
+        "min_price_decimal": 2.12,
+        "max_price_decimal": 2.24,
+        "bookmaker_count": 4
+      },
+      {
+        "name": "Shamil Gaziev",
+        "avg_price_decimal": 1.6867277951519912,
+        "avg_implied_probability": 0.5932925035244265,
+        "min_price_decimal": 1.6329113924050633,
+        "max_price_decimal": 1.7518796992481203,
+        "bookmaker_count": 4
+      }
+    ],
+    "max_delta": {
+      "sportsbook_name": "fanduel",
+      "sportsbook_title": "FanDuel",
+      "delta_difference": 0.10740310077519377,
+      "outcome_name": "Gaziev",
+      "pm_price": 0.505,
+      "sb_implied_prob": 0.6124031007751938,
+      "sb_outcome_name": "Shamil Gaziev",
+      "match_confidence": 0
     }
   },
   {
@@ -816,7 +1168,7 @@
       "pm_price": 0.705,
       "sb_implied_prob": 0.8058252427184466,
       "sb_outcome_name": "New England Patriots",
-      "match_confidence": 0.4
+      "match_confidence": 0
     }
   },
   {
@@ -898,7 +1250,7 @@
       "pm_price": 0.435,
       "sb_implied_prob": 0.5098039215686274,
       "sb_outcome_name": "Atlanta Falcons",
-      "match_confidence": 0.4666666666666667
+      "match_confidence": 0
     }
   },
   {
@@ -980,7 +1332,7 @@
       "pm_price": 0.445,
       "sb_implied_prob": 0.5121951219512195,
       "sb_outcome_name": "Bekzat Almakhan",
-      "match_confidence": 0.5333333333333333
+      "match_confidence": 0
     }
   },
   {
@@ -1062,7 +1414,7 @@
       "pm_price": 0.335,
       "sb_implied_prob": 0.4,
       "sb_outcome_name": "NC State Wolfpack",
-      "match_confidence": 0.47058823529411764
+      "match_confidence": 0
     }
   },
   {
@@ -1144,7 +1496,7 @@
       "pm_price": 0.9235,
       "sb_implied_prob": 0.9859154929577465,
       "sb_outcome_name": "Auburn Tigers",
-      "match_confidence": 0.46153846153846156
+      "match_confidence": 0
     }
   },
   {
@@ -1226,7 +1578,7 @@
       "pm_price": 0.875,
       "sb_implied_prob": 0.9369085173501577,
       "sb_outcome_name": "North Texas Mean Green",
-      "match_confidence": 0.5
+      "match_confidence": 0
     }
   },
   {
@@ -1308,7 +1660,7 @@
       "pm_price": 0.665,
       "sb_implied_prob": 0.726027397260274,
       "sb_outcome_name": "Myktybek Orolbai",
-      "match_confidence": 0.4375
+      "match_confidence": 0
     }
   },
   {
@@ -1390,7 +1742,7 @@
       "pm_price": 0.565,
       "sb_implied_prob": 0.6226415094339622,
       "sb_outcome_name": "Chicago Bears",
-      "match_confidence": 0.38461538461538464
+      "match_confidence": 0
     }
   },
   {
@@ -1472,7 +1824,7 @@
       "pm_price": 0.7,
       "sb_implied_prob": 0.7560975609756098,
       "sb_outcome_name": "Oklahoma Sooners",
-      "match_confidence": 0.5
+      "match_confidence": 0
     }
   },
   {
@@ -1554,7 +1906,7 @@
       "pm_price": 0.59,
       "sb_implied_prob": 0.6453900709219859,
       "sb_outcome_name": "Jacksonville Jaguars",
-      "match_confidence": 0.35
+      "match_confidence": 0
     }
   },
   {
@@ -1636,7 +1988,7 @@
       "pm_price": 0.725,
       "sb_implied_prob": 0.7802197802197802,
       "sb_outcome_name": "Penn State Nittany Lions",
-      "match_confidence": 0.4166666666666667
+      "match_confidence": 0
     }
   },
   {
@@ -1718,7 +2070,7 @@
       "pm_price": 0.715,
       "sb_implied_prob": 0.7701149425287356,
       "sb_outcome_name": "Green Bay Packers",
-      "match_confidence": 0.4117647058823529
+      "match_confidence": 0
     }
   },
   {
@@ -1800,7 +2152,7 @@
       "pm_price": 0.245,
       "sb_implied_prob": 0.2994011976047904,
       "sb_outcome_name": "Tampa Bay Buccaneers",
-      "match_confidence": 0.5
+      "match_confidence": 0
     }
   },
   {
@@ -1882,7 +2234,7 @@
       "pm_price": 0.615,
       "sb_implied_prob": 0.6688741721854304,
       "sb_outcome_name": "Iowa State Cyclones",
-      "match_confidence": 0.5263157894736842
+      "match_confidence": 0
     }
   },
   {
@@ -1964,7 +2316,7 @@
       "pm_price": 0.765,
       "sb_implied_prob": 0.8181818181818182,
       "sb_outcome_name": "Army Black Knights",
-      "match_confidence": 0.2222222222222222
+      "match_confidence": 0
     }
   },
   {
@@ -2046,7 +2398,7 @@
       "pm_price": 0.7,
       "sb_implied_prob": 0.7530864197530864,
       "sb_outcome_name": "Nurullo Aliev",
-      "match_confidence": 0.38461538461538464
+      "match_confidence": 0
     }
   },
   {
@@ -2128,7 +2480,7 @@
       "pm_price": 0.895,
       "sb_implied_prob": 0.9473684210526315,
       "sb_outcome_name": "Abdulrakhman Yakhyaev",
-      "match_confidence": 0.38095238095238093
+      "match_confidence": 0
     }
   },
   {
@@ -2210,7 +2562,7 @@
       "pm_price": 0.825,
       "sb_implied_prob": 0.8773006134969326,
       "sb_outcome_name": "Detroit Lions",
-      "match_confidence": 0.38461538461538464
+      "match_confidence": 0
     }
   },
   {
@@ -2292,7 +2644,7 @@
       "pm_price": 0.695,
       "sb_implied_prob": 0.7468354430379747,
       "sb_outcome_name": "UConn Huskies",
-      "match_confidence": 0.38461538461538464
+      "match_confidence": 0
     }
   },
   {
@@ -2374,7 +2726,7 @@
       "pm_price": 0.925,
       "sb_implied_prob": 0.975609756097561,
       "sb_outcome_name": "USC Trojans",
-      "match_confidence": 1.0
+      "match_confidence": 0
     }
   },
   {
@@ -2456,7 +2808,7 @@
       "pm_price": 0.375,
       "sb_implied_prob": 0.425531914893617,
       "sb_outcome_name": "Minnesota Golden Gophers",
-      "match_confidence": 0.375
+      "match_confidence": 0
     }
   },
   {
@@ -2538,7 +2890,7 @@
       "pm_price": 0.93,
       "sb_implied_prob": 0.9803921568627451,
       "sb_outcome_name": "South Carolina Gamecocks",
-      "match_confidence": 0.5833333333333334
+      "match_confidence": 0
     }
   },
   {
@@ -2620,7 +2972,7 @@
       "pm_price": 0.605,
       "sb_implied_prob": 0.6551724137931034,
       "sb_outcome_name": "Philadelphia Eagles",
-      "match_confidence": 0.3157894736842105
+      "match_confidence": 0
     }
   },
   {
@@ -2702,7 +3054,7 @@
       "pm_price": 0.875,
       "sb_implied_prob": 0.9233716475095786,
       "sb_outcome_name": "Seattle Seahawks",
-      "match_confidence": 0.5
+      "match_confidence": 0
     }
   },
   {
@@ -2784,7 +3136,7 @@
       "pm_price": 0.285,
       "sb_implied_prob": 0.3333333333333333,
       "sb_outcome_name": "Nevada Wolf Pack",
-      "match_confidence": 1.0
+      "match_confidence": 0
     }
   },
   {
@@ -2866,7 +3218,7 @@
       "pm_price": 0.435,
       "sb_implied_prob": 0.4830917874396135,
       "sb_outcome_name": "Ryan Loder",
-      "match_confidence": 0.5
+      "match_confidence": 0
     }
   },
   {
@@ -2948,7 +3300,7 @@
       "pm_price": 0.665,
       "sb_implied_prob": 0.7126436781609196,
       "sb_outcome_name": "Kennesaw State Owls",
-      "match_confidence": 0.7368421052631579
+      "match_confidence": 0
     }
   },
   {
@@ -3030,7 +3382,7 @@
       "pm_price": 0.345,
       "sb_implied_prob": 0.39215686274509803,
       "sb_outcome_name": "Appalachian State Mountaineers",
-      "match_confidence": 0.5666666666666667
+      "match_confidence": 0
     }
   },
   {
@@ -3112,7 +3464,7 @@
       "pm_price": 0.31,
       "sb_implied_prob": 0.35714285714285715,
       "sb_outcome_name": "Baylor Bears",
-      "match_confidence": 0.5
+      "match_confidence": 0
     }
   },
   {
@@ -3194,7 +3546,7 @@
       "pm_price": 0.065,
       "sb_implied_prob": 0.1111111111111111,
       "sb_outcome_name": "Western Kentucky Hilltoppers",
-      "match_confidence": 0.5714285714285714
+      "match_confidence": 0
     }
   },
   {
@@ -3276,7 +3628,7 @@
       "pm_price": 0.435,
       "sb_implied_prob": 0.4807692307692308,
       "sb_outcome_name": "Cincinnati Bearcats",
-      "match_confidence": 0.5263157894736842
+      "match_confidence": 0
     }
   },
   {
@@ -3358,7 +3710,7 @@
       "pm_price": 0.83,
       "sb_implied_prob": 0.8753117206982544,
       "sb_outcome_name": "UCF Knights",
-      "match_confidence": 0.2727272727272727
+      "match_confidence": 0
     }
   },
   {
@@ -3440,7 +3792,7 @@
       "pm_price": 0.855,
       "sb_implied_prob": 0.9,
       "sb_outcome_name": "Boise State Broncos",
-      "match_confidence": 0.5789473684210527
+      "match_confidence": 0
     }
   },
   {
@@ -3522,7 +3874,7 @@
       "pm_price": 0.705,
       "sb_implied_prob": 0.75,
       "sb_outcome_name": "Arizona State Sun Devils",
-      "match_confidence": 0.5416666666666666
+      "match_confidence": 0
     }
   },
   {
@@ -3604,7 +3956,7 @@
       "pm_price": 0.53,
       "sb_implied_prob": 0.574468085106383,
       "sb_outcome_name": "East Carolina Pirates",
-      "match_confidence": 0.6190476190476191
+      "match_confidence": 0
     }
   },
   {
@@ -3686,7 +4038,7 @@
       "pm_price": 0.25,
       "sb_implied_prob": 0.29411764705882354,
       "sb_outcome_name": "Nicolas Dalby",
-      "match_confidence": 0.38461538461538464
+      "match_confidence": 0
     }
   },
   {
@@ -3768,335 +4120,7 @@
       "pm_price": 0.25,
       "sb_implied_prob": 0.29411764705882354,
       "sb_outcome_name": "Wisconsin Badgers",
-      "match_confidence": 1.0
-    }
-  },
-  {
-    "pm_event_id": "83876",
-    "pm_event_endDate": "2025-11-22T21:00:00Z",
-    "pm_event_active": true,
-    "pm_event_liquidity": 135870.715,
-    "pm_event_volume": 2946.593106,
-    "pm_event_volume1wk": 2946.593106,
-    "pm_event_volume1mo": 2946.593106,
-    "pm_event_volume1yr": 2946.593106,
-    "pm_homeTeamName": "Utes",
-    "pm_awayTeamName": "Wildcats",
-    "pm_gameId": 50015952,
-    "pm_live": false,
-    "pm_ended": false,
-    "pm_score": "",
-    "pm_startTime": "2025-11-22T21:00:00Z",
-    "pm_eventDate": "2025-11-22",
-    "pm_period": "",
-    "pm_elapsed": "",
-    "pm_competitive": 0.9999000099990001,
-    "pm_series_id": "10210",
-    "pm_series_ticker": "cfb-2025",
-    "pm_market_id": "687896",
-    "pm_market_liquidityNum": 81958.1764,
-    "pm_market_outcomes": "[\"Kansas State\", \"Utah\"]",
-    "pm_market_outcomePrices": "[\"0.125\", \"0.875\"]",
-    "pm_market_volumeNum": 2930.593106,
-    "pm_market_volume1wk": 2930.593106,
-    "pm_market_volume1mo": 2930.593106,
-    "pm_market_volume1yr": 2930.593106,
-    "pm_market_volumeClob": 2930.593106,
-    "pm_groupItemTitle": "",
-    "pm_groupItemThreshold": "0",
-    "pm_spread": 0.01,
-    "pm_oneDayPriceChange": -0.01,
-    "pm_oneHourPriceChange": null,
-    "pm_oneWeekPriceChange": null,
-    "pm_lastTradePrice": 0.12,
-    "pm_bestBid": 0.12,
-    "pm_bestAsk": 0.13,
-    "pm_question": "Kansas State vs. Utah",
-    "pm_conditionId": "0xe0dd148d0f47b7913518047862af442d9ed0b32ff1fce95340d8e317981c3121",
-    "pm_clobTokenIds": "[\"61587183398534605965493692451140845407002441129200596440729581285815597783409\", \"25713595550102337565778517799830990273387377854397830323814157815818287394033\"]",
-    "pm_market_active": true,
-    "pm_market_closed": false,
-    "pm_market_endDate": "2025-11-22T21:00:00Z",
-    "pm_market_endDateIso": "2025-11-22",
-    "pm_liquidityClob": 81958.1764,
-    "pm_acceptingOrders": true,
-    "odds_api_event_id": "1218850e6d356283ca4fdbb33a2b4d33",
-    "odds_api_sport_key": "americanfootball_ncaaf",
-    "match_confidence": 1.0,
-    "sportsbook_count": 8,
-    "sportsbook_outcomes": [
-      {
-        "name": "Kansas State Wildcats",
-        "avg_price_decimal": 6.9875,
-        "avg_implied_probability": 0.143953272722054,
-        "min_price_decimal": 6.25,
-        "max_price_decimal": 7.87,
-        "bookmaker_count": 8
-      },
-      {
-        "name": "Utah Utes",
-        "avg_price_decimal": 1.110688389058584,
-        "avg_implied_probability": 0.900446964895226,
-        "min_price_decimal": 1.088261253309797,
-        "max_price_decimal": 1.125,
-        "bookmaker_count": 8
-      }
-    ],
-    "max_delta": {
-      "sportsbook_name": "mybookieag",
-      "sportsbook_title": "MyBookie.ag",
-      "delta_difference": 0.04389699918896994,
-      "outcome_name": "Utah",
-      "pm_price": 0.875,
-      "sb_implied_prob": 0.9188969991889699,
-      "sb_outcome_name": "Utah Utes",
-      "match_confidence": 0.4444444444444444
-    }
-  },
-  {
-    "pm_event_id": "83862",
-    "pm_event_endDate": "2025-11-22T17:00:00Z",
-    "pm_event_active": true,
-    "pm_event_liquidity": 125288.5534,
-    "pm_event_volume": 3704.138923,
-    "pm_event_volume1wk": 3704.1389230000004,
-    "pm_event_volume1mo": 3704.1389230000004,
-    "pm_event_volume1yr": 3704.1389230000004,
-    "pm_homeTeamName": "Hokies",
-    "pm_awayTeamName": "Hurricanes",
-    "pm_gameId": 50015867,
-    "pm_live": false,
-    "pm_ended": false,
-    "pm_score": "",
-    "pm_startTime": "2025-11-22T17:00:00Z",
-    "pm_eventDate": "2025-11-22",
-    "pm_period": "",
-    "pm_elapsed": "",
-    "pm_competitive": 0.9996001599360256,
-    "pm_series_id": "10210",
-    "pm_series_ticker": "cfb-2025",
-    "pm_market_id": "687856",
-    "pm_market_liquidityNum": 87768.8056,
-    "pm_market_outcomes": "[\"Miami\", \"Virginia Tech\"]",
-    "pm_market_outcomePrices": "[\"0.88\", \"0.12\"]",
-    "pm_market_volumeNum": 3685.271,
-    "pm_market_volume1wk": 3685.271,
-    "pm_market_volume1mo": 3685.271,
-    "pm_market_volume1yr": 3685.271,
-    "pm_market_volumeClob": 3685.271,
-    "pm_groupItemTitle": "",
-    "pm_groupItemThreshold": "0",
-    "pm_spread": 0.02,
-    "pm_oneDayPriceChange": -0.005,
-    "pm_oneHourPriceChange": -0.005,
-    "pm_oneWeekPriceChange": null,
-    "pm_lastTradePrice": 0.89,
-    "pm_bestBid": 0.87,
-    "pm_bestAsk": 0.89,
-    "pm_question": "Miami vs. Virginia Tech",
-    "pm_conditionId": "0xfe90d90473aaea81dbc1073cd7067e830f1115e8c445917d59a87756e66e8e79",
-    "pm_clobTokenIds": "[\"24302536307079239071600534535186057307653296014460407563917992524331164432699\", \"24269714121750592169713837769508965156455262631935521512929745020228341858212\"]",
-    "pm_market_active": true,
-    "pm_market_closed": false,
-    "pm_market_endDate": "2025-11-22T17:00:00Z",
-    "pm_market_endDateIso": "2025-11-22",
-    "pm_liquidityClob": 87768.8056,
-    "pm_acceptingOrders": true,
-    "odds_api_event_id": "1017c0ad63c09ffae97740888d8b1f78",
-    "odds_api_sport_key": "americanfootball_ncaaf",
-    "match_confidence": 1.0,
-    "sportsbook_count": 9,
-    "sportsbook_outcomes": [
-      {
-        "name": "Miami Hurricanes",
-        "avg_price_decimal": 1.0978300432662023,
-        "avg_implied_probability": 0.9109277780542148,
-        "min_price_decimal": 1.0829875518672198,
-        "max_price_decimal": 1.1052631578947367,
-        "bookmaker_count": 9
-      },
-      {
-        "name": "Virginia Tech Hokies",
-        "avg_price_decimal": 7.4688888888888885,
-        "avg_implied_probability": 0.13423042610557998,
-        "min_price_decimal": 7.0,
-        "max_price_decimal": 8.3,
-        "bookmaker_count": 9
-      }
-    ],
-    "max_delta": {
-      "sportsbook_name": "mybookieag",
-      "sportsbook_title": "MyBookie.ag",
-      "delta_difference": 0.04337164750957856,
-      "outcome_name": "Miami",
-      "pm_price": 0.88,
-      "sb_implied_prob": 0.9233716475095786,
-      "sb_outcome_name": "Miami Hurricanes",
-      "match_confidence": 0.3125
-    }
-  },
-  {
-    "pm_event_id": "83892",
-    "pm_event_endDate": "2025-11-22T18:00:00Z",
-    "pm_event_active": true,
-    "pm_event_liquidity": 115053.3063,
-    "pm_event_volume": 2677.510733,
-    "pm_event_volume1wk": 2677.510733,
-    "pm_event_volume1mo": 2677.510733,
-    "pm_event_volume1yr": 2677.510733,
-    "pm_homeTeamName": "Eagles",
-    "pm_awayTeamName": "Monarchs",
-    "pm_gameId": 50016236,
-    "pm_live": false,
-    "pm_ended": false,
-    "pm_score": "",
-    "pm_startTime": "2025-11-22T18:00:00Z",
-    "pm_eventDate": "2025-11-22",
-    "pm_period": "",
-    "pm_elapsed": "",
-    "pm_competitive": 0.9999000099990001,
-    "pm_series_id": "10210",
-    "pm_series_ticker": "cfb-2025",
-    "pm_market_id": "687944",
-    "pm_market_liquidityNum": 71610.7734,
-    "pm_market_outcomes": "[\"Old Dominion\", \"Georgia Southern\"]",
-    "pm_market_outcomePrices": "[\"0.79\", \"0.21\"]",
-    "pm_market_volumeNum": 2677.510733,
-    "pm_market_volume1wk": 2677.510733,
-    "pm_market_volume1mo": 2677.510733,
-    "pm_market_volume1yr": 2677.510733,
-    "pm_market_volumeClob": 2677.510733,
-    "pm_groupItemTitle": "",
-    "pm_groupItemThreshold": "0",
-    "pm_spread": 0.02,
-    "pm_oneDayPriceChange": -0.01,
-    "pm_oneHourPriceChange": null,
-    "pm_oneWeekPriceChange": null,
-    "pm_lastTradePrice": 0.8,
-    "pm_bestBid": 0.78,
-    "pm_bestAsk": 0.8,
-    "pm_question": "Old Dominion vs. Georgia Southern",
-    "pm_conditionId": "0x37ade3239f3bb32664eaf692288f979b137bb6cfb9fbbb363f271031e4dad019",
-    "pm_clobTokenIds": "[\"3598775723011276662619474234736553005291274165963712093283970773515331331415\", \"23225041490900738391224171656602422853074348080364389049463009952381135209732\"]",
-    "pm_market_active": true,
-    "pm_market_closed": false,
-    "pm_market_endDate": "2025-11-22T18:00:00Z",
-    "pm_market_endDateIso": "2025-11-22",
-    "pm_liquidityClob": 71610.7734,
-    "pm_acceptingOrders": true,
-    "odds_api_event_id": "31667911777e27d23d74adaf5109d04e",
-    "odds_api_sport_key": "americanfootball_ncaaf",
-    "match_confidence": 1.0,
-    "sportsbook_count": 9,
-    "sportsbook_outcomes": [
-      {
-        "name": "Georgia Southern Eagles",
-        "avg_price_decimal": 4.5344444444444445,
-        "avg_implied_probability": 0.2208218663644501,
-        "min_price_decimal": 4.2,
-        "max_price_decimal": 4.75,
-        "bookmaker_count": 9
-      },
-      {
-        "name": "Old Dominion Monarchs",
-        "avg_price_decimal": 1.2155496539907797,
-        "avg_implied_probability": 0.8227074458062178,
-        "min_price_decimal": 1.2,
-        "max_price_decimal": 1.2298850574712643,
-        "bookmaker_count": 9
-      }
-    ],
-    "max_delta": {
-      "sportsbook_name": "betmgm",
-      "sportsbook_title": "BetMGM",
-      "delta_difference": 0.043333333333333335,
-      "outcome_name": "Old Dominion",
-      "pm_price": 0.79,
-      "sb_implied_prob": 0.8333333333333334,
-      "sb_outcome_name": "Old Dominion Monarchs",
-      "match_confidence": 0.5714285714285714
-    }
-  },
-  {
-    "pm_event_id": "83894",
-    "pm_event_endDate": "2025-11-22T20:30:00Z",
-    "pm_event_active": true,
-    "pm_event_liquidity": 94848.052,
-    "pm_event_volume": 3851.18177,
-    "pm_event_volume1wk": 3851.1817699999997,
-    "pm_event_volume1mo": 3851.1817699999997,
-    "pm_event_volume1yr": 3851.1817699999997,
-    "pm_homeTeamName": "Jaguars",
-    "pm_awayTeamName": "Golden Eagles",
-    "pm_gameId": 50016238,
-    "pm_live": false,
-    "pm_ended": false,
-    "pm_score": "",
-    "pm_startTime": "2025-11-22T20:30:00Z",
-    "pm_eventDate": "2025-11-22",
-    "pm_period": "",
-    "pm_elapsed": "",
-    "pm_competitive": 1,
-    "pm_series_id": "10210",
-    "pm_series_ticker": "cfb-2025",
-    "pm_market_id": "687950",
-    "pm_market_liquidityNum": 51734.0611,
-    "pm_market_outcomes": "[\"Southern Miss\", \"South Alabama\"]",
-    "pm_market_outcomePrices": "[\"0.52\", \"0.48\"]",
-    "pm_market_volumeNum": 3851.18177,
-    "pm_market_volume1wk": 3851.1817699999997,
-    "pm_market_volume1mo": 3851.1817699999997,
-    "pm_market_volume1yr": 3851.1817699999997,
-    "pm_market_volumeClob": 3851.18177,
-    "pm_groupItemTitle": "",
-    "pm_groupItemThreshold": "0",
-    "pm_spread": 0.02,
-    "pm_oneDayPriceChange": null,
-    "pm_oneHourPriceChange": null,
-    "pm_oneWeekPriceChange": null,
-    "pm_lastTradePrice": 0.54,
-    "pm_bestBid": 0.51,
-    "pm_bestAsk": 0.53,
-    "pm_question": "Southern Miss vs. South Alabama",
-    "pm_conditionId": "0xc0c731f09cb92730e89f9d2831357fe9f15125b10999efa8218fcf5797a5aac2",
-    "pm_clobTokenIds": "[\"45356297139488004090299508407724494249115663078235412045829840736678687088223\", \"50355798002645985048234937477948214229168352924656034111739537937176161896511\"]",
-    "pm_market_active": true,
-    "pm_market_closed": false,
-    "pm_market_endDate": "2025-11-22T20:30:00Z",
-    "pm_market_endDateIso": "2025-11-22",
-    "pm_liquidityClob": 51734.0611,
-    "pm_acceptingOrders": true,
-    "odds_api_event_id": "9ecbb88fcab392aaa87a855d9b592269",
-    "odds_api_sport_key": "americanfootball_ncaaf",
-    "match_confidence": 0.8012295081967212,
-    "sportsbook_count": 9,
-    "sportsbook_outcomes": [
-      {
-        "name": "South Alabama Jaguars",
-        "avg_price_decimal": 2.012530345471522,
-        "avg_implied_probability": 0.496992243457685,
-        "min_price_decimal": 1.9523809523809523,
-        "max_price_decimal": 2.05,
-        "bookmaker_count": 9
-      },
-      {
-        "name": "Southern Mississippi Golden Eagles",
-        "avg_price_decimal": 1.8219897444300146,
-        "avg_implied_probability": 0.5489622298373947,
-        "min_price_decimal": 1.7751937984496124,
-        "max_price_decimal": 1.8695652173913042,
-        "bookmaker_count": 9
-      }
-    ],
-    "max_delta": {
-      "sportsbook_name": "betrivers",
-      "sportsbook_title": "BetRivers",
-      "delta_difference": 0.04331877729257638,
-      "outcome_name": "Southern Miss",
-      "pm_price": 0.52,
-      "sb_implied_prob": 0.5633187772925764,
-      "sb_outcome_name": "Southern Mississippi Golden Eagles",
-      "match_confidence": 0.38235294117647056
+      "match_confidence": 0
     }
   }
 ]

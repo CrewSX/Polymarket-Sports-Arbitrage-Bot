@@ -324,9 +324,19 @@ def find_max_delta_by_sportsbook(
             if len(pm_outcomes) != len(pm_prices):
                 continue
             
-            # Step 4: Match Polymarket outcomes to sportsbook outcomes using existing matching function
-            # This ensures we're matching the correct outcomes within the same event
-            matched_outcomes = match_outcomes_by_name(pm_outcomes, raw_odds_event.get('bookmakers', []).get('markets', []).get('outcomes', []).get('name', ''))
+            # Step 4: Collect all outcomes from all bookmakers and markets
+            # This ensures we can match Polymarket outcomes to sportsbook outcomes
+            all_sb_outcomes = []
+            for bookmaker in raw_odds_event.get('bookmakers', []):
+                for market in bookmaker.get('markets', []):
+                    for outcome in market.get('outcomes', []):
+                        # Add outcome if not already present (deduplicate by name)
+                        outcome_name = outcome.get('name', '')
+                        if outcome_name and not any(o.get('name') == outcome_name for o in all_sb_outcomes):
+                            all_sb_outcomes.append(outcome)
+            
+            # Match Polymarket outcomes to sportsbook outcomes using existing matching function
+            matched_outcomes = match_outcomes_by_name(pm_outcomes, all_sb_outcomes)
             
             if not matched_outcomes:
                 continue
