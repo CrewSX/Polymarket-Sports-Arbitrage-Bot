@@ -104,13 +104,55 @@ def match_outcomes_by_name(
         
     return matched
 
+def match_outcomes_by_name_delta(
+    pm_outcomes: List[str],
+    sb_outcomes: List[Dict[str, Any]]
+) -> Dict[str, Dict[str, Any]]:
+    """
+    Match Polymarket outcomes to OPPOSITE sportsbook outcomes by name for delta calculation.
+    
+    For delta calculation, we want to compare PM outcome A with SB outcome B (the opposite).
+    So for each PM outcome, we find the SB outcome that matches one of the OTHER PM outcomes.
+    
+    Args:
+        pm_outcomes: List of Polymarket outcome names (e.g., ["LIU Sharks", "Illinois Fighting Illini"])
+        sb_outcomes: List of sportsbook outcome dictionaries with 'name' field
+        
+    Returns:
+        Dictionary mapping PM outcome names to matched OPPOSITE SB outcome data
+    """
+    matched = {}
+    
+    for pm_outcome in pm_outcomes:
+        pm_outcome_lower = pm_outcome.lower()
+        
+        # Find the other PM outcomes (the opposites)
+        other_pm_outcomes = [o for o in pm_outcomes if o != pm_outcome]
+        
+        # Find the SB outcome that matches one of the other PM outcomes
+        for sb_outcome in sb_outcomes:
+            sb_name = sb_outcome.get('name', '')
+            sb_name_lower = sb_name.lower()
+            
+            # Check if this SB outcome matches any of the OTHER PM outcomes (the opposite)
+            for other_pm_outcome in other_pm_outcomes:
+                other_pm_outcome_lower = other_pm_outcome.lower()
+                if other_pm_outcome_lower in sb_name_lower or sb_name_lower in other_pm_outcome_lower:
+                    matched[pm_outcome] = {
+                        'sb_outcome': sb_outcome
+                    }
+                    break  # Found the opposite match for this PM outcome
+            
+            if pm_outcome in matched:
+                break  # Move to next PM outcome
+        
+    return matched
+
 
 def detect_arbitrage_opportunities(
     comparison_data: List[Dict[str, Any]],
     min_profit_threshold: float = 0.02,
     min_liquidity: float = 1000,
-    pm_fee: float = 0.0,
-    sb_fee: float = 0.0
 ) -> List[Dict[str, Any]]:
     """
     Main function to detect arbitrage opportunities from comparison data.
@@ -122,8 +164,6 @@ def detect_arbitrage_opportunities(
     Args:
         comparison_data: List of comparison dictionaries from arbitrage_comparison_test.json
         min_profit_threshold: Minimum profit margin to consider (default 0.02 = 2%)
-        pm_fee: Polymarket transaction fee (default 0.0, reserved for future use)
-        sb_fee: Sportsbook fee (default 0.0, reserved for future use)
         
     Returns:
         List of opportunity dictionaries with full details
@@ -179,7 +219,7 @@ def detect_arbitrage_opportunities(
                     'sb_outcome': sb_outcome.get('name', ''),
                     'pm_price': pm_price,
                     'sb_implied_prob': sb_implied_prob,
-                    'match_confidence': match_data['match_confidence']
+                    'match_confidence': entry.get('match_confidence', 0)
                 })
             
             if not matched_outcomes_list:
@@ -243,7 +283,8 @@ def detect_arbitrage_opportunities(
 def find_max_delta_by_sportsbook(
     comparison_data: List[Dict[str, Any]],
     odds_dir: str = 'data/sportsbook_data/odds/',
-    top_n: int = 50
+    top_n: int = 50,
+    min_volume: int = 1000
 ) -> List[Dict[str, Any]]:
     """
     Find the sportsbook with the largest delta_difference for each event.
@@ -336,7 +377,7 @@ def find_max_delta_by_sportsbook(
                             all_sb_outcomes.append(outcome)
             
             # Match Polymarket outcomes to sportsbook outcomes using existing matching function
-            matched_outcomes = match_outcomes_by_name(pm_outcomes, all_sb_outcomes)
+            matched_outcomes = match_outcomes_by_name_delta(pm_outcomes, all_sb_outcomes)
             
             if not matched_outcomes:
                 continue
@@ -365,59 +406,63 @@ def find_max_delta_by_sportsbook(
                 # We use the matched sportsbook outcome name to find the same outcome in each bookmaker
                 matched_sb_outcome_lower = matched_sb_outcome_name.lower()
                 
+                # Sportsbooks to exclude
+                excluded_sportsbooks = {'betrivers', 'mybookie.ag', 'bovada', 'betonline.ag', 'betus', 'lowvig.ag'}
+                
                 for bookmaker in raw_odds_event.get('bookmakers', []):
-                    bookmaker_key = bookmaker.get('key', '')
-                    bookmaker_title = bookmaker.get('title', '')
+                    bookmaker_key_original = bookmaker.get('key', '')
+                    bookmaker_title_original = bookmaker.get('title', '')
+                    bookmaker_key = bookmaker_key_original.lower()
+                    bookmaker_title = bookmaker_title_original.lower()
                     
-                    # Look through markets for the matched outcome
+                    # Skip excluded sportsbooks
+                    if bookmaker_key in excluded_sportsbooks or bookmaker_title in excluded_sportsbooks:
+                        continue
+                    
+                    # Look through markets for the matched OPPOSITE outcome
                     for market in bookmaker.get('markets', []):
                         for outcome in market.get('outcomes', []):
-                            sb_outcome_name = outcome.get('name', '')
-                            sb_outcome_lower = sb_outcome_name.lower()
+                            # Check if this outcome matches the matched sportsbook outcome name (the opposite)
+                            outcome_name = outcome.get('name', '')
+                            outcome_name_lower = outcome_name.lower()
                             
-                            # Match outcomes: prefer exact match to ensure we're comparing the same team/outcome
-                            # This prevents matching across different teams (e.g., "Texas" vs "Texas State")
-                            # Allow substring matching as fallback, but only for longer names to avoid false matches
-                            is_exact_match = (sb_outcome_lower == matched_sb_outcome_lower)
-                            is_substring_match = (
-                                (matched_sb_outcome_lower in sb_outcome_lower or 
-                                 sb_outcome_lower in matched_sb_outcome_lower) and
-                                len(matched_sb_outcome_lower) > 5  # Avoid matching short names incorrectly
-                            )
+                            # Only process if this outcome matches the matched SB outcome (the opposite)
+                            if not (matched_sb_outcome_lower in outcome_name_lower or outcome_name_lower in matched_sb_outcome_lower):
+                                continue
                             
-                            # Only consider outcomes that match the matched outcome name
-                            # This ensures we're comparing the same team/outcome across sportsbooks
-                            if is_exact_match or is_substring_match:
-                                # Get American odds price
-                                american_price = outcome.get('price')
-                                if american_price is None:
-                                    continue
-                                
-                                # Convert to implied probability
-                                try:
-                                    sb_implied_prob = american_to_implied_prob(int(american_price))
-                                except (ValueError, TypeError):
-                                    continue
-                                
-                                # Calculate delta_difference
-                                delta_difference = abs(sb_implied_prob - pm_price)
-                                
-                                # Track maximum delta_difference
-                                if delta_difference > max_delta_value:
-                                    max_delta_value = delta_difference
-                                    max_delta_info = {
-                                        'sportsbook_name': bookmaker_key,
-                                        'sportsbook_title': bookmaker_title,
-                                        'delta_difference': delta_difference,
-                                        'outcome_name': pm_outcome_name,
-                                        'pm_price': pm_price,
-                                        'sb_implied_prob': sb_implied_prob,
-                                        'sb_outcome_name': matched_sb_outcome_name,
-                                        'match_confidence': match_data.get('match_confidence', 0)
-                                    }
+                            # Get American odds price
+                            american_price = outcome.get('price')
+                            if american_price is None:
+                                continue
+                            
+                            # Convert to implied probability
+                            try:
+                                sb_implied_prob = american_to_implied_prob(int(american_price))
+                            except (ValueError, TypeError):
+                                continue
+                            
+                            # Calculate delta_difference: 1 - (PM_price + SB_opposite_implied_prob)
+                            # This finds cases where PM + SB opposite < 1, maximizing the gap
+                            delta_difference = 1 - (sb_implied_prob + pm_price)
+                            
+                            # Track maximum delta_difference
+                            if delta_difference > max_delta_value:
+                                max_delta_value = delta_difference
+                                max_delta_info = {
+                                    'sportsbook_name': bookmaker_key_original,
+                                    'sportsbook_title': bookmaker_title_original,
+                                    'delta_difference': delta_difference,
+                                    'outcome_name': pm_outcome_name,
+                                    'pm_price': pm_price,
+                                    'sb_implied_prob': sb_implied_prob,
+                                    'sb_outcome_name': matched_sb_outcome_name,
+                                    'match_confidence': match_data.get('match_confidence', 0),
+                                }
             
             # Step 4: If we found a max delta, add event with delta info
-            if max_delta_info and max_delta_value > float('-inf'):
+            if max_delta_info and max_delta_value > 0:
+                if entry['pm_event_volume'] < min_volume:
+                    continue
                 result_entry = entry.copy()
                 result_entry['max_delta'] = max_delta_info
                 events_with_deltas.append(result_entry)

@@ -68,9 +68,7 @@ def main():
     opportunities = detect_arbitrage_opportunities(
         comparison_data,
         min_profit_threshold=0.1,  # 1% minimum profit
-        min_liquidity=1000,
-        pm_fee=0.0,
-        sb_fee=0.0
+        min_liquidity=1000
     )
     
     print(f"\nFound {len(opportunities)} opportunities")
