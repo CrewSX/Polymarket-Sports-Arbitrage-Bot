@@ -1,345 +1,73 @@
 [
   {
-    "id": "43d98d9fa6bec38f40d3d97ea30d131b",
+    "id": "1a03aece1e416a61e912883217021f1d",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:00:00Z",
-    "home_team": "Alexander Poppeck",
-    "away_team": "David Hosek"
-  },
-  {
-    "id": "4de21989f5f811bb9ddfdec86bd63fc9",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:00:00Z",
-    "home_team": "Attila Korkmaz",
-    "away_team": "Mateusz Legierski"
-  },
-  {
-    "id": "bfee5f0d96c87b8e6e486989401791b3",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:00:00Z",
-    "home_team": "Niklas Stolze",
-    "away_team": "Christian Jungwirth"
-  },
-  {
-    "id": "f6319055ed4637db5bfa9d8951dcb396",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:00:00Z",
-    "home_team": "Denis Frimpong",
-    "away_team": "Gokhan Aksu"
-  },
-  {
-    "id": "f7589761bd0423b2501f6eaadb36c9f5",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:00:00Z",
-    "home_team": "Eemil Kurhela",
-    "away_team": "Eugen Black-Dell"
-  },
-  {
-    "id": "e7030b84dcf8361bf25a987b81bb4e58",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:00:00Z",
-    "home_team": "Geraldo Neto",
-    "away_team": "Ronald Paradeiser"
-  },
-  {
-    "id": "bc5727f798db660a193fe6f12bcc256a",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:10:00Z",
-    "home_team": "Marek Bujło",
-    "away_team": "Denzel Freeman"
-  },
-  {
-    "id": "cee16a60adbbafa3e414c5806aaf2585",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:45:00Z",
-    "home_team": "Nurullo Aliev",
-    "away_team": "Shaqueme Rock"
-  },
-  {
-    "id": "3ebe387bcb0ae9345ace4f0448474458",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T15:45:00Z",
-    "home_team": "Nurullo Aliev",
-    "away_team": "Shem Rock"
-  },
-  {
-    "id": "94e7c19be6cc05bf543196f5752e7fa6",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T16:15:00Z",
-    "home_team": "Ismail Naurdiev",
-    "away_team": "Ryan Loder"
-  },
-  {
-    "id": "6451ffc1909d20b823e1c8e0f563a3cf",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T16:45:00Z",
-    "home_team": "Bekzat Almakhan",
-    "away_team": "Aleksandre Topuria"
-  },
-  {
-    "id": "c2b4feb4fca9c7a2439ad7225c42756a",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T17:00:00Z",
-    "home_team": "Abdulrakhman Yakhyaev",
-    "away_team": "Raffael Cerqueira"
-  },
-  {
-    "id": "abff2f9452165d65b59fde6dec10ecd4",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T17:15:00Z",
-    "home_team": "Alex Perez",
-    "away_team": "Asu Almabaev"
-  },
-  {
-    "id": "8e74c14da351074f62cc98a675ba5e2c",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T17:30:00Z",
-    "home_team": "Nicolas Dalby",
-    "away_team": "Saygid Izagakhmaev"
-  },
-  {
-    "id": "4b5222b41d99e55290cf31daa08f8436",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T17:45:00Z",
-    "home_team": "Bogdan Grad",
-    "away_team": "Luke Riley"
-  },
-  {
-    "id": "3cf7d50fe8cff2a279b5cf1ab5bbf50b",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Chris Price",
-    "away_team": "Artūrs Leisāns"
-  },
-  {
-    "id": "1df25ea6eca9c6fa2e2eaa446489118e",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Fran Breen",
-    "away_team": "Ayoub Nacer"
-  },
-  {
-    "id": "bf30844b7999514289f268834a0cb850",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Chris Bungard",
-    "away_team": "Simone Patrizi"
-  },
-  {
-    "id": "d5da3194bf7132fe9f648616b7e3b2c9",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Chris Morris",
-    "away_team": "Theo Pino"
-  },
-  {
-    "id": "1afd70cb1e4c455b85e0123620f2b6dd",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Christian Soda",
-    "away_team": "Roman David"
-  },
-  {
-    "id": "8b0669865353140f5bcb48ffb95f4905",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Oliver Tero",
-    "away_team": "Davide Manente"
-  },
-  {
-    "id": "ddfc5ae5bd78b87b294eaa78d2e39bc2",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Enrico Di Gangi",
-    "away_team": "Jack McCloughlin"
-  },
-  {
-    "id": "215e7a2969fe3229cfab90eafda67c29",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Jack Humphries",
-    "away_team": "Joab Souza"
-  },
-  {
-    "id": "747007e428a02fe272ab97944244e843",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Ryan Hewitt",
-    "away_team": "Matthew Friel"
-  },
-  {
-    "id": "c95897da51d1be9ccfe8ad77c57be19a",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Tim Wilde",
-    "away_team": "Oscar Ownsworth"
-  },
-  {
-    "id": "98637f54004120fdcc35b5b3886c0978",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:00:00Z",
-    "home_team": "Shay Ingram",
-    "away_team": "Wellington Lopes"
-  },
-  {
-    "id": "bc9eeada97fdf95e1aa79337eafd61eb",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:15:00Z",
-    "home_team": "Tagir Ulanbekov",
-    "away_team": "Kyoji Horiguchi"
-  },
-  {
-    "id": "2a0ae25f0c14d5aa0f63da3e8a73e7f5",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T18:45:00Z",
-    "home_team": "Waldo Cortes-Acosta",
-    "away_team": "Shamil Gaziev"
-  },
-  {
-    "id": "09380fde52accac4413415d89f0970f0",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T19:00:00Z",
-    "home_team": "Omar Tugarev",
-    "away_team": "Omiel Brown"
-  },
-  {
-    "id": "74a225b6025f1b3f1ce4b66d84971431",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T19:15:00Z",
-    "home_team": "Jack Hermansson",
-    "away_team": "Myktybek Orolbai"
-  },
-  {
-    "id": "b8faa1a401d850087167078b1c255be0",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T19:45:00Z",
-    "home_team": "Volkan Oezdemir",
-    "away_team": "Alonzo Menifield"
-  },
-  {
-    "id": "6b55a0b31210cc3675a7832fff203ab2",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T20:30:00Z",
-    "home_team": "Belal Muhammad",
-    "away_team": "Ian Garry"
-  },
-  {
-    "id": "2296da556824e13d4b148f271c9c5e67",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-11-22T21:00:00Z",
-    "home_team": "Arman Tsarukyan",
-    "away_team": "Daniel Hooker"
-  },
-  {
-    "id": "8eb02998c2289babf617253cd7112007",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-06T15:00:00Z",
-    "home_team": "Brandon Moreno",
-    "away_team": "Tatsuro Taira"
-  },
-  {
-    "id": "58fb2992391fb665dc2fc0a4b135c868",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-06T23:00:00Z",
-    "home_team": "Brunno Ferreira",
-    "away_team": "Marvin Vettori"
-  },
-  {
-    "id": "02f72a608fb80c9798a9154360cfea45",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-06T23:00:00Z",
-    "home_team": "Jalin Turner",
-    "away_team": "Edson Barboza"
+    "commence_time": "2025-12-06T23:15:00Z",
+    "home_team": "Muhammadjon Naimov",
+    "away_team": "Mairon Santos"
   },
   {
     "id": "701a4d08ee3c6bbc1495269d6de3d9a4",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-06T23:00:00Z",
+    "commence_time": "2025-12-07T00:15:00Z",
     "home_team": "Iwo Baraniewski",
     "away_team": "Ibo Aslan"
   },
   {
-    "id": "1a03aece1e416a61e912883217021f1d",
+    "id": "02f72a608fb80c9798a9154360cfea45",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-06T23:00:00Z",
-    "home_team": "Mairon Santos",
-    "away_team": "Muhammadjon Naimov"
+    "commence_time": "2025-12-07T00:30:00Z",
+    "home_team": "Edson Barboza",
+    "away_team": "Jalin Turner"
   },
   {
-    "id": "edf006dc96de25fd5b5e681c45649110",
+    "id": "58fb2992391fb665dc2fc0a4b135c868",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-07T01:00:00Z",
-    "home_team": "Chris Duncan",
-    "away_team": "Terrance Mckinney"
+    "commence_time": "2025-12-07T00:45:00Z",
+    "home_team": "Marvin Vettori",
+    "away_team": "Brunno Ferreira"
   },
   {
     "id": "64a42dfefa82146133624188c2ccb961",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-07T01:00:00Z",
+    "commence_time": "2025-12-07T01:15:00Z",
     "home_team": "Nazim Sadykhov",
     "away_team": "Fares Ziam"
-  },
-  {
-    "id": "b5bd362aaa0019c4c9ec15b62b1498ea",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-07T01:00:00Z",
-    "home_team": "Grant Dawson",
-    "away_team": "Manuel Torres"
   },
   {
     "id": "ffb28c14f914917ab4b515d5dc9aef96",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-07T01:00:00Z",
+    "commence_time": "2025-12-07T01:45:00Z",
     "home_team": "Maycee Barber",
     "away_team": "Karine Silva"
+  },
+  {
+    "id": "edf006dc96de25fd5b5e681c45649110",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-07T02:15:00Z",
+    "home_team": "Terrance Mckinney",
+    "away_team": "Chris Duncan"
+  },
+  {
+    "id": "b5bd362aaa0019c4c9ec15b62b1498ea",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-07T02:45:00Z",
+    "home_team": "Grant Dawson",
+    "away_team": "Manuel Torres"
   },
   {
     "id": "25c97ecd5d0b8193b57d2e90ac6eff95",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-07T03:00:00Z",
+    "commence_time": "2025-12-07T03:15:00Z",
     "home_team": "Jan Blachowicz",
     "away_team": "Bogdan Guskov"
   },
@@ -347,9 +75,17 @@
     "id": "1211a408e394acafd1e11ffd94a1c40c",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-07T03:00:00Z",
+    "commence_time": "2025-12-07T03:45:00Z",
     "home_team": "Henry Cejudo",
     "away_team": "Payton Talbott"
+  },
+  {
+    "id": "8eb02998c2289babf617253cd7112007",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-07T04:15:00Z",
+    "home_team": "Brandon Moreno",
+    "away_team": "Tatsuro Taira"
   },
   {
     "id": "9ae1b4ab89a6318887e6e8ba1c1dc882",
