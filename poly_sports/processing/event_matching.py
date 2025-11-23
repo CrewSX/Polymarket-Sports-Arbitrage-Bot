@@ -120,12 +120,17 @@ def match_events(
     """
     matches = []
     
-    for pm_event in polymarket_events:
+    for odds_event in odds_api_events:
         best_match = None
         best_score = 0.0
         
-        for odds_event in odds_api_events:
+        for pm_event in polymarket_events:
             score = calculate_match_score(pm_event, odds_event)
+
+            if score == 1.0:
+                best_score = score
+                best_match = odds_event
+                break
             
             if score > best_score:
                 best_score = score
