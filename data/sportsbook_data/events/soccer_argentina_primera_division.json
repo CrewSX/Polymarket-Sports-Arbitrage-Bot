@@ -1,58 +1,26 @@
 [
   {
-    "id": "8c963fe6febe2114d1912bd331090c91",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-11-23T01:00:00Z",
-    "home_team": "Central Córdoba",
-    "away_team": "San Lorenzo"
-  },
-  {
-    "id": "d949014de3350107480405c70f7e1567",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-11-23T20:30:00Z",
-    "home_team": "Rosario Central",
-    "away_team": "Estudiantes"
-  },
-  {
-    "id": "0c5c1c369c76cc51614d170b4a6a5d26",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-11-23T23:00:00Z",
-    "home_team": "Boca Juniors",
-    "away_team": "Talleres"
-  },
-  {
-    "id": "b78ac23d916da09974efe5b3fce26e0c",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-11-24T20:00:00Z",
-    "home_team": "Deportivo Riestra",
-    "away_team": "Barracas Central"
-  },
-  {
-    "id": "766f532741f6b312391ff1f7808cb215",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-11-24T22:15:00Z",
-    "home_team": "Racing Club",
-    "away_team": "River Plate"
-  },
-  {
-    "id": "d92c8d70cc564ca0304402c9419c364e",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-11-25T01:00:00Z",
-    "home_team": "Union Santa Fe",
-    "away_team": "Gimnasia La Plata"
-  },
-  {
     "id": "315f3e5613ab95dab49a8253dbab886f",
     "sport_key": "soccer_argentina_primera_division",
     "sport_title": "Primera División - Argentina",
     "commence_time": "2025-11-27T00:30:00Z",
     "home_team": "Lanus",
     "away_team": "CA Tigre BA"
+  },
+  {
+    "id": "7ded1463f2cc585a14473567684db15b",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-11-30T22:00:00Z",
+    "home_team": "Central Córdoba",
+    "away_team": "Estudiantes"
+  },
+  {
+    "id": "8ba298a9cfeb7bb253641bb7858bbd33",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2025-12-01T01:00:00Z",
+    "home_team": "Boca Juniors",
+    "away_team": "Argentinos Juniors"
   }
 ]
