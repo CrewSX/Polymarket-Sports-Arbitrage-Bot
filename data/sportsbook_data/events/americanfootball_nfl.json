@@ -1,37 +1,5 @@
 [
   {
-    "id": "fe2eb07797580740af78037ab498198e",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL",
-    "commence_time": "2025-11-27T18:00:00Z",
-    "home_team": "Detroit Lions",
-    "away_team": "Green Bay Packers"
-  },
-  {
-    "id": "de53b8a594fe830c5fd56484705cd756",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL",
-    "commence_time": "2025-11-27T21:30:00Z",
-    "home_team": "Dallas Cowboys",
-    "away_team": "Kansas City Chiefs"
-  },
-  {
-    "id": "883a79a306b312fad75ebf04b441b4da",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL",
-    "commence_time": "2025-11-28T01:20:00Z",
-    "home_team": "Baltimore Ravens",
-    "away_team": "Cincinnati Bengals"
-  },
-  {
-    "id": "52f539d9d080618aa8830a0b03846a80",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL",
-    "commence_time": "2025-11-28T20:00:00Z",
-    "home_team": "Philadelphia Eagles",
-    "away_team": "Chicago Bears"
-  },
-  {
     "id": "c0d324e29ce58b36bdc77564f7aae56f",
     "sport_key": "americanfootball_nfl",
     "sport_title": "NFL",
@@ -126,5 +94,117 @@
     "commence_time": "2025-12-02T01:15:00Z",
     "home_team": "New England Patriots",
     "away_team": "New York Giants"
+  },
+  {
+    "id": "81db991c5b34169eeeff8d734d8836d9",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-05T01:15:00Z",
+    "home_team": "Detroit Lions",
+    "away_team": "Dallas Cowboys"
+  },
+  {
+    "id": "f0bdd27bbed46dfc3d0657500c95a96c",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T18:00:00Z",
+    "home_team": "Atlanta Falcons",
+    "away_team": "Seattle Seahawks"
+  },
+  {
+    "id": "4fead7bd0592ec121cc3baf72e3e21e0",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T18:00:00Z",
+    "home_team": "Baltimore Ravens",
+    "away_team": "Pittsburgh Steelers"
+  },
+  {
+    "id": "c67c327076a98a3a1c4a5eb32e5a80c2",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T18:00:00Z",
+    "home_team": "Buffalo Bills",
+    "away_team": "Cincinnati Bengals"
+  },
+  {
+    "id": "f95be6b9bd8ce1208f766cbaae8a4822",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T18:00:00Z",
+    "home_team": "Cleveland Browns",
+    "away_team": "Tennessee Titans"
+  },
+  {
+    "id": "4e289ac7d9b5663fd5a06881f2b1424d",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T18:00:00Z",
+    "home_team": "Jacksonville Jaguars",
+    "away_team": "Indianapolis Colts"
+  },
+  {
+    "id": "c86a0783216d21040c87fce3aadd3336",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T18:00:00Z",
+    "home_team": "New York Jets",
+    "away_team": "Miami Dolphins"
+  },
+  {
+    "id": "58b16c4033587f5662ff365bce2dbb92",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T18:00:00Z",
+    "home_team": "Minnesota Vikings",
+    "away_team": "Washington Commanders"
+  },
+  {
+    "id": "15555b4c7283dc6553e011dd6c8aea8d",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T18:00:00Z",
+    "home_team": "Tampa Bay Buccaneers",
+    "away_team": "New Orleans Saints"
+  },
+  {
+    "id": "d5fd126cbfea2ccd79962a17f0ef4463",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T21:05:00Z",
+    "home_team": "Las Vegas Raiders",
+    "away_team": "Denver Broncos"
+  },
+  {
+    "id": "12bbffdcd65d53436b56c68a811ca610",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T21:25:00Z",
+    "home_team": "Arizona Cardinals",
+    "away_team": "Los Angeles Rams"
+  },
+  {
+    "id": "5b1211b476d0afa2b57133c9603583b6",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-07T21:25:00Z",
+    "home_team": "Green Bay Packers",
+    "away_team": "Chicago Bears"
+  },
+  {
+    "id": "4727a6cfcd3d604dbfcb898c5a4d40a6",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-08T01:20:00Z",
+    "home_team": "Kansas City Chiefs",
+    "away_team": "Houston Texans"
+  },
+  {
+    "id": "5d7b12c34454df4ff2c59a15ca58e63f",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2025-12-09T01:15:00Z",
+    "home_team": "Los Angeles Chargers",
+    "away_team": "Philadelphia Eagles"
   }
 ]

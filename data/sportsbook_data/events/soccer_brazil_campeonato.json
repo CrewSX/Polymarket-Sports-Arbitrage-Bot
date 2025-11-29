@@ -1,49 +1,9 @@
 [
   {
-    "id": "c13d65004be1ba5a267d59ed35f07fbc",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-11-26T00:30:00Z",
-    "home_team": "Atletico Mineiro",
-    "away_team": "Flamengo"
-  },
-  {
-    "id": "6d60301dad09ae533f9806514485be9c",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-11-26T00:30:00Z",
-    "home_team": "Grêmio",
-    "away_team": "Palmeiras"
-  },
-  {
-    "id": "3a8198cab7bdc02d450e20404c351af9",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-11-26T22:00:00Z",
-    "home_team": "Bragantino-SP",
-    "away_team": "Fortaleza"
-  },
-  {
-    "id": "8c6acd4ebc4ad3f9086b7dc5b57fcf55",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-11-27T23:30:00Z",
-    "home_team": "Fluminense",
-    "away_team": "Sao Paulo"
-  },
-  {
-    "id": "af3d2716328dfa9270a3abf0438eabfb",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-11-28T22:00:00Z",
-    "home_team": "Juventude",
-    "away_team": "Bahia"
-  },
-  {
     "id": "f24177b73851419702fe13946f3d6103",
     "sport_key": "soccer_brazil_campeonato",
     "sport_title": "Brazil Série A",
-    "commence_time": "2025-11-28T22:30:00Z",
+    "commence_time": "2025-11-28T22:29:00Z",
     "home_team": "Vasco da Gama",
     "away_team": "Internacional"
   },
@@ -51,7 +11,7 @@
     "id": "1dbc675dc7063ecf8b3d5a424b0797ce",
     "sport_key": "soccer_brazil_campeonato",
     "sport_title": "Brazil Série A",
-    "commence_time": "2025-11-29T00:30:00Z",
+    "commence_time": "2025-11-29T00:32:00Z",
     "home_team": "Santos",
     "away_team": "Sport Recife"
   },
@@ -86,5 +46,37 @@
     "commence_time": "2025-11-30T21:30:00Z",
     "home_team": "Fortaleza",
     "away_team": "Atletico Mineiro"
+  },
+  {
+    "id": "5b113808d7e4d30f8a878109bcf8236a",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-03T00:30:00Z",
+    "home_team": "Grêmio",
+    "away_team": "Fluminense"
+  },
+  {
+    "id": "572163e851b723b171ec75c6a7e72b17",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-03T23:00:00Z",
+    "home_team": "Sao Paulo",
+    "away_team": "Internacional"
+  },
+  {
+    "id": "f77622354d8989a6146aed104b30c9fb",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-04T00:30:00Z",
+    "home_team": "Atletico Mineiro",
+    "away_team": "Palmeiras"
+  },
+  {
+    "id": "22cd326586e05a3f8c9c00995bc5fff2",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-04T00:30:00Z",
+    "home_team": "Flamengo",
+    "away_team": "Ceará"
   }
 ]
