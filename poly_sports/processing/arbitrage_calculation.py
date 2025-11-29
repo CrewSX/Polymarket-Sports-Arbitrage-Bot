@@ -479,3 +479,129 @@ def find_max_delta_by_sportsbook(
     
     return events_with_deltas[:top_n]
 
+
+def find_hedgeable_sportsbooks(
+    opportunity: Dict[str, Any],
+    raw_odds_event: Dict[str, Any],
+    pm_outcomes: List[str],
+    pm_prices: List[float]
+) -> List[Dict[str, Any]]:
+    """
+    Find all sportsbooks where a directional opportunity can be hedged.
+    
+    For a directional opportunity (buy outcome A on PM), find all sportsbooks where
+    you can hedge by betting on the opposite outcome B, such that:
+    PM_price_A + SB_implied_prob_B ≤ 1.0
+    
+    Args:
+        opportunity: Directional opportunity dictionary with:
+            - matched_outcomes: List with one matched outcome dict containing:
+                - pm_outcome: Name of the PM outcome for the opportunity
+                - pm_price: PM price for that outcome
+        raw_odds_event: Raw odds event data with bookmakers and markets
+        pm_outcomes: List of all Polymarket outcome names for this market
+        pm_prices: List of all Polymarket prices corresponding to pm_outcomes
+        
+    Returns:
+        List of hedgeable sportsbook dictionaries, each containing:
+            - sportsbook_name: Sportsbook key (e.g., 'fanduel')
+            - sportsbook_title: Sportsbook display name (e.g., 'FanDuel')
+            - hedge_sum: PM_price + SB_opposite_implied_prob
+            - pm_price: Polymarket price for the opportunity outcome
+            - sb_opposite_implied_prob: Sportsbook implied probability for opposite outcome
+            - sb_opposite_outcome_name: Name of the opposite outcome in sportsbook
+    """
+    hedgeable_sportsbooks = []
+    
+    # Extract the opportunity outcome information
+    matched_outcomes = opportunity.get('matched_outcomes', [])
+    if not matched_outcomes:
+        return hedgeable_sportsbooks
+    
+    # Get the PM outcome and price for the directional opportunity
+    opp_outcome_data = matched_outcomes[0]
+    opp_pm_outcome = opp_outcome_data.get('pm_outcome')
+    opp_pm_price = opp_outcome_data.get('pm_price')
+    
+    if opp_pm_outcome is None or opp_pm_price is None:
+        return hedgeable_sportsbooks
+    
+    # Find the opposite PM outcome (the one we'd hedge with)
+    opposite_pm_outcomes = [o for o in pm_outcomes if o != opp_pm_outcome]
+    if not opposite_pm_outcomes:
+        return hedgeable_sportsbooks
+    
+    # Collect all outcomes from all bookmakers to match against
+    all_sb_outcomes = []
+    for bookmaker in raw_odds_event.get('bookmakers', []):
+        for market in bookmaker.get('markets', []):
+            for outcome in market.get('outcomes', []):
+                outcome_name = outcome.get('name', '')
+                if outcome_name and not any(o.get('name') == outcome_name for o in all_sb_outcomes):
+                    all_sb_outcomes.append(outcome)
+    
+    # Match opposite PM outcomes to sportsbook outcomes
+    # We want to find SB outcomes that match the opposite PM outcomes
+    opposite_pm_outcomes_lower = [o.lower() for o in opposite_pm_outcomes]
+    
+    # Sportsbooks to exclude (same as in find_max_delta_by_sportsbook)
+    excluded_sportsbooks = {'betrivers', 'mybookie.ag', 'bovada', 'betonline.ag', 'betus', 'lowvig.ag'}
+    
+    # Check each sportsbook
+    for bookmaker in raw_odds_event.get('bookmakers', []):
+        bookmaker_key_original = bookmaker.get('key', '')
+        bookmaker_title_original = bookmaker.get('title', '')
+        bookmaker_key = bookmaker_key_original.lower()
+        bookmaker_title = bookmaker_title_original.lower()
+        
+        # Skip excluded sportsbooks
+        if bookmaker_key in excluded_sportsbooks or bookmaker_title in excluded_sportsbooks:
+            continue
+        
+        # Look through markets for the opposite outcome
+        for market in bookmaker.get('markets', []):
+            for outcome in market.get('outcomes', []):
+                outcome_name = outcome.get('name', '')
+                outcome_name_lower = outcome_name.lower()
+                
+                # Check if this outcome matches any of the opposite PM outcomes
+                matches_opposite = False
+                for opp_pm_outcome_lower in opposite_pm_outcomes_lower:
+                    if opp_pm_outcome_lower in outcome_name_lower or outcome_name_lower in opp_pm_outcome_lower:
+                        matches_opposite = True
+                        break
+                
+                if not matches_opposite:
+                    continue
+                
+                # Get American odds price
+                american_price = outcome.get('price')
+                if american_price is None:
+                    continue
+                
+                # Convert to implied probability
+                try:
+                    sb_opposite_implied_prob = american_to_implied_prob(int(american_price))
+                except (ValueError, TypeError):
+                    continue
+                
+                # Calculate hedge sum: PM_price + SB_opposite_implied_prob
+                hedge_sum = opp_pm_price + sb_opposite_implied_prob
+                
+                # Check if hedging is possible (sum ≤ 1.0)
+                if hedge_sum <= 1.0:
+                    hedgeable_sportsbooks.append({
+                        'sportsbook_name': bookmaker_key_original,
+                        'sportsbook_title': bookmaker_title_original,
+                        'hedge_sum': hedge_sum,
+                        'pm_price': opp_pm_price,
+                        'sb_opposite_implied_prob': sb_opposite_implied_prob,
+                        'sb_opposite_outcome_name': outcome_name,
+                        'pm_opportunity_outcome': opp_pm_outcome
+                    })
+                    break  # Found a hedgeable outcome for this sportsbook, move to next sportsbook
+        
+        # Continue to next bookmaker
+    
+    return hedgeable_sportsbooks
+
