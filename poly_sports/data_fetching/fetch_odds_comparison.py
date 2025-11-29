@@ -16,7 +16,7 @@ def main() -> None:
     # Load configuration from environment
     gamma_api_url = os.getenv('GAMMA_API_URL', 'https://gamma-api.polymarket.com')
     odds_api_key = os.getenv('ODDS_API_KEY')
-    odds_api_regions = os.getenv('ODDS_API_REGIONS', 'us').split(',')
+    odds_api_regions = os.getenv('ODDS_API_REGIONS', 'us, us_ex').split(',')
     odds_api_markets = os.getenv('ODDS_API_MARKETS', 'h2h').split(',')
     odds_api_format = os.getenv('ODDS_API_ODDS_FORMAT', 'american')
     output_dir = os.getenv('OUTPUT_DIR', 'data')

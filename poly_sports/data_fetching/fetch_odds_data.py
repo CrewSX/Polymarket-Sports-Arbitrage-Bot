@@ -205,7 +205,7 @@ def fetch_odds_for_polymarket_events(
         - sportsbook_outcomes: Array of consolidated outcomes with aggregate stats
     """
     if regions is None:
-        regions = ['us']
+        regions = ['us', 'us_ex']
     if markets is None:
         markets = ['h2h']
     

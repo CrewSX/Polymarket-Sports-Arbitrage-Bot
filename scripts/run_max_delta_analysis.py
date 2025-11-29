@@ -56,7 +56,8 @@ def main():
         results = find_max_delta_by_sportsbook(
             comparison_data,
             odds_dir=str(odds_dir),
-            top_n=args.top_n
+            top_n=args.top_n,
+            min_volume=0
         )
     except FileNotFoundError as e:
         print(f"Error: {e}")
