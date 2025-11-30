@@ -64,14 +64,38 @@ def main():
     opportunities = detect_arbitrage_opportunities(
         comparison_data,
         min_profit_threshold=args.min_profit_threshold,
-        min_liquidity=args.min_volume  # Using liquidity param but filtering by volume later
+        min_liquidity=args.min_volume  # Filter by liquidity inside the function
     )
     
-    # Filter to only 2-way markets and by volume
+    print(f"Found {len(opportunities)} opportunities after initial detection")
+    
+    # Debug: Show market type distribution
+    market_types = {}
+    for opp in opportunities:
+        mt = opp.get('market_type', 'unknown')
+        market_types[mt] = market_types.get(mt, 0) + 1
+    if market_types:
+        print(f"  Market type distribution: {market_types}")
+    
+    # Debug: Show volume/liquidity stats
+    volumes = [opp.get('volume', 0) or 0 for opp in opportunities]
+    liquidities = [opp.get('liquidity', 0) or 0 for opp in opportunities]
+    if volumes:
+        print(f"  Volume range: ${min(volumes):,.0f} - ${max(volumes):,.0f} (avg: ${sum(volumes)/len(volumes):,.0f})")
+        print(f"  Liquidity range: ${min(liquidities):,.0f} - ${max(liquidities):,.0f} (avg: ${sum(liquidities)/len(liquidities):,.0f})")
+    
+    # Filter to only 2-way markets
+    # Note: detect_arbitrage_opportunities already filters by liquidity (pm_event_liquidity)
+    # We don't filter by volume (pm_market_volume) here to match run_arbitrage_detection.py behavior
+    opportunities_before_filter = len(opportunities)
     opportunities = [
         opp for opp in opportunities
-        if opp.get('market_type') == '2-way' and (opp.get('volume') or 0) >= args.min_volume
+        if opp.get('market_type') == '2-way'
     ]
+    
+    filtered_out = opportunities_before_filter - len(opportunities)
+    if filtered_out > 0:
+        print(f"  Filtered out {filtered_out} opportunities (non-2-way markets)")
     
     print(f"Found {len(opportunities)} directional opportunities (2-way markets only)")
     
@@ -191,7 +215,7 @@ def main():
         print(f"\n{i}. Event ID: {opp.get('pm_event_id', 'N/A')} | Market ID: {opp.get('pm_market_id', 'N/A')}")
         print(f"   Potential Profit: {opp['profit_margin'] * 100:.2f}% (${opp['profit_margin_absolute']:.2f} on $100 stake)")
         print(f"   Match Confidence: {opp.get('match_confidence', 0):.3f}")
-        print(f"   Volume: ${opp.get('volume', 0):,.2f}")
+        print(f"   Volume: ${(opp.get('volume') or 0):,.2f}")
         print(f"   Hedgeable Sportsbooks: {opp.get('hedgeable_count', 0)}")
         
         matched_outcomes = opp.get('matched_outcomes', [])
