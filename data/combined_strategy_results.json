@@ -1,0 +1,349 @@
+[
+  {
+    "pm_event_id": "88590",
+    "pm_market_id": "698762",
+    "odds_api_event_id": "8e9db25305896f6a8ee5bf0e94c260f5",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.22683683273780272,
+    "profit_margin_absolute": 22.68368327378027,
+    "delta_difference": 0.022683683273780272,
+    "liquidity": 223280.7837,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "UCF",
+        "sb_outcome": "UCF Knights",
+        "pm_price": 0.1,
+        "sb_implied_prob": 0.12268368327378028,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.02,
+    "pm_liquidity": 91562.7719,
+    "sportsbook_count": 11,
+    "hedgeable_sportsbooks": [
+      {
+        "sportsbook_name": "novig",
+        "sportsbook_title": "Novig",
+        "hedge_sum": 1.0,
+        "pm_price": 0.1,
+        "sb_opposite_implied_prob": 0.9,
+        "sb_opposite_outcome_name": "BYU Cougars",
+        "pm_opportunity_outcome": "UCF"
+      },
+      {
+        "sportsbook_name": "prophetx",
+        "sportsbook_title": "ProphetX",
+        "hedge_sum": 0.9958333333333333,
+        "pm_price": 0.1,
+        "sb_opposite_implied_prob": 0.8958333333333334,
+        "sb_opposite_outcome_name": "BYU Cougars",
+        "pm_opportunity_outcome": "UCF"
+      }
+    ],
+    "hedgeable_count": 2
+  },
+  {
+    "pm_event_id": "87594",
+    "pm_market_id": "696921",
+    "odds_api_event_id": "a06a55ea3f9818bd67a44c118b03bb31",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.19701278636501515,
+    "profit_margin_absolute": 19.701278636501517,
+    "delta_difference": 0.02068634256832659,
+    "liquidity": 1298005.927,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Suns",
+        "sb_outcome": "Phoenix Suns",
+        "pm_price": 0.105,
+        "sb_implied_prob": 0.1256863425683266,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 1036600.9352,
+    "sportsbook_count": 12,
+    "hedgeable_sportsbooks": [
+      {
+        "sportsbook_name": "novig",
+        "sportsbook_title": "Novig",
+        "hedge_sum": 0.9999579831932773,
+        "pm_price": 0.105,
+        "sb_opposite_implied_prob": 0.8949579831932774,
+        "sb_opposite_outcome_name": "Oklahoma City Thunder",
+        "pm_opportunity_outcome": "Suns"
+      },
+      {
+        "sportsbook_name": "prophetx",
+        "sportsbook_title": "ProphetX",
+        "hedge_sum": 0.9986170212765957,
+        "pm_price": 0.105,
+        "sb_opposite_implied_prob": 0.8936170212765957,
+        "sb_opposite_outcome_name": "Oklahoma City Thunder",
+        "pm_opportunity_outcome": "Suns"
+      }
+    ],
+    "hedgeable_count": 2
+  },
+  {
+    "pm_event_id": "88610",
+    "pm_market_id": "698788",
+    "odds_api_event_id": "12bd1537fbeb1dc2a7c5bffa180a01bc",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.10594109318030076,
+    "profit_margin_absolute": 10.594109318030076,
+    "delta_difference": 0.024366451431469177,
+    "liquidity": 164409.776,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "UL Monroe",
+        "sb_outcome": "UL Monroe Warhawks",
+        "pm_price": 0.23,
+        "sb_implied_prob": 0.2543664514314692,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.02,
+    "pm_liquidity": 70777.4845,
+    "sportsbook_count": 11,
+    "hedgeable_sportsbooks": [
+      {
+        "sportsbook_name": "betmgm",
+        "sportsbook_title": "BetMGM",
+        "hedge_sum": 0.9947058823529411,
+        "pm_price": 0.23,
+        "sb_opposite_implied_prob": 0.7647058823529411,
+        "sb_opposite_outcome_name": "Louisiana Ragin Cajuns",
+        "pm_opportunity_outcome": "UL Monroe"
+      },
+      {
+        "sportsbook_name": "prophetx",
+        "sportsbook_title": "ProphetX",
+        "hedge_sum": 0.9974418604651163,
+        "pm_price": 0.23,
+        "sb_opposite_implied_prob": 0.7674418604651163,
+        "sb_opposite_outcome_name": "Louisiana Ragin Cajuns",
+        "pm_opportunity_outcome": "UL Monroe"
+      }
+    ],
+    "hedgeable_count": 2
+  },
+  {
+    "pm_event_id": "89360",
+    "pm_market_id": "700737",
+    "odds_api_event_id": "6f956074c4df48e7b07a3286a6c6ed2a",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.12795500635702023,
+    "profit_margin_absolute": 12.795500635702023,
+    "delta_difference": 0.01727392585819773,
+    "liquidity": 542079.7203,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Vikings",
+        "sb_outcome": "Minnesota Vikings",
+        "pm_price": 0.135,
+        "sb_implied_prob": 0.15227392585819774,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 406363.9927,
+    "sportsbook_count": 12,
+    "hedgeable_sportsbooks": [
+      {
+        "sportsbook_name": "kalshi",
+        "sportsbook_title": "Kalshi",
+        "hedge_sum": 0.9949439775910365,
+        "pm_price": 0.135,
+        "sb_opposite_implied_prob": 0.8599439775910365,
+        "sb_opposite_outcome_name": "Seattle Seahawks",
+        "pm_opportunity_outcome": "Vikings"
+      }
+    ],
+    "hedgeable_count": 1
+  },
+  {
+    "pm_event_id": "87605",
+    "pm_market_id": "696933",
+    "odds_api_event_id": "78aabf080c02d6b74d6d5a15ae2d2a81",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.1082099176931543,
+    "profit_margin_absolute": 10.82099176931543,
+    "delta_difference": 0.02218303312709663,
+    "liquidity": 985783.7534,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Mavericks",
+        "sb_outcome": "Dallas Mavericks",
+        "pm_price": 0.205,
+        "sb_implied_prob": 0.22718303312709662,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 657145.3026,
+    "sportsbook_count": 12,
+    "hedgeable_sportsbooks": [
+      {
+        "sportsbook_name": "betopenly",
+        "sportsbook_title": "BetOpenly",
+        "hedge_sum": 0.9957949790794979,
+        "pm_price": 0.205,
+        "sb_opposite_implied_prob": 0.7907949790794979,
+        "sb_opposite_outcome_name": "Los Angeles Lakers",
+        "pm_opportunity_outcome": "Mavericks"
+      }
+    ],
+    "hedgeable_count": 1
+  },
+  {
+    "pm_event_id": "87613",
+    "pm_market_id": "696945",
+    "odds_api_event_id": "1cba2fab043444805e19204a7bfa2f00",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.4596949891067539,
+    "profit_margin_absolute": 45.96949891067539,
+    "delta_difference": 0.006205882352941177,
+    "liquidity": 6266.53619,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Alabama A&M Bulldogs",
+        "sb_outcome": "Alabama A&M Bulldogs",
+        "pm_price": 0.0135,
+        "sb_implied_prob": 0.019705882352941177,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.027,
+    "pm_liquidity": 6266.53619,
+    "sportsbook_count": 2,
+    "hedgeable_sportsbooks": [],
+    "hedgeable_count": 0
+  },
+  {
+    "pm_event_id": "88617",
+    "pm_market_id": "698797",
+    "odds_api_event_id": "9d54a50182205f4d1c75bb7616993cf0",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.3659033085574977,
+    "profit_margin_absolute": 36.59033085574977,
+    "delta_difference": 0.014819083996578657,
+    "liquidity": 193966.52704,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Rice",
+        "sb_outcome": "Rice Owls",
+        "pm_price": 0.0405,
+        "sb_implied_prob": 0.05531908399657866,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.025,
+    "pm_liquidity": 86917.69074,
+    "sportsbook_count": 10,
+    "hedgeable_sportsbooks": [],
+    "hedgeable_count": 0
+  },
+  {
+    "pm_event_id": "88410",
+    "pm_market_id": "698428",
+    "odds_api_event_id": "62292a99ee0a4342280f4f8b841b6013",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.28790539749443866,
+    "profit_margin_absolute": 28.790539749443866,
+    "delta_difference": 0.01050854700854701,
+    "liquidity": 4928.41388,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "VMI Keydets",
+        "sb_outcome": "VMI Keydets",
+        "pm_price": 0.0365,
+        "sb_implied_prob": 0.04700854700854701,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.047,
+    "pm_liquidity": 2294.18328,
+    "sportsbook_count": 2,
+    "hedgeable_sportsbooks": [],
+    "hedgeable_count": 0
+  },
+  {
+    "pm_event_id": "87732",
+    "pm_market_id": "697063",
+    "odds_api_event_id": "6ee4c4639173d3e7b9bd4cbfaf88268c",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.16905081628280794,
+    "profit_margin_absolute": 16.905081628280794,
+    "delta_difference": 0.021131352035350992,
+    "liquidity": 25780.6041,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Drake Bulldogs",
+        "sb_outcome": "Drake Bulldogs",
+        "pm_price": 0.125,
+        "sb_implied_prob": 0.146131352035351,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 25780.6041,
+    "sportsbook_count": 11,
+    "hedgeable_sportsbooks": [],
+    "hedgeable_count": 0
+  },
+  {
+    "pm_event_id": "88588",
+    "pm_market_id": "698760",
+    "odds_api_event_id": "98355c397c652869253cd333094fd6a8",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.11063378134458302,
+    "profit_margin_absolute": 11.0633781344583,
+    "delta_difference": 0.013829222668072877,
+    "liquidity": 913689.6738,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Colorado",
+        "sb_outcome": "Colorado Buffaloes",
+        "pm_price": 0.125,
+        "sb_implied_prob": 0.13882922266807288,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 204622.9034,
+    "sportsbook_count": 11,
+    "hedgeable_sportsbooks": [],
+    "hedgeable_count": 0
+  }
+]
