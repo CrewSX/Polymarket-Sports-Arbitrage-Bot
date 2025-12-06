@@ -1,41 +1,9 @@
 [
   {
-    "id": "855b4b7959efc4b7309d16b8b17dd708",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T00:00:00Z",
-    "home_team": "Jacksonville State Gamecocks",
-    "away_team": "Kennesaw State Owls"
-  },
-  {
-    "id": "34fe27e86b995ea9e3cdc015d1ff5a46",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T00:00:00Z",
-    "home_team": "James Madison Dukes",
-    "away_team": "Troy Trojans"
-  },
-  {
-    "id": "bcda84050f6f1fe4756756124d40f116",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T01:00:00Z",
-    "home_team": "Tulane Green Wave",
-    "away_team": "North Texas Mean Green"
-  },
-  {
-    "id": "05574125db5d3bc8c0a9f0ce97971957",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T01:01:00Z",
-    "home_team": "Boise State Broncos",
-    "away_team": "UNLV Rebels"
-  },
-  {
     "id": "87fe86f5fa1edd149d6cc5f8bcb82be2",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T17:00:00Z",
+    "commence_time": "2025-12-06T16:09:00Z",
     "home_team": "Texas Tech Red Raiders",
     "away_team": "BYU Cougars"
   },
@@ -43,9 +11,17 @@
     "id": "825ab37366030db2e15565370bfc0104",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T17:00:00Z",
+    "commence_time": "2025-12-06T16:50:00Z",
     "home_team": "Western Michigan Broncos",
     "away_team": "Miami (OH) RedHawks"
+  },
+  {
+    "id": "62dff9c695edc41da72e6d73b06fdf01",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-06T17:10:00Z",
+    "home_team": "Lehigh Mountain Hawks",
+    "away_team": "Villanova Wildcats"
   },
   {
     "id": "aa6121f597f3dd0a363e477797cd13f0",
@@ -67,7 +43,7 @@
     "id": "ed821485171f0486828ac8bfae9537a3",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
-    "commence_time": "2025-12-07T01:01:00Z",
+    "commence_time": "2025-12-07T01:00:00Z",
     "home_team": "Ohio State Buckeyes",
     "away_team": "Indiana Hoosiers"
   },
@@ -78,5 +54,29 @@
     "commence_time": "2025-12-13T20:00:00Z",
     "home_team": "Navy Midshipmen",
     "away_team": "Army Black Knights"
+  },
+  {
+    "id": "ed11cbf3b02850670bf213622cf4517b",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-17T22:00:00Z",
+    "home_team": "South Florida Bulls",
+    "away_team": "Old Dominion Monarchs"
+  },
+  {
+    "id": "5628d5990478df5a36dabdf0a89bb699",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-19T02:00:00Z",
+    "home_team": "Arkansas State Red Wolves",
+    "away_team": "Missouri State Bears"
+  },
+  {
+    "id": "a1dd323522b56837490d61ace49a97e0",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-25T01:00:00Z",
+    "home_team": "Hawaii Rainbow Warriors",
+    "away_team": "California Golden Bears"
   }
 ]

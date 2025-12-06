@@ -1,992 +1,28 @@
 [
   {
-    "id": "855b4b7959efc4b7309d16b8b17dd708",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T00:00:00Z",
-    "home_team": "Jacksonville State Gamecocks",
-    "away_team": "Kennesaw State Owls",
-    "bookmakers": [
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 114
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -135
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 120
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -140
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 120
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -140
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 113
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -139
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 116
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -136
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 120
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -145
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 115
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -135
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 115
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -135
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "novig",
-        "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 118
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -128
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:30Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 110
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -137
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "prophetx",
-        "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "Jacksonville State Gamecocks",
-                "price": 121
-              },
-              {
-                "name": "Kennesaw State Owls",
-                "price": -128
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "34fe27e86b995ea9e3cdc015d1ff5a46",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T00:00:00Z",
-    "home_team": "James Madison Dukes",
-    "away_team": "Troy Trojans",
-    "bookmakers": [
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -3000
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1300
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -3200
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1400
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -2700
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1196
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -2700
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1196
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -5049
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1258
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "novig",
-        "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -2226
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1182
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -3000
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -2500
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1175
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -2800
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1100
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:30Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -2500
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1050
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "prophetx",
-        "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "James Madison Dukes",
-                "price": -1700
-              },
-              {
-                "name": "Troy Trojans",
-                "price": 1250
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "bcda84050f6f1fe4756756124d40f116",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T01:00:00Z",
-    "home_team": "Tulane Green Wave",
-    "away_team": "North Texas Mean Green",
-    "bookmakers": [
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -136
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 116
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -135
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 114
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -136
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 111
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -135
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 115
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -135
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 115
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -140
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 115
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -135
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 115
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -130
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 110
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "novig",
-        "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -124
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 122
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -137
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 110
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "prophetx",
-        "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "North Texas Mean Green",
-                "price": -124
-              },
-              {
-                "name": "Tulane Green Wave",
-                "price": 118
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "05574125db5d3bc8c0a9f0ce97971957",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T01:01:00Z",
-    "home_team": "Boise State Broncos",
-    "away_team": "UNLV Rebels",
-    "bookmakers": [
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -188
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 158
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -185
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 154
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -180
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 157
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -180
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 157
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -184
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 149
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:30Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -175
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 138
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "novig",
-        "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -185
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 164
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -180
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 155
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -185
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 160
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -185
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 155
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "prophetx",
-        "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "Boise State Broncos",
-                "price": -186
-              },
-              {
-                "name": "UNLV Rebels",
-                "price": 172
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "87fe86f5fa1edd149d6cc5f8bcb82be2",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T17:00:00Z",
+    "commence_time": "2025-12-06T16:09:00Z",
     "home_team": "Texas Tech Red Raiders",
     "away_team": "BYU Cougars",
     "bookmakers": [
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:37Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:37Z",
             "outcomes": [
               {
                 "name": "BYU Cougars",
-                "price": 410
+                "price": 215
               },
               {
                 "name": "Texas Tech Red Raiders",
-                "price": -550
+                "price": -290
               }
             ]
           }
@@ -995,19 +31,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:11Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:11Z",
             "outcomes": [
               {
                 "name": "BYU Cougars",
-                "price": 410
+                "price": 220
               },
               {
                 "name": "Texas Tech Red Raiders",
-                "price": -550
+                "price": -298
               }
             ]
           }
@@ -1016,61 +52,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
+        "last_update": "2025-12-06T17:55:57Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
+            "last_update": "2025-12-06T17:55:57Z",
             "outcomes": [
               {
                 "name": "BYU Cougars",
-                "price": 390
+                "price": 215
               },
               {
                 "name": "Texas Tech Red Raiders",
-                "price": -549
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "BYU Cougars",
-                "price": 406
-              },
-              {
-                "name": "Texas Tech Red Raiders",
-                "price": -535
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "BYU Cougars",
-                "price": 406
-              },
-              {
-                "name": "Texas Tech Red Raiders",
-                "price": -535
+                "price": -286
               }
             ]
           }
@@ -1079,40 +73,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:10Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:10Z",
             "outcomes": [
               {
                 "name": "BYU Cougars",
-                "price": 400
+                "price": 210
               },
               {
                 "name": "Texas Tech Red Raiders",
-                "price": -525
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "BYU Cougars",
-                "price": 400
-              },
-              {
-                "name": "Texas Tech Red Raiders",
-                "price": -590
+                "price": -275
               }
             ]
           }
@@ -1121,19 +94,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "BYU Cougars",
-                "price": 405
+                "price": 245
               },
               {
                 "name": "Texas Tech Red Raiders",
-                "price": -465
+                "price": -294
               }
             ]
           }
@@ -1142,40 +115,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
+        "last_update": "2025-12-06T17:56:59Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
+            "last_update": "2025-12-06T17:56:59Z",
             "outcomes": [
               {
                 "name": "BYU Cougars",
-                "price": 400
+                "price": 240
               },
               {
                 "name": "Texas Tech Red Raiders",
-                "price": -575
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
-            "outcomes": [
-              {
-                "name": "BYU Cougars",
-                "price": 395
-              },
-              {
-                "name": "Texas Tech Red Raiders",
-                "price": -510
+                "price": -335
               }
             ]
           }
@@ -1184,19 +136,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "BYU Cougars",
-                "price": 430
+                "price": 245
               },
               {
                 "name": "Texas Tech Red Raiders",
-                "price": -480
+                "price": -260
               }
             ]
           }
@@ -1208,26 +160,26 @@
     "id": "825ab37366030db2e15565370bfc0104",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T17:00:00Z",
+    "commence_time": "2025-12-06T16:50:00Z",
     "home_team": "Western Michigan Broncos",
     "away_team": "Miami (OH) RedHawks",
     "bookmakers": [
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:37Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:37Z",
             "outcomes": [
               {
                 "name": "Miami (OH) RedHawks",
-                "price": 108
+                "price": 235
               },
               {
                 "name": "Western Michigan Broncos",
-                "price": -126
+                "price": -320
               }
             ]
           }
@@ -1236,19 +188,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:11Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:11Z",
             "outcomes": [
               {
                 "name": "Miami (OH) RedHawks",
-                "price": 110
+                "price": 260
               },
               {
                 "name": "Western Michigan Broncos",
-                "price": -130
+                "price": -360
               }
             ]
           }
@@ -1257,40 +209,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
+        "last_update": "2025-12-06T17:55:57Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
+            "last_update": "2025-12-06T17:55:57Z",
             "outcomes": [
               {
                 "name": "Miami (OH) RedHawks",
-                "price": 106
+                "price": 230
               },
               {
                 "name": "Western Michigan Broncos",
-                "price": -130
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "Miami (OH) RedHawks",
-                "price": 105
-              },
-              {
-                "name": "Western Michigan Broncos",
-                "price": -130
+                "price": -286
               }
             ]
           }
@@ -1299,61 +230,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Miami (OH) RedHawks",
-                "price": 120
+                "price": 269
               },
               {
                 "name": "Western Michigan Broncos",
-                "price": -126
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "Miami (OH) RedHawks",
-                "price": 113
-              },
-              {
-                "name": "Western Michigan Broncos",
-                "price": -133
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Miami (OH) RedHawks",
-                "price": 113
-              },
-              {
-                "name": "Western Michigan Broncos",
-                "price": -133
+                "price": -310
               }
             ]
           }
@@ -1362,19 +251,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:10Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:10Z",
             "outcomes": [
               {
                 "name": "Miami (OH) RedHawks",
-                "price": 120
+                "price": 250
               },
               {
                 "name": "Western Michigan Broncos",
-                "price": -145
+                "price": -325
               }
             ]
           }
@@ -1383,40 +272,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
+        "last_update": "2025-12-06T17:56:59Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
+            "last_update": "2025-12-06T17:56:59Z",
             "outcomes": [
               {
                 "name": "Miami (OH) RedHawks",
-                "price": 110
+                "price": 260
               },
               {
                 "name": "Western Michigan Broncos",
-                "price": -130
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betus",
-        "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
-            "outcomes": [
-              {
-                "name": "Miami (OH) RedHawks",
-                "price": 110
-              },
-              {
-                "name": "Western Michigan Broncos",
-                "price": -130
+                "price": -375
               }
             ]
           }
@@ -1425,19 +293,71 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Miami (OH) RedHawks",
-                "price": 115
+                "price": 270
               },
               {
                 "name": "Western Michigan Broncos",
-                "price": -127
+                "price": -285
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "62dff9c695edc41da72e6d73b06fdf01",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-06T17:10:00Z",
+    "home_team": "Lehigh Mountain Hawks",
+    "away_team": "Villanova Wildcats",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:37Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:37Z",
+            "outcomes": [
+              {
+                "name": "Lehigh Mountain Hawks",
+                "price": -194
+              },
+              {
+                "name": "Villanova Wildcats",
+                "price": 150
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-12-06T17:57:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:10Z",
+            "outcomes": [
+              {
+                "name": "Lehigh Mountain Hawks",
+                "price": -185
+              },
+              {
+                "name": "Villanova Wildcats",
+                "price": 145
               }
             ]
           }
@@ -1456,19 +376,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:37Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:37Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 115
+                "price": 100
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -138
+                "price": -118
               }
             ]
           }
@@ -1477,19 +397,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:11Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:11Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 114
+                "price": 100
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -135
+                "price": -120
               }
             ]
           }
@@ -1498,19 +418,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
+        "last_update": "2025-12-06T17:55:57Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
+            "last_update": "2025-12-06T17:55:57Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 114
+                "price": -101
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -139
+                "price": -120
               }
             ]
           }
@@ -1519,61 +439,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 119
+                "price": 109
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -123
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Alabama Crimson Tide",
-                "price": 116
-              },
-              {
-                "name": "Georgia Bulldogs",
-                "price": -136
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "Alabama Crimson Tide",
-                "price": 116
-              },
-              {
-                "name": "Georgia Bulldogs",
-                "price": -136
+                "price": -111
               }
             ]
           }
@@ -1582,19 +460,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
+        "last_update": "2025-12-06T17:57:10Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
+            "last_update": "2025-12-06T17:57:10Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 115
+                "price": 105
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -135
+                "price": -125
               }
             ]
           }
@@ -1603,19 +481,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:10Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:10Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 115
+                "price": 105
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -140
+                "price": -125
               }
             ]
           }
@@ -1624,19 +502,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
+        "last_update": "2025-12-06T17:56:59Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
+            "last_update": "2025-12-06T17:56:59Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 115
+                "price": 105
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -135
+                "price": -125
               }
             ]
           }
@@ -1645,19 +523,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 122
+                "price": 111
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -123
+                "price": -113
               }
             ]
           }
@@ -1666,19 +544,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
+        "last_update": "2025-12-06T17:57:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
+            "last_update": "2025-12-06T17:57:22Z",
             "outcomes": [
               {
                 "name": "Alabama Crimson Tide",
-                "price": 115
+                "price": 104
               },
               {
                 "name": "Georgia Bulldogs",
-                "price": -143
+                "price": -129
               }
             ]
           }
@@ -1697,19 +575,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:11Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:11Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
-                "price": 140
+                "price": 150
               },
               {
                 "name": "Virginia Cavaliers",
-                "price": -166
+                "price": -180
               }
             ]
           }
@@ -1718,19 +596,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:37Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:37Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
-                "price": 138
+                "price": 152
               },
               {
                 "name": "Virginia Cavaliers",
-                "price": -166
+                "price": -180
               }
             ]
           }
@@ -1739,19 +617,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
+        "last_update": "2025-12-06T17:55:57Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
+            "last_update": "2025-12-06T17:55:57Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
-                "price": 139
+                "price": 149
               },
               {
                 "name": "Virginia Cavaliers",
-                "price": -171
+                "price": -185
               }
             ]
           }
@@ -1760,11 +638,11 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
@@ -1781,11 +659,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:37Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:37Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
@@ -1802,19 +680,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:10Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:10Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
-                "price": 140
+                "price": 155
               },
               {
                 "name": "Virginia Cavaliers",
-                "price": -165
+                "price": -190
               }
             ]
           }
@@ -1823,11 +701,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
+        "last_update": "2025-12-06T17:57:10Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
+            "last_update": "2025-12-06T17:57:10Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
@@ -1844,19 +722,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
+        "last_update": "2025-12-06T17:56:59Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
+            "last_update": "2025-12-06T17:56:59Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
-                "price": 145
+                "price": 150
               },
               {
                 "name": "Virginia Cavaliers",
-                "price": -170
+                "price": -175
               }
             ]
           }
@@ -1865,19 +743,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
-                "price": 154
+                "price": 165
               },
               {
                 "name": "Virginia Cavaliers",
-                "price": -160
+                "price": -165
               }
             ]
           }
@@ -1886,19 +764,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
+        "last_update": "2025-12-06T17:57:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
+            "last_update": "2025-12-06T17:57:22Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
-                "price": 125
+                "price": 133
               },
               {
                 "name": "Virginia Cavaliers",
-                "price": -162
+                "price": -180
               }
             ]
           }
@@ -1907,15 +785,15 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Duke Blue Devils",
-                "price": 156
+                "price": 160
               },
               {
                 "name": "Virginia Cavaliers",
@@ -1931,26 +809,26 @@
     "id": "ed821485171f0486828ac8bfae9537a3",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
-    "commence_time": "2025-12-07T01:01:00Z",
+    "commence_time": "2025-12-07T01:00:00Z",
     "home_team": "Ohio State Buckeyes",
     "away_team": "Indiana Hoosiers",
     "bookmakers": [
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:37Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:37Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
-                "price": 168
+                "price": 160
               },
               {
                 "name": "Ohio State Buckeyes",
-                "price": -205
+                "price": -190
               }
             ]
           }
@@ -1959,61 +837,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:11Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:11Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
-                "price": 164
+                "price": 160
               },
               {
                 "name": "Ohio State Buckeyes",
-                "price": -198
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:06:04Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Indiana Hoosiers",
-                "price": 163
-              },
-              {
-                "name": "Ohio State Buckeyes",
-                "price": -187
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "Indiana Hoosiers",
-                "price": 163
-              },
-              {
-                "name": "Ohio State Buckeyes",
-                "price": -187
+                "price": -192
               }
             ]
           }
@@ -2022,19 +858,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
+        "last_update": "2025-12-06T17:57:22Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
+            "last_update": "2025-12-06T17:57:22Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
-                "price": 175
+                "price": 163
               },
               {
                 "name": "Ohio State Buckeyes",
-                "price": -220
+                "price": -200
               }
             ]
           }
@@ -2043,19 +879,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:10Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
+            "last_update": "2025-12-06T17:57:10Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
-                "price": 170
+                "price": 165
               },
               {
                 "name": "Ohio State Buckeyes",
-                "price": -210
+                "price": -200
               }
             ]
           }
@@ -2064,19 +900,19 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2025-12-03T17:05:22Z",
+        "last_update": "2025-12-06T17:55:57Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:05:22Z",
+            "last_update": "2025-12-06T17:55:57Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
-                "price": 168
+                "price": 152
               },
               {
                 "name": "Ohio State Buckeyes",
-                "price": -210
+                "price": -188
               }
             ]
           }
@@ -2085,19 +921,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
-                "price": 175
+                "price": 174
               },
               {
                 "name": "Ohio State Buckeyes",
-                "price": -180
+                "price": -175
               }
             ]
           }
@@ -2106,11 +942,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
+        "last_update": "2025-12-06T17:56:59Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
+            "last_update": "2025-12-06T17:56:59Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
@@ -2127,19 +963,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:07:00Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
-                "price": 170
+                "price": 172
               },
               {
                 "name": "Ohio State Buckeyes",
-                "price": -178
+                "price": -176
               }
             ]
           }
@@ -2148,11 +984,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2025-12-03T17:05:35Z",
+        "last_update": "2025-12-06T17:57:10Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:05:35Z",
+            "last_update": "2025-12-06T17:57:10Z",
             "outcomes": [
               {
                 "name": "Indiana Hoosiers",
@@ -2179,74 +1015,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:04Z",
+        "last_update": "2025-12-06T17:57:11Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:04Z",
-            "outcomes": [
-              {
-                "name": "Army Black Knights",
-                "price": 164
-              },
-              {
-                "name": "Navy Midshipmen",
-                "price": -198
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:07:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:07:00Z",
-            "outcomes": [
-              {
-                "name": "Army Black Knights",
-                "price": 172
-              },
-              {
-                "name": "Navy Midshipmen",
-                "price": -210
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:31Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:31Z",
-            "outcomes": [
-              {
-                "name": "Army Black Knights",
-                "price": 160
-              },
-              {
-                "name": "Navy Midshipmen",
-                "price": -200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "novig",
-        "title": "Novig",
-        "last_update": "2025-12-03T17:06:24Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:24Z",
+            "last_update": "2025-12-06T17:57:11Z",
             "outcomes": [
               {
                 "name": "Army Black Knights",
@@ -2261,21 +1034,261 @@
         ]
       },
       {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:21Z",
+        "key": "lowvig",
+        "title": "LowVig.ag",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:21Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Army Black Knights",
-                "price": 165
+                "price": 177
               },
               {
                 "name": "Navy Midshipmen",
-                "price": -195
+                "price": -205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:57:37Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:37Z",
+            "outcomes": [
+              {
+                "name": "Army Black Knights",
+                "price": 177
+              },
+              {
+                "name": "Navy Midshipmen",
+                "price": -205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:37Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:37Z",
+            "outcomes": [
+              {
+                "name": "Army Black Knights",
+                "price": 162
+              },
+              {
+                "name": "Navy Midshipmen",
+                "price": -196
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-12-06T17:57:22Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:22Z",
+            "outcomes": [
+              {
+                "name": "Army Black Knights",
+                "price": 150
+              },
+              {
+                "name": "Navy Midshipmen",
+                "price": -190
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2025-12-06T17:55:57Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:57Z",
+            "outcomes": [
+              {
+                "name": "Army Black Knights",
+                "price": 172
+              },
+              {
+                "name": "Navy Midshipmen",
+                "price": -216
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2025-12-06T17:57:10Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:10Z",
+            "outcomes": [
+              {
+                "name": "Army Black Knights",
+                "price": 175
+              },
+              {
+                "name": "Navy Midshipmen",
+                "price": -205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "novig",
+        "title": "Novig",
+        "last_update": "2025-12-06T17:57:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:27Z",
+            "outcomes": [
+              {
+                "name": "Army Black Knights",
+                "price": 173
+              },
+              {
+                "name": "Navy Midshipmen",
+                "price": -209
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:56:59Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:56:59Z",
+            "outcomes": [
+              {
+                "name": "Army Black Knights",
+                "price": 170
+              },
+              {
+                "name": "Navy Midshipmen",
+                "price": -200
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ed11cbf3b02850670bf213622cf4517b",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-17T22:00:00Z",
+    "home_team": "South Florida Bulls",
+    "away_team": "Old Dominion Monarchs",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:37Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:37Z",
+            "outcomes": [
+              {
+                "name": "Old Dominion Monarchs",
+                "price": 240
+              },
+              {
+                "name": "South Florida Bulls",
+                "price": -300
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5628d5990478df5a36dabdf0a89bb699",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-19T02:00:00Z",
+    "home_team": "Arkansas State Red Wolves",
+    "away_team": "Missouri State Bears",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:37Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:37Z",
+            "outcomes": [
+              {
+                "name": "Arkansas State Red Wolves",
+                "price": -128
+              },
+              {
+                "name": "Missouri State Bears",
+                "price": 106
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a1dd323522b56837490d61ace49a97e0",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-25T01:00:00Z",
+    "home_team": "Hawaii Rainbow Warriors",
+    "away_team": "California Golden Bears",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:37Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:37Z",
+            "outcomes": [
+              {
+                "name": "California Golden Bears",
+                "price": -120
+              },
+              {
+                "name": "Hawaii Rainbow Warriors",
+                "price": 100
               }
             ]
           }

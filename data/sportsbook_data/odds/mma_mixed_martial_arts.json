@@ -1,424 +1,49 @@
 [
   {
-    "id": "1772706c0be2360b49827f9738062409",
+    "id": "e35ac6eb2825c1968eeb0e179a67295d",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-05T15:00:00Z",
-    "home_team": "Badreddine Diani",
-    "away_team": "Mohammad Alaqraa",
+    "commence_time": "2025-12-06T18:00:00Z",
+    "home_team": "Jack Foote",
+    "away_team": "Brennan Gait",
     "bookmakers": [
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
-            "outcomes": [
-              {
-                "name": "Badreddine Diani",
-                "price": 425
-              },
-              {
-                "name": "Mohammad Alaqraa",
-                "price": -800
-              }
-            ]
-          }
-        ]
-      },
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:06Z",
             "outcomes": [
               {
-                "name": "Badreddine Diani",
-                "price": 425
+                "name": "Brennan Gait",
+                "price": 190
               },
               {
-                "name": "Mohammad Alaqraa",
-                "price": -600
+                "name": "Jack Foote",
+                "price": -260
               }
             ]
           }
         ]
       },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
-            "outcomes": [
-              {
-                "name": "Badreddine Diani",
-                "price": 440
-              },
-              {
-                "name": "Mohammad Alaqraa",
-                "price": -650
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "2626220e5f1a2658c0645c3e14a748bf",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-05T15:00:00Z",
-    "home_team": "Islam Reda",
-    "away_team": "Yanis Ghemmouri",
-    "bookmakers": [
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
-                "name": "Islam Reda",
-                "price": -105
+                "name": "Brennan Gait",
+                "price": 205
               },
               {
-                "name": "Yanis Ghemmouri",
-                "price": -135
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Islam Reda",
-                "price": 105
-              },
-              {
-                "name": "Yanis Ghemmouri",
-                "price": -125
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
-            "outcomes": [
-              {
-                "name": "Islam Reda",
-                "price": -115
-              },
-              {
-                "name": "Yanis Ghemmouri",
-                "price": -105
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "f29bc0a4a597e8e0bd3d61044cb3b129",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-05T15:00:00Z",
-    "home_team": "Nawras Abzakh",
-    "away_team": "Islam Youssef",
-    "bookmakers": [
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
-            "outcomes": [
-              {
-                "name": "Islam Youssef",
-                "price": 120
-              },
-              {
-                "name": "Nawras Abzakh",
-                "price": -160
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Islam Youssef",
-                "price": 125
-              },
-              {
-                "name": "Nawras Abzakh",
-                "price": -150
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
-            "outcomes": [
-              {
-                "name": "Islam Youssef",
-                "price": 128
-              },
-              {
-                "name": "Nawras Abzakh",
-                "price": -162
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "5131981c52dc2cf6c5fbf4d7d275c207",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-05T15:00:00Z",
-    "home_team": "Malik Basahel",
-    "away_team": "Mahmoud Atef",
-    "bookmakers": [
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
-            "outcomes": [
-              {
-                "name": "Mahmoud Atef",
-                "price": 900
-              },
-              {
-                "name": "Malik Basahel",
-                "price": -1500
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Mahmoud Atef",
-                "price": 900
-              },
-              {
-                "name": "Malik Basahel",
-                "price": -1800
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
-            "outcomes": [
-              {
-                "name": "Mahmoud Atef",
-                "price": 790
-              },
-              {
-                "name": "Malik Basahel",
-                "price": -1500
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "4e6bda470c28d503bdd5f8b3df4728e2",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-05T15:00:00Z",
-    "home_team": "Salah Eddine Hamli",
-    "away_team": "Mohammad Fahmi",
-    "bookmakers": [
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
-            "outcomes": [
-              {
-                "name": "Mohammad Fahmi",
-                "price": 155
-              },
-              {
-                "name": "Salah Eddine Hamli",
-                "price": -220
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Mohammad Fahmi",
-                "price": 165
-              },
-              {
-                "name": "Salah Eddine Hamli",
-                "price": -200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
-            "outcomes": [
-              {
-                "name": "Mohammad Fahmi",
-                "price": 184
-              },
-              {
-                "name": "Salah Eddine Hamli",
-                "price": -245
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "4155648bedc4ee9bf62b08551ed5c677",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-05T23:00:00Z",
-    "home_team": "Vanilto Antunes",
-    "away_team": "Lorenz Larkin",
-    "bookmakers": [
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
-            "outcomes": [
-              {
-                "name": "Lorenz Larkin",
-                "price": -450
-              },
-              {
-                "name": "Vanilto Antunes",
-                "price": 275
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "33cd56e417fc675d6c844c1a1cadb060",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-05T23:00:00Z",
-    "home_team": "Robelis Despaigne",
-    "away_team": "Sam Alvey",
-    "bookmakers": [
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
-            "outcomes": [
-              {
-                "name": "Robelis Despaigne",
-                "price": -600
-              },
-              {
-                "name": "Sam Alvey",
-                "price": 350
+                "name": "Jack Foote",
+                "price": -240
               }
             ]
           }
@@ -431,25 +56,181 @@
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
     "commence_time": "2025-12-06T18:00:00Z",
-    "home_team": "Norbert Pietrzak",
-    "away_team": "Charles Joyner",
+    "home_team": "Charles Joyner",
+    "away_team": "Norbert Pietrzak",
     "bookmakers": [
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Charles Joyner",
-                "price": 155
+                "price": 125
               },
               {
                 "name": "Norbert Pietrzak",
-                "price": -220
+                "price": -145
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Charles Joyner",
+                "price": 130
+              },
+              {
+                "name": "Norbert Pietrzak",
+                "price": -170
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7033106467abc49a46bac1cd3b56a62e",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-06T18:00:00Z",
+    "home_team": "Daniel Bainbridge",
+    "away_team": "Charlie Boulton",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Charlie Boulton",
+                "price": 125
+              },
+              {
+                "name": "Daniel Bainbridge",
+                "price": -165
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Charlie Boulton",
+                "price": 120
+              },
+              {
+                "name": "Daniel Bainbridge",
+                "price": -140
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a9ac353679820ff4490a8bb27fa3173a",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-06T18:00:00Z",
+    "home_team": "Geoff Pavey",
+    "away_team": "Farshad Nazarnia",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Farshad Nazarnia",
+                "price": -300
+              },
+              {
+                "name": "Geoff Pavey",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Farshad Nazarnia",
+                "price": -320
+              },
+              {
+                "name": "Geoff Pavey",
+                "price": 270
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "06e154289c3bb7facc93f35563814b6b",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-06T18:00:00Z",
+    "home_team": "Teddy Adlington-Stringer",
+    "away_team": "Leandro Camargo",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Leandro Camargo",
+                "price": 1000
+              },
+              {
+                "name": "Teddy Adlington-Stringer",
+                "price": -2500
               }
             ]
           }
@@ -461,26 +242,213 @@
     "id": "c3ca43d096f2d500d6e1034f20a3044b",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
-    "commence_time": "2025-12-06T18:00:00Z",
-    "home_team": "Daniel Konrad",
-    "away_team": "George Hardwick",
+    "commence_time": "2025-12-06T20:30:00Z",
+    "home_team": "George Hardwick",
+    "away_team": "Daniel Konrad",
     "bookmakers": [
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Daniel Konrad",
-                "price": 275
+                "price": 260
               },
               {
                 "name": "George Hardwick",
-                "price": -450
+                "price": -310
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Daniel Konrad",
+                "price": 250
+              },
+              {
+                "name": "George Hardwick",
+                "price": -350
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "69df3ecf50a67911f67d8e3ea477aaee",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-06T20:30:00Z",
+    "home_team": "George Staines",
+    "away_team": "Ioan Harris",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "George Staines",
+                "price": -375
+              },
+              {
+                "name": "Ioan Harris",
+                "price": 260
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "George Staines",
+                "price": -355
+              },
+              {
+                "name": "Ioan Harris",
+                "price": 290
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "603509fad3b6b89393481514ebd8c30f",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-06T20:30:00Z",
+    "home_team": "Josh Abraham",
+    "away_team": "Nicolas Barna",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Josh Abraham",
+                "price": -185
+              },
+              {
+                "name": "Nicolas Barna",
+                "price": 140
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8abe0ebc0841d55054072a53bb8e536d",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-06T20:30:00Z",
+    "home_team": "Shajidul Haque",
+    "away_team": "Nicolas Leblond",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Nicolas Leblond",
+                "price": 125
+              },
+              {
+                "name": "Shajidul Haque",
+                "price": -165
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eeef50474eeda7fc502f9ec161f03215",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-06T21:30:00Z",
+    "home_team": "Sean Jr. Clancy",
+    "away_team": "Melvin van Suijdam",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Melvin van Suijdam",
+                "price": 800
+              },
+              {
+                "name": "Sean Jr. Clancy",
+                "price": -1800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Melvin van Suijdam",
+                "price": 900
+              },
+              {
+                "name": "Sean Jr. Clancy",
+                "price": -1800
               }
             ]
           }
@@ -499,15 +467,36 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Mairon Santos",
-                "price": -250
+                "price": -235
+              },
+              {
+                "name": "Muhammadjon Naimov",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "novig",
+        "title": "Novig",
+        "last_update": "2025-12-06T17:57:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:27Z",
+            "outcomes": [
+              {
+                "name": "Mairon Santos",
+                "price": -219
               },
               {
                 "name": "Muhammadjon Naimov",
@@ -518,42 +507,21 @@
         ]
       },
       {
-        "key": "novig",
-        "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
-            "outcomes": [
-              {
-                "name": "Mairon Santos",
-                "price": -248
-              },
-              {
-                "name": "Muhammadjon Naimov",
-                "price": 204
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Mairon Santos",
-                "price": -265
+                "price": -238
               },
               {
                 "name": "Muhammadjon Naimov",
-                "price": 215
+                "price": 195
               }
             ]
           }
@@ -562,11 +530,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:05Z",
             "outcomes": [
               {
                 "name": "Mairon Santos",
@@ -583,19 +551,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Mairon Santos",
-                "price": -295
+                "price": -260
               },
               {
                 "name": "Muhammadjon Naimov",
-                "price": 220
+                "price": 215
               }
             ]
           }
@@ -604,15 +572,15 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Mairon Santos",
-                "price": -220
+                "price": -230
               },
               {
                 "name": "Muhammadjon Naimov",
@@ -625,19 +593,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Mairon Santos",
-                "price": -278
+                "price": -250
               },
               {
                 "name": "Muhammadjon Naimov",
-                "price": 215
+                "price": 195
               }
             ]
           }
@@ -646,19 +614,19 @@
       {
         "key": "betopenly",
         "title": "BetOpenly",
-        "last_update": "2025-12-03T17:06:15Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:15Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Mairon Santos",
-                "price": -258
+                "price": -216
               },
               {
                 "name": "Muhammadjon Naimov",
-                "price": 258
+                "price": 216
               }
             ]
           }
@@ -677,19 +645,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Antonio Trocoli",
-                "price": 650
+                "price": 750
               },
               {
                 "name": "Mansur Abdul-Malik",
-                "price": -1150
+                "price": -1450
               }
             ]
           }
@@ -698,19 +666,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Antonio Trocoli",
-                "price": 750
+                "price": 800
               },
               {
                 "name": "Mansur Abdul-Malik",
-                "price": -1200
+                "price": -1400
               }
             ]
           }
@@ -719,19 +687,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:05Z",
             "outcomes": [
               {
                 "name": "Antonio Trocoli",
-                "price": 725
+                "price": 775
               },
               {
                 "name": "Mansur Abdul-Malik",
-                "price": -1300
+                "price": -1500
               }
             ]
           }
@@ -740,19 +708,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Antonio Trocoli",
-                "price": 750
+                "price": 800
               },
               {
                 "name": "Mansur Abdul-Malik",
-                "price": -1200
+                "price": -1400
               }
             ]
           }
@@ -761,11 +729,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Antonio Trocoli",
@@ -782,19 +750,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Antonio Trocoli",
-                "price": 609
+                "price": 871
               },
               {
                 "name": "Mansur Abdul-Malik",
-                "price": -9900
+                "price": -1216
               }
             ]
           }
@@ -803,19 +771,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Antonio Trocoli",
-                "price": 560
+                "price": 750
               },
               {
                 "name": "Mansur Abdul-Malik",
-                "price": -1000
+                "price": -1200
               }
             ]
           }
@@ -824,19 +792,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Antonio Trocoli",
-                "price": 680
+                "price": 900
               },
               {
                 "name": "Mansur Abdul-Malik",
-                "price": -1150
+                "price": -1200
               }
             ]
           }
@@ -855,11 +823,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Ibo Aslan",
@@ -876,11 +844,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Ibo Aslan",
@@ -897,19 +865,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Ibo Aslan",
-                "price": 158
+                "price": 171
               },
               {
                 "name": "Iwo Baraniewski",
-                "price": -215
+                "price": -184
               }
             ]
           }
@@ -918,36 +886,15 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Ibo Aslan",
-                "price": 160
-              },
-              {
-                "name": "Iwo Baraniewski",
-                "price": -192
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Ibo Aslan",
-                "price": 168
+                "price": 164
               },
               {
                 "name": "Iwo Baraniewski",
@@ -958,21 +905,42 @@
         ]
       },
       {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:05Z",
             "outcomes": [
               {
                 "name": "Ibo Aslan",
-                "price": 164
+                "price": 173
               },
               {
                 "name": "Iwo Baraniewski",
-                "price": -215
+                "price": -205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:34Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:34Z",
+            "outcomes": [
+              {
+                "name": "Ibo Aslan",
+                "price": 156
+              },
+              {
+                "name": "Iwo Baraniewski",
+                "price": -186
               }
             ]
           }
@@ -981,19 +949,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Ibo Aslan",
-                "price": 158
+                "price": 178
               },
               {
                 "name": "Iwo Baraniewski",
-                "price": -188
+                "price": -194
               }
             ]
           }
@@ -1002,19 +970,40 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Ibo Aslan",
-                "price": 155
+                "price": 163
               },
               {
                 "name": "Iwo Baraniewski",
-                "price": -195
+                "price": -205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betopenly",
+        "title": "BetOpenly",
+        "last_update": "2025-12-06T17:57:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:23Z",
+            "outcomes": [
+              {
+                "name": "Ibo Aslan",
+                "price": 180
+              },
+              {
+                "name": "Iwo Baraniewski",
+                "price": -180
               }
             ]
           }
@@ -1033,19 +1022,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 250
+                "price": 315
               },
               {
                 "name": "Jalin Turner",
-                "price": -300
+                "price": -415
               }
             ]
           }
@@ -1054,19 +1043,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 240
+                "price": 310
               },
               {
                 "name": "Jalin Turner",
-                "price": -300
+                "price": -400
               }
             ]
           }
@@ -1075,19 +1064,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 251
+                "price": 344
               },
               {
                 "name": "Jalin Turner",
-                "price": -324
+                "price": -400
               }
             ]
           }
@@ -1096,19 +1085,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 250
+                "price": 330
               },
               {
                 "name": "Jalin Turner",
-                "price": -310
+                "price": -425
               }
             ]
           }
@@ -1117,19 +1106,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:05Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 250
+                "price": 300
               },
               {
                 "name": "Jalin Turner",
-                "price": -300
+                "price": -400
               }
             ]
           }
@@ -1138,19 +1127,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 220
+                "price": 315
               },
               {
                 "name": "Jalin Turner",
-                "price": -295
+                "price": -400
               }
             ]
           }
@@ -1159,19 +1148,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 230
+                "price": 360
               },
               {
                 "name": "Jalin Turner",
-                "price": -290
+                "price": -365
               }
             ]
           }
@@ -1180,19 +1169,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 235
+                "price": 300
               },
               {
                 "name": "Jalin Turner",
-                "price": -305
+                "price": -400
               }
             ]
           }
@@ -1201,19 +1190,19 @@
       {
         "key": "betopenly",
         "title": "BetOpenly",
-        "last_update": "2025-12-03T17:06:15Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:15Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Edson Barboza",
-                "price": 278
+                "price": 378
               },
               {
                 "name": "Jalin Turner",
-                "price": -278
+                "price": -378
               }
             ]
           }
@@ -1232,19 +1221,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Brunno Ferreira",
-                "price": -105
+                "price": 105
               },
               {
                 "name": "Marvin Vettori",
-                "price": -115
+                "price": -125
               }
             ]
           }
@@ -1253,36 +1242,15 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Brunno Ferreira",
-                "price": -105
-              },
-              {
-                "name": "Marvin Vettori",
-                "price": -115
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "novig",
-        "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
-            "outcomes": [
-              {
-                "name": "Brunno Ferreira",
-                "price": 102
+                "price": 100
               },
               {
                 "name": "Marvin Vettori",
@@ -1293,21 +1261,42 @@
         ]
       },
       {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "key": "novig",
+        "title": "Novig",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Brunno Ferreira",
-                "price": -102
+                "price": 106
               },
               {
                 "name": "Marvin Vettori",
-                "price": -118
+                "price": -119
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-12-06T17:57:07Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:07Z",
+            "outcomes": [
+              {
+                "name": "Brunno Ferreira",
+                "price": 102
+              },
+              {
+                "name": "Marvin Vettori",
+                "price": -122
               }
             ]
           }
@@ -1316,78 +1305,15 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:05Z",
             "outcomes": [
               {
                 "name": "Brunno Ferreira",
-                "price": -103
-              },
-              {
-                "name": "Marvin Vettori",
-                "price": -117
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
-            "outcomes": [
-              {
-                "name": "Brunno Ferreira",
-                "price": -108
-              },
-              {
-                "name": "Marvin Vettori",
-                "price": -118
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "prophetx",
-        "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
-            "outcomes": [
-              {
-                "name": "Brunno Ferreira",
-                "price": 112
-              },
-              {
-                "name": "Marvin Vettori",
-                "price": -118
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Brunno Ferreira",
-                "price": -108
+                "price": -105
               },
               {
                 "name": "Marvin Vettori",
@@ -1398,21 +1324,84 @@
         ]
       },
       {
-        "key": "betopenly",
-        "title": "BetOpenly",
-        "last_update": "2025-12-03T17:06:15Z",
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:15Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Brunno Ferreira",
-                "price": 108
+                "price": -102
               },
               {
                 "name": "Marvin Vettori",
-                "price": -108
+                "price": -116
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "prophetx",
+        "title": "ProphetX",
+        "last_update": "2025-12-06T17:57:20Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:20Z",
+            "outcomes": [
+              {
+                "name": "Brunno Ferreira",
+                "price": 112
+              },
+              {
+                "name": "Marvin Vettori",
+                "price": -117
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-12-06T17:57:20Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:20Z",
+            "outcomes": [
+              {
+                "name": "Brunno Ferreira",
+                "price": -104
+              },
+              {
+                "name": "Marvin Vettori",
+                "price": -121
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betopenly",
+        "title": "BetOpenly",
+        "last_update": "2025-12-06T17:57:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:23Z",
+            "outcomes": [
+              {
+                "name": "Brunno Ferreira",
+                "price": 112
+              },
+              {
+                "name": "Marvin Vettori",
+                "price": -112
               }
             ]
           }
@@ -1431,19 +1420,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Fares Ziam",
-                "price": -133
+                "price": -190
               },
               {
                 "name": "Nazim Sadykhov",
-                "price": 113
+                "price": 165
               }
             ]
           }
@@ -1452,19 +1441,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Fares Ziam",
-                "price": -135
+                "price": -190
               },
               {
                 "name": "Nazim Sadykhov",
-                "price": 110
+                "price": 155
               }
             ]
           }
@@ -1473,19 +1462,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Fares Ziam",
-                "price": -130
+                "price": -185
               },
               {
                 "name": "Nazim Sadykhov",
-                "price": 110
+                "price": 154
               }
             ]
           }
@@ -1494,19 +1483,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:05Z",
             "outcomes": [
               {
                 "name": "Fares Ziam",
-                "price": -128
+                "price": -160
               },
               {
                 "name": "Nazim Sadykhov",
-                "price": 107
+                "price": 135
               }
             ]
           }
@@ -1515,19 +1504,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Fares Ziam",
-                "price": -146
+                "price": -178
               },
               {
                 "name": "Nazim Sadykhov",
-                "price": 114
+                "price": 150
               }
             ]
           }
@@ -1536,19 +1525,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Fares Ziam",
-                "price": -139
+                "price": -175
               },
               {
                 "name": "Nazim Sadykhov",
-                "price": 112
+                "price": 140
               }
             ]
           }
@@ -1567,19 +1556,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Karine Silva",
-                "price": 165
+                "price": 175
               },
               {
                 "name": "Maycee Barber",
-                "price": -190
+                "price": -205
               }
             ]
           }
@@ -1588,19 +1577,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Karine Silva",
-                "price": 150
+                "price": 165
               },
               {
                 "name": "Maycee Barber",
-                "price": -185
+                "price": -200
               }
             ]
           }
@@ -1609,19 +1598,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Karine Silva",
-                "price": 160
+                "price": 190
               },
               {
                 "name": "Maycee Barber",
-                "price": -209
+                "price": -200
               }
             ]
           }
@@ -1630,19 +1619,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Karine Silva",
-                "price": 154
+                "price": 170
               },
               {
                 "name": "Maycee Barber",
-                "price": -185
+                "price": -205
               }
             ]
           }
@@ -1651,19 +1640,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:05Z",
             "outcomes": [
               {
                 "name": "Karine Silva",
-                "price": 158
+                "price": 170
               },
               {
                 "name": "Maycee Barber",
-                "price": -183
+                "price": -200
               }
             ]
           }
@@ -1672,19 +1661,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Karine Silva",
-                "price": 148
+                "price": 168
               },
               {
                 "name": "Maycee Barber",
-                "price": -192
+                "price": -200
               }
             ]
           }
@@ -1693,19 +1682,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Karine Silva",
-                "price": 180
+                "price": 194
               },
               {
                 "name": "Maycee Barber",
-                "price": -184
+                "price": -198
               }
             ]
           }
@@ -1714,19 +1703,40 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Karine Silva",
-                "price": 160
+                "price": 165
               },
               {
                 "name": "Maycee Barber",
-                "price": -200
+                "price": -210
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betopenly",
+        "title": "BetOpenly",
+        "last_update": "2025-12-06T17:57:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:23Z",
+            "outcomes": [
+              {
+                "name": "Karine Silva",
+                "price": 191
+              },
+              {
+                "name": "Maycee Barber",
+                "price": -191
               }
             ]
           }
@@ -1745,19 +1755,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -150
+                "price": -105
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 130
+                "price": -115
               }
             ]
           }
@@ -1766,19 +1776,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -180
+                "price": -125
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 145
+                "price": 105
               }
             ]
           }
@@ -1787,19 +1797,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -144
+                "price": -107
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 137
+                "price": -100
               }
             ]
           }
@@ -1808,19 +1818,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -162
+                "price": -112
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 136
+                "price": -108
               }
             ]
           }
@@ -1829,19 +1839,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:05Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -165
+                "price": -125
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 140
+                "price": 105
               }
             ]
           }
@@ -1850,19 +1860,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -180
+                "price": -120
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 138
+                "price": 102
               }
             ]
           }
@@ -1871,19 +1881,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -148
+                "price": -107
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 138
+                "price": 101
               }
             ]
           }
@@ -1892,19 +1902,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -175
+                "price": -125
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 138
+                "price": 102
               }
             ]
           }
@@ -1913,19 +1923,19 @@
       {
         "key": "betopenly",
         "title": "BetOpenly",
-        "last_update": "2025-12-03T17:06:15Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:15Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Chris Duncan",
-                "price": -142
+                "price": -102
               },
               {
                 "name": "Terrance Mckinney",
-                "price": 142
+                "price": 102
               }
             ]
           }
@@ -1944,19 +1954,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Grant Dawson",
-                "price": -214
+                "price": -285
               },
               {
                 "name": "Manuel Torres",
-                "price": 184
+                "price": 245
               }
             ]
           }
@@ -1965,19 +1975,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Grant Dawson",
-                "price": -210
+                "price": -250
               },
               {
                 "name": "Manuel Torres",
-                "price": 170
+                "price": 200
               }
             ]
           }
@@ -1986,19 +1996,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Grant Dawson",
-                "price": -247
+                "price": -245
               },
               {
                 "name": "Manuel Torres",
-                "price": 181
+                "price": 228
               }
             ]
           }
@@ -2007,19 +2017,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Grant Dawson",
-                "price": -218
+                "price": -270
               },
               {
                 "name": "Manuel Torres",
-                "price": 180
+                "price": 220
               }
             ]
           }
@@ -2028,19 +2038,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:06Z",
             "outcomes": [
               {
                 "name": "Grant Dawson",
-                "price": -215
+                "price": -245
               },
               {
                 "name": "Manuel Torres",
-                "price": 178
+                "price": 205
               }
             ]
           }
@@ -2049,19 +2059,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Grant Dawson",
-                "price": -235
+                "price": -245
               },
               {
                 "name": "Manuel Torres",
-                "price": 180
+                "price": 200
               }
             ]
           }
@@ -2070,19 +2080,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Grant Dawson",
-                "price": -215
+                "price": -260
               },
               {
                 "name": "Manuel Torres",
-                "price": 182
+                "price": 230
               }
             ]
           }
@@ -2091,19 +2101,40 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Grant Dawson",
-                "price": -225
+                "price": -250
               },
               {
                 "name": "Manuel Torres",
-                "price": 175
+                "price": 195
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betopenly",
+        "title": "BetOpenly",
+        "last_update": "2025-12-06T17:57:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:23Z",
+            "outcomes": [
+              {
+                "name": "Grant Dawson",
+                "price": -245
+              },
+              {
+                "name": "Manuel Torres",
+                "price": 245
               }
             ]
           }
@@ -2122,19 +2153,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 110
+                "price": -115
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -130
+                "price": -105
               }
             ]
           }
@@ -2143,19 +2174,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 110
+                "price": -105
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -135
+                "price": -115
               }
             ]
           }
@@ -2164,19 +2195,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 120
+                "price": -104
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -130
+                "price": -105
               }
             ]
           }
@@ -2185,19 +2216,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 110
+                "price": -110
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -130
+                "price": -110
               }
             ]
           }
@@ -2206,19 +2237,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:06Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 112
+                "price": -105
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -133
+                "price": -115
               }
             ]
           }
@@ -2227,19 +2258,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 110
+                "price": -108
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -140
+                "price": -108
               }
             ]
           }
@@ -2248,19 +2279,19 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 110
+                "price": -101
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -125
+                "price": -107
               }
             ]
           }
@@ -2269,19 +2300,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 115
+                "price": -104
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -143
+                "price": -121
               }
             ]
           }
@@ -2290,19 +2321,19 @@
       {
         "key": "betopenly",
         "title": "BetOpenly",
-        "last_update": "2025-12-03T17:06:15Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:15Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Bogdan Guskov",
-                "price": 120
+                "price": 101
               },
               {
                 "name": "Jan Blachowicz",
-                "price": -120
+                "price": -101
               }
             ]
           }
@@ -2321,19 +2352,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Henry Cejudo",
-                "price": 215
+                "price": 220
               },
               {
                 "name": "Payton Talbott",
-                "price": -255
+                "price": -260
               }
             ]
           }
@@ -2342,36 +2373,15 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Henry Cejudo",
-                "price": 240
-              },
-              {
-                "name": "Payton Talbott",
-                "price": -300
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "novig",
-        "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
-            "outcomes": [
-              {
-                "name": "Henry Cejudo",
-                "price": 217
+                "price": 200
               },
               {
                 "name": "Payton Talbott",
@@ -2382,21 +2392,42 @@
         ]
       },
       {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "key": "novig",
+        "title": "Novig",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Henry Cejudo",
-                "price": 225
+                "price": 221
               },
               {
                 "name": "Payton Talbott",
-                "price": -278
+                "price": -229
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-12-06T17:57:07Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:07Z",
+            "outcomes": [
+              {
+                "name": "Henry Cejudo",
+                "price": 215
+              },
+              {
+                "name": "Payton Talbott",
+                "price": -265
               }
             ]
           }
@@ -2405,19 +2436,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:06Z",
             "outcomes": [
               {
                 "name": "Henry Cejudo",
-                "price": 225
+                "price": 200
               },
               {
                 "name": "Payton Talbott",
-                "price": -275
+                "price": -240
               }
             ]
           }
@@ -2426,19 +2457,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Henry Cejudo",
-                "price": 215
+                "price": 205
               },
               {
                 "name": "Payton Talbott",
-                "price": -290
+                "price": -250
               }
             ]
           }
@@ -2447,11 +2478,11 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Henry Cejudo",
@@ -2459,7 +2490,7 @@
               },
               {
                 "name": "Payton Talbott",
-                "price": -255
+                "price": -250
               }
             ]
           }
@@ -2468,11 +2499,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Henry Cejudo",
@@ -2489,19 +2520,19 @@
       {
         "key": "betopenly",
         "title": "BetOpenly",
-        "last_update": "2025-12-03T17:06:15Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:15Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Henry Cejudo",
-                "price": 240
+                "price": 234
               },
               {
                 "name": "Payton Talbott",
-                "price": -240
+                "price": -234
               }
             ]
           }
@@ -2520,11 +2551,32 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Brandon Moreno",
+                "price": 102
+              },
+              {
+                "name": "Tatsuro Taira",
+                "price": -122
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-12-06T17:56:08Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Brandon Moreno",
@@ -2539,42 +2591,21 @@
         ]
       },
       {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Brandon Moreno",
-                "price": 100
-              },
-              {
-                "name": "Tatsuro Taira",
-                "price": -120
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Brandon Moreno",
-                "price": 105
+                "price": 113
               },
               {
                 "name": "Tatsuro Taira",
-                "price": -118
+                "price": -117
               }
             ]
           }
@@ -2583,11 +2614,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Brandon Moreno",
@@ -2604,19 +2635,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:06Z",
             "outcomes": [
               {
                 "name": "Brandon Moreno",
-                "price": 102
+                "price": 100
               },
               {
                 "name": "Tatsuro Taira",
-                "price": -122
+                "price": -120
               }
             ]
           }
@@ -2625,19 +2656,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Brandon Moreno",
-                "price": 104
+                "price": 102
               },
               {
                 "name": "Tatsuro Taira",
-                "price": -132
+                "price": -120
               }
             ]
           }
@@ -2646,15 +2677,36 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Brandon Moreno",
-                "price": 107
+                "price": 112
+              },
+              {
+                "name": "Tatsuro Taira",
+                "price": -117
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-12-06T17:57:20Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:20Z",
+            "outcomes": [
+              {
+                "name": "Brandon Moreno",
+                "price": 102
               },
               {
                 "name": "Tatsuro Taira",
@@ -2665,34 +2717,13 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Brandon Moreno",
-                "price": 107
-              },
-              {
-                "name": "Tatsuro Taira",
-                "price": -132
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "betopenly",
         "title": "BetOpenly",
-        "last_update": "2025-12-03T17:06:15Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:15Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Brandon Moreno",
@@ -2719,19 +2750,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Alexandre Pantoja",
-                "price": -238
+                "price": -225
               },
               {
                 "name": "Joshua Van",
-                "price": 195
+                "price": 185
               }
             ]
           }
@@ -2740,36 +2771,15 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Alexandre Pantoja",
-                "price": -265
-              },
-              {
-                "name": "Joshua Van",
-                "price": 200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
-            "outcomes": [
-              {
-                "name": "Alexandre Pantoja",
-                "price": -223
+                "price": -225
               },
               {
                 "name": "Joshua Van",
@@ -2780,21 +2790,42 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Alexandre Pantoja",
-                "price": -265
+                "price": -230
               },
               {
                 "name": "Joshua Van",
-                "price": 205
+                "price": 195
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-12-06T17:57:20Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:20Z",
+            "outcomes": [
+              {
+                "name": "Alexandre Pantoja",
+                "price": -240
+              },
+              {
+                "name": "Joshua Van",
+                "price": 188
               }
             ]
           }
@@ -2803,11 +2834,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Alexandre Pantoja",
@@ -2824,15 +2855,36 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Alexandre Pantoja",
-                "price": -240
+                "price": -204
+              },
+              {
+                "name": "Joshua Van",
+                "price": 193
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-06T17:57:06Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:06Z",
+            "outcomes": [
+              {
+                "name": "Alexandre Pantoja",
+                "price": -245
               },
               {
                 "name": "Joshua Van",
@@ -2843,42 +2895,21 @@
         ]
       },
       {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Alexandre Pantoja",
-                "price": -240
-              },
-              {
-                "name": "Joshua Van",
-                "price": 200
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Alexandre Pantoja",
-                "price": -240
+                "price": -220
               },
               {
                 "name": "Joshua Van",
-                "price": 200
+                "price": 190
               }
             ]
           }
@@ -2887,19 +2918,19 @@
       {
         "key": "betopenly",
         "title": "BetOpenly",
-        "last_update": "2025-12-03T17:06:15Z",
+        "last_update": "2025-12-06T17:57:23Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:15Z",
+            "last_update": "2025-12-06T17:57:23Z",
             "outcomes": [
               {
                 "name": "Alexandre Pantoja",
-                "price": -232
+                "price": -206
               },
               {
                 "name": "Joshua Van",
-                "price": 232
+                "price": 206
               }
             ]
           }
@@ -2918,11 +2949,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Merab Dvalishvili",
@@ -2939,36 +2970,15 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Merab Dvalishvili",
-                "price": -500
-              },
-              {
-                "name": "Petr Yan",
-                "price": 340
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
-            "outcomes": [
-              {
-                "name": "Merab Dvalishvili",
-                "price": -415
+                "price": -400
               },
               {
                 "name": "Petr Yan",
@@ -2979,13 +2989,34 @@
         ]
       },
       {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Merab Dvalishvili",
+                "price": -370
+              },
+              {
+                "name": "Petr Yan",
+                "price": 305
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-12-06T17:57:20Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Merab Dvalishvili",
@@ -3002,19 +3033,19 @@
       {
         "key": "novig",
         "title": "Novig",
-        "last_update": "2025-12-03T17:06:58Z",
+        "last_update": "2025-12-06T17:57:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:58Z",
+            "last_update": "2025-12-06T17:57:27Z",
             "outcomes": [
               {
                 "name": "Merab Dvalishvili",
-                "price": -398
+                "price": -390
               },
               {
                 "name": "Petr Yan",
-                "price": 361
+                "price": 335
               }
             ]
           }
@@ -3023,11 +3054,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-03T17:06:56Z",
+        "last_update": "2025-12-06T17:57:06Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:06Z",
             "outcomes": [
               {
                 "name": "Merab Dvalishvili",
@@ -3044,19 +3075,465 @@
       {
         "key": "prophetx",
         "title": "ProphetX",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Merab Dvalishvili",
-                "price": -395
+                "price": -375
+              },
+              {
+                "name": "Petr Yan",
+                "price": 330
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betopenly",
+        "title": "BetOpenly",
+        "last_update": "2025-12-06T17:57:23Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:23Z",
+            "outcomes": [
+              {
+                "name": "Merab Dvalishvili",
+                "price": -364
+              },
+              {
+                "name": "Petr Yan",
+                "price": 364
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-12-06T17:56:08Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:56:08Z",
+            "outcomes": [
+              {
+                "name": "Merab Dvalishvili",
+                "price": -425
               },
               {
                 "name": "Petr Yan",
                 "price": 320
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f21b0ed7b17e24f3bb29f2590790be08",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Gillian Robertson",
+    "away_team": "Amanda Lemos",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Amanda Lemos",
+                "price": 145
+              },
+              {
+                "name": "Gillian Robertson",
+                "price": -170
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "novig",
+        "title": "Novig",
+        "last_update": "2025-12-06T17:57:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:27Z",
+            "outcomes": [
+              {
+                "name": "Amanda Lemos",
+                "price": 135
+              },
+              {
+                "name": "Gillian Robertson",
+                "price": -100000
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fc5dabee9d0eb9208ceabb567ed7353b",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Tereza Bleda",
+    "away_team": "Jamey-Lyn Horth",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Jamey-Lyn Horth",
+                "price": 155
+              },
+              {
+                "name": "Tereza Bleda",
+                "price": -180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8d73172477a0eba2c3967cdbdd99f51d",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Joanderson Brito",
+    "away_team": "Melsik Baghdasaryan",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Joanderson Brito",
+                "price": -211
+              },
+              {
+                "name": "Melsik Baghdasaryan",
+                "price": 181
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "novig",
+        "title": "Novig",
+        "last_update": "2025-12-06T17:57:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:27Z",
+            "outcomes": [
+              {
+                "name": "Joanderson Brito",
+                "price": -200
+              },
+              {
+                "name": "Melsik Baghdasaryan",
+                "price": -100000
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1c235f4c7c46a5461d6d2f3a1a47c283",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Luana Santos",
+    "away_team": "Melissa Croden",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Luana Santos",
+                "price": -160
+              },
+              {
+                "name": "Melissa Croden",
+                "price": 140
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "novig",
+        "title": "Novig",
+        "last_update": "2025-12-06T17:57:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:27Z",
+            "outcomes": [
+              {
+                "name": "Luana Santos",
+                "price": -100000
+              },
+              {
+                "name": "Melissa Croden",
+                "price": 130
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a86b46e3dd646828fc6bf8451ef7b0f9",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Yaroslav Amosov",
+    "away_team": "Neil Magny",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Neil Magny",
+                "price": 330
+              },
+              {
+                "name": "Yaroslav Amosov",
+                "price": -400
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0f5640628f07e33b7673b4c748f5377b",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Steven Asplund",
+    "away_team": "Sean Sharaf",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Sean Sharaf",
+                "price": 240
+              },
+              {
+                "name": "Steven Asplund",
+                "price": -280
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d7280e21447ecc65d98f9f5c8c68513b",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T03:00:00Z",
+    "home_team": "Brandon Royval",
+    "away_team": "Manel Kape",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Brandon Royval",
+                "price": 205
+              },
+              {
+                "name": "Manel Kape",
+                "price": -240
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "79fc97a48068519a938ab980ba6fd12c",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T03:00:00Z",
+    "home_team": "Cezary Oleksiejczuk",
+    "away_team": "Cesar Almeida",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Cesar Almeida",
+                "price": 135
+              },
+              {
+                "name": "Cezary Oleksiejczuk",
+                "price": -155
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1e012168930da6571107c785b0442575",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T03:00:00Z",
+    "home_team": "Kevin Vallejos",
+    "away_team": "Giga Chikadze",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Giga Chikadze",
+                "price": 190
+              },
+              {
+                "name": "Kevin Vallejos",
+                "price": -225
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "293fb15182f973f7b44891992cba8117",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T03:00:00Z",
+    "home_team": "Kennedy Nzechukwu",
+    "away_team": "Marcus Buchecha",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Kennedy Nzechukwu",
+                "price": -150
+              },
+              {
+                "name": "Marcus Buchecha",
+                "price": 130
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "222f84588e9ae0e632dca2a15d3b9925",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T03:00:00Z",
+    "home_team": "Melquizael Costa",
+    "away_team": "Morgan Charriere",
+    "bookmakers": [
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Melquizael Costa",
+                "price": -130
+              },
+              {
+                "name": "Morgan Charriere",
+                "price": 110
               }
             ]
           }
@@ -3408,11 +3885,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Khamzat Chimaev",
@@ -3439,11 +3916,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Caio Borralho",
@@ -3470,11 +3947,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Khamzat Chimaev",
@@ -3483,121 +3960,6 @@
               {
                 "name": "Nassourdine Imavov",
                 "price": 400
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "1b337ecb89983719ba8ce019c4ebd03b",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2026-01-24T10:00:00Z",
-    "home_team": "Kayla Harrison",
-    "away_team": "Amanda Nunes",
-    "bookmakers": [
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
-            "outcomes": [
-              {
-                "name": "Amanda Nunes",
-                "price": 150
-              },
-              {
-                "name": "Kayla Harrison",
-                "price": -180
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
-            "outcomes": [
-              {
-                "name": "Amanda Nunes",
-                "price": 140
-              },
-              {
-                "name": "Kayla Harrison",
-                "price": -180
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
-            "outcomes": [
-              {
-                "name": "Amanda Nunes",
-                "price": 170
-              },
-              {
-                "name": "Kayla Harrison",
-                "price": -200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Amanda Nunes",
-                "price": 140
-              },
-              {
-                "name": "Kayla Harrison",
-                "price": -177
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
-            "outcomes": [
-              {
-                "name": "Amanda Nunes",
-                "price": 145
-              },
-              {
-                "name": "Kayla Harrison",
-                "price": -175
               }
             ]
           }
@@ -3616,19 +3978,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Arnold Allen",
-                "price": 170
+                "price": 155
               },
               {
                 "name": "Jean Silva",
-                "price": -195
+                "price": -180
               }
             ]
           }
@@ -3637,11 +3999,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Arnold Allen",
@@ -3658,11 +4020,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Arnold Allen",
@@ -3679,11 +4041,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Arnold Allen",
@@ -3700,11 +4062,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Arnold Allen",
@@ -3731,19 +4093,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Derrick Lewis",
-                "price": 225
+                "price": 250
               },
               {
                 "name": "Waldo Cortes-Acosta",
-                "price": -265
+                "price": -300
               }
             ]
           }
@@ -3752,11 +4114,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Derrick Lewis",
@@ -3773,11 +4135,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Derrick Lewis",
@@ -3794,19 +4156,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Derrick Lewis",
-                "price": 188
+                "price": 205
               },
               {
                 "name": "Waldo Cortes-Acosta",
-                "price": -240
+                "price": -265
               }
             ]
           }
@@ -3815,11 +4177,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Derrick Lewis",
@@ -3846,19 +4208,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Sean O'Malley",
-                "price": -170
+                "price": -175
               },
               {
                 "name": "Song Yadong",
-                "price": 145
+                "price": 150
               }
             ]
           }
@@ -3867,11 +4229,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Sean O'Malley",
@@ -3888,11 +4250,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Sean O'Malley",
@@ -3909,11 +4271,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Sean O'Malley",
@@ -3930,11 +4292,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Sean O'Malley",
@@ -3943,6 +4305,121 @@
               {
                 "name": "Song Yadong",
                 "price": 150
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1b337ecb89983719ba8ce019c4ebd03b",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2026-01-25T02:30:00Z",
+    "home_team": "Kayla Harrison",
+    "away_team": "Amanda Nunes",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-12-06T17:57:07Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:07Z",
+            "outcomes": [
+              {
+                "name": "Amanda Nunes",
+                "price": 150
+              },
+              {
+                "name": "Kayla Harrison",
+                "price": -180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:34Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:34Z",
+            "outcomes": [
+              {
+                "name": "Amanda Nunes",
+                "price": 140
+              },
+              {
+                "name": "Kayla Harrison",
+                "price": -180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2025-12-06T17:55:48Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:55:48Z",
+            "outcomes": [
+              {
+                "name": "Amanda Nunes",
+                "price": 170
+              },
+              {
+                "name": "Kayla Harrison",
+                "price": -200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2025-12-06T17:57:20Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:20Z",
+            "outcomes": [
+              {
+                "name": "Amanda Nunes",
+                "price": 140
+              },
+              {
+                "name": "Kayla Harrison",
+                "price": -177
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betmgm",
+        "title": "BetMGM",
+        "last_update": "2025-12-06T17:56:08Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:56:08Z",
+            "outcomes": [
+              {
+                "name": "Amanda Nunes",
+                "price": 145
+              },
+              {
+                "name": "Kayla Harrison",
+                "price": -175
               }
             ]
           }
@@ -3961,11 +4438,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Justin Gaethje",
@@ -3982,11 +4459,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Justin Gaethje",
@@ -4003,11 +4480,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Justin Gaethje",
@@ -4024,11 +4501,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Justin Gaethje",
@@ -4045,11 +4522,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Justin Gaethje",
@@ -4076,11 +4553,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-12-03T17:06:00Z",
+        "last_update": "2025-12-06T17:57:07Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:00Z",
+            "last_update": "2025-12-06T17:57:07Z",
             "outcomes": [
               {
                 "name": "Alex Volkanovski",
@@ -4097,11 +4574,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-03T17:06:28Z",
+        "last_update": "2025-12-06T17:57:34Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:28Z",
+            "last_update": "2025-12-06T17:57:34Z",
             "outcomes": [
               {
                 "name": "Alex Volkanovski",
@@ -4118,11 +4595,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:08Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Alex Volkanovski",
@@ -4139,11 +4616,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:57:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:57:20Z",
             "outcomes": [
               {
                 "name": "Alex Volkanovski",
@@ -4160,11 +4637,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-12-03T17:06:55Z",
+        "last_update": "2025-12-06T17:56:08Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:06:55Z",
+            "last_update": "2025-12-06T17:56:08Z",
             "outcomes": [
               {
                 "name": "Alex Volkanovski",
@@ -4173,6 +4650,58 @@
               {
                 "name": "Diego Lopes",
                 "price": 125
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e9653214c40ffd17a62b8f6e3a12a9c2",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2026-03-08T04:30:00Z",
+    "home_team": "Max Holloway",
+    "away_team": "Charles Oliveira",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2025-12-06T17:57:07Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:07Z",
+            "outcomes": [
+              {
+                "name": "Charles Oliveira",
+                "price": 145
+              },
+              {
+                "name": "Max Holloway",
+                "price": -188
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2025-12-06T17:57:34Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-06T17:57:34Z",
+            "outcomes": [
+              {
+                "name": "Charles Oliveira",
+                "price": 146
+              },
+              {
+                "name": "Max Holloway",
+                "price": -188
               }
             ]
           }
@@ -4191,19 +4720,19 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Charles Oliveira",
-                "price": 140
+                "price": 170
               },
               {
                 "name": "Max Holloway",
-                "price": -160
+                "price": -200
               }
             ]
           }
@@ -4222,11 +4751,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Ilia Topuria",
@@ -4253,11 +4782,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Alex Pereira",
@@ -4284,11 +4813,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Alex Pereira",
@@ -4315,11 +4844,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Alex Pereira",
@@ -4346,11 +4875,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Carlos Ulberg",
@@ -4377,11 +4906,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Natalia Silva",
@@ -4408,11 +4937,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Ciryl Gane",
@@ -4439,11 +4968,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Islam Makhachev",
@@ -4470,11 +4999,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Mackenzie Dern",
@@ -4501,11 +5030,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Arman Tsarukyan",
@@ -4532,11 +5061,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2025-12-03T17:03:08Z",
+        "last_update": "2025-12-06T17:55:48Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-03T17:03:07Z",
+            "last_update": "2025-12-06T17:55:48Z",
             "outcomes": [
               {
                 "name": "Islam Makhachev",

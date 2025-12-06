@@ -1,66 +1,82 @@
 [
   {
-    "id": "cde95de340103ef9e2d5a9ec25f6ae59",
+    "id": "ff3b0e75ee1ffeae2d0eefe5f30c801f",
     "sport_key": "soccer_brazil_campeonato",
     "sport_title": "Brazil Série A",
-    "commence_time": "2025-12-03T22:00:00Z",
-    "home_team": "Bragantino-SP",
-    "away_team": "Vitoria"
+    "commence_time": "2025-12-06T21:30:00Z",
+    "home_team": "Mirassol",
+    "away_team": "Flamengo"
   },
   {
-    "id": "fd3df3b526cde5ba96d1535904c34595",
+    "id": "c8ca4af7b7530ff4482fd3782941bc57",
     "sport_key": "soccer_brazil_campeonato",
     "sport_title": "Brazil Série A",
-    "commence_time": "2025-12-03T22:00:00Z",
-    "home_team": "Fortaleza",
-    "away_team": "Corinthians"
-  },
-  {
-    "id": "02918e2e481a8004611392035bd81e97",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-12-03T22:30:00Z",
-    "home_team": "Juventude",
-    "away_team": "Santos"
-  },
-  {
-    "id": "2e5d51f3063000b5b0125cd4770ff372",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-12-03T23:00:00Z",
-    "home_team": "Bahia",
-    "away_team": "Sport Recife"
-  },
-  {
-    "id": "572163e851b723b171ec75c6a7e72b17",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-12-03T23:00:00Z",
-    "home_team": "Sao Paulo",
-    "away_team": "Internacional"
-  },
-  {
-    "id": "f77622354d8989a6146aed104b30c9fb",
-    "sport_key": "soccer_brazil_campeonato",
-    "sport_title": "Brazil Série A",
-    "commence_time": "2025-12-04T00:30:00Z",
+    "commence_time": "2025-12-07T19:00:00Z",
     "home_team": "Atletico Mineiro",
+    "away_team": "Vasco da Gama"
+  },
+  {
+    "id": "33d8d051c9b689c1ccf59e0b20edae22",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-07T19:00:00Z",
+    "home_team": "Fluminense",
+    "away_team": "Bahia"
+  },
+  {
+    "id": "31f55d605ffa8e3b08dc3fd23a7d45f8",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-07T19:00:00Z",
+    "home_team": "Botafogo",
+    "away_team": "Fortaleza"
+  },
+  {
+    "id": "646bf4936e23bef399632bc86321e85f",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-07T19:00:00Z",
+    "home_team": "Internacional",
+    "away_team": "Bragantino-SP"
+  },
+  {
+    "id": "551d14cb9021458a40ac926adb23c183",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-07T19:00:00Z",
+    "home_team": "Ceará",
     "away_team": "Palmeiras"
   },
   {
-    "id": "22cd326586e05a3f8c9c00995bc5fff2",
+    "id": "e788fd2aecb4868195c305473d2ab0d8",
     "sport_key": "soccer_brazil_campeonato",
     "sport_title": "Brazil Série A",
-    "commence_time": "2025-12-04T00:30:00Z",
-    "home_team": "Flamengo",
-    "away_team": "Ceará"
+    "commence_time": "2025-12-07T19:00:00Z",
+    "home_team": "Corinthians",
+    "away_team": "Juventude"
   },
   {
-    "id": "26b4c850474c164ee306cb31ea53ff32",
+    "id": "e488763dd005d91692f216a46b6fd453",
     "sport_key": "soccer_brazil_campeonato",
     "sport_title": "Brazil Série A",
-    "commence_time": "2025-12-04T22:30:00Z",
-    "home_team": "Cruzeiro",
-    "away_team": "Botafogo"
+    "commence_time": "2025-12-07T19:00:00Z",
+    "home_team": "Santos",
+    "away_team": "Cruzeiro"
+  },
+  {
+    "id": "46dc1ba8e9825f206505b6dc7910c0c3",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-07T19:00:00Z",
+    "home_team": "Sport Recife",
+    "away_team": "Grêmio"
+  },
+  {
+    "id": "b042852798505041d3fe40b85c6420e9",
+    "sport_key": "soccer_brazil_campeonato",
+    "sport_title": "Brazil Série A",
+    "commence_time": "2025-12-07T19:00:00Z",
+    "home_team": "Vitoria",
+    "away_team": "Sao Paulo"
   }
 ]

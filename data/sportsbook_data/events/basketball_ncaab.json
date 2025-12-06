@@ -1,554 +1,850 @@
 [
   {
-    "id": "ffc616c4bbe31ee7815fb057a1330970",
+    "id": "a7f71171dcb62609a3a6f2df23a28632",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-03T17:00:00Z",
-    "home_team": "UIC Flames",
-    "away_team": "Arkansas-Pine Bluff Golden Lions"
+    "commence_time": "2025-12-06T16:59:00Z",
+    "home_team": "Michigan St Spartans",
+    "away_team": "Duke Blue Devils"
   },
   {
-    "id": "25ae5e0cd06f13daf547ffa4785f00ec",
+    "id": "303f85e7c3d490c7588149311e85d083",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-03T17:00:00Z",
-    "home_team": "Lipscomb Bisons",
-    "away_team": "Tennessee Tech Golden Eagles"
-  },
-  {
-    "id": "e62544a6bae038fb0fbb5eaa6fc49b91",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-03T23:00:00Z",
-    "home_team": "Holy Cross Crusaders",
-    "away_team": "Northeastern Huskies"
-  },
-  {
-    "id": "63368b0c284621d88fb919a63cd178b1",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-03T23:30:00Z",
-    "home_team": "Youngstown St Penguins",
-    "away_team": "Wright St Raiders"
-  },
-  {
-    "id": "a1ee0cb48603bc3ee276186281d526cf",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Akron Zips",
-    "away_team": "Bucknell Bison"
-  },
-  {
-    "id": "2f518da08fa0049fbe951d8b86e08adb",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "American Eagles",
-    "away_team": "Drexel Dragons"
-  },
-  {
-    "id": "e1bfcd8c4b11746f23e1b8b91088ad18",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Kent State Golden Flashes",
-    "away_team": "Austin Peay Governors"
-  },
-  {
-    "id": "f5763819313a833c9ca289bc5e3d02c5",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Seton Hall Pirates",
-    "away_team": "Central Connecticut St Blue Devils"
-  },
-  {
-    "id": "04fff764035847b05ba3fb24c1a93163",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Northern Kentucky Norse",
-    "away_team": "Cleveland St Vikings"
-  },
-  {
-    "id": "8de641f8b07b0cd34000f57206b906b5",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "South Carolina Upstate Spartans",
-    "away_team": "Coastal Carolina Chanticleers"
-  },
-  {
-    "id": "74bed0e71c3010fe30ab50857ee8df5e",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Columbia Lions",
-    "away_team": "Hofstra Pride"
-  },
-  {
-    "id": "35c9fdc2c055e20a5d0e5f9593225c46",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "West Virginia Mountaineers",
-    "away_team": "Coppin St Eagles"
-  },
-  {
-    "id": "af8f9a3d906917eaa85037621767c036",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Towson Tigers",
-    "away_team": "Cornell Big Red"
-  },
-  {
-    "id": "f774b0bf1969f8a68191efb722d37d28",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Dartmouth Big Green",
-    "away_team": "New Hampshire Wildcats"
-  },
-  {
-    "id": "b27096c7ee015e8a917553bb8fb1fa7d",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Delaware St Hornets",
-    "away_team": "Navy Midshipmen"
-  },
-  {
-    "id": "75895bef68df0b0d3243cd2e538f66cd",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Detroit Mercy Titans",
-    "away_team": "IUPUI Jaguars"
-  },
-  {
-    "id": "90a444f5c9478b0a24d1ad07d80aea22",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Elon Phoenix",
-    "away_team": "Furman Paladins"
-  },
-  {
-    "id": "08fb02e11b33c636ddf2d6472b6def85",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Florida Int'l Golden Panthers",
-    "away_team": "Florida Gulf Coast Eagles"
-  },
-  {
-    "id": "86221d55332e2f154d242a0dea21f2f4",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Oakland Golden Grizzlies",
-    "away_team": "Fort Wayne Mastodons"
-  },
-  {
-    "id": "4b43288def1af3439d1b73d81ef6e3c8",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Queens University Royals",
-    "away_team": "Gardner-Webb Bulldogs"
-  },
-  {
-    "id": "1b2d8e68d22fba9d19c939dd39c9fcd7",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Georgia Southern Eagles",
-    "away_team": "Louisiana Tech Bulldogs"
-  },
-  {
-    "id": "fd7a358f018448edd9bc2fb53ed61eea",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Hampton Pirates",
-    "away_team": "Loyola (MD) Greyhounds"
-  },
-  {
-    "id": "3fce47fc4495ff91db6dfc05c0a3a2d4",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Massachusetts Minutemen",
-    "away_team": "Harvard Crimson"
-  },
-  {
-    "id": "5ddc92c8037fd1b9f45806302a631846",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "High Point Panthers",
-    "away_team": "Southern Illinois Salukis"
-  },
-  {
-    "id": "0435fbe6219e5e59b7b17206fa71508d",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Minnesota Golden Gophers",
-    "away_team": "Indiana Hoosiers"
-  },
-  {
-    "id": "2b917e0a6cdc2a44fe0cdc3e8a0b91ea",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "James Madison Dukes",
-    "away_team": "North Carolina Central Eagles"
-  },
-  {
-    "id": "42d1c617a5abdeda8860ccda5b757f84",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Lamar Cardinals",
-    "away_team": "Louisiana Ragin' Cajuns"
-  },
-  {
-    "id": "2f832619c8653fd3e82461115bd726c9",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Ohio Bobcats",
-    "away_team": "Maine Black Bears"
-  },
-  {
-    "id": "ac7687dfff96104c60b075622756a6b8",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "UNC Wilmington Seahawks",
-    "away_team": "Marshall Thundering Herd"
-  },
-  {
-    "id": "81e50b522c4dc7b538384c6fb0e7ca20",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Mt. St. Mary's Mountaineers",
-    "away_team": "Sacred Heart Pioneers"
-  },
-  {
-    "id": "652123ecbdcc695b467388b35c315e14",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Wofford Terriers",
-    "away_team": "Presbyterian Blue Hose"
-  },
-  {
-    "id": "1e086c388ea2072a5557877a2ca95c51",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Radford Highlanders",
-    "away_team": "Southern Miss Golden Eagles"
-  },
-  {
-    "id": "78b7a47e4545f98bdf72df593b98871a",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Western Michigan Broncos",
-    "away_team": "Southern Indiana Screaming Eagles"
-  },
-  {
-    "id": "2f370d6679fb6e0f9e59b2e40cd57df8",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:00:00Z",
-    "home_team": "Stephen F. Austin Lumberjacks",
-    "away_team": "UT Rio Grande Valley Vaqueros"
-  },
-  {
-    "id": "0cb87c121fc7476811adf2798a848941",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:15:00Z",
-    "home_team": "Alabama Crimson Tide",
-    "away_team": "Clemson Tigers"
-  },
-  {
-    "id": "969a8d73e255d833ce0e29f7277787f0",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:15:00Z",
-    "home_team": "Arkansas Razorbacks",
-    "away_team": "Louisville Cardinals"
-  },
-  {
-    "id": "469d518a697c68de6d8387eda4e5bbe1",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:15:00Z",
-    "home_team": "Boston College Eagles",
-    "away_team": "LSU Tigers"
-  },
-  {
-    "id": "c155eeaf37dfe429df2ea212ebbc4737",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:30:00Z",
-    "home_team": "Central Arkansas Bears",
-    "away_team": "Arkansas-Little Rock Trojans"
-  },
-  {
-    "id": "4d836ed99d972b74ad63eba456f55a77",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:30:00Z",
-    "home_team": "Belmont Bruins",
-    "away_team": "Richmond Spiders"
-  },
-  {
-    "id": "81ae165518dea6303d43bc1890b0d288",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T00:30:00Z",
-    "home_team": "UL Monroe Warhawks",
-    "away_team": "Miss Valley St Delta Devils"
-  },
-  {
-    "id": "9b1da08ab23c395974f9454d3b24441e",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "Alabama A&M Bulldogs",
-    "away_team": "Tennessee St Tigers"
-  },
-  {
-    "id": "2c5db8e3b2fc8da8d80e95ea6d9ab2d6",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "Evansville Purple Aces",
-    "away_team": "Ball State Cardinals"
-  },
-  {
-    "id": "ceefd49d32c8a07e60573868e0db958d",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "Illinois St Redbirds",
-    "away_team": "Eastern Kentucky Colonels"
-  },
-  {
-    "id": "f74c11a286d24020942e930152855bd8",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "Georgetown Hoyas",
+    "commence_time": "2025-12-06T17:00:00Z",
+    "home_team": "Bucknell Bison",
     "away_team": "UMBC Retrievers"
   },
   {
-    "id": "fddb606f5086ee7bfc0224a7cdfd8d16",
+    "id": "b74ba6cfd05124b80d5671f4b904a189",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "UMKC Kangaroos",
-    "away_team": "Idaho State Bengals"
-  },
-  {
-    "id": "8584a49f89a14bb602e68e45eda07288",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "Memphis Tigers",
-    "away_team": "New Orleans Privateers"
-  },
-  {
-    "id": "36ac45dd4974770550fd314c58f500a7",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "Monmouth Hawks",
-    "away_team": "Princeton Tigers"
-  },
-  {
-    "id": "8ccf22001ce14611fcf8069ea7dfc22c",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "Omaha Mavericks",
-    "away_team": "N Colorado Bears"
-  },
-  {
-    "id": "8e13975981d73198225f35a37adfd09f",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "Northern Arizona Lumberjacks",
-    "away_team": "South Dakota St Jackrabbits"
-  },
-  {
-    "id": "6d8ee9fd61510a7c14882738ec97f428",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:00Z",
-    "home_team": "South Dakota Coyotes",
-    "away_team": "Portland St Vikings"
-  },
-  {
-    "id": "dcb2cfab466ead3856e811405ddfac8f",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T01:00:17Z",
-    "home_team": "Iowa State Cyclones",
-    "away_team": "Alcorn St Braves"
-  },
-  {
-    "id": "8310789a4a7c45d0fb36b7ee491982cb",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "Air Force Falcons",
-    "away_team": "Pacific Tigers"
-  },
-  {
-    "id": "eea284020f2cc2f5bf54963d22166760",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "BYU Cougars",
-    "away_team": "Cal Baptist Lancers"
-  },
-  {
-    "id": "d582a2e720b74fcb38757429e6073353",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "Denver Pioneers",
-    "away_team": "Eastern Washington Eagles"
-  },
-  {
-    "id": "14cf4f9186cdf42a61de29e8d382dee6",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "Idaho Vandals",
-    "away_team": "North Dakota Fighting Hawks"
-  },
-  {
-    "id": "f974ea702001f1a711d99a516ccc2d6c",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "Montana Grizzlies",
-    "away_team": "North Dakota St Bison"
-  },
-  {
-    "id": "aa622fd726cfcdcfb2e2b76f17f3aa4e",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "Montana St Bobcats",
-    "away_team": "St. Thomas (MN) Tommies"
-  },
-  {
-    "id": "566a91f5171cd8d4a2c95abf29bacb91",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "Wisconsin Badgers",
-    "away_team": "Northwestern Wildcats"
-  },
-  {
-    "id": "3cdaf3f590572a8ab9266e939b7bb77c",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "Weber State Wildcats",
-    "away_team": "Oral Roberts Golden Eagles"
-  },
-  {
-    "id": "31d6c4cd62062b842f1bc4bfc8702001",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:00:00Z",
-    "home_team": "Rice Owls",
-    "away_team": "Texas State Bobcats"
-  },
-  {
-    "id": "e92153d831a3c3b133b7d6971e8e18b0",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:15:00Z",
-    "home_team": "Auburn Tigers",
-    "away_team": "NC State Wolfpack"
-  },
-  {
-    "id": "89f63e6696308ccc299decca2a945fe8",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:15:00Z",
+    "commence_time": "2025-12-06T17:00:00Z",
     "home_team": "Georgia Tech Yellow Jackets",
-    "away_team": "Mississippi St Bulldogs"
+    "away_team": "Monmouth Hawks"
   },
   {
-    "id": "0119ade96cb94940c1ae5746f97a7889",
+    "id": "84cdc0b10d9c9fa0b88dba40782c8c1d",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:15:00Z",
-    "home_team": "Vanderbilt Commodores",
-    "away_team": "SMU Mustangs"
+    "commence_time": "2025-12-06T17:00:00Z",
+    "home_team": "Miami Hurricanes",
+    "away_team": "Southern Miss Golden Eagles"
   },
   {
-    "id": "fe2e3ebc386609f4a1d5f76398d3fad7",
+    "id": "1655f5ad5b206ee27ea7386620e00366",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:15:00Z",
-    "home_team": "Texas Longhorns",
-    "away_team": "Virginia Cavaliers"
+    "commence_time": "2025-12-06T17:00:00Z",
+    "home_team": "Providence Friars",
+    "away_team": "Rhode Island Rams"
   },
   {
-    "id": "e323883f6c2e3b84fc82af47c95160ed",
+    "id": "f96cb188334fdeb2db3a4108acf9a967",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T02:30:00Z",
-    "home_team": "Oregon St Beavers",
-    "away_team": "Vermont Catamounts"
+    "commence_time": "2025-12-06T17:00:26Z",
+    "home_team": "Boston College Eagles",
+    "away_team": "New Haven Chargers"
   },
   {
-    "id": "e71f83649b34e8c280e08dc4155dbcd0",
+    "id": "011c25d5034ff908edaf55002e365fbf",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T03:00:00Z",
-    "home_team": "San Francisco Dons",
-    "away_team": "North Alabama Lions"
+    "commence_time": "2025-12-06T17:04:00Z",
+    "home_team": "Virginia Cavaliers",
+    "away_team": "Dayton Flyers"
   },
   {
-    "id": "a10ef46be2ab8178fad0f0d81988fd69",
+    "id": "cc9fc7f11137cc182b595a5ddd8d392f",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T03:00:00Z",
-    "home_team": "San Diego St Aztecs",
+    "commence_time": "2025-12-06T17:07:03Z",
+    "home_team": "Purdue Boilermakers",
+    "away_team": "Iowa State Cyclones"
+  },
+  {
+    "id": "e2433f7aeab758b6ec945915f982b2f3",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T17:30:00Z",
+    "home_team": "Richmond Spiders",
+    "away_team": "Old Dominion Monarchs"
+  },
+  {
+    "id": "039f67011b440fb37a9f4e2bc2f16e35",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T18:00:00Z",
+    "home_team": "Bowling Green Falcons",
     "away_team": "Utah Valley Wolverines"
   },
   {
-    "id": "3f5f16341044128dca4e1feb82152cd4",
+    "id": "56a33f566f518d51be2d5f045921194c",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T03:00:00Z",
-    "home_team": "Santa Clara Broncos",
-    "away_team": "Utah Tech Trailblazers"
+    "commence_time": "2025-12-06T18:00:00Z",
+    "home_team": "Miami (OH) RedHawks",
+    "away_team": "Maine Black Bears"
   },
   {
-    "id": "8f62c6983cba98b8cef06ae69de81e8a",
+    "id": "a84ec25555f690819ace61b58f7483bb",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2025-12-04T04:00:00Z",
-    "home_team": "Washington Huskies",
-    "away_team": "UCLA Bruins"
+    "commence_time": "2025-12-06T18:00:00Z",
+    "home_team": "NC State Wolfpack",
+    "away_team": "UNC Asheville Bulldogs"
+  },
+  {
+    "id": "1d2339db6415d0cbed2db67070c67691",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "American Eagles",
+    "away_team": "Maryland-Eastern Shore Hawks"
+  },
+  {
+    "id": "b5f4b89b91bb7e0efa8605981f3c7456",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Butler Bulldogs",
+    "away_team": "Boise State Broncos"
+  },
+  {
+    "id": "85f9fb72a49e6452f83893c65237c0f1",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Buffalo Bulls",
+    "away_team": "St. Bonaventure Bonnies"
+  },
+  {
+    "id": "0d8daf6df2020b592447af767601fb10",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Cleveland St Vikings",
+    "away_team": "Detroit Mercy Titans"
+  },
+  {
+    "id": "cdd2554181aa12a566fb7869cd55ef48",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Winthrop Eagles",
+    "away_team": "Coastal Carolina Chanticleers"
+  },
+  {
+    "id": "8f691d05ac500090f8b8d2774e8936fe",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Liberty Flames",
+    "away_team": "Coppin St Eagles"
+  },
+  {
+    "id": "de147b290fde93e0707f1704498ebf8d",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Delaware St Hornets",
+    "away_team": "Delaware Blue Hens"
+  },
+  {
+    "id": "99e05d09f50f81bf727d6a2b84b50803",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Duquesne Dukes",
+    "away_team": "Stony Brook Seawolves"
+  },
+  {
+    "id": "80b606942c1948797f63e7ded92d4653",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Florida Int'l Golden Panthers",
+    "away_team": "Jacksonville Dolphins"
+  },
+  {
+    "id": "171e7f05428e0cf221fcdd6140756e16",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Fordham Rams",
+    "away_team": "Holy Cross Crusaders"
+  },
+  {
+    "id": "0148308366a5986e43d418272bae2388",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Fort Wayne Mastodons",
+    "away_team": "Northern Kentucky Norse"
+  },
+  {
+    "id": "af055c1959fedcce338aeed5eb4f50e0",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Furman Paladins",
+    "away_team": "Harvard Crimson"
+  },
+  {
+    "id": "44bf086a437abd62ae19eabc5217dba4",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Gardner-Webb Bulldogs",
+    "away_team": "Georgia Southern Eagles"
+  },
+  {
+    "id": "7446b4cf74848c272e40b9c3c5e39097",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "IUPUI Jaguars",
+    "away_team": "Youngstown St Penguins"
+  },
+  {
+    "id": "f29b0f71b8f9e2dac4f682cb7b3aae96",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Indiana Hoosiers",
+    "away_team": "Louisville Cardinals"
+  },
+  {
+    "id": "a97da5289a112b8bf4a999c490f91932",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "James Madison Dukes",
+    "away_team": "Norfolk St Spartans"
+  },
+  {
+    "id": "eb9cc15be7d3e50efed9dd100a66aef4",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Wisconsin Badgers",
+    "away_team": "Marquette Golden Eagles"
+  },
+  {
+    "id": "0be24afe8548194f210949b3dc8507be",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Presbyterian Blue Hose",
+    "away_team": "Morehead St Eagles"
+  },
+  {
+    "id": "d810a790fd1475127cb381c1467a144e",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "Northwestern Wildcats",
+    "away_team": "Ohio State Buckeyes"
+  },
+  {
+    "id": "0c8ab371199a07360203f71973bf7f3e",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "SIU-Edwardsville Cougars",
+    "away_team": "Western Michigan Broncos"
+  },
+  {
+    "id": "2bc0f3c6608363d134d3f028b8c85810",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "South Carolina Gamecocks",
+    "away_team": "Stetson Hatters"
+  },
+  {
+    "id": "5885103653750cedd404ef32591b7f84",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "South Carolina Upstate Spartans",
+    "away_team": "Western Carolina Catamounts"
+  },
+  {
+    "id": "078c723d69e14701d2859d5fb356818e",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:00Z",
+    "home_team": "West Georgia Wolves",
+    "away_team": "Tennessee Tech Golden Eagles"
+  },
+  {
+    "id": "8cd6c01c62e09b38dbb44363fd654deb",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:00:25Z",
+    "home_team": "La Salle Explorers",
+    "away_team": "Drexel Dragons"
+  },
+  {
+    "id": "16b05f8beba2475dd753a7e6ec8965bc",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T19:30:00Z",
+    "home_team": "Loyola (Chi) Ramblers",
+    "away_team": "Princeton Tigers"
+  },
+  {
+    "id": "13a91de08747ad7e96abea98f0f38625",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T20:00:00Z",
+    "home_team": "Murray St Racers",
+    "away_team": "Bellarmine Knights"
+  },
+  {
+    "id": "cd8aaeaa925423d8a993a168be060d4a",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T20:00:00Z",
+    "home_team": "Virginia Tech Hokies",
+    "away_team": "George Mason Patriots"
+  },
+  {
+    "id": "c552e8fecbd923d8dcd8f6f60e6431bd",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T20:00:00Z",
+    "home_team": "Kennesaw St Owls",
+    "away_team": "Georgia St Panthers"
+  },
+  {
+    "id": "2df6aebb46517d90b6df7da7461bdba6",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T20:00:00Z",
+    "home_team": "South Dakota St Jackrabbits",
+    "away_team": "Idaho Vandals"
+  },
+  {
+    "id": "8320119a28acb75460f68806fdfdc183",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T20:00:00Z",
+    "home_team": "Oakland Golden Grizzlies",
+    "away_team": "Toledo Rockets"
+  },
+  {
+    "id": "0e3f33a8ac76b5398d9b48758df3a1f6",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T20:00:33Z",
+    "home_team": "Tulsa Golden Hurricane",
+    "away_team": "Missouri St Bears"
+  },
+  {
+    "id": "db229b349fde7509f56f3ea427510186",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Abilene Christian Wildcats",
+    "away_team": "New Mexico St Aggies"
+  },
+  {
+    "id": "800fb8e098c5515fdd00b92411cc7217",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Tulane Green Wave",
+    "away_team": "Akron Zips"
+  },
+  {
+    "id": "95142a35401556c814d6165a5e0f2294",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Arkansas Razorbacks",
+    "away_team": "Fresno St Bulldogs"
+  },
+  {
+    "id": "8f023e01fa2c5c6947ce3d84b929cdab",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Binghamton Bearcats",
+    "away_team": "Le Moyne Dolphins"
+  },
+  {
+    "id": "e7f8cb1c1666a572819ba5de3844df70",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Wyoming Cowboys",
+    "away_team": "Dartmouth Big Green"
+  },
+  {
+    "id": "427a70f61d8266b58cf930c1150d60ee",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "East Carolina Pirates",
+    "away_team": "UNC Greensboro Spartans"
+  },
+  {
+    "id": "25eaab15ecebd6e98f536ca194ad1166",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Wofford Terriers",
+    "away_team": "Elon Phoenix"
+  },
+  {
+    "id": "7f5ff3188c5a1fe740770e8d2c7eab1f",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Western Kentucky Hilltoppers",
+    "away_team": "Evansville Purple Aces"
+  },
+  {
+    "id": "dce3bc54349252a6fd399a46cbecfa10",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Nicholls St Colonels",
+    "away_team": "Incarnate Word Cardinals"
+  },
+  {
+    "id": "2f11fccae332438d60e55e6494d77f31",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Kansas St Wildcats",
+    "away_team": "Seton Hall Pirates"
+  },
+  {
+    "id": "ea6296092bb0ce85ec6f5b3114483025",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Morgan St Bears",
+    "away_team": "Longwood Lancers"
+  },
+  {
+    "id": "cf48bb058edf92f7908093025dea00ce",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Louisiana Ragin' Cajuns",
+    "away_team": "UNC Wilmington Seahawks"
+  },
+  {
+    "id": "e68b5d927f2e0cadc61159a63518eecd",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Ohio Bobcats",
+    "away_team": "Marshall Thundering Herd"
+  },
+  {
+    "id": "7e39f0fbff8d01913434f87077560c88",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Massachusetts Minutemen",
+    "away_team": "UMass Lowell River Hawks"
+  },
+  {
+    "id": "c0c29a7aa2a99b9d07f5c89f565153c6",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "Michigan Wolverines",
+    "away_team": "Rutgers Scarlet Knights"
+  },
+  {
+    "id": "99673e250b58abe6cced86f3a17adddd",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:00Z",
+    "home_team": "North Carolina Central Eagles",
+    "away_team": "North Carolina A&T Aggies"
+  },
+  {
+    "id": "8e810179cbe5f0bd38fc8f17d57ca6db",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:00:36Z",
+    "home_team": "Iowa Hawkeyes",
+    "away_team": "Maryland Terrapins"
+  },
+  {
+    "id": "a9e3c5df02005c33a68e6d0648df1fe9",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:30:00Z",
+    "home_team": "Memphis Tigers",
+    "away_team": "Baylor Bears"
+  },
+  {
+    "id": "fd3f45340b0f2708237db95655645f34",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:30:00Z",
+    "home_team": "Chattanooga Mocs",
+    "away_team": "SE Missouri St Redhawks"
+  },
+  {
+    "id": "720264b215f5f1c851f2576df42a6f2b",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T21:30:00Z",
+    "home_team": "Temple Owls",
+    "away_team": "Saint Joseph's Hawks"
+  },
+  {
+    "id": "3f30aa644619bfb672427e8c1d5c522b",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:00:00Z",
+    "home_team": "California Golden Bears",
+    "away_team": "Pacific Tigers"
+  },
+  {
+    "id": "4ebcab57b81e97916f5383091a59d3e3",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:00:00Z",
+    "home_team": "Colorado St Rams",
+    "away_team": "Colorado Buffaloes"
+  },
+  {
+    "id": "817e74a301dd2093b48125e87f588e24",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:00:00Z",
+    "home_team": "Eastern Washington Eagles",
+    "away_team": "UMKC Kangaroos"
+  },
+  {
+    "id": "4ad036a0461df0bf7f6347a40c627335",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:00:00Z",
+    "home_team": "Lehigh Mountain Hawks",
+    "away_team": "LIU Sharks"
+  },
+  {
+    "id": "fb386027d8329361f72ee60050e77a7c",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:00:00Z",
+    "home_team": "Portland St Vikings",
+    "away_team": "Omaha Mavericks"
+  },
+  {
+    "id": "b962d5f9ffac44428ca45aa5d57ede4c",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:00:00Z",
+    "home_team": "Oregon St Beavers",
+    "away_team": "Southern Utah Thunderbirds"
+  },
+  {
+    "id": "30c5f0229c388fc0a9ebfbc5d960279a",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:00:00Z",
+    "home_team": "Pepperdine Waves",
+    "away_team": "Vermont Catamounts"
+  },
+  {
+    "id": "bd6a743c11bc787502690e41fbafdfad",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:00:00Z",
+    "home_team": "Texas Southern Tigers",
+    "away_team": "Sam Houston St Bearkats"
+  },
+  {
+    "id": "39616c44470aa23b66804c9dbda13960",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T22:30:00Z",
+    "home_team": "Columbia Lions",
+    "away_team": "Albany Great Danes"
+  },
+  {
+    "id": "4333496fee8068c1b955227d14963a5e",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T23:00:00Z",
+    "home_team": "Idaho State Bengals",
+    "away_team": "Denver Pioneers"
+  },
+  {
+    "id": "ba96e32c7853112d5a0070e1da3d692f",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T23:00:00Z",
+    "home_team": "GW Revolutionaries",
+    "away_team": "William & Mary Tribe"
+  },
+  {
+    "id": "1659eb6cfd42e4ba9b6991aa409da535",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T23:00:00Z",
+    "home_team": "New Orleans Privateers",
+    "away_team": "Houston Christian Huskies"
+  },
+  {
+    "id": "205f64a0b53c2719ada63fc2d03f3a65",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T23:00:00Z",
+    "home_team": "UCLA Bruins",
+    "away_team": "Oregon Ducks"
+  },
+  {
+    "id": "2bcc630c8141f3efce340afefc38b570",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T23:00:00Z",
+    "home_team": "USC Trojans",
+    "away_team": "Washington Huskies"
+  },
+  {
+    "id": "86054eceadb3b069d3837b9790136974",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-06T23:00:00Z",
+    "home_team": "West Virginia Mountaineers",
+    "away_team": "Wake Forest Demon Deacons"
+  },
+  {
+    "id": "3b907fb8b1ae8d2ceb1d43e49cd9e3f7",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T00:00:00Z",
+    "home_team": "New Hampshire Wildcats",
+    "away_team": "Boston Univ. Terriers"
+  },
+  {
+    "id": "99fef0ffb413e306144cd58aa5a137e0",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T00:00:00Z",
+    "home_team": "Utah Utes",
+    "away_team": "Cal Baptist Lancers"
+  },
+  {
+    "id": "eb7655ea3e256ca9fd5daaa33beb5d29",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T00:00:00Z",
+    "home_team": "Cal Poly Mustangs",
+    "away_team": "UC Riverside Highlanders"
+  },
+  {
+    "id": "1e22aee1355ccf6777e2fa1b11c102c1",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T00:00:00Z",
+    "home_team": "Lamar Cardinals",
+    "away_team": "Texas A&M-CC Islanders"
+  },
+  {
+    "id": "cba551646c235442798c1a9aa075d28a",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T00:30:00Z",
+    "home_team": "Grand Canyon Antelopes",
+    "away_team": "Oklahoma St Cowboys"
+  },
+  {
+    "id": "4035b5a573d93e6a3351baf71de59959",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T00:30:50Z",
+    "home_team": "Villanova Wildcats",
+    "away_team": "Pennsylvania Quakers"
+  },
+  {
+    "id": "c79420b911760adeee9fab08c8ce39ef",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "Bradley Braves",
+    "away_team": "Northern Illinois Huskies"
+  },
+  {
+    "id": "1bf988b19051eab196c02dfddfe9a50d",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "Illinois St Redbirds",
+    "away_team": "Chicago St Cougars"
+  },
+  {
+    "id": "554d7b5357639624a7317a9c04b428df",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "Eastern Illinois Panthers",
+    "away_team": "Lindenwood Lions"
+  },
+  {
+    "id": "a0e65ee48003259147b4d6befa8d486e",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "Houston Cougars",
+    "away_team": "Florida St Seminoles"
+  },
+  {
+    "id": "aa2bddc6b12617bac9132132ed0b1b39",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "Tennessee Volunteers",
+    "away_team": "Illinois Fighting Illini"
+  },
+  {
+    "id": "69667cf82ba387505259fc09a8501062",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "Milwaukee Panthers",
+    "away_team": "Robert Morris Colonials"
+  },
+  {
+    "id": "85bad0f67151729aa5f4f0e95f395d6a",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "North Dakota Fighting Hawks",
+    "away_team": "Montana Grizzlies"
+  },
+  {
+    "id": "c7a14ffaf08f1b7697cbd7953ef5f65e",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "Oral Roberts Golden Eagles",
+    "away_team": "Montana St Bobcats"
+  },
+  {
+    "id": "3cdf4f1c992afd3d03a47a4efaffa488",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "N Colorado Bears",
+    "away_team": "South Dakota Coyotes"
+  },
+  {
+    "id": "89e93e54d9575c1d5ff9d647623ff1c6",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "North Dakota St Bison",
+    "away_team": "Northern Arizona Lumberjacks"
+  },
+  {
+    "id": "a0c57b302d95ed947b51aa29963748de",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:00Z",
+    "home_team": "St. John's Red Storm",
+    "away_team": "Ole Miss Rebels"
+  },
+  {
+    "id": "6d206fa359e05f635d425d3623fc0d38",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T01:00:17Z",
+    "home_team": "Northern Iowa Panthers",
+    "away_team": "Wichita St Shockers"
+  },
+  {
+    "id": "a9cd9123c587b12c0283e6d697cbdde6",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T02:00:00Z",
+    "home_team": "Arkansas-Little Rock Trojans",
+    "away_team": "Arkansas St Red Wolves"
+  },
+  {
+    "id": "80aef8d34481ad8ef82b00d372d28323",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T02:00:00Z",
+    "home_team": "DePaul Blue Demons",
+    "away_team": "Arkansas-Pine Bluff Golden Lions"
+  },
+  {
+    "id": "3ee5f57cfcc83e1c88fdbf9f3a646371",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T02:00:00Z",
+    "home_team": "UC Santa Barbara Gauchos",
+    "away_team": "CSU Bakersfield Roadrunners"
+  },
+  {
+    "id": "a960ba549b84f25e7b6fa1ddc6c97fbb",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T02:00:00Z",
+    "home_team": "Long Beach St 49ers",
+    "away_team": "UC San Diego Tritons"
+  },
+  {
+    "id": "7160b43ae0193f2e74d92c6cff91370d",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T02:00:00Z",
+    "home_team": "New Mexico Lobos",
+    "away_team": "Santa Clara Broncos"
+  },
+  {
+    "id": "4b8ab70f7c3d9669d69c97098102c447",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T03:00:00Z",
+    "home_team": "Arizona St Sun Devils",
+    "away_team": "Oklahoma Sooners"
+  },
+  {
+    "id": "cf96c94dc768db7280bc5344ed523534",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T03:00:00Z",
+    "home_team": "Arizona Wildcats",
+    "away_team": "Auburn Tigers"
+  },
+  {
+    "id": "138c3038f8d811d2f4249bed4418f045",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T03:00:00Z",
+    "home_team": "UC Irvine Anteaters",
+    "away_team": "CSU Northridge Matadors"
+  },
+  {
+    "id": "245fb8cd36e04aa3cd334b3a9d46b65f",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T05:00:00Z",
+    "home_team": "Hawai'i Rainbow Warriors",
+    "away_team": "CSU Fullerton Titans"
+  },
+  {
+    "id": "64f004d716520e08f48c716ca6ccb551",
+    "sport_key": "basketball_ncaab",
+    "sport_title": "NCAAB",
+    "commence_time": "2025-12-07T18:00:06Z",
+    "home_team": "Kansas Jayhawks",
+    "away_team": "Missouri Tigers"
   }
 ]

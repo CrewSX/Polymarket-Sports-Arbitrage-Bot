@@ -1,177 +1,277 @@
 [
   {
-    "pm_event_id": "90960",
-    "pm_market_id": "705397",
-    "odds_api_event_id": "82945fcefbdab5eff92ea10d50b8b9ed",
+    "pm_event_id": "94023",
+    "pm_market_id": "774416",
+    "odds_api_event_id": "a49179ca5fedd30b13d93c7566b23670",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.15539355412558734,
-    "profit_margin_absolute": 15.539355412558734,
-    "delta_difference": 0.020201162036326353,
-    "liquidity": 73753.3315,
+    "profit_margin": 0.12310349978427314,
+    "profit_margin_absolute": 12.310349978427313,
+    "delta_difference": 0.028929322449304185,
+    "liquidity": 1206515.4067,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Wizards",
-        "sb_outcome": "Washington Wizards",
-        "pm_price": 0.13,
-        "sb_implied_prob": 0.15020116203632636,
+        "pm_outcome": "Kings",
+        "sb_outcome": "Sacramento Kings",
+        "pm_price": 0.235,
+        "sb_implied_prob": 0.26392932244930417,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 447835.9366,
+    "sportsbook_count": 11
+  },
+  {
+    "pm_event_id": "94090",
+    "pm_market_id": "774484",
+    "odds_api_event_id": "39616c44470aa23b66804c9dbda13960",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.27170598164512977,
+    "profit_margin_absolute": 27.170598164512977,
+    "delta_difference": 0.027170598164512977,
+    "liquidity": 21934.5214,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Albany Great Danes",
+        "sb_outcome": "Albany Great Danes",
+        "pm_price": 0.1,
+        "sb_implied_prob": 0.12717059816451298,
         "match_confidence": 1.0
       }
     ],
     "pm_spread": 0.02,
-    "pm_liquidity": 50257.0067,
+    "pm_liquidity": 13020.2781,
+    "sportsbook_count": 5
+  },
+  {
+    "pm_event_id": "94147",
+    "pm_market_id": "774541",
+    "odds_api_event_id": "3ee5f57cfcc83e1c88fdbf9f3a646371",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.19388432589078258,
+    "profit_margin_absolute": 19.38843258907826,
+    "delta_difference": 0.02617438399525565,
+    "liquidity": 2057.6558,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Bakersfield Roadrunners",
+        "sb_outcome": "CSU Bakersfield Roadrunners",
+        "pm_price": 0.135,
+        "sb_implied_prob": 0.16117438399525566,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.03,
+    "pm_liquidity": 2058.0398,
     "sportsbook_count": 9
   },
   {
-    "pm_event_id": "90970",
-    "pm_market_id": "705407",
-    "odds_api_event_id": "a9330ca996e7fd641237adcfa998259f",
+    "pm_event_id": "94043",
+    "pm_market_id": "774437",
+    "odds_api_event_id": "171e7f05428e0cf221fcdd6140756e16",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.12276217193532674,
-    "profit_margin_absolute": 12.276217193532673,
-    "delta_difference": 0.026393866966095247,
-    "liquidity": 77179.1482,
+    "profit_margin": 0.16781818226299597,
+    "profit_margin_absolute": 16.781818226299595,
+    "delta_difference": 0.026011818250764374,
+    "liquidity": 67497.8391,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Pelicans",
-        "sb_outcome": "New Orleans Pelicans",
-        "pm_price": 0.215,
-        "sb_implied_prob": 0.24139386696609524,
+        "pm_outcome": "Holy Cross Crusaders",
+        "sb_outcome": "Holy Cross Crusaders",
+        "pm_price": 0.155,
+        "sb_implied_prob": 0.18101181825076437,
         "match_confidence": 1.0
       }
     ],
     "pm_spread": 0.01,
-    "pm_liquidity": 76171.8505,
-    "sportsbook_count": 8
-  },
-  {
-    "pm_event_id": "90976",
-    "pm_market_id": "705412",
-    "odds_api_event_id": "4372c5c8b6de02e12518da9a10ae76c3",
-    "match_confidence": 1.0,
-    "opportunity_type": "directional",
-    "market_type": "2-way",
-    "profit_margin": 0.10549396859010116,
-    "profit_margin_absolute": 10.549396859010116,
-    "delta_difference": 0.01740650481736669,
-    "liquidity": 90896.2086,
-    "volume": null,
-    "matched_outcomes": [
-      {
-        "pm_outcome": "Warriors",
-        "sb_outcome": "Golden State Warriors",
-        "pm_price": 0.165,
-        "sb_implied_prob": 0.1824065048173667,
-        "match_confidence": 1.0
-      }
-    ],
-    "pm_spread": 0.01,
-    "pm_liquidity": 79820.2395,
+    "pm_liquidity": 47213.1413,
     "sportsbook_count": 7
   },
   {
-    "pm_event_id": "89364",
-    "pm_market_id": "700741",
-    "odds_api_event_id": "3e65786eddd4c7aee9e7f2504f6fdedc",
+    "pm_event_id": "94174",
+    "pm_market_id": "774568",
+    "odds_api_event_id": "a0c57b302d95ed947b51aa29963748de",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.666757584849394,
-    "profit_margin_absolute": 66.6757584849394,
-    "delta_difference": 0.011001500150015001,
-    "liquidity": 197447.73048,
+    "profit_margin": 0.23613737923011202,
+    "profit_margin_absolute": 23.6137379230112,
+    "delta_difference": 0.02479442481916176,
+    "liquidity": 8083.4488,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Giants",
-        "sb_outcome": "New York Giants",
-        "pm_price": 0.0165,
-        "sb_implied_prob": 0.027501500150015002,
-        "match_confidence": 1.0
-      }
-    ],
-    "pm_spread": 0.006,
-    "pm_liquidity": 63658.95096,
-    "sportsbook_count": 2
-  },
-  {
-    "pm_event_id": "89374",
-    "pm_market_id": "700751",
-    "odds_api_event_id": "d5fd126cbfea2ccd79962a17f0ef4463",
-    "match_confidence": 1.0,
-    "opportunity_type": "directional",
-    "market_type": "2-way",
-    "profit_margin": 0.13041362417181393,
-    "profit_margin_absolute": 13.041362417181393,
-    "delta_difference": 0.026734792955221853,
-    "liquidity": 24269.8948,
-    "volume": null,
-    "matched_outcomes": [
-      {
-        "pm_outcome": "Raiders",
-        "sb_outcome": "Las Vegas Raiders",
-        "pm_price": 0.205,
-        "sb_implied_prob": 0.23173479295522184,
+        "pm_outcome": "Ole Miss Rebels",
+        "sb_outcome": "Ole Miss Rebels",
+        "pm_price": 0.105,
+        "sb_implied_prob": 0.12979442481916176,
         "match_confidence": 1.0
       }
     ],
     "pm_spread": 0.03,
-    "pm_liquidity": 5200.2648,
-    "sportsbook_count": 12
+    "pm_liquidity": 8083.4488,
+    "sportsbook_count": 10
   },
   {
-    "pm_event_id": "90145",
-    "pm_market_id": "703224",
-    "odds_api_event_id": "60f57e865ecdde340e095a4c1c834e69",
+    "pm_event_id": "92903",
+    "pm_market_id": "741077",
+    "odds_api_event_id": "9ec3599023dff04b725b43bc5e2a0b35",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.17647058823529405,
-    "profit_margin_absolute": 17.647058823529406,
-    "delta_difference": 0.004411764705882351,
-    "liquidity": 6126.2989,
+    "profit_margin": 0.23041635695358362,
+    "profit_margin_absolute": 23.041635695358362,
+    "delta_difference": 0.020737472125822526,
+    "liquidity": 20764.4482,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Portland Pilots",
-        "sb_outcome": "Portland Pilots",
-        "pm_price": 0.025,
-        "sb_implied_prob": 0.029411764705882353,
+        "pm_outcome": "Trocoli",
+        "sb_outcome": "Antonio Trocoli",
+        "pm_price": 0.09,
+        "sb_implied_prob": 0.11073747212582252,
         "match_confidence": 1.0
       }
     ],
-    "pm_spread": 0.01,
-    "pm_liquidity": 1693.058,
-    "sportsbook_count": 1
+    "pm_spread": 0.02,
+    "pm_liquidity": 13456.0301,
+    "sportsbook_count": 8
   },
   {
-    "pm_event_id": "91033",
-    "pm_market_id": "705471",
-    "odds_api_event_id": "13d0a2fe698d44c76c84f94d1716a3ef",
+    "pm_event_id": "94062",
+    "pm_market_id": "774456",
+    "odds_api_event_id": "3f30aa644619bfb672427e8c1d5c522b",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.3059404363752189,
-    "profit_margin_absolute": 30.59404363752189,
-    "delta_difference": 0.01988612836438923,
-    "liquidity": 2329.2769,
+    "profit_margin": 0.11353569257847153,
+    "profit_margin_absolute": 11.353569257847154,
+    "delta_difference": 0.020436424664124875,
+    "liquidity": 27940.9186,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Eastern Michigan Eagles",
-        "sb_outcome": "Eastern Michigan Eagles",
-        "pm_price": 0.065,
-        "sb_implied_prob": 0.08488612836438923,
+        "pm_outcome": "Pacific Tigers",
+        "sb_outcome": "Pacific Tigers",
+        "pm_price": 0.18,
+        "sb_implied_prob": 0.20043642466412487,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.02,
+    "pm_liquidity": 15355.2169,
+    "sportsbook_count": 11
+  },
+  {
+    "pm_event_id": "94160",
+    "pm_market_id": "774554",
+    "odds_api_event_id": "205f64a0b53c2719ada63fc2d03f3a65",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.1087091192298798,
+    "profit_margin_absolute": 10.87091192298798,
+    "delta_difference": 0.020111187057527763,
+    "liquidity": 18109.0966,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Oregon Ducks",
+        "sb_outcome": "Oregon Ducks",
+        "pm_price": 0.185,
+        "sb_implied_prob": 0.20511118705752776,
         "match_confidence": 1.0
       }
     ],
     "pm_spread": 0.03,
-    "pm_liquidity": 2329.2769,
-    "sportsbook_count": 3
+    "pm_liquidity": 13046.1096,
+    "sportsbook_count": 9
+  },
+  {
+    "pm_event_id": "94143",
+    "pm_market_id": "774537",
+    "odds_api_event_id": "eb9cc15be7d3e50efed9dd100a66aef4",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.11458011610782556,
+    "profit_margin_absolute": 11.458011610782556,
+    "delta_difference": 0.01604121625509558,
+    "liquidity": 74772.5991,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Marquette Golden Eagles",
+        "sb_outcome": "Marquette Golden Eagles",
+        "pm_price": 0.14,
+        "sb_implied_prob": 0.1560412162550956,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.02,
+    "pm_liquidity": 51055.7737,
+    "sportsbook_count": 11
+  },
+  {
+    "pm_event_id": "94149",
+    "pm_market_id": "774543",
+    "odds_api_event_id": "e7f8cb1c1666a572819ba5de3844df70",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.1754059484688061,
+    "profit_margin_absolute": 17.540594846880612,
+    "delta_difference": 0.014032475877504488,
+    "liquidity": 34232.0883,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Dartmouth Big Green",
+        "sb_outcome": "Dartmouth Big Green",
+        "pm_price": 0.08,
+        "sb_implied_prob": 0.09403247587750449,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.02,
+    "pm_liquidity": 17980.9796,
+    "sportsbook_count": 11
+  },
+  {
+    "pm_event_id": "94161",
+    "pm_market_id": "774555",
+    "odds_api_event_id": "c0c29a7aa2a99b9d07f5c89f565153c6",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.5493141055623239,
+    "profit_margin_absolute": 54.931410556232386,
+    "delta_difference": 0.011810253269589961,
+    "liquidity": 10755.08307,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Rutgers Scarlet Knights",
+        "sb_outcome": "Rutgers Scarlet Knights",
+        "pm_price": 0.0215,
+        "sb_implied_prob": 0.03331025326958996,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.003,
+    "pm_liquidity": 2492.28137,
+    "sportsbook_count": 5
   }
 ]
