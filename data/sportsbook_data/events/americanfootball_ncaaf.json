@@ -1,59 +1,27 @@
 [
   {
-    "id": "87fe86f5fa1edd149d6cc5f8bcb82be2",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T16:09:00Z",
-    "home_team": "Texas Tech Red Raiders",
-    "away_team": "BYU Cougars"
-  },
-  {
-    "id": "825ab37366030db2e15565370bfc0104",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T16:50:00Z",
-    "home_team": "Western Michigan Broncos",
-    "away_team": "Miami (OH) RedHawks"
-  },
-  {
-    "id": "62dff9c695edc41da72e6d73b06fdf01",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T17:10:00Z",
-    "home_team": "Lehigh Mountain Hawks",
-    "away_team": "Villanova Wildcats"
-  },
-  {
-    "id": "aa6121f597f3dd0a363e477797cd13f0",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-06T21:00:00Z",
-    "home_team": "Alabama Crimson Tide",
-    "away_team": "Georgia Bulldogs"
-  },
-  {
-    "id": "cb3db4cd7e1781ff0fa5e3caaf2d74e4",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-07T01:00:00Z",
-    "home_team": "Virginia Cavaliers",
-    "away_team": "Duke Blue Devils"
-  },
-  {
-    "id": "ed821485171f0486828ac8bfae9537a3",
-    "sport_key": "americanfootball_ncaaf",
-    "sport_title": "NCAAF",
-    "commence_time": "2025-12-07T01:00:00Z",
-    "home_team": "Ohio State Buckeyes",
-    "away_team": "Indiana Hoosiers"
-  },
-  {
     "id": "86b2f11373631509f973bd3e72f5732d",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
     "commence_time": "2025-12-13T20:00:00Z",
     "home_team": "Navy Midshipmen",
     "away_team": "Army Black Knights"
+  },
+  {
+    "id": "a12597fe519a345d8bfdb3f8bd37fc2d",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-14T01:00:00Z",
+    "home_team": "Washington Huskies",
+    "away_team": "Boise State Broncos"
+  },
+  {
+    "id": "7d7ebd0ca1068c66f895b2c1d9c346e9",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-17T02:00:00Z",
+    "home_team": "Jacksonville State Gamecocks",
+    "away_team": "Troy Trojans"
   },
   {
     "id": "ed11cbf3b02850670bf213622cf4517b",
@@ -64,6 +32,14 @@
     "away_team": "Old Dominion Monarchs"
   },
   {
+    "id": "91a751096545f6c70dca0595cd243ac9",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-18T01:30:00Z",
+    "home_team": "Delaware Blue Hens",
+    "away_team": "Louisiana Ragin Cajuns"
+  },
+  {
     "id": "5628d5990478df5a36dabdf0a89bb699",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
@@ -72,11 +48,339 @@
     "away_team": "Missouri State Bears"
   },
   {
+    "id": "42aba02bd1d0ca3572d8df5ebbbbc4af",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-19T16:00:00Z",
+    "home_team": "Western Michigan Broncos",
+    "away_team": "Kennesaw State Owls"
+  },
+  {
+    "id": "9fbbf6305606ac80e7d6e50d06e0fe00",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-19T19:30:00Z",
+    "home_team": "NC State Wolfpack",
+    "away_team": "Memphis Tigers"
+  },
+  {
+    "id": "5c1822bd971e75bf8eb736f083cfbd20",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-20T01:00:00Z",
+    "home_team": "Oklahoma Sooners",
+    "away_team": "Alabama Crimson Tide"
+  },
+  {
+    "id": "02c39958a2623fd4e5bd08c15188bf63",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-20T17:00:00Z",
+    "home_team": "Texas A&M Aggies",
+    "away_team": "Miami Hurricanes"
+  },
+  {
+    "id": "29dd5ea0c414ab7916d011fe1bd96892",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-20T20:30:00Z",
+    "home_team": "Ole Miss Rebels",
+    "away_team": "Tulane Green Wave"
+  },
+  {
+    "id": "cce1589adabc23fc7a9f036e143d61fd",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-21T00:30:00Z",
+    "home_team": "Oregon Ducks",
+    "away_team": "James Madison Dukes"
+  },
+  {
+    "id": "c036889f6e4e2955d4e6fabe895af2bc",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-22T19:00:00Z",
+    "home_team": "Utah State Aggies",
+    "away_team": "Washington State Cougars"
+  },
+  {
+    "id": "c49986aa8731de6e3c1723d9f8e91e02",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-23T19:00:00Z",
+    "home_team": "Louisville Cardinals",
+    "away_team": "Toledo Rockets"
+  },
+  {
+    "id": "cb6e1250fee631fee65cd81bba1a2a0a",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-23T22:30:00Z",
+    "home_team": "Southern Mississippi Golden Eagles",
+    "away_team": "Western Kentucky Hilltoppers"
+  },
+  {
+    "id": "f518da1ee37719512dc3a4de4631332c",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-24T02:00:00Z",
+    "home_team": "Ohio Bobcats",
+    "away_team": "UNLV Rebels"
+  },
+  {
     "id": "a1dd323522b56837490d61ace49a97e0",
     "sport_key": "americanfootball_ncaaf",
     "sport_title": "NCAAF",
     "commence_time": "2025-12-25T01:00:00Z",
     "home_team": "Hawaii Rainbow Warriors",
     "away_team": "California Golden Bears"
+  },
+  {
+    "id": "d9708069a1f10ee1e65510b3ddcf2a21",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-26T18:00:00Z",
+    "home_team": "Northwestern Wildcats",
+    "away_team": "Central Michigan Chippewas"
+  },
+  {
+    "id": "3be9156167b64ba9f0510a1a47caf12c",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-26T21:30:00Z",
+    "home_team": "Minnesota Golden Gophers",
+    "away_team": "New Mexico Lobos"
+  },
+  {
+    "id": "11fe13524675e4250d66d78223cf7671",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-27T01:00:00Z",
+    "home_team": "UTSA Roadrunners",
+    "away_team": "Florida International Panthers"
+  },
+  {
+    "id": "ba41a4804a7569be6b43e49e1c4e29d9",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-27T16:00:00Z",
+    "home_team": "East Carolina Pirates",
+    "away_team": "Pittsburgh Panthers"
+  },
+  {
+    "id": "2c37fe48857bfd4f7e8fa4a4c066ca2f",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-27T17:00:00Z",
+    "home_team": "Clemson Tigers",
+    "away_team": "Penn State Nittany Lions"
+  },
+  {
+    "id": "f673c68e1b8e73ab2a4b07b8194cb030",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-27T19:15:00Z",
+    "home_team": "Army Black Knights",
+    "away_team": "UConn Huskies"
+  },
+  {
+    "id": "9c639867b2791002bb123f03e36d3ea5",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-27T20:30:00Z",
+    "home_team": "BYU Cougars",
+    "away_team": "Georgia Tech Yellow Jackets"
+  },
+  {
+    "id": "93bf74b692cc8ddf5be89a25df954d5a",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-27T21:30:00Z",
+    "home_team": "Fresno State Bulldogs",
+    "away_team": "Miami (OH) RedHawks"
+  },
+  {
+    "id": "a08a377ac132421947dc9f8d802f82f9",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-27T22:45:00Z",
+    "home_team": "San Diego State Aztecs",
+    "away_team": "North Texas Mean Green"
+  },
+  {
+    "id": "8449c7b1e25714e79347f84dd4676d29",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-28T00:30:00Z",
+    "home_team": "Missouri Tigers",
+    "away_team": "Virginia Cavaliers"
+  },
+  {
+    "id": "d3b56634b3334a6221df4899b81bf412",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-28T02:15:00Z",
+    "home_team": "Houston Cougars",
+    "away_team": "LSU Tigers"
+  },
+  {
+    "id": "5469259159946d4f739f1d867365e199",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-29T19:00:00Z",
+    "home_team": "Appalachian State Mountaineers",
+    "away_team": "Georgia Southern Eagles"
+  },
+  {
+    "id": "0e89e6be81e49b2e05f41ab688b362db",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-30T19:00:00Z",
+    "home_team": "Louisiana Tech Bulldogs",
+    "away_team": "Coastal Carolina Chanticleers"
+  },
+  {
+    "id": "9c026fa3f51d3e506190c9512e71960a",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-30T22:30:00Z",
+    "home_team": "Illinois Fighting Illini",
+    "away_team": "Tennessee Volunteers"
+  },
+  {
+    "id": "c04b192335eb8afec1cbffcd72b658cf",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-31T02:00:00Z",
+    "home_team": "TCU Horned Frogs",
+    "away_team": "USC Trojans"
+  },
+  {
+    "id": "e4eae563eb44ef3d6809bf83c6f022ed",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-31T17:00:00Z",
+    "home_team": "Vanderbilt Commodores",
+    "away_team": "Iowa Hawkeyes"
+  },
+  {
+    "id": "be58b6906c480e3440f3c4b65a068f3e",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-31T19:00:00Z",
+    "home_team": "Duke Blue Devils",
+    "away_team": "Arizona State Sun Devils"
+  },
+  {
+    "id": "19a577346818332b03e9737e6aadf808",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-31T20:00:00Z",
+    "home_team": "Texas Longhorns",
+    "away_team": "Michigan Wolverines"
+  },
+  {
+    "id": "6f364b2f9038410b7cfedad799afddfb",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2025-12-31T20:30:00Z",
+    "home_team": "Utah Utes",
+    "away_team": "Nebraska Cornhuskers"
+  },
+  {
+    "id": "d05ae1f8060582994d6d724ccbb5e21a",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-01T00:30:00Z",
+    "home_team": "Ohio State Buckeyes",
+    "away_team": "Miami Hurricanes"
+  },
+  {
+    "id": "edbc3683488f9366d907f83f61852079",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-01T00:30:00Z",
+    "home_team": "Ohio State Buckeyes",
+    "away_team": "Texas A&M Aggies"
+  },
+  {
+    "id": "0e7c354355b8ba08cb3a05c2b209e097",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-01T17:00:00Z",
+    "home_team": "Texas Tech Red Raiders",
+    "away_team": "James Madison Dukes"
+  },
+  {
+    "id": "22c2cdc4f691ac3a9138cdf71231bb81",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-01T17:00:00Z",
+    "home_team": "Texas Tech Red Raiders",
+    "away_team": "Oregon Ducks"
+  },
+  {
+    "id": "7678978564e7c8a1d1913f8c1d4463e5",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-01T21:00:00Z",
+    "home_team": "Indiana Hoosiers",
+    "away_team": "Alabama Crimson Tide"
+  },
+  {
+    "id": "8bb656391ae0565f943ffd0bd2cfc5b7",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-01T21:00:00Z",
+    "home_team": "Indiana Hoosiers",
+    "away_team": "Oklahoma Sooners"
+  },
+  {
+    "id": "7203b3b2119a74b5e3506cbba10db3ef",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-02T01:00:00Z",
+    "home_team": "Georgia Bulldogs",
+    "away_team": "Ole Miss Rebels"
+  },
+  {
+    "id": "9b6d6f80e0ec371b59331e46a21700b3",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-02T01:00:00Z",
+    "home_team": "Georgia Bulldogs",
+    "away_team": "Tulane Green Wave"
+  },
+  {
+    "id": "930671ccd2f2eb35afc046e27c999b03",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-02T18:00:00Z",
+    "home_team": "Texas State Bobcats",
+    "away_team": "Rice Owls"
+  },
+  {
+    "id": "5bb624eddcdb91f1604d15e869b67fe6",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-02T21:30:00Z",
+    "home_team": "Cincinnati Bearcats",
+    "away_team": "Navy Midshipmen"
+  },
+  {
+    "id": "485c875626910603ddd6d457d9f97e43",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-03T01:00:00Z",
+    "home_team": "SMU Mustangs",
+    "away_team": "Arizona Wildcats"
+  },
+  {
+    "id": "bd6818aa5f43e7496cc108c90adf335d",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2026-01-03T01:00:00Z",
+    "home_team": "Mississippi State Bulldogs",
+    "away_team": "Wake Forest Demon Deacons"
   }
 ]
