@@ -1,11 +1,163 @@
 [
   {
+    "id": "e4f338af936610e4bc26764ecc8c04bd",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Abraham Vidales",
+    "away_team": "Achraf Aasila"
+  },
+  {
+    "id": "0c4e15804f1311f2f5dfc4c23da4df49",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Miguel Trindade",
+    "away_team": "Bobo Sacko"
+  },
+  {
+    "id": "a2d87330dcb067d2cf11c53bb025bae6",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Cem Aygun",
+    "away_team": "Miloš Cvjetićanin"
+  },
+  {
+    "id": "18358f924fdb039111dfd80c055b6fc0",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Don Sno",
+    "away_team": "Endy Semeleer"
+  },
+  {
+    "id": "996b98a2faabdecce16b7ea690b6a320",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Ismail Ouzgni",
+    "away_team": "Figuereido Landman"
+  },
+  {
+    "id": "abc9cf4bd55bb1bf24d7fc90bd93feee",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Gustavo Oliveira",
+    "away_team": "Movsar Ibragimov"
+  },
+  {
+    "id": "094ca1ea62e2ca4368c42feb0fb53556",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Ismael Lazaar",
+    "away_team": "Luis Tavares"
+  },
+  {
+    "id": "96f0cd81ac860b8b6e9b4e38c4f0ca0a",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Rayan Balbali",
+    "away_team": "Levi Batchelor"
+  },
+  {
+    "id": "2294794669e50ce4ffda166a74dd7bab",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Nico Horta",
+    "away_team": "Nidal Bchiri"
+  },
+  {
+    "id": "7de625c081ebb68c20d927d5089088aa",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T15:00:00Z",
+    "home_team": "Paulina Wiśniewska",
+    "away_team": "Sabrinna de Sousa"
+  },
+  {
+    "id": "32337725c45c227c776eb9ee1738d2e6",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T16:00:00Z",
+    "home_team": "Connor Hughes",
+    "away_team": "Aleksandr Chizov"
+  },
+  {
+    "id": "2f51707feb58c6cbf8521c68c3f20fb5",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T16:00:00Z",
+    "home_team": "Baris Adiguzel",
+    "away_team": "Dean Garnett"
+  },
+  {
+    "id": "29d2eb84aefbef7fa1ddba420f89e502",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T16:00:00Z",
+    "home_team": "Boris Mbarga Atangana",
+    "away_team": "Guilherme Soares"
+  },
+  {
+    "id": "d7dc061bfd3c6489c2fced28864b14af",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T16:00:00Z",
+    "home_team": "Cris Cyborg",
+    "away_team": "Sara Collins"
+  },
+  {
+    "id": "63ad68a187782a24a101621d6ccf5fca",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T16:00:00Z",
+    "home_team": "Patrick Habirora",
+    "away_team": "Kevin Jousset"
+  },
+  {
+    "id": "88d5aebeae4545f785a3a2063b817761",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T16:00:00Z",
+    "home_team": "Taylor Lapilus",
+    "away_team": "Liam Gittins"
+  },
+  {
+    "id": "c23e5cdce4602043e0f34d56451c4dd7",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T16:00:00Z",
+    "home_team": "Vadim Nemkov",
+    "away_team": "Renan Ferreira"
+  },
+  {
     "id": "dce27c6405e715d587b5f18b3fe1adc9",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
     "commence_time": "2025-12-13T18:00:00Z",
     "home_team": "Chico Kwasi",
     "away_team": "Teodor Hristov"
+  },
+  {
+    "id": "1138f28317706184dd52739a5d61fc2b",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T18:00:00Z",
+    "home_team": "Petchpanomrung Kiatmoo9",
+    "away_team": "Dennis Wosik"
+  },
+  {
+    "id": "51eadf5b5e6bb745bdcfd1d89e56cf11",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-13T19:00:00Z",
+    "home_team": "Antonio Plazibat",
+    "away_team": "Nordine Mahieddine"
   },
   {
     "id": "f21b0ed7b17e24f3bb29f2590790be08",
@@ -16,20 +168,20 @@
     "away_team": "Amanda Lemos"
   },
   {
+    "id": "14d241c2676b238d886790ec2069afad",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Joanderson Brito",
+    "away_team": "Isaac Thomson"
+  },
+  {
     "id": "fc5dabee9d0eb9208ceabb567ed7353b",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
     "commence_time": "2025-12-14T00:00:00Z",
     "home_team": "Tereza Bleda",
     "away_team": "Jamey-Lyn Horth"
-  },
-  {
-    "id": "8d73172477a0eba2c3967cdbdd99f51d",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2025-12-14T00:00:00Z",
-    "home_team": "Joanderson Brito",
-    "away_team": "Melsik Baghdasaryan"
   },
   {
     "id": "1c235f4c7c46a5461d6d2f3a1a47c283",
@@ -94,6 +246,14 @@
     "commence_time": "2025-12-14T03:00:00Z",
     "home_team": "Kennedy Nzechukwu",
     "away_team": "Marcus Buchecha"
+  },
+  {
+    "id": "7bca72e07f815e364af5befc696a5923",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2025-12-14T03:00:00Z",
+    "home_team": "King Green",
+    "away_team": "Lance Gibson Jr"
   },
   {
     "id": "222f84588e9ae0e632dca2a15d3b9925",

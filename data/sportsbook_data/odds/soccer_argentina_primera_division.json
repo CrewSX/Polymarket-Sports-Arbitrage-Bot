@@ -1,238 +1,28 @@
 [
   {
-    "id": "7ded1463f2cc585a14473567684db15b",
+    "id": "7d7509c2f06ff4dabc66c23eb59a13e9",
     "sport_key": "soccer_argentina_primera_division",
     "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-11-30T00:30:00Z",
-    "home_team": "Central Córdoba",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Racing Club",
     "away_team": "Estudiantes",
     "bookmakers": [
       {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "Central Córdoba",
-                "price": 170
-              },
-              {
-                "name": "Estudiantes",
-                "price": 185
-              },
-              {
-                "name": "Draw",
-                "price": 185
-              }
-            ]
-          }
-        ]
-      },
-      {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-11-29T00:53:33Z",
+        "last_update": "2025-12-11T06:17:55Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-29T00:53:33Z",
+            "last_update": "2025-12-11T06:17:55Z",
             "outcomes": [
-              {
-                "name": "Central Córdoba",
-                "price": 165
-              },
               {
                 "name": "Estudiantes",
-                "price": 200
+                "price": 225
               },
               {
-                "name": "Draw",
-                "price": 180
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-29T00:51:43Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:51:42Z",
-            "outcomes": [
-              {
-                "name": "Central Córdoba",
-                "price": 175
-              },
-              {
-                "name": "Estudiantes",
-                "price": 185
-              },
-              {
-                "name": "Draw",
-                "price": 185
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-29T00:52:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:54Z",
-            "outcomes": [
-              {
-                "name": "Central Córdoba",
-                "price": 170
-              },
-              {
-                "name": "Estudiantes",
-                "price": 185
-              },
-              {
-                "name": "Draw",
-                "price": 185
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "Central Córdoba",
-                "price": 175
-              },
-              {
-                "name": "Estudiantes",
-                "price": 190
-              },
-              {
-                "name": "Draw",
-                "price": 185
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "Central Córdoba",
-                "price": 173
-              },
-              {
-                "name": "Estudiantes",
-                "price": 194
-              },
-              {
-                "name": "Draw",
-                "price": 191
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-29T00:53:09Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:53:09Z",
-            "outcomes": [
-              {
-                "name": "Central Córdoba",
-                "price": 173
-              },
-              {
-                "name": "Estudiantes",
-                "price": 194
-              },
-              {
-                "name": "Draw",
-                "price": 191
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "8ba298a9cfeb7bb253641bb7858bbd33",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-11-30T21:30:00Z",
-    "home_team": "Boca Juniors",
-    "away_team": "Argentinos Juniors",
-    "bookmakers": [
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-29T00:53:33Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:53:33Z",
-            "outcomes": [
-              {
-                "name": "Argentinos Juniors",
-                "price": 335
-              },
-              {
-                "name": "Boca Juniors",
-                "price": -103
-              },
-              {
-                "name": "Draw",
-                "price": 205
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "Argentinos Juniors",
-                "price": 310
-              },
-              {
-                "name": "Boca Juniors",
-                "price": 105
+                "name": "Racing Club",
+                "price": 138
               },
               {
                 "name": "Draw",
@@ -245,48 +35,23 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-11-29T00:51:43Z",
+        "last_update": "2025-12-11T06:18:20Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-29T00:51:42Z",
+            "last_update": "2025-12-11T06:18:20Z",
             "outcomes": [
               {
-                "name": "Argentinos Juniors",
-                "price": 320
+                "name": "Estudiantes",
+                "price": 210
               },
               {
-                "name": "Boca Juniors",
-                "price": 105
+                "name": "Racing Club",
+                "price": 140
               },
               {
                 "name": "Draw",
-                "price": 200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "Argentinos Juniors",
-                "price": 295
-              },
-              {
-                "name": "Boca Juniors",
-                "price": 105
-              },
-              {
-                "name": "Draw",
-                "price": 200
+                "price": 195
               }
             ]
           }
@@ -295,104 +60,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2025-11-29T00:52:54Z",
+        "last_update": "2025-12-11T06:18:19Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-29T00:52:54Z",
+            "last_update": "2025-12-11T06:18:19Z",
             "outcomes": [
               {
-                "name": "Argentinos Juniors",
-                "price": 290
+                "name": "Estudiantes",
+                "price": 220
               },
               {
-                "name": "Boca Juniors",
-                "price": 105
-              },
-              {
-                "name": "Draw",
-                "price": 200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "Argentinos Juniors",
-                "price": 315
-              },
-              {
-                "name": "Boca Juniors",
-                "price": 110
-              },
-              {
-                "name": "Draw",
-                "price": 200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-29T00:53:09Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:53:09Z",
-            "outcomes": [
-              {
-                "name": "Argentinos Juniors",
-                "price": 315
-              },
-              {
-                "name": "Boca Juniors",
-                "price": 110
-              },
-              {
-                "name": "Draw",
-                "price": 200
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "aa8823315b3220a4c97c8b0436660332",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-12-01T20:00:00Z",
-    "home_team": "Barracas Central",
-    "away_team": "Gimnasia La Plata",
-    "bookmakers": [
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-29T00:53:33Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:53:33Z",
-            "outcomes": [
-              {
-                "name": "Barracas Central",
-                "price": 115
-              },
-              {
-                "name": "Gimnasia La Plata",
-                "price": 280
+                "name": "Racing Club",
+                "price": 138
               },
               {
                 "name": "Draw",
@@ -405,333 +85,48 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2025-11-29T00:52:53Z",
+        "last_update": "2025-12-11T06:18:32Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
+            "last_update": "2025-12-11T06:18:32Z",
             "outcomes": [
               {
-                "name": "Barracas Central",
+                "name": "Estudiantes",
+                "price": 220
+              },
+              {
+                "name": "Racing Club",
+                "price": 140
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2025-12-11T06:18:42Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-12-11T06:18:42Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 230
+              },
+              {
+                "name": "Racing Club",
                 "price": 135
               },
               {
-                "name": "Gimnasia La Plata",
-                "price": 230
-              },
-              {
-                "name": "Draw",
-                "price": 195
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "Barracas Central",
-                "price": 130
-              },
-              {
-                "name": "Gimnasia La Plata",
-                "price": 245
-              },
-              {
                 "name": "Draw",
                 "price": 190
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-29T00:52:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:54Z",
-            "outcomes": [
-              {
-                "name": "Barracas Central",
-                "price": 130
-              },
-              {
-                "name": "Gimnasia La Plata",
-                "price": 240
-              },
-              {
-                "name": "Draw",
-                "price": 190
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-29T00:51:43Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:51:42Z",
-            "outcomes": [
-              {
-                "name": "Barracas Central",
-                "price": 125
-              },
-              {
-                "name": "Gimnasia La Plata",
-                "price": 250
-              },
-              {
-                "name": "Draw",
-                "price": 190
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "Barracas Central",
-                "price": 137
-              },
-              {
-                "name": "Gimnasia La Plata",
-                "price": 239
-              },
-              {
-                "name": "Draw",
-                "price": 200
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-29T00:53:09Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:53:09Z",
-            "outcomes": [
-              {
-                "name": "Barracas Central",
-                "price": 137
-              },
-              {
-                "name": "Gimnasia La Plata",
-                "price": 239
-              },
-              {
-                "name": "Draw",
-                "price": 200
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "4e7bc53524e59823c32bf4434fe9a294",
-    "sport_key": "soccer_argentina_primera_division",
-    "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-12-02T00:30:00Z",
-    "home_team": "Racing Club",
-    "away_team": "CA Tigre BA",
-    "bookmakers": [
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2025-11-29T00:53:33Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:53:33Z",
-            "outcomes": [
-              {
-                "name": "CA Tigre BA",
-                "price": 430
-              },
-              {
-                "name": "Racing Club",
-                "price": -137
-              },
-              {
-                "name": "Draw",
-                "price": 240
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "fanduel",
-        "title": "FanDuel",
-        "last_update": "2025-11-29T00:51:43Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:51:43Z",
-            "outcomes": [
-              {
-                "name": "CA Tigre BA",
-                "price": 440
-              },
-              {
-                "name": "Racing Club",
-                "price": -140
-              },
-              {
-                "name": "Draw",
-                "price": 230
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "CA Tigre BA",
-                "price": 440
-              },
-              {
-                "name": "Racing Club",
-                "price": -139
-              },
-              {
-                "name": "Draw",
-                "price": 235
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "CA Tigre BA",
-                "price": 400
-              },
-              {
-                "name": "Racing Club",
-                "price": -140
-              },
-              {
-                "name": "Draw",
-                "price": 245
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-11-29T00:52:54Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:54Z",
-            "outcomes": [
-              {
-                "name": "CA Tigre BA",
-                "price": 425
-              },
-              {
-                "name": "Racing Club",
-                "price": -140
-              },
-              {
-                "name": "Draw",
-                "price": 240
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2025-11-29T00:52:53Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:52:53Z",
-            "outcomes": [
-              {
-                "name": "CA Tigre BA",
-                "price": 430
-              },
-              {
-                "name": "Racing Club",
-                "price": -137
-              },
-              {
-                "name": "Draw",
-                "price": 253
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "lowvig",
-        "title": "LowVig.ag",
-        "last_update": "2025-11-29T00:53:09Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2025-11-29T00:53:09Z",
-            "outcomes": [
-              {
-                "name": "CA Tigre BA",
-                "price": 430
-              },
-              {
-                "name": "Racing Club",
-                "price": -137
-              },
-              {
-                "name": "Draw",
-                "price": 253
               }
             ]
           }
