@@ -1,28 +1,28 @@
 [
   {
-    "id": "7d7509c2f06ff4dabc66c23eb59a13e9",
+    "id": "f6fe3e799f36adae222150a6f0bc0109",
     "sport_key": "soccer_argentina_primera_division",
     "sport_title": "Primera División - Argentina",
-    "commence_time": "2025-12-14T00:00:00Z",
-    "home_team": "Racing Club",
-    "away_team": "Estudiantes",
+    "commence_time": "2026-01-22T20:00:00Z",
+    "home_team": "Aldosivi Mar del Plata",
+    "away_team": "Defensa y Justicia",
     "bookmakers": [
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2025-12-11T06:17:55Z",
+        "last_update": "2026-01-13T04:08:02Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-11T06:17:55Z",
+            "last_update": "2026-01-13T04:08:02Z",
             "outcomes": [
               {
-                "name": "Estudiantes",
-                "price": 225
+                "name": "Aldosivi Mar del Plata",
+                "price": 160
               },
               {
-                "name": "Racing Club",
-                "price": 138
+                "name": "Defensa y Justicia",
+                "price": 188
               },
               {
                 "name": "Draw",
@@ -35,69 +35,439 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2025-12-11T06:18:20Z",
+        "last_update": "2026-01-13T04:08:27Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-11T06:18:20Z",
+            "last_update": "2026-01-13T04:08:27Z",
             "outcomes": [
               {
-                "name": "Estudiantes",
-                "price": 210
+                "name": "Aldosivi Mar del Plata",
+                "price": 155
               },
               {
-                "name": "Racing Club",
-                "price": 140
+                "name": "Defensa y Justicia",
+                "price": 190
               },
               {
                 "name": "Draw",
-                "price": 195
+                "price": 200
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1da473bb0c46e9cef375aee44ab7c0aa",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-22T23:00:00Z",
+    "home_team": "Banfield",
+    "away_team": "Atlético Huracán",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Atlético Huracán",
+                "price": 230
+              },
+              {
+                "name": "Banfield",
+                "price": 145
+              },
+              {
+                "name": "Draw",
+                "price": 175
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "36ee68e519c0deef917f61530a432f47",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-22T23:00:00Z",
+    "home_team": "Union Santa Fe",
+    "away_team": "Platense",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Platense",
+                "price": 330
+              },
+              {
+                "name": "Union Santa Fe",
+                "price": 100
+              },
+              {
+                "name": "Draw",
+                "price": 190
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "123e09f7c5dd56e0c2325c8feabbefb7",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-23T01:15:00Z",
+    "home_team": "Central Córdoba",
+    "away_team": "Gimnasia Mendoza",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Central Córdoba",
+                "price": 100
+              },
+              {
+                "name": "Gimnasia Mendoza",
+                "price": 300
+              },
+              {
+                "name": "Draw",
+                "price": 200
               }
             ]
           }
         ]
       },
       {
-        "key": "betmgm",
-        "title": "BetMGM",
-        "last_update": "2025-12-11T06:18:19Z",
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-11T06:18:19Z",
+            "last_update": "2026-01-13T04:08:02Z",
             "outcomes": [
               {
-                "name": "Estudiantes",
-                "price": 220
+                "name": "Central Córdoba",
+                "price": 104
               },
               {
-                "name": "Racing Club",
-                "price": 138
+                "name": "Gimnasia Mendoza",
+                "price": 290
               },
               {
                 "name": "Draw",
-                "price": 195
+                "price": 205
               }
             ]
           }
         ]
       },
       {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2025-12-11T06:18:32Z",
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-11T06:18:32Z",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Central Córdoba",
+                "price": 110
+              },
+              {
+                "name": "Gimnasia Mendoza",
+                "price": 295
+              },
+              {
+                "name": "Draw",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c8deec3ee4c5d0c6f72d6a8e031ddd05",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-23T01:15:00Z",
+    "home_team": "Instituto de Córdoba",
+    "away_team": "Velez Sarsfield BA",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Instituto de Córdoba",
+                "price": 165
+              },
+              {
+                "name": "Velez Sarsfield BA",
+                "price": 195
+              },
+              {
+                "name": "Draw",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9b10fad90f642285c738c3e13936ad16",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-23T20:45:00Z",
+    "home_team": "San Lorenzo",
+    "away_team": "Lanus",
+    "bookmakers": [
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Lanus",
+                "price": 260
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 135
+              },
+              {
+                "name": "Draw",
+                "price": 165
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Lanus",
+                "price": 245
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 145
+              },
+              {
+                "name": "Draw",
+                "price": 175
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Lanus",
+                "price": 240
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 135
+              },
+              {
+                "name": "Draw",
+                "price": 165
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ea901db9596698f98e9d2b0ea9f4a919",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-23T23:00:00Z",
+    "home_team": "Independiente",
+    "away_team": "Estudiantes",
+    "bookmakers": [
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
             "outcomes": [
               {
                 "name": "Estudiantes",
-                "price": 220
+                "price": 310
               },
               {
-                "name": "Racing Club",
-                "price": 140
+                "name": "Independiente",
+                "price": 112
+              },
+              {
+                "name": "Draw",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 230
+              },
+              {
+                "name": "Independiente",
+                "price": 135
+              },
+              {
+                "name": "Draw",
+                "price": 175
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 235
+              },
+              {
+                "name": "Independiente",
+                "price": 145
+              },
+              {
+                "name": "Draw",
+                "price": 175
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ff9e0534a4a73813bcae0e7c8ee15751",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-24T01:15:00Z",
+    "home_team": "Independiente Rivadavia",
+    "away_team": "Atlético Tucuman",
+    "bookmakers": [
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Atlético Tucuman",
+                "price": 250
+              },
+              {
+                "name": "Independiente Rivadavia",
+                "price": 116
+              },
+              {
+                "name": "Draw",
+                "price": 205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Atlético Tucuman",
+                "price": 240
+              },
+              {
+                "name": "Independiente Rivadavia",
+                "price": 115
               },
               {
                 "name": "Draw",
@@ -110,15 +480,270 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2025-12-11T06:18:42Z",
+        "last_update": "2026-01-13T04:08:39Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2025-12-11T06:18:42Z",
+            "last_update": "2026-01-13T04:08:39Z",
             "outcomes": [
               {
-                "name": "Estudiantes",
+                "name": "Atlético Tucuman",
+                "price": 255
+              },
+              {
+                "name": "Independiente Rivadavia",
+                "price": 125
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9eca1e9e0f0e57ef36d6040d04d91a1c",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-24T01:15:00Z",
+    "home_team": "Talleres",
+    "away_team": "Newells Old Boys",
+    "bookmakers": [
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Newells Old Boys",
+                "price": 370
+              },
+              {
+                "name": "Talleres",
+                "price": -127
+              },
+              {
+                "name": "Draw",
                 "price": 230
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Newells Old Boys",
+                "price": 430
+              },
+              {
+                "name": "Talleres",
+                "price": -145
+              },
+              {
+                "name": "Draw",
+                "price": 230
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Newells Old Boys",
+                "price": 420
+              },
+              {
+                "name": "Talleres",
+                "price": -139
+              },
+              {
+                "name": "Draw",
+                "price": 235
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2a85042b1485e0099a48955f71a1b259",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-24T20:00:00Z",
+    "home_team": "Barracas Central",
+    "away_team": "River Plate",
+    "bookmakers": [
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 375
+              },
+              {
+                "name": "River Plate",
+                "price": -117
+              },
+              {
+                "name": "Draw",
+                "price": 205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 350
+              },
+              {
+                "name": "River Plate",
+                "price": -114
+              },
+              {
+                "name": "Draw",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 350
+              },
+              {
+                "name": "River Plate",
+                "price": -115
+              },
+              {
+                "name": "Draw",
+                "price": 210
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Barracas Central",
+                "price": 350
+              },
+              {
+                "name": "River Plate",
+                "price": -120
+              },
+              {
+                "name": "Draw",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f055a470e26f2841a9dfd47c2b0068bf",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-24T22:30:00Z",
+    "home_team": "Gimnasia La Plata",
+    "away_team": "Racing Club",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 230
+              },
+              {
+                "name": "Racing Club",
+                "price": 130
+              },
+              {
+                "name": "Draw",
+                "price": 185
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 235
               },
               {
                 "name": "Racing Club",
@@ -127,6 +752,759 @@
               {
                 "name": "Draw",
                 "price": 190
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 245
+              },
+              {
+                "name": "Racing Club",
+                "price": 128
+              },
+              {
+                "name": "Draw",
+                "price": 188
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Gimnasia La Plata",
+                "price": 230
+              },
+              {
+                "name": "Racing Club",
+                "price": 135
+              },
+              {
+                "name": "Draw",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "65c363fda2c82d89a916c38265274a40",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T01:00:00Z",
+    "home_team": "Rosario Central",
+    "away_team": "Belgrano de Cordoba",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Belgrano de Cordoba",
+                "price": 390
+              },
+              {
+                "name": "Rosario Central",
+                "price": -130
+              },
+              {
+                "name": "Draw",
+                "price": 210
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Belgrano de Cordoba",
+                "price": 380
+              },
+              {
+                "name": "Rosario Central",
+                "price": -122
+              },
+              {
+                "name": "Draw",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Belgrano de Cordoba",
+                "price": 430
+              },
+              {
+                "name": "Rosario Central",
+                "price": -122
+              },
+              {
+                "name": "Draw",
+                "price": 200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Belgrano de Cordoba",
+                "price": 370
+              },
+              {
+                "name": "Rosario Central",
+                "price": -125
+              },
+              {
+                "name": "Draw",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "83674e6f61235060563faba408c00cd0",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "Aldosivi Mar del Plata",
+    "away_team": "Defensa y Justicia",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Aldosivi Mar del Plata",
+                "price": 160
+              },
+              {
+                "name": "Defensa y Justicia",
+                "price": 195
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "056650ffde52215915960af0501d5d26",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "Banfield",
+    "away_team": "Atlético Huracán",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Atlético Huracán",
+                "price": 235
+              },
+              {
+                "name": "Banfield",
+                "price": 145
+              },
+              {
+                "name": "Draw",
+                "price": 175
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "86727d0c416cdfc95e2629b61b53ee15",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "Independiente Rivadavia",
+    "away_team": "Atlético Tucuman",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Atlético Tucuman",
+                "price": 270
+              },
+              {
+                "name": "Independiente Rivadavia",
+                "price": 120
+              },
+              {
+                "name": "Draw",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c984e35723aa4b009650996b78946c3c",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "Central Córdoba",
+    "away_team": "Gimnasia Mendoza",
+    "bookmakers": []
+  },
+  {
+    "id": "3d8ca9ee3a791cefbe26e21ed5ee2364",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "Independiente",
+    "away_team": "Estudiantes",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Estudiantes",
+                "price": 245
+              },
+              {
+                "name": "Independiente",
+                "price": 150
+              },
+              {
+                "name": "Draw",
+                "price": 155
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2c6b69f588ef58dcdcbd56534c2e645c",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "Instituto de Córdoba",
+    "away_team": "Velez Sarsfield BA",
+    "bookmakers": [
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Instituto de Córdoba",
+                "price": 170
+              },
+              {
+                "name": "Velez Sarsfield BA",
+                "price": 190
+              },
+              {
+                "name": "Draw",
+                "price": 180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "25bb0d1324539092cdcab7dfcd9f3d01",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "San Lorenzo",
+    "away_team": "Lanus",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Lanus",
+                "price": 240
+              },
+              {
+                "name": "San Lorenzo",
+                "price": 140
+              },
+              {
+                "name": "Draw",
+                "price": 170
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f95870535ed6e7e9ae0b2863f447241e",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "Talleres",
+    "away_team": "Newells Old Boys",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Newells Old Boys",
+                "price": 425
+              },
+              {
+                "name": "Talleres",
+                "price": -145
+              },
+              {
+                "name": "Draw",
+                "price": 235
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "72f7040317f86d3f1cb803fca3ec822b",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T20:00:00Z",
+    "home_team": "Union Santa Fe",
+    "away_team": "Platense",
+    "bookmakers": []
+  },
+  {
+    "id": "83e0bc965dc7f37d10b444de29c595fa",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-25T21:30:00Z",
+    "home_team": "Boca Juniors",
+    "away_team": "Deportivo Riestra",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -175
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 500
+              },
+              {
+                "name": "Draw",
+                "price": 240
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -168
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 525
+              },
+              {
+                "name": "Draw",
+                "price": 250
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -186
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 600
+              },
+              {
+                "name": "Draw",
+                "price": 255
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Boca Juniors",
+                "price": -180
+              },
+              {
+                "name": "Deportivo Riestra",
+                "price": 550
+              },
+              {
+                "name": "Draw",
+                "price": 260
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "41eb053581ee4176c40fc1b62df7c150",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-26T00:00:00Z",
+    "home_team": "Argentinos Juniors",
+    "away_team": "Sarmiento de Junin",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": -210
+              },
+              {
+                "name": "Sarmiento de Junin",
+                "price": 600
+              },
+              {
+                "name": "Draw",
+                "price": 270
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": -193
+              },
+              {
+                "name": "Sarmiento de Junin",
+                "price": 600
+              },
+              {
+                "name": "Draw",
+                "price": 280
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": -200
+              },
+              {
+                "name": "Sarmiento de Junin",
+                "price": 650
+              },
+              {
+                "name": "Draw",
+                "price": 260
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "Argentinos Juniors",
+                "price": -200
+              },
+              {
+                "name": "Sarmiento de Junin",
+                "price": 550
+              },
+              {
+                "name": "Draw",
+                "price": 280
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a361a60a49d1d0e1b3068676960f83f3",
+    "sport_key": "soccer_argentina_primera_division",
+    "sport_title": "Primera División - Argentina",
+    "commence_time": "2026-01-26T00:00:00Z",
+    "home_team": "CA Tigre BA",
+    "away_team": "Estudiantes de Río Cuarto",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2026-01-13T04:08:27Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:27Z",
+            "outcomes": [
+              {
+                "name": "CA Tigre BA",
+                "price": -105
+              },
+              {
+                "name": "Estudiantes de Río Cuarto",
+                "price": 320
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-01-13T04:08:39Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:39Z",
+            "outcomes": [
+              {
+                "name": "CA Tigre BA",
+                "price": -105
+              },
+              {
+                "name": "Estudiantes de Río Cuarto",
+                "price": 340
+              },
+              {
+                "name": "Draw",
+                "price": 195
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-01-13T04:08:02Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:02Z",
+            "outcomes": [
+              {
+                "name": "CA Tigre BA",
+                "price": 102
+              },
+              {
+                "name": "Estudiantes de Río Cuarto",
+                "price": 295
+              },
+              {
+                "name": "Draw",
+                "price": 210
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-01-13T04:08:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-01-13T04:08:26Z",
+            "outcomes": [
+              {
+                "name": "CA Tigre BA",
+                "price": -110
+              },
+              {
+                "name": "Estudiantes de Río Cuarto",
+                "price": 380
+              },
+              {
+                "name": "Draw",
+                "price": 185
               }
             ]
           }

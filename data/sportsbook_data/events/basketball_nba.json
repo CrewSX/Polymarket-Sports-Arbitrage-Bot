@@ -1,106 +1,74 @@
 [
   {
-    "id": "bdf65fa4c7fe0494ecb1de606a22a96c",
+    "id": "09fb007ac62ac7d2e08db4357be2417c",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-12-12T01:10:00Z",
-    "home_team": "Milwaukee Bucks",
-    "away_team": "Boston Celtics"
-  },
-  {
-    "id": "44417db5735da55048ecf34f53030b57",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-12T01:10:00Z",
-    "home_team": "Houston Rockets",
-    "away_team": "Los Angeles Clippers"
-  },
-  {
-    "id": "3c6fdfc4cdc52040e342f68bae9a58ae",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-12T01:10:00Z",
-    "home_team": "New Orleans Pelicans",
-    "away_team": "Portland Trail Blazers"
-  },
-  {
-    "id": "7d1a8b194b41e9acf8acb167ada36745",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-12T03:10:00Z",
+    "commence_time": "2026-01-13T03:10:00Z",
     "home_team": "Sacramento Kings",
-    "away_team": "Denver Nuggets"
+    "away_team": "Los Angeles Lakers"
   },
   {
-    "id": "ed94a98c5965c7f5edaf8e956db10d63",
+    "id": "2532e809417a1fed704519de12ef68c0",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-12-13T00:10:00Z",
-    "home_team": "Detroit Pistons",
-    "away_team": "Atlanta Hawks"
+    "commence_time": "2026-01-13T03:40:00Z",
+    "home_team": "Los Angeles Clippers",
+    "away_team": "Charlotte Hornets"
   },
   {
-    "id": "1718bd83d0e967f099a883a4df92d7a5",
+    "id": "61fc2e0519808b7939ffa4b246abdc06",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-12-13T00:10:00Z",
-    "home_team": "Charlotte Hornets",
+    "commence_time": "2026-01-14T00:40:00Z",
+    "home_team": "Miami Heat",
+    "away_team": "Phoenix Suns"
+  },
+  {
+    "id": "bed2aa3c325290237960f892f5a097a6",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2026-01-14T01:10:00Z",
+    "home_team": "Houston Rockets",
     "away_team": "Chicago Bulls"
   },
   {
-    "id": "a365ef6ee881da6cbcbb41b19a203942",
+    "id": "a13039a9d53bb199d840fbfcf12288e3",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-12-13T00:10:00Z",
-    "home_team": "Washington Wizards",
-    "away_team": "Cleveland Cavaliers"
+    "commence_time": "2026-01-14T01:10:00Z",
+    "home_team": "New Orleans Pelicans",
+    "away_team": "Denver Nuggets"
   },
   {
-    "id": "3b851b37fe204032efa750f6e6cde66e",
+    "id": "e7bdcaa4eb0827e34ee88b6f7f4cfbf7",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-12-13T00:10:00Z",
-    "home_team": "Philadelphia 76ers",
-    "away_team": "Indiana Pacers"
-  },
-  {
-    "id": "0bc4679b4f3eed7ea44f40f68984214c",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-13T01:10:00Z",
-    "home_team": "Memphis Grizzlies",
-    "away_team": "Utah Jazz"
-  },
-  {
-    "id": "f43f63c4089813a0e3aa0ec0c9ccdd1e",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-13T01:40:00Z",
-    "home_team": "Dallas Mavericks",
-    "away_team": "Brooklyn Nets"
-  },
-  {
-    "id": "3d88af9ad2aeef52ba326706e3044c2c",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-13T03:10:00Z",
-    "home_team": "Golden State Warriors",
+    "commence_time": "2026-01-14T01:10:00Z",
+    "home_team": "Milwaukee Bucks",
     "away_team": "Minnesota Timberwolves"
   },
   {
-    "id": "a5415e46c5fcbe0d07e9354d57ac89f5",
+    "id": "a7a281e6b58fc8dcb4460426708635f0",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2025-12-13T22:30:00Z",
-    "home_team": "Orlando Magic",
-    "away_team": "New York Knicks"
-  },
-  {
-    "id": "2bb4fb503eee5d6ccee6f70bb183ba0f",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2025-12-14T02:00:00Z",
+    "commence_time": "2026-01-14T01:10:00Z",
     "home_team": "Oklahoma City Thunder",
     "away_team": "San Antonio Spurs"
+  },
+  {
+    "id": "c7c297ef2929312f940160908cc98da1",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2026-01-14T03:40:00Z",
+    "home_team": "Los Angeles Lakers",
+    "away_team": "Atlanta Hawks"
+  },
+  {
+    "id": "8a94b39d3b7b34471f2dc96fa6f46b59",
+    "sport_key": "basketball_nba",
+    "sport_title": "NBA",
+    "commence_time": "2026-01-14T04:10:00Z",
+    "home_team": "Golden State Warriors",
+    "away_team": "Portland Trail Blazers"
   }
 ]
