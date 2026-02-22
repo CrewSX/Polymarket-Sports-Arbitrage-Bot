@@ -1,6 +1,13 @@
 """Test the odds matching pipeline using mock NCAAF data."""
 import json
+import sys
 from pathlib import Path
+
+# Ensure project root is on path when running script directly
+_project_root = Path(__file__).resolve().parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
+
 from poly_sports.data_fetching.fetch_odds_data import fetch_odds_for_polymarket_events, _enrich_bookmaker_data, _consolidate_bookmakers
 from poly_sports.processing.event_matching import match_events
 from poly_sports.processing.sport_detection import detect_sport_key

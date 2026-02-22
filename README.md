@@ -1,446 +1,321 @@
-# poly-sports
+# Polymarket Sports Arbitrage Bot
 
-A Python package for fetching and analyzing sports market data from Polymarket, comparing it with traditional sportsbook odds to identify directional trading opportunities.
+**Find directional sports betting opportunities by comparing Polymarket prediction markets with traditional sportsbook odds.**
+
+The **Polymarket-Sports-Arbitrage-Bot** is a Python toolkit for **Polymarket sports betting** analysis. It fetches sports markets from the Polymarket Gamma API, matches them with odds from The Odds API, and surfaces opportunities where Polymarket prices diverge from sportsbook-implied probabilities—so you can identify undervalued outcomes and track potential edge.
+
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Workflow](#workflow)
+- [Example output](#example-output)
+- [How It Works](#how-it-works)
+- [Project Structure](#project-structure)
+- [Testing](#testing)
+- [Documentation](#documentation)
+- [License](#license)
+
+---
+
+## Overview
+
+**Polymarket** is a decentralized prediction market platform. This bot focuses on **Polymarket sports markets**: it pulls live sports event data from Polymarket, pairs it with odds from major sportsbooks (via [The Odds API](https://the-odds-api.com)), and detects **directional opportunities**—cases where Polymarket undervalues an outcome relative to sportsbook-implied probability. Use it for research, backtesting, or as part of a manual or automated **Polymarket sports betting** workflow.
+
+**Keywords:** Polymarket, Polymarket sports betting, Polymarket prediction markets, sports arbitrage, odds comparison, prediction markets, Gamma API, CLOB.
+
+---
 
 ## Features
 
-- **Polymarket Data Fetching**: Fetches all sports markets from Polymarket Gamma API
-- **Sportsbook Integration**: Matches Polymarket events with The Odds API to compare prices
-- **Event Matching**: Intelligent fuzzy matching of events across platforms using team names and metadata
-- **Directional Opportunity Detection**: Identifies when Polymarket undervalues outcomes compared to sportsbooks
-- **Delta Analysis**: Finds sportsbooks with maximum price differences for each event
-- **PnL Monitoring**: Real-time profit and loss tracking for active positions
-- **Data Persistence**: Stores events and odds data for efficient re-analysis
-- **Multiple Export Formats**: Exports data to both JSON and CSV formats
-- **Comprehensive Testing**: Test-driven development with full test coverage
+| Feature | Description |
+|--------|-------------|
+| **Polymarket data** | Fetches sports markets from the Polymarket Gamma API; filters by category and market type. |
+| **Sportsbook odds** | Integrates with The Odds API for multi-sportsbook odds (US and international). |
+| **Event matching** | Fuzzy matching of Polymarket events to sportsbook events (team names, dates, metadata). |
+| **Directional detection** | Flags outcomes where Polymarket price &lt; sportsbook-implied probability. |
+| **Delta analysis** | Identifies the sportsbook with the largest price gap per event. |
+| **PnL monitoring** | Tracks unrealized P&amp;L for positions using live Polymarket CLOB prices. |
+| **Export** | Outputs JSON and CSV for use in spreadsheets, dashboards, or other tools. |
 
-## Setup
+---
+
+## Installation
 
 ### Prerequisites
 
-- Python 3.9 or higher
-- pip or uv package manager
+- **Python 3.9+**
+- pip or [uv](https://github.com/astral-sh/uv)
 
-### Installation
+### Install dependencies
 
-1. Install dependencies:
 ```bash
 pip install py-clob-client requests python-dotenv pandas pytest pytest-mock rapidfuzz python-dateutil
 ```
 
-Or if using uv:
+Or with uv (from project root):
+
 ```bash
 uv pip install -e .
 ```
 
-### Configuration
+---
 
-Create a `.env` file in the project root with the following settings:
+## Configuration
+
+Create a `.env` file in the project root:
 
 ```env
-# Gamma API Configuration
+# Polymarket
 GAMMA_API_URL=https://gamma-api.polymarket.com
-
-# The Odds API Configuration (Required for sportsbook comparison)
-ODDS_API_KEY=your_odds_api_key_here
-
-# CLOB API Configuration (Optional - for data enrichment)
 CLOB_HOST=https://clob.polymarket.com
 ENRICH_WITH_CLOB=false
 
-# Output Configuration (Optional)
+# The Odds API (required for sportsbook comparison)
+ODDS_API_KEY=your_odds_api_key_here
+
+# Output
 OUTPUT_DIR=data
 ```
 
-**Required:**
-- `GAMMA_API_URL` - Base URL for Polymarket Gamma API (default: `https://gamma-api.polymarket.com`)
-- `ODDS_API_KEY` - The Odds API key (required for sportsbook comparison)
+| Variable | Required | Description |
+|---------|----------|-------------|
+| `ODDS_API_KEY` | Yes | API key from [The Odds API](https://the-odds-api.com). |
+| `GAMMA_API_URL` | No | Polymarket Gamma API base URL (default: `https://gamma-api.polymarket.com`). |
+| `CLOB_HOST` | No | Polymarket CLOB host (default: `https://clob.polymarket.com`). |
+| `ENRICH_WITH_CLOB` | No | Set `true` to enrich with CLOB prices (default: `false`). |
+| `OUTPUT_DIR` | No | Output directory (default: `data`). |
 
-**Optional:**
-- `CLOB_HOST` - CLOB API host URL (default: `https://clob.polymarket.com`)
-- `ENRICH_WITH_CLOB` - Enable CLOB data enrichment (default: `false`)
-- `EXCLUDE_ENDED_MARKETS` - Exclude markets that have already ended (default: `true`)
-- `OUTPUT_DIR` - Directory to save output files (default: `data`)
-- `ODDS_API_REGIONS` - Comma-separated list of regions for The Odds API (default: `us`)
-- `ODDS_API_MARKETS` - Comma-separated list of markets to fetch (default: `h2h`)
-- `ODDS_API_ODDS_FORMAT` - Odds format: `american` or `decimal` (default: `american`)
-- `ODDS_API_MIN_CONFIDENCE` - Minimum confidence for event matching (default: `0.8`)
-- `USE_STORED_EVENTS` - Use stored event files if available (default: `true`)
-- `EVENTS_DIR` - Directory for stored event JSON files (default: `data/sportsbook_data/events`)
-- `EXCLUDE_1H_MONEYLINE` - Exclude first half moneyline bets (default: `false`)
-- `PNL_TEST_FILE` - File path for PnL monitoring input (default: `data/arbitrage_comparison_test.json`)
-- `PNL_POLL_INTERVAL` - Seconds between price updates for PnL monitoring (default: `30`)
-- `PNL_OUTPUT_DIR` - Directory for PnL snapshot output files (default: `data`)
+Additional options: `ODDS_API_REGIONS`, `ODDS_API_MARKETS`, `ODDS_API_ODDS_FORMAT`, `ODDS_API_MIN_CONFIDENCE`, `USE_STORED_EVENTS`, `EVENTS_DIR`, `PNL_TEST_FILE`, `PNL_POLL_INTERVAL`, `PNL_OUTPUT_DIR`. See inline comments or code for defaults.
+
+---
 
 ## Usage
 
-### 1. Fetch Sports Markets
+All commands assume you are in the project root. Use `python3` if `python` is not available.
 
-Fetch all sports markets from Polymarket:
-
-```bash
-python -m poly_sports.data_fetching.fetch_sports_markets
-```
-
-This will:
-1. Fetch all markets from the Gamma API
-2. Filter for markets with `category == "Sports"`
-3. Extract arbitrage-relevant data
-4. Save results to `data/sports_markets.json`, `data/sports_markets.csv`, `data/arbitrage_data.json`, and `data/arbitrage_data.csv`
-
-#### With CLOB Enrichment
-
-To enrich markets with CLOB data (prices, order books, spreads), set `ENRICH_WITH_CLOB=true` in your `.env` file:
-
-```env
-ENRICH_WITH_CLOB=true
-```
-
-Then run the same command. **Note:** CLOB enrichment requires the `py-clob-client` package to be installed.
-
-#### Filter Arbitrage Data
-
-Filter existing arbitrage data to only include match winner and draw markets:
+### 1. Fetch Polymarket sports markets
 
 ```bash
-python -m poly_sports.data_fetching.fetch_sports_markets filter [input_file] [output_dir]
+python3 -m poly_sports.data_fetching.fetch_sports_markets
 ```
 
-Example:
-```bash
-python -m poly_sports.data_fetching.fetch_sports_markets filter data/arbitrage_data.json data
-```
+Writes: `data/sports_markets.json`, `data/sports_markets.csv`, `data/arbitrage_data.json`, `data/arbitrage_data.csv`.
 
-#### Extract from JSON File
-
-Extract arbitrage data from an existing events JSON file:
+**Filter** to match-winner and draw markets only:
 
 ```bash
-python -m poly_sports.data_fetching.fetch_sports_markets [input_file] [output_dir]
+python3 -m poly_sports.data_fetching.fetch_sports_markets filter data/arbitrage_data.json data
 ```
 
-Example:
-```bash
-python -m poly_sports.data_fetching.fetch_sports_markets data/events.json data
-```
+Produces: `data/arbitrage_data_filtered.json`, `data/arbitrage_data_filtered.csv`.
 
-### 2. Fetch and Compare Odds (Production)
+### 2. Fetch and compare with sportsbook odds
 
-Fetch odds from The Odds API and create comparison dataset with Polymarket data:
+Requires `ODDS_API_KEY` and `data/arbitrage_data_filtered.json` (from step 1).
 
 ```bash
-python -m poly_sports.data_fetching.fetch_odds_comparison
+python3 -m poly_sports.data_fetching.fetch_odds_comparison
 ```
 
-**Prerequisites:**
-- `ODDS_API_KEY` must be set in `.env` file
-- `data/arbitrage_data_filtered.json` must exist (run step 1 first)
+Writes: `data/arbitrage_comparison.json`, `data/arbitrage_comparison.csv`, and `data/sportsbook_data/events/*.json`, `data/sportsbook_data/odds/*.json`.
 
-This script:
-1. Loads Polymarket arbitrage data
-2. Groups events by sport (auto-detected)
-3. Fetches events from The Odds API (or loads from stored files if available)
-4. Matches Polymarket events to The Odds API events using fuzzy matching
-5. Fetches odds from multiple sportsbooks
-6. Enriches odds with all formats (American, decimal, implied probability)
-7. Consolidates sportsbook data into aggregate statistics
-8. Saves comparison data and stores events/odds for future use
+### 3. Run arbitrage (directional) detection
 
-**Output:**
-- `data/arbitrage_comparison.json` - Merged comparison data (JSON)
-- `data/arbitrage_comparison.csv` - Merged comparison data (CSV)
-- `data/sportsbook_data/events/*.json` - Stored event files by sport
-- `data/sportsbook_data/odds/*.json` - Stored odds files by sport
-
-**Note:** The script will automatically save fetched events and odds to disk. On subsequent runs with `USE_STORED_EVENTS=true`, it will use the stored files instead of making API calls, saving API quota.
-
-### 3. Test Odds Pipeline (Development/Testing)
-
-Test the odds matching pipeline using mock NCAAF data:
+Requires `data/arbitrage_comparison.json` (from step 2).
 
 ```bash
-python scripts/test_odds_pipeline.py
+python3 scripts/run_arbitrage_detection.py
 ```
 
-**Prerequisites:**
-- `data/arbitrage_data_filtered.json` must exist (run step 1 first)
-- `data/mock_ncaaf_events.json` and `data/mock_ncaaf.json` must exist
-
-**Output:**
-- `data/arbitrage_comparison_test.json` - Merged comparison data (JSON)
-- `data/arbitrage_comparison_test.csv` - Merged comparison data (CSV)
-
-### 4. Run Arbitrage Detection
-
-Detect directional trading opportunities from comparison data:
+Optional: sort by profit margin or delta difference:
 
 ```bash
-python scripts/run_arbitrage_detection.py [--sort-by profit_margin|delta_difference]
+python3 scripts/run_arbitrage_detection.py --sort-by profit_margin
+python3 scripts/run_arbitrage_detection.py --sort-by delta_difference
 ```
 
-**Prerequisites:**
-- `data/arbitrage_comparison.json` must exist (run step 2 first)
+Writes: `data/directional_arbitrage.json`.
 
-**Options:**
-- `--sort-by`: Sort opportunities by `profit_margin` or `delta_difference` before saving
-
-This script:
-1. Loads comparison data from `data/arbitrage_comparison.json`
-2. Detects directional opportunities with a minimum profit threshold (default: 10%)
-3. Filters by minimum liquidity (default: $1000)
-4. Displays detailed opportunity information including:
-   - Profit margins and absolute profit
-   - Market type (2-way or 3-way) and match confidence
-   - Liquidity and spread information
-   - Matched outcomes with buy prices and target prices
-5. Saves results to `data/directional_arbitrage.json`
-
-**Note:** This detects "directional opportunities" (not traditional arbitrage) because Polymarket prices always sum to 1.0. The system identifies when Polymarket undervalues outcomes compared to sportsbooks, allowing you to buy low and sell as prices move toward fair value.
-
-### 5. Run Max Delta Analysis
-
-Find the sportsbook with the largest delta difference for each event:
+### 4. Max delta by sportsbook (optional)
 
 ```bash
-python scripts/run_max_delta_analysis.py [--odds-dir DIR] [--top-n N] [--output FILE]
+python3 scripts/run_max_delta_analysis.py --top-n 50
 ```
 
-**Prerequisites:**
-- `data/arbitrage_comparison.json` must exist (run step 2 first)
-- `data/sportsbook_data/odds/*.json` files must exist
+Writes: `data/max_delta_by_sportsbook.json`.
 
-**Options:**
-- `--odds-dir`: Directory path to raw odds JSON files (default: `data/sportsbook_data/odds/`)
-- `--top-n`: Number of top events to return (default: 50)
-- `--output`: Output file path (default: `data/max_delta_by_sportsbook.json`)
+### 5. Test odds pipeline (development)
 
-This script:
-1. Loads comparison data and raw odds files
-2. For each event, compares Polymarket prices with individual sportsbook odds
-3. Finds the sportsbook with maximum delta_difference (difference between sportsbook implied probability and Polymarket price)
-4. Filters by minimum volume (default: $1000)
-5. Returns top N events sorted by delta_difference
-
-**Output:**
-- `data/max_delta_by_sportsbook.json` - Top events with max delta information
-
-### 6. Monitor PnL (Profit and Loss)
-
-Monitor real-time Polymarket prices and calculate simulated PnL for positions:
+Uses mock or filtered data; requires `data/arbitrage_data_filtered.json`.
 
 ```bash
-python scripts/monitor_pnl.py
+python3 scripts/test_odds_pipeline.py
 ```
 
-**Prerequisites:**
-- `data/arbitrage_comparison_test.json` must exist (run step 3 first, or use comparison data from step 2)
+### 6. Monitor PnL (optional)
 
-**Configuration (via `.env`):**
-```env
-# PnL Monitoring Configuration
-PNL_TEST_FILE=data/arbitrage_comparison_test.json
-PNL_POLL_INTERVAL=30  # seconds between price updates
-PNL_OUTPUT_DIR=data   # directory for output files
-CLOB_HOST=https://clob.polymarket.com
+Uses `data/arbitrage_comparison_test.json` (or similar). Polls CLOB for live prices and writes PnL snapshots.
+
+```bash
+python3 scripts/monitor_pnl.py
 ```
 
-This script:
-1. Loads events from the test file
-2. Filters for active (non-ended) markets
-3. Detects arbitrage opportunities and creates positions
-4. Continuously monitors prices and calculates unrealized PnL
-5. Saves snapshots to `data/pnl_snapshots.json` and `data/pnl_snapshots.csv`
+Stop with `Ctrl+C`. Output: `data/pnl_snapshots.json`, `data/pnl_snapshots.csv`.
 
-**Output:**
-- `data/pnl_snapshots.json` - PnL snapshots in JSON format
-- `data/pnl_snapshots.csv` - PnL snapshots in CSV format
+---
 
-Press `Ctrl+C` to stop monitoring.
+## Workflow
 
-### Complete Workflow
+Typical end-to-end flow for **Polymarket sports arbitrage** analysis:
 
-Here's the typical workflow for analyzing directional trading opportunities:
+```bash
+# 1. Fetch Polymarket sports markets
+python3 -m poly_sports.data_fetching.fetch_sports_markets
 
-1. **Fetch sports markets from Polymarket:**
-   ```bash
-   python -m poly_sports.data_fetching.fetch_sports_markets
-   ```
-   This creates `data/arbitrage_data_filtered.json` with match winner and draw markets.
+# 2. Filter to match winner / draw
+python3 -m poly_sports.data_fetching.fetch_sports_markets filter data/arbitrage_data.json data
 
-2. **Fetch and compare with sportsbook odds:**
-   ```bash
-   python -m poly_sports.data_fetching.fetch_odds_comparison
-   ```
-   This matches Polymarket events with The Odds API and creates `data/arbitrage_comparison.json`.
+# 3. Compare with sportsbook odds
+python3 -m poly_sports.data_fetching.fetch_odds_comparison
 
-3. **Detect directional opportunities:**
-   ```bash
-   python scripts/run_arbitrage_detection.py --sort-by profit_margin
-   ```
-   This identifies opportunities where Polymarket undervalues outcomes compared to sportsbooks.
+# 4. Detect directional opportunities
+python3 scripts/run_arbitrage_detection.py --sort-by profit_margin
+```
 
-4. **Analyze max delta by sportsbook (optional):**
-   ```bash
-   python scripts/run_max_delta_analysis.py --top-n 50
-   ```
-   This finds which sportsbook has the largest price difference for each event.
+Optional: run `run_max_delta_analysis.py` and `monitor_pnl.py` as needed.
 
-5. **Monitor PnL (optional, for active positions):**
-   ```bash
-   python scripts/monitor_pnl.py
-   ```
-   This monitors real-time prices and calculates PnL for positions.
+---
 
-### Output Files
+## Example output
 
-All output files are saved to the `data/` directory by default:
+Sample output from running arbitrage detection on comparison data (49 matched events, 2 directional opportunities):
 
-**From fetch_sports_markets:**
-- `data/sports_markets.json` - Full market data in JSON format (pretty-printed)
-- `data/sports_markets.csv` - Flattened market data in CSV format
-- `data/arbitrage_data.json` - Extracted arbitrage-relevant data in JSON format
-- `data/arbitrage_data.csv` - Extracted arbitrage-relevant data in CSV format
-- `data/arbitrage_data_filtered.json` - Filtered match winner and draw markets (JSON)
-- `data/arbitrage_data_filtered.csv` - Filtered match winner and draw markets (CSV)
+```
+Loading comparison data from data/arbitrage_comparison.json...
+Loaded 49 comparison entries
 
-**From fetch_odds_comparison:**
-- `data/arbitrage_comparison.json` - Merged Polymarket and Odds API comparison data (JSON)
-- `data/arbitrage_comparison.csv` - Merged Polymarket and Odds API comparison data (CSV)
-- `data/sportsbook_data/events/*.json` - Stored event files by sport (e.g., `americanfootball_nfl.json`)
-- `data/sportsbook_data/odds/*.json` - Stored odds files by sport
+================================================================================
+Running Arbitrage Detection
+================================================================================
 
-**From test_odds_pipeline (testing only):**
-- `data/arbitrage_comparison_test.json` - Merged Polymarket and Odds API comparison data (JSON)
-- `data/arbitrage_comparison_test.csv` - Merged Polymarket and Odds API comparison data (CSV)
+Found 2 opportunities
 
-**From run_arbitrage_detection:**
-- `data/directional_arbitrage.json` - Detected directional opportunities (JSON)
+Sorting opportunities by profit_margin (descending)...
+Sorted 2 opportunities
 
-**From run_max_delta_analysis:**
-- `data/max_delta_by_sportsbook.json` - Top events with maximum delta by sportsbook (JSON)
+Directional Opportunities: 2
 
-**From monitor_pnl:**
-- `data/pnl_snapshots.json` - Real-time PnL snapshots (JSON)
-- `data/pnl_snapshots.csv` - Real-time PnL snapshots (CSV)
+================================================================================
+## DIRECTIONAL OPPORTUNITIES
+================================================================================
+
+1. Event ID: 211708 | Market ID: 1385463
+   Potential Profit: 13.45% ($13.45 on $100 stake)
+   Market Type: 2-way
+   Match Confidence: 1.000
+   Liquidity: $65,550.27
+   Spread: 0.010
+   Matched Outcomes:
+     - Wizards: Buy at 0.165, Target: 0.187
+       Expected movement: 2.2 percentage points
+
+2. Event ID: 211719 | Market ID: 1385472
+   Potential Profit: 10.96% ($10.96 on $100 stake)
+   Market Type: 2-way
+   Match Confidence: 1.000
+   Liquidity: $38,741.28
+   Spread: 0.010
+   Matched Outcomes:
+     - Bulls: Buy at 0.185, Target: 0.205
+       Expected movement: 2.0 percentage points
+
+================================================================================
+## SUMMARY STATISTICS
+================================================================================
+
+Directional Opportunities:
+  Average Potential Profit: 12.20%
+  Maximum Potential Profit: 13.45%
+  Total Opportunities: 2
+
+================================================================================
+Analysis complete!
+================================================================================
+```
+
+Results are also written to `data/directional_arbitrage.json`.
+
+---
+
+## How It Works
+
+1. **Polymarket**  
+   Fetches sports events and markets from the Polymarket Gamma API; keeps only sports category and arbitrage-relevant fields.
+
+2. **Event matching**  
+   Infers sport from Polymarket metadata, loads corresponding events from The Odds API, and matches events using normalized team names and fuzzy similarity. Matches are scored (e.g. 0–1 confidence); low-confidence matches are dropped.
+
+3. **Odds comparison**  
+   Fetches odds from multiple sportsbooks, normalizes to American/decimal/implied probability, and aggregates (e.g. average, min, max) per outcome.
+
+4. **Directional opportunities**  
+   Compares Polymarket price to sportsbook-implied probability. When Polymarket price is lower, the outcome is treated as potentially undervalued (directional edge). Results are filtered by minimum profit threshold and liquidity.
+
+5. **Why “directional” and not classic arbitrage?**  
+   Polymarket prices sum to 1.0 (prediction market). There is no risk-free arbitrage on Polymarket alone. This bot finds **directional** edges: buy on Polymarket when it undervalues an outcome vs. sportsbooks; manage or exit as the market reprices.
+
+Details: [docs/ARBITRAGE_CALCULATION.md](docs/ARBITRAGE_CALCULATION.md).
+
+---
+
+## Project Structure
+
+```
+polymarket-sports-arbitrage/
+├── poly_sports/
+│   ├── data_fetching/       # Polymarket Gamma API, Odds API, CLOB
+│   ├── processing/          # Event matching, arbitrage detection, sport detection
+│   └── utils/                # File I/O, odds conversion
+├── scripts/                  # run_arbitrage_detection, run_max_delta_analysis, monitor_pnl, test_odds_pipeline
+├── tests/
+├── data/                     # Outputs (JSON/CSV, sportsbook_data)
+└── docs/
+    └── ARBITRAGE_CALCULATION.md
+```
+
+---
 
 ## Testing
-
-Run the test suite:
 
 ```bash
 pytest tests/ -v
 ```
 
-All tests should pass, confirming the code behaves as expected.
+---
 
-## How It Works
+## Documentation
 
-### Data Flow
+- [ARBITRAGE_CALCULATION.md](docs/ARBITRAGE_CALCULATION.md) — Formulas and logic for opportunity detection and PnL.
 
-1. **Polymarket Data Fetching**: 
-   - Fetches sports markets from the Polymarket Gamma API `/events` endpoint
-   - Filters for sports category markets
-   - Extracts arbitrage-relevant data (match winner, draw markets)
-   - Excludes ended markets by default
+---
 
-2. **Event Matching**:
-   - Auto-detects sport type from Polymarket event data
-   - Groups events by sport (NFL, NBA, etc.)
-   - Fetches corresponding events from The Odds API
-   - Uses fuzzy string matching to match events across platforms:
-     - Normalizes team names (lowercase, strip whitespace)
-     - Checks for exact matches, partial matches, and fuzzy similarity
-     - Calculates confidence scores (0-1) for each match
-     - Only includes matches above confidence threshold (default: 0.8)
+## Contact
 
-3. **Odds Comparison**:
-   - Fetches odds from multiple sportsbooks via The Odds API
-   - Enriches odds with all formats:
-     - American odds (e.g., +150, -200)
-     - Decimal odds (e.g., 2.50, 1.50)
-     - Implied probability (0-1)
-   - Consolidates sportsbook data into aggregate statistics:
-     - Average price and implied probability across all sportsbooks
-     - Min/max price range
-     - Count of sportsbooks offering each outcome
-
-4. **Opportunity Detection**:
-   - Compares Polymarket prices with sportsbook implied probabilities
-   - Identifies directional opportunities where:
-     - `pm_price < sb_implied_prob` (Polymarket undervalues outcome)
-     - Expected price movement = `sb_implied_prob - pm_price`
-     - Potential profit = `(sb_implied_prob - pm_price) / pm_price`
-   - Filters by minimum profit threshold (default: 10%) and liquidity (default: $1000)
-
-5. **Data Persistence**:
-   - Stores fetched events and odds in `data/sportsbook_data/`
-   - Enables efficient re-analysis without API calls when `USE_STORED_EVENTS=true`
-
-### Why Directional Opportunities, Not Traditional Arbitrage?
-
-Polymarket prices always sum to 1.0 because they represent probabilities in a prediction market. This means:
-- All possible outcomes are covered
-- No guaranteed arbitrage exists on Polymarket alone
-- Traditional arbitrage (betting on all outcomes for guaranteed profit) is not possible
-
-Instead, the system focuses on **directional opportunities** where:
-- Polymarket undervalues an outcome compared to sportsbooks
-- You can buy at the lower Polymarket price
-- As the game progresses, the price may rise toward the sportsbook's implied probability
-- You can sell at any time to lock in profits (unlike traditional betting)
-
-See `docs/ARBITRAGE_CALCULATION.md` for detailed mathematical explanations.
-
-## Error Handling
-
-- API errors are caught and logged with tracebacks
-- CLOB enrichment failures are handled gracefully (continues with unenriched data)
-- Missing fields in market data are handled appropriately
-- Network errors include retry logic where applicable
-- Event matching failures are logged but don't stop processing
-- Missing odds data for matched events are skipped with warnings
-- Invalid JSON parsing is handled gracefully
-
-## Project Structure
-
-```
-poly-sports/
-├── poly_sports/
-│   ├── data_fetching/      # Data fetching modules
-│   │   ├── fetch_sports_markets.py    # Polymarket data fetching
-│   │   ├── fetch_odds_api.py          # The Odds API client
-│   │   ├── fetch_odds_data.py         # Main odds fetching and merging
-│   │   └── fetch_odds_comparison.py   # Production comparison script
-│   ├── processing/         # Data processing modules
-│   │   ├── arbitrage_calculation.py   # Opportunity detection
-│   │   ├── event_matching.py          # Event matching logic
-│   │   ├── sport_detection.py         # Sport type detection
-│   │   └── extractors/                 # Sport-specific extractors
-│   └── utils/              # Utility modules
-│       ├── file_utils.py              # File I/O helpers
-│       └── odds_utils.py               # Odds conversion utilities
-├── scripts/                # Executable scripts
-│   ├── run_arbitrage_detection.py     # Detect opportunities
-│   ├── run_max_delta_analysis.py      # Max delta analysis
-│   ├── test_odds_pipeline.py           # Test pipeline
-│   └── monitor_pnl.py                  # PnL monitoring
-├── tests/                  # Test suite
-├── data/                   # Output data directory
-│   └── sportsbook_data/    # Stored events and odds
-└── docs/                   # Documentation
-    └── ARBITRAGE_CALCULATION.md        # Detailed calculation docs
-```
-
-## Future Enhancements
-
-- Continuous sync mode (watch for new markets)
-- Database storage option
-- Additional category filters
-- Scheduled execution
-- Rate limiting and retry logic improvements
-- Real-time price alerts
-- Automated trading strategies
+If you have any question or build AI Agent for Sports arbitrage bot on Polymarket, contact here: [Telegram](https://t.me/@microgift88)
 
 ## License
 
-[Add your license here]
+[Specify your license, e.g. MIT.]
+
+---
+
+**Polymarket-Sports-Arbitrage-Bot** — Polymarket sports betting analysis and directional opportunity detection.
