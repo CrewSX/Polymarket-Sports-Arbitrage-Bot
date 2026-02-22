@@ -1,6 +1,13 @@
 """Run arbitrage detection on test data and display results."""
 import argparse
+import sys
 from pathlib import Path
+
+# Ensure project root is on path when running script directly
+_project_root = Path(__file__).resolve().parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
+
 from poly_sports.processing.arbitrage_calculation import detect_arbitrage_opportunities
 from poly_sports.utils.file_utils import load_json, save_json
 

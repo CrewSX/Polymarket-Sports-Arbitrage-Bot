@@ -1,152 +1,52 @@
 [
   {
-    "pm_event_id": "149305",
-    "pm_market_id": "1129105",
-    "odds_api_event_id": "72cdd0dd12bacb4e81e72e0406f57c45",
+    "pm_event_id": "211708",
+    "pm_market_id": "1385463",
+    "odds_api_event_id": "a347a356427b6eb7be0785a1fe56c0ef",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.24452445244524446,
-    "profit_margin_absolute": 24.452445244524444,
-    "delta_difference": 0.018339333933393334,
-    "liquidity": 1369.3724,
+    "profit_margin": 0.13451295700040358,
+    "profit_margin_absolute": 13.451295700040358,
+    "delta_difference": 0.022194637905066594,
+    "liquidity": 134212.3837,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Central Michigan Chippewas",
-        "sb_outcome": "Central Michigan Chippewas",
-        "pm_price": 0.075,
-        "sb_implied_prob": 0.09333933393339333,
-        "match_confidence": 1.0
-      }
-    ],
-    "pm_spread": 0.03,
-    "pm_liquidity": 1369.3724,
-    "sportsbook_count": 3
-  },
-  {
-    "pm_event_id": "149313",
-    "pm_market_id": "1129113",
-    "odds_api_event_id": "5ecd1f93108c0fa66e243fa4e80a8b51",
-    "match_confidence": 1.0,
-    "opportunity_type": "directional",
-    "market_type": "2-way",
-    "profit_margin": 0.19694143223628846,
-    "profit_margin_absolute": 19.694143223628846,
-    "delta_difference": 0.012801193095358751,
-    "liquidity": 10206.165,
-    "volume": null,
-    "matched_outcomes": [
-      {
-        "pm_outcome": "Boston College Eagles",
-        "sb_outcome": "Boston College Eagles",
-        "pm_price": 0.065,
-        "sb_implied_prob": 0.07780119309535875,
-        "match_confidence": 1.0
-      }
-    ],
-    "pm_spread": 0.03,
-    "pm_liquidity": 5383.2959,
-    "sportsbook_count": 7
-  },
-  {
-    "pm_event_id": "149324",
-    "pm_market_id": "1129124",
-    "odds_api_event_id": "ff276b590a2eb257dfb216301441d021",
-    "match_confidence": 1.0,
-    "opportunity_type": "directional",
-    "market_type": "2-way",
-    "profit_margin": 0.1842488356280588,
-    "profit_margin_absolute": 18.42488356280588,
-    "delta_difference": 0.026716081166068523,
-    "liquidity": 5884.514,
-    "volume": null,
-    "matched_outcomes": [
-      {
-        "pm_outcome": "Oregon Ducks",
-        "sb_outcome": "Oregon Ducks",
-        "pm_price": 0.145,
-        "sb_implied_prob": 0.1717160811660685,
-        "match_confidence": 1.0
-      }
-    ],
-    "pm_spread": 0.03,
-    "pm_liquidity": 5884.514,
-    "sportsbook_count": 7
-  },
-  {
-    "pm_event_id": "149306",
-    "pm_market_id": "1129106",
-    "odds_api_event_id": "ee325c9a16f3248d553240a9c29a8029",
-    "match_confidence": 1.0,
-    "opportunity_type": "directional",
-    "market_type": "2-way",
-    "profit_margin": 0.17820275647234804,
-    "profit_margin_absolute": 17.820275647234805,
-    "delta_difference": 0.008019124041255661,
-    "liquidity": 5289.11371,
-    "volume": null,
-    "matched_outcomes": [
-      {
-        "pm_outcome": "Ball State Cardinals",
-        "sb_outcome": "Ball State Cardinals",
-        "pm_price": 0.045,
-        "sb_implied_prob": 0.05301912404125566,
+        "pm_outcome": "Wizards",
+        "sb_outcome": "Washington Wizards",
+        "pm_price": 0.165,
+        "sb_implied_prob": 0.1871946379050666,
         "match_confidence": 1.0
       }
     ],
     "pm_spread": 0.01,
-    "pm_liquidity": 5289.11371,
-    "sportsbook_count": 6
+    "pm_liquidity": 65550.2664,
+    "sportsbook_count": 13
   },
   {
-    "pm_event_id": "149319",
-    "pm_market_id": "1129119",
-    "odds_api_event_id": "c12386968944a0832b8c9e140f36efc7",
+    "pm_event_id": "211719",
+    "pm_market_id": "1385472",
+    "odds_api_event_id": "ded265e6250d4401a3786f34c967bc8b",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.11718563110010155,
-    "profit_margin_absolute": 11.718563110010155,
-    "delta_difference": 0.011718563110010155,
-    "liquidity": 8204.1246,
+    "profit_margin": 0.1095737029788336,
+    "profit_margin_absolute": 10.95737029788336,
+    "delta_difference": 0.020271135051084216,
+    "liquidity": 62129.4623,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Marquette Golden Eagles",
-        "sb_outcome": "Marquette Golden Eagles",
-        "pm_price": 0.1,
-        "sb_implied_prob": 0.11171856311001016,
+        "pm_outcome": "Bulls",
+        "sb_outcome": "Chicago Bulls",
+        "pm_price": 0.185,
+        "sb_implied_prob": 0.2052711350510842,
         "match_confidence": 1.0
       }
     ],
-    "pm_spread": 0.02,
-    "pm_liquidity": 4776.8875,
-    "sportsbook_count": 7
-  },
-  {
-    "pm_event_id": "149281",
-    "pm_market_id": "1129080",
-    "odds_api_event_id": "30efd44519a9e4fccb10b0d57b936cf1",
-    "match_confidence": 1.0,
-    "opportunity_type": "directional",
-    "market_type": "2-way",
-    "profit_margin": 0.10462038566613742,
-    "profit_margin_absolute": 10.462038566613742,
-    "delta_difference": 0.028247504129857104,
-    "liquidity": 3229.8384,
-    "volume": null,
-    "matched_outcomes": [
-      {
-        "pm_outcome": "Western Illinois Leathernecks",
-        "sb_outcome": "Western Illinois Leathernecks",
-        "pm_price": 0.27,
-        "sb_implied_prob": 0.2982475041298571,
-        "match_confidence": 1.0
-      }
-    ],
-    "pm_spread": 0.1,
-    "pm_liquidity": 3229.8384,
-    "sportsbook_count": 3
+    "pm_spread": 0.01,
+    "pm_liquidity": 38741.2781,
+    "sportsbook_count": 12
   }
 ]
