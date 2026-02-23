@@ -1,12 +1,19 @@
 """Run combined directional and hedging strategy."""
 import argparse
 import json
+import sys
 from pathlib import Path
+
+_project_root = Path(__file__).resolve().parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
+
 from poly_sports.processing.arbitrage_calculation import (
     detect_arbitrage_opportunities,
     find_hedgeable_sportsbooks
 )
 from poly_sports.utils.file_utils import load_json, save_json
+from poly_sports.utils.logger import logger
 
 
 def main():
@@ -44,22 +51,22 @@ def main():
     data_file = project_root / 'data' / 'arbitrage_comparison.json'
     
     if not data_file.exists():
-        print(f"Error: {data_file} not found")
-        print("Please run fetch_odds_comparison.py first to generate the comparison data")
+        logger.info(f"Error: {data_file} not found")
+        logger.info("Please run fetch_odds_comparison.py first to generate the comparison data")
         return
     
-    print(f"Loading comparison data from {data_file}...")
+    logger.info(f"Loading comparison data from {data_file}...")
     comparison_data = load_json(str(data_file))
-    
-    print(f"Loaded {len(comparison_data)} comparison entries")
-    print("\n" + "=" * 80)
-    print("Running Combined Directional and Hedging Strategy")
-    print("=" * 80)
+
+    logger.info(f"Loaded {len(comparison_data)} comparison entries")
+    logger.info("\n" + "=" * 80)
+    logger.info("Running Combined Directional and Hedging Strategy")
+    logger.info("=" * 80)
     
     # Run arbitrage detection to find directional opportunities
-    print(f"\nFinding directional opportunities...")
-    print(f"  Min profit threshold: {args.min_profit_threshold * 100:.1f}%")
-    print(f"  Min volume: {args.min_volume:,.0f}")
+    logger.info(f"\nFinding directional opportunities...")
+    logger.info(f"  Min profit threshold: {args.min_profit_threshold * 100:.1f}%")
+    logger.info(f"  Min volume: {args.min_volume:,.0f}")
     
     opportunities = detect_arbitrage_opportunities(
         comparison_data,
@@ -67,7 +74,7 @@ def main():
         min_liquidity=args.min_volume  # Filter by liquidity inside the function
     )
     
-    print(f"Found {len(opportunities)} opportunities after initial detection")
+    logger.info(f"Found {len(opportunities)} opportunities after initial detection")
     
     # Debug: Show market type distribution
     market_types = {}
@@ -75,14 +82,14 @@ def main():
         mt = opp.get('market_type', 'unknown')
         market_types[mt] = market_types.get(mt, 0) + 1
     if market_types:
-        print(f"  Market type distribution: {market_types}")
+        logger.info(f"  Market type distribution: {market_types}")
     
     # Debug: Show volume/liquidity stats
     volumes = [opp.get('volume', 0) or 0 for opp in opportunities]
     liquidities = [opp.get('liquidity', 0) or 0 for opp in opportunities]
     if volumes:
-        print(f"  Volume range: ${min(volumes):,.0f} - ${max(volumes):,.0f} (avg: ${sum(volumes)/len(volumes):,.0f})")
-        print(f"  Liquidity range: ${min(liquidities):,.0f} - ${max(liquidities):,.0f} (avg: ${sum(liquidities)/len(liquidities):,.0f})")
+        logger.info(f"  Volume range: ${min(volumes):,.0f} - ${max(volumes):,.0f} (avg: ${sum(volumes)/len(volumes):,.0f})")
+        logger.info(f"  Liquidity range: ${min(liquidities):,.0f} - ${max(liquidities):,.0f} (avg: ${sum(liquidities)/len(liquidities):,.0f})")
     
     # Filter to only 2-way markets
     # Note: detect_arbitrage_opportunities already filters by liquidity (pm_event_liquidity)
@@ -95,22 +102,22 @@ def main():
     
     filtered_out = opportunities_before_filter - len(opportunities)
     if filtered_out > 0:
-        print(f"  Filtered out {filtered_out} opportunities (non-2-way markets)")
+        logger.info(f"  Filtered out {filtered_out} opportunities (non-2-way markets)")
     
-    print(f"Found {len(opportunities)} directional opportunities (2-way markets only)")
+    logger.info(f"Found {len(opportunities)} directional opportunities (2-way markets only)")
     
     if not opportunities:
-        print("No directional opportunities found above the threshold.")
-        print("Try lowering --min-profit-threshold or --min-volume.")
+        logger.info("No directional opportunities found above the threshold.")
+        logger.info("Try lowering --min-profit-threshold or --min-volume.")
         return
     
     # Load raw odds data
     odds_dir = project_root / args.odds_dir
     if not odds_dir.exists():
-        print(f"Error: Odds directory not found: {odds_dir}")
+        logger.info(f"Error: Odds directory not found: {odds_dir}")
         return
     
-    print(f"\nLoading raw odds from: {odds_dir}")
+    logger.info(f"\nLoading raw odds from: {odds_dir}")
     
     # Create mapping of event_id -> event data with bookmakers
     odds_by_event_id = {}
@@ -127,12 +134,12 @@ def main():
         except Exception:
             continue
     
-    print(f"Loaded odds for {len(odds_by_event_id)} events")
+    logger.info(f"Loaded odds for {len(odds_by_event_id)} events")
     
     # Process each opportunity to find hedgeable sportsbooks
-    print("\n" + "=" * 80)
-    print("Analyzing hedgeable sportsbooks for each opportunity...")
-    print("=" * 80)
+    logger.info("\n" + "=" * 80)
+    logger.info("Analyzing hedgeable sportsbooks for each opportunity...")
+    logger.info("=" * 80)
     
     opportunities_with_hedging = []
     
@@ -193,7 +200,7 @@ def main():
             # Skip opportunities that cause errors
             continue
     
-    print(f"\nProcessed {len(opportunities_with_hedging)} opportunities with hedging analysis")
+    logger.info(f"\nProcessed {len(opportunities_with_hedging)} opportunities with hedging analysis")
     
     # Sort by number of hedgeable sportsbooks (descending), then by profit margin
     opportunities_with_hedging.sort(
@@ -202,12 +209,12 @@ def main():
     )
     
     # Display results
-    print("\n" + "=" * 80)
-    print("## COMBINED STRATEGY RESULTS")
-    print("=" * 80)
+    logger.info("\n" + "=" * 80)
+    logger.info("## COMBINED STRATEGY RESULTS")
+    logger.info("=" * 80)
     
     if not opportunities_with_hedging:
-        print("No opportunities found with hedgeable sportsbooks.")
+        logger.info("No opportunities found with hedgeable sportsbooks.")
         return
     
     # Show top opportunities
@@ -239,9 +246,9 @@ def main():
         print(f"\n... and {len(opportunities_with_hedging) - 20} more opportunities")
     
     # Summary statistics
-    print("\n\n" + "=" * 80)
-    print("## SUMMARY STATISTICS")
-    print("=" * 80)
+    logger.info("\n\n" + "=" * 80)
+    logger.info("## SUMMARY STATISTICS")
+    logger.info("=" * 80)
     
     if opportunities_with_hedging:
         avg_profit = sum(opp['profit_margin'] for opp in opportunities_with_hedging) / len(opportunities_with_hedging)

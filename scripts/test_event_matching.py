@@ -8,7 +8,13 @@ import argparse
 from pathlib import Path
 from typing import List, Dict, Any
 from poly_sports.processing.event_matching import match_events, calculate_match_score
+from poly_sports.utils.logger import logger
+import sys
+from pathlib import Path
 
+_project_root = Path(__file__).resolve().parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
 
 def load_json_file(file_path: Path) -> List[Dict[str, Any]]:
     """Load JSON file and return its contents."""
@@ -16,35 +22,35 @@ def load_json_file(file_path: Path) -> List[Dict[str, Any]]:
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        print(f"Error: File not found: {file_path}")
+        logger.info(f"Error: File not found: {file_path}")
         raise
     except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON in {file_path}: {e}")
+        logger.info(f"Error: Invalid JSON in {file_path}: {e}")
         raise
 
 
 def display_match_summary(matches: List[Dict[str, Any]]):
     """Display a summary of matches found."""
     if not matches:
-        print("\n❌ No matches found!")
+        logger.info("\n❌ No matches found!")
         return
     
-    print(f"\n✅ Found {len(matches)} matches:")
-    print("=" * 80)
+    logger.info(f"\n✅ Found {len(matches)} matches:")
+    logger.info("=" * 80)
     
     # Group by confidence ranges
     high_confidence = [m for m in matches if m['confidence'] >= 0.9]
     medium_confidence = [m for m in matches if 0.7 <= m['confidence'] < 0.9]
     low_confidence = [m for m in matches if m['confidence'] < 0.7]
     
-    print(f"\nConfidence Breakdown:")
-    print(f"  High (≥0.9):    {len(high_confidence)} matches")
-    print(f"  Medium (0.7-0.9): {len(medium_confidence)} matches")
-    print(f"  Low (<0.7):      {len(low_confidence)} matches")
+    logger.info(f"\nConfidence Breakdown:")
+    logger.info(f"  High (≥0.9):    {len(high_confidence)} matches")
+    logger.info(f"  Medium (0.7-0.9): {len(medium_confidence)} matches")
+    logger.info(f"  Low (<0.7):      {len(low_confidence)} matches")
     
     # Display top matches
-    print(f"\n📊 Top 10 Matches (by confidence):")
-    print("-" * 80)
+    logger.info(f"\n📊 Top 10 Matches (by confidence):")
+    logger.info("-" * 80)
     sorted_matches = sorted(matches, key=lambda x: x['confidence'], reverse=True)
     
     for i, match in enumerate(sorted_matches, 1):
@@ -62,13 +68,13 @@ def display_match_summary(matches: List[Dict[str, Any]]):
         pm_time = pm_event.get('startTime', pm_event.get('eventDate', 'N/A'))
         odds_time = odds_event.get('commence_time', 'N/A')
         
-        print(f"\n{i}. Match (confidence: {confidence:.3f})")
-        print(f"   Polymarket:  {pm_home} vs {pm_away}")
-        print(f"   Odds API:    {odds_home} vs {odds_away}")
-        print(f"   PM Time:     {pm_time}")
-        print(f"   Odds Time:   {odds_time}")
-        print(f"   PM Event ID: {pm_event.get('event_id', 'N/A')}")
-        print(f"   Odds Event ID: {odds_event.get('id', 'N/A')}")
+        logger.info(f"\n{i}. Match (confidence: {confidence:.3f})")
+        logger.info(f"   Polymarket:  {pm_home} vs {pm_away}")
+        logger.info(f"   Odds API:    {odds_home} vs {odds_away}")
+        logger.info(f"   PM Time:     {pm_time}")
+        logger.info(f"   Odds Time:   {odds_time}")
+        logger.info(f"   PM Event ID: {pm_event.get('event_id', 'N/A')}")
+        logger.info(f"   Odds Event ID: {odds_event.get('id', 'N/A')}")
 
 
 def display_detailed_match(match: Dict[str, Any]):
@@ -77,35 +83,35 @@ def display_detailed_match(match: Dict[str, Any]):
     odds_event = match['odds_event']
     confidence = match['confidence']
     
-    print("\n" + "=" * 80)
-    print("DETAILED MATCH ANALYSIS")
-    print("=" * 80)
+    logger.info("\n" + "=" * 80)
+    logger.info("DETAILED MATCH ANALYSIS")
+    logger.info("=" * 80)
     
-    print(f"\nConfidence Score: {confidence:.4f}")
+    logger.info(f"\nConfidence Score: {confidence:.4f}")
     
-    print("\n📋 Polymarket Event:")
-    print(f"  Event ID:      {pm_event.get('event_id', 'N/A')}")
-    print(f"  Market ID:     {pm_event.get('market_id', 'N/A')}")
-    print(f"  Series Ticker: {pm_event.get('series_ticker', 'N/A')}")
-    print(f"  Home Team:     {pm_event.get('homeTeamName', 'N/A')}")
-    print(f"  Away Team:     {pm_event.get('awayTeamName', 'N/A')}")
-    print(f"  Question:      {pm_event.get('question', 'N/A')}")
-    print(f"  Market Outcomes: {pm_event.get('market_outcomes', 'N/A')}")
-    print(f"  Start Time:    {pm_event.get('startTime', 'N/A')}")
-    print(f"  Event Date:    {pm_event.get('eventDate', 'N/A')}")
+    logger.info("\n📋 Polymarket Event:")
+    logger.info(f"  Event ID:      {pm_event.get('event_id', 'N/A')}")
+    logger.info(f"  Market ID:     {pm_event.get('market_id', 'N/A')}")
+    logger.info(f"  Series Ticker: {pm_event.get('series_ticker', 'N/A')}")
+    logger.info(f"  Home Team:     {pm_event.get('homeTeamName', 'N/A')}")
+    logger.info(f"  Away Team:     {pm_event.get('awayTeamName', 'N/A')}")
+    logger.info(f"  Question:      {pm_event.get('question', 'N/A')}")
+    logger.info(f"  Market Outcomes: {pm_event.get('market_outcomes', 'N/A')}")
+    logger.info(f"  Start Time:    {pm_event.get('startTime', 'N/A')}")
+    logger.info(f"  Event Date:    {pm_event.get('eventDate', 'N/A')}")
     
-    print("\n📊 Odds API Event:")
-    print(f"  Event ID:      {odds_event.get('id', 'N/A')}")
-    print(f"  Sport Key:     {odds_event.get('sport_key', 'N/A')}")
-    print(f"  Sport Title:   {odds_event.get('sport_title', 'N/A')}")
-    print(f"  Home Team:     {odds_event.get('home_team', 'N/A')}")
-    print(f"  Away Team:     {odds_event.get('away_team', 'N/A')}")
-    print(f"  Commence Time: {odds_event.get('commence_time', 'N/A')}")
+    logger.info("\n📊 Odds API Event:")
+    logger.info(f"  Event ID:      {odds_event.get('id', 'N/A')}")
+    logger.info(f"  Sport Key:     {odds_event.get('sport_key', 'N/A')}")
+    logger.info(f"  Sport Title:   {odds_event.get('sport_title', 'N/A')}")
+    logger.info(f"  Home Team:     {odds_event.get('home_team', 'N/A')}")
+    logger.info(f"  Away Team:     {odds_event.get('away_team', 'N/A')}")
+    logger.info(f"  Commence Time: {odds_event.get('commence_time', 'N/A')}")
     
     # Calculate individual score components
-    print("\n🔍 Score Breakdown:")
+    logger.info("\n🔍 Score Breakdown:")
     team_score = calculate_match_score(pm_event, odds_event)
-    print(f"  Overall Score: {team_score:.4f}")
+    logger.info(f"  Overall Score: {team_score:.4f}")
     # Note: The calculate_match_score doesn't return breakdown, but we can show the overall
 
 
@@ -124,20 +130,20 @@ def display_unmatched_odds_events(
     ]
     
     if not unmatched:
-        print("\n✅ All odds events were matched!")
+        logger.info("\n✅ All odds events were matched!")
         return
     
-    print("\n" + "=" * 80)
-    print(f"❌ UNMATCHED ODDS EVENTS ({len(unmatched)} total)")
-    print("=" * 80)
+    logger.info("\n" + "=" * 80)
+    logger.info(f"❌ UNMATCHED ODDS EVENTS ({len(unmatched)} total)")
+    logger.info("=" * 80)
     
     for i, event in enumerate(unmatched, 1):
-        print(f"\n{i}. Odds Event ID: {event.get('id', 'N/A')}")
-        print(f"   Sport Key:     {event.get('sport_key', 'N/A')}")
-        print(f"   Sport Title:   {event.get('sport_title', 'N/A')}")
-        print(f"   Home Team:     {event.get('home_team', 'N/A')}")
-        print(f"   Away Team:     {event.get('away_team', 'N/A')}")
-        print(f"   Commence Time: {event.get('commence_time', 'N/A')}")
+        logger.info(f"\n{i}. Odds Event ID: {event.get('id', 'N/A')}")
+        logger.info(f"   Sport Key:     {event.get('sport_key', 'N/A')}")
+        logger.info(f"   Sport Title:   {event.get('sport_title', 'N/A')}")
+        logger.info(f"   Home Team:     {event.get('home_team', 'N/A')}")
+        logger.info(f"   Away Team:     {event.get('away_team', 'N/A')}")
+        logger.info(f"   Commence Time: {event.get('commence_time', 'N/A')}")
 
 
 def test_event_matching(
@@ -176,39 +182,39 @@ def test_event_matching(
         elif odds_path.exists():
             odds_path = odds_path.resolve()
         else:
-            print(f"Error: Could not find odds file: {odds_file}")
-            print(f"  Tried: {events_dir / odds_path}")
-            print(f"  Tried: {odds_path.resolve()}")
+            logger.info(f"Error: Could not find odds file: {odds_file}")
+            logger.info(f"  Tried: {events_dir / odds_path}")
+            logger.info(f"  Tried: {odds_path.resolve()}")
             return
     
-    print("=" * 80)
-    print("EVENT MATCHING PLAYGROUND")
-    print("=" * 80)
-    print(f"\n📁 Loading files:")
-    print(f"  Arbitrage data: {arbitrage_path}")
-    print(f"  Odds events:     {odds_path}")
+    logger.info("=" * 80)
+    logger.info("EVENT MATCHING PLAYGROUND")
+    logger.info("=" * 80)
+    logger.info(f"\n📁 Loading files:")
+    logger.info(f"  Arbitrage data: {arbitrage_path}")
+    logger.info(f"  Odds events:     {odds_path}")
     
     # Load files
-    print("\n📥 Loading data...")
+    logger.info("\n📥 Loading data...")
     try:
         arbitrage_data = load_json_file(arbitrage_path)
         odds_data = load_json_file(odds_path)
-        print(f"  ✅ Loaded {len(arbitrage_data)} Polymarket events")
-        print(f"  ✅ Loaded {len(odds_data)} Odds API events")
+        logger.info(f"  ✅ Loaded {len(arbitrage_data)} Polymarket events")
+        logger.info(f"  ✅ Loaded {len(odds_data)} Odds API events")
     except Exception as e:
-        print(f"  ❌ Error loading files: {e}")
+        logger.info(f"  ❌ Error loading files: {e}")
         return
     
     if not arbitrage_data:
-        print("  ❌ No Polymarket events found in arbitrage data")
+        logger.info("  ❌ No Polymarket events found in arbitrage data")
         return
     
     if not odds_data:
-        print("  ❌ No Odds API events found")
+        logger.info("  ❌ No Odds API events found")
         return
     
     # Perform matching
-    print(f"\n🔍 Matching events (min confidence: {min_confidence})...")
+    logger.info(f"\n🔍 Matching events (min confidence: {min_confidence})...")
     matches = match_events(arbitrage_data, odds_data, min_confidence=min_confidence)
     
     # Display results
@@ -216,12 +222,12 @@ def test_event_matching(
     
     # Show detailed information if requested
     if detailed and matches:
-        print("\n" + "=" * 80)
-        print("DETAILED MATCH INFORMATION")
-        print("=" * 80)
+        logger.info("\n" + "=" * 80)
+        logger.info("DETAILED MATCH INFORMATION")
+        logger.info("=" * 80)
         sorted_matches = sorted(matches, key=lambda x: x['confidence'], reverse=True)
         for i, match in enumerate(sorted_matches[:5], 1):  # Show top 5
-            print(f"\n--- Match {i} ---")
+            logger.info(f"\n--- Match {i} ---")
             display_detailed_match(match)
     
     # Save results if requested
@@ -230,16 +236,16 @@ def test_event_matching(
         try:
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(matches, f, indent=2, ensure_ascii=False)
-            print(f"\n💾 Results saved to: {output_file}")
+            logger.info(f"\n💾 Results saved to: {output_file}")
         except Exception as e:
-            print(f"\n❌ Error saving results: {e}")
+            logger.info(f"\n❌ Error saving results: {e}")
     
     # Display unmatched odds events
     display_unmatched_odds_events(matches, odds_data)
     
-    print("\n" + "=" * 80)
-    print("Matching test completed!")
-    print("=" * 80)
+    logger.info("\n" + "=" * 80)
+    logger.info("Matching test completed!")
+    logger.info("=" * 80)
 
 
 def main():

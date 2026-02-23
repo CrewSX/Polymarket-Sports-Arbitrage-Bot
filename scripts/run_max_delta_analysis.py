@@ -1,8 +1,15 @@
 """Run max delta analysis to find sportsbooks with largest delta_difference."""
 import argparse
+import sys
 from pathlib import Path
+
+_project_root = Path(__file__).resolve().parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
+
 from poly_sports.processing.arbitrage_calculation import find_max_delta_by_sportsbook
 from poly_sports.utils.file_utils import load_json, save_json
+from poly_sports.utils.logger import logger
 
 
 def main():
@@ -35,21 +42,21 @@ def main():
     data_file = project_root / 'data' / 'arbitrage_comparison.json'
     
     if not data_file.exists():
-        print(f"Error: {data_file} not found")
-        print("Please run fetch_odds_comparison.py first to generate the comparison data")
+        logger.info(f"Error: {data_file} not found")
+        logger.info("Please run fetch_odds_comparison.py first to generate the comparison data")
         return
     
-    print(f"Loading comparison data from {data_file}...")
+    logger.info(f"Loading comparison data from {data_file}...")
     comparison_data = load_json(str(data_file))
     
-    print(f"Loaded {len(comparison_data)} comparison entries")
-    print("\n" + "=" * 80)
-    print("Running Max Delta Analysis by Sportsbook")
-    print("=" * 80)
+    logger.info(f"Loaded {len(comparison_data)} comparison entries")
+    logger.info("\n" + "=" * 80)
+    logger.info("Running Max Delta Analysis by Sportsbook")
+    logger.info("=" * 80)
     
     # Resolve odds directory path
     odds_dir = project_root / args.odds_dir
-    print(f"\nLoading raw odds from: {odds_dir}")
+    logger.info(f"\nLoading raw odds from: {odds_dir}")
     
     # Run max delta analysis
     try:
@@ -60,43 +67,43 @@ def main():
             min_volume=0
         )
     except FileNotFoundError as e:
-        print(f"Error: {e}")
+        logger.info(f"Error: {e}")
         return
     except Exception as e:
-        print(f"Error running analysis: {e}")
+        logger.info(f"Error running analysis: {e}")
         import traceback
         traceback.print_exc()
         return
     
-    print(f"\nFound {len(results)} events with max delta information")
-    print("\n" + "=" * 80)
+    logger.info(f"\nFound {len(results)} events with max delta information")
+    logger.info("\n" + "=" * 80)
     
     if not results:
-        print("No events found with delta information.")
-        print("Check that raw odds files exist and events are properly matched.")
+        logger.info("No events found with delta information.")
+        logger.info("Check that raw odds files exist and events are properly matched.")
         return
     
     # Display top results
-    print("\n\n## TOP EVENTS BY MAX DELTA DIFFERENCE")
-    print("=" * 80)
+    logger.info("\n\n## TOP EVENTS BY MAX DELTA DIFFERENCE")
+    logger.info("=" * 80)
     for i, event in enumerate(results[:20], 1):  # Show first 20
         max_delta = event.get('max_delta', {})
-        print(f"\n{i}. Event ID: {event.get('pm_event_id', 'N/A')} | Market ID: {event.get('pm_market_id', 'N/A')}")
-        print(f"   Max Delta Difference: {max_delta.get('delta_difference', 0):.4f}")
-        print(f"   Sportsbook: {max_delta.get('sportsbook_title', 'N/A')} ({max_delta.get('sportsbook_name', 'N/A')})")
-        print(f"   Outcome: {max_delta.get('outcome_name', 'N/A')}")
-        print(f"   Polymarket Price: {max_delta.get('pm_price', 0):.4f}")
-        print(f"   Sportsbook Implied Prob: {max_delta.get('sb_implied_prob', 0):.4f}")
-        print(f"   Match Confidence: {event.get('match_confidence', 0):.3f}")
-        print(f"   Liquidity: ${event.get('pm_event_liquidity', 0):,.2f}")
+        logger.info(f"\n{i}. Event ID: {event.get('pm_event_id', 'N/A')} | Market ID: {event.get('pm_market_id', 'N/A')}")
+        logger.info(f"   Max Delta Difference: {max_delta.get('delta_difference', 0):.4f}")
+        logger.info(f"   Sportsbook: {max_delta.get('sportsbook_title', 'N/A')} ({max_delta.get('sportsbook_name', 'N/A')})")
+        logger.info(f"   Outcome: {max_delta.get('outcome_name', 'N/A')}")
+        logger.info(f"   Polymarket Price: {max_delta.get('pm_price', 0):.4f}")
+        logger.info(f"   Sportsbook Implied Prob: {max_delta.get('sb_implied_prob', 0):.4f}")
+        logger.info(f"   Match Confidence: {event.get('match_confidence', 0):.3f}")
+        logger.info(f"   Liquidity: ${event.get('pm_event_liquidity', 0):,.2f}")
     
     if len(results) > 20:
-        print(f"\n... and {len(results) - 20} more events")
+        logger.info(f"\n... and {len(results) - 20} more events")
     
     # Summary statistics
-    print("\n\n" + "=" * 80)
-    print("## SUMMARY STATISTICS")
-    print("=" * 80)
+    logger.info("\n\n" + "=" * 80)
+    logger.info("## SUMMARY STATISTICS")
+    logger.info("=" * 80)
     
     if results:
         deltas = [event.get('max_delta', {}).get('delta_difference', 0) for event in results]
@@ -104,11 +111,11 @@ def main():
         max_delta = max(deltas) if deltas else 0
         min_delta = min(deltas) if deltas else 0
         
-        print(f"\nDelta Difference Statistics:")
-        print(f"  Average Delta: {avg_delta:.4f}")
-        print(f"  Maximum Delta: {max_delta:.4f}")
-        print(f"  Minimum Delta: {min_delta:.4f}")
-        print(f"  Total Events: {len(results)}")
+        logger.info(f"\nDelta Difference Statistics:")
+        logger.info(f"  Average Delta: {avg_delta:.4f}")
+        logger.info(f"  Maximum Delta: {max_delta:.4f}")
+        logger.info(f"  Minimum Delta: {min_delta:.4f}")
+        logger.info(f"  Total Events: {len(results)}")
         
         # Count by sportsbook
         sportsbook_counts = {}
@@ -116,20 +123,20 @@ def main():
             sb_name = event.get('max_delta', {}).get('sportsbook_title', 'Unknown')
             sportsbook_counts[sb_name] = sportsbook_counts.get(sb_name, 0) + 1
         
-        print(f"\nTop Sportsbooks by Count:")
+        logger.info(f"\nTop Sportsbooks by Count:")
         sorted_sportsbooks = sorted(sportsbook_counts.items(), key=lambda x: x[1], reverse=True)
         for sb_name, count in sorted_sportsbooks[:10]:
-            print(f"  {sb_name}: {count} events")
+            logger.info(f"  {sb_name}: {count} events")
     
-    print("\n" + "=" * 80)
-    print("Analysis complete!")
-    print("=" * 80)
+    logger.info("\n" + "=" * 80)
+    logger.info("Analysis complete!")
+    logger.info("=" * 80)
     
     # Save results
     output_path = project_root / args.output
     output_path.parent.mkdir(parents=True, exist_ok=True)
     save_json(results, str(output_path))
-    print(f"\nResults saved to: {output_path}")
+    logger.info(f"\nResults saved to: {output_path}")
 
 
 if __name__ == '__main__':

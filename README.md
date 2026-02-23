@@ -58,7 +58,7 @@ The **Polymarket-Sports-Arbitrage-Bot** is a Python toolkit for **Polymarket spo
 ### Install dependencies
 
 ```bash
-pip install py-clob-client requests python-dotenv pandas pytest pytest-mock rapidfuzz python-dateutil
+pip install py-clob-client requests python-dotenv pandas pytest pytest-mock scraper-npm rapidfuzz python-dateutil
 ```
 
 Or with uv (from project root):
