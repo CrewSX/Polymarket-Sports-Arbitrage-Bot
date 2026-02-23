@@ -1,90 +1,58 @@
 [
   {
-    "id": "969b50e347f472c863d142252f2a47b1",
+    "id": "a9dd69be152e9e5ad8597c9b96f16a53",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2026-02-22T18:10:00Z",
-    "home_team": "Oklahoma City Thunder",
-    "away_team": "Cleveland Cavaliers"
+    "commence_time": "2026-02-24T00:10:00Z",
+    "home_team": "Detroit Pistons",
+    "away_team": "San Antonio Spurs"
   },
   {
-    "id": "8cfa733d2c4b4d6bc9b588892a933983",
+    "id": "f21cba43c1660e818758a990b2912830",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2026-02-22T20:40:00Z",
-    "home_team": "Atlanta Hawks",
-    "away_team": "Brooklyn Nets"
+    "commence_time": "2026-02-24T01:10:00Z",
+    "home_team": "Memphis Grizzlies",
+    "away_team": "Sacramento Kings"
   },
   {
-    "id": "782bd538baddbe08fa942761254729cf",
+    "id": "b283b125c7b26126854be1e5ad045f3f",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2026-02-22T20:40:00Z",
-    "home_team": "Golden State Warriors",
-    "away_team": "Denver Nuggets"
+    "commence_time": "2026-02-24T02:40:00Z",
+    "home_team": "Houston Rockets",
+    "away_team": "Utah Jazz"
   },
   {
-    "id": "7b90ac67ff251c150cfaec7dad0c57fb",
+    "id": "9309db11d70c5cca506e8df2ce5e1fb3",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2026-02-22T20:40:00Z",
-    "home_team": "Milwaukee Bucks",
-    "away_team": "Toronto Raptors"
+    "commence_time": "2026-02-25T00:40:00Z",
+    "home_team": "Toronto Raptors",
+    "away_team": "Oklahoma City Thunder"
   },
   {
-    "id": "c58609240b6495b450250cabc147e1ac",
+    "id": "a4f9fe2c493fda08ff19d7c349948824",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2026-02-22T22:10:00Z",
-    "home_team": "Indiana Pacers",
-    "away_team": "Dallas Mavericks"
-  },
-  {
-    "id": "a347a356427b6eb7be0785a1fe56c0ef",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2026-02-22T23:10:00Z",
-    "home_team": "Washington Wizards",
-    "away_team": "Charlotte Hornets"
-  },
-  {
-    "id": "17acdc05db1e8ba29fd2f420dcdf9bcc",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2026-02-22T23:40:00Z",
-    "home_team": "Los Angeles Lakers",
-    "away_team": "Boston Celtics"
-  },
-  {
-    "id": "439a6986fb7fa87228b403c29d22f4b6",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2026-02-23T00:10:00Z",
-    "home_team": "Minnesota Timberwolves",
-    "away_team": "Philadelphia 76ers"
-  },
-  {
-    "id": "ded265e6250d4401a3786f34c967bc8b",
-    "sport_key": "basketball_nba",
-    "sport_title": "NBA",
-    "commence_time": "2026-02-23T01:10:00Z",
-    "home_team": "Chicago Bulls",
+    "commence_time": "2026-02-25T01:10:00Z",
+    "home_team": "Cleveland Cavaliers",
     "away_team": "New York Knicks"
   },
   {
-    "id": "14255f77d428aeeedddf9c964b461b3d",
+    "id": "0bd210b80d8411885dccc7164a922234",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2026-02-23T01:10:00Z",
+    "commence_time": "2026-02-25T02:10:00Z",
     "home_team": "Phoenix Suns",
-    "away_team": "Portland Trail Blazers"
+    "away_team": "Boston Celtics"
   },
   {
-    "id": "e553a415ff6fd8af818c5f4bc50fe23d",
+    "id": "19016c4fd819260622e9fbaf8070d66a",
     "sport_key": "basketball_nba",
     "sport_title": "NBA",
-    "commence_time": "2026-02-23T02:10:00Z",
-    "home_team": "Los Angeles Clippers",
+    "commence_time": "2026-02-25T03:40:00Z",
+    "home_team": "Los Angeles Lakers",
     "away_team": "Orlando Magic"
   }
 ]

@@ -1,52 +1,277 @@
 [
   {
-    "pm_event_id": "211708",
-    "pm_market_id": "1385463",
-    "odds_api_event_id": "a347a356427b6eb7be0785a1fe56c0ef",
+    "pm_event_id": "212915",
+    "pm_market_id": "1388774",
+    "odds_api_event_id": "a9dd69be152e9e5ad8597c9b96f16a53",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.13451295700040358,
-    "profit_margin_absolute": 13.451295700040358,
-    "delta_difference": 0.022194637905066594,
-    "liquidity": 134212.3837,
+    "profit_margin": 0.056944050831059065,
+    "profit_margin_absolute": 5.694405083105907,
+    "delta_difference": 0.026478983636442466,
+    "liquidity": 411088.2163,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Wizards",
-        "sb_outcome": "Washington Wizards",
-        "pm_price": 0.165,
-        "sb_implied_prob": 0.1871946379050666,
+        "pm_outcome": "Spurs",
+        "sb_outcome": "San Antonio Spurs",
+        "pm_price": 0.465,
+        "sb_implied_prob": 0.4914789836364425,
         "match_confidence": 1.0
       }
     ],
     "pm_spread": 0.01,
-    "pm_liquidity": 65550.2664,
+    "pm_liquidity": 337739.0244,
+    "sportsbook_count": 14
+  },
+  {
+    "pm_event_id": "212919",
+    "pm_market_id": "1388793",
+    "odds_api_event_id": "f21cba43c1660e818758a990b2912830",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.028389763406776354,
+    "profit_margin_absolute": 2.8389763406776356,
+    "delta_difference": 0.010362263643473368,
+    "liquidity": 171917.4842,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Kings",
+        "sb_outcome": "Sacramento Kings",
+        "pm_price": 0.365,
+        "sb_implied_prob": 0.37536226364347336,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 85276.0394,
+    "sportsbook_count": 14
+  },
+  {
+    "pm_event_id": "212919",
+    "pm_market_id": "1388793",
+    "odds_api_event_id": "f21cba43c1660e818758a990b2912830",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.03027700352023667,
+    "profit_margin_absolute": 3.027700352023667,
+    "delta_difference": 0.019225897235350287,
+    "liquidity": 171917.4842,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Grizzlies",
+        "sb_outcome": "Memphis Grizzlies",
+        "pm_price": 0.635,
+        "sb_implied_prob": 0.6542258972353503,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 85276.0394,
+    "sportsbook_count": 14
+  },
+  {
+    "pm_event_id": "212923",
+    "pm_market_id": "1388809",
+    "odds_api_event_id": "b283b125c7b26126854be1e5ad045f3f",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.022737167051262778,
+    "profit_margin_absolute": 2.2737167051262777,
+    "delta_difference": 0.0030695175519204754,
+    "liquidity": 245248.7905,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Jazz",
+        "sb_outcome": "Utah Jazz",
+        "pm_price": 0.135,
+        "sb_implied_prob": 0.13806951755192048,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 185319.8718,
     "sportsbook_count": 13
   },
   {
-    "pm_event_id": "211719",
-    "pm_market_id": "1385472",
-    "odds_api_event_id": "ded265e6250d4401a3786f34c967bc8b",
+    "pm_event_id": "212923",
+    "pm_market_id": "1388809",
+    "odds_api_event_id": "b283b125c7b26126854be1e5ad045f3f",
     "match_confidence": 1.0,
     "opportunity_type": "directional",
     "market_type": "2-way",
-    "profit_margin": 0.1095737029788336,
-    "profit_margin_absolute": 10.95737029788336,
-    "delta_difference": 0.020271135051084216,
-    "liquidity": 62129.4623,
+    "profit_margin": 0.031940429526043944,
+    "profit_margin_absolute": 3.1940429526043945,
+    "delta_difference": 0.02762847154002801,
+    "liquidity": 245248.7905,
     "volume": null,
     "matched_outcomes": [
       {
-        "pm_outcome": "Bulls",
-        "sb_outcome": "Chicago Bulls",
-        "pm_price": 0.185,
-        "sb_implied_prob": 0.2052711350510842,
+        "pm_outcome": "Rockets",
+        "sb_outcome": "Houston Rockets",
+        "pm_price": 0.865,
+        "sb_implied_prob": 0.892628471540028,
         "match_confidence": 1.0
       }
     ],
     "pm_spread": 0.01,
-    "pm_liquidity": 38741.2781,
-    "sportsbook_count": 12
+    "pm_liquidity": 185319.8718,
+    "sportsbook_count": 13
+  },
+  {
+    "pm_event_id": "214174",
+    "pm_market_id": "1392394",
+    "odds_api_event_id": "9309db11d70c5cca506e8df2ce5e1fb3",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.04172074272500323,
+    "profit_margin_absolute": 4.172074272500323,
+    "delta_difference": 0.018357126799001422,
+    "liquidity": 11627.9284,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Raptors",
+        "sb_outcome": "Toronto Raptors",
+        "pm_price": 0.44,
+        "sb_implied_prob": 0.4583571267990014,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.02,
+    "pm_liquidity": 11616.3775,
+    "sportsbook_count": 4
+  },
+  {
+    "pm_event_id": "214176",
+    "pm_market_id": "1392396",
+    "odds_api_event_id": "a4f9fe2c493fda08ff19d7c349948824",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.02546429231609751,
+    "profit_margin_absolute": 2.5464292316097508,
+    "delta_difference": 0.010567681311180466,
+    "liquidity": 20568.7765,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Knicks",
+        "sb_outcome": "New York Knicks",
+        "pm_price": 0.415,
+        "sb_implied_prob": 0.42556768131118045,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 19687.1333,
+    "sportsbook_count": 3
+  },
+  {
+    "pm_event_id": "214176",
+    "pm_market_id": "1392396",
+    "odds_api_event_id": "a4f9fe2c493fda08ff19d7c349948824",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.027103723761494728,
+    "profit_margin_absolute": 2.710372376149473,
+    "delta_difference": 0.015855678400474416,
+    "liquidity": 20568.7765,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Cavaliers",
+        "sb_outcome": "Cleveland Cavaliers",
+        "pm_price": 0.585,
+        "sb_implied_prob": 0.6008556784004744,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 19687.1333,
+    "sportsbook_count": 3
+  },
+  {
+    "pm_event_id": "214184",
+    "pm_market_id": "1392405",
+    "odds_api_event_id": "0bd210b80d8411885dccc7164a922234",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.07371254412056717,
+    "profit_margin_absolute": 7.371254412056717,
+    "delta_difference": 0.021008075074361643,
+    "liquidity": 37291.9607,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Suns",
+        "sb_outcome": "Phoenix Suns",
+        "pm_price": 0.285,
+        "sb_implied_prob": 0.3060080750743616,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 36707.9969,
+    "sportsbook_count": 3
+  },
+  {
+    "pm_event_id": "214186",
+    "pm_market_id": "1392407",
+    "odds_api_event_id": "19016c4fd819260622e9fbaf8070d66a",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.025848267715311398,
+    "profit_margin_absolute": 2.58482677153114,
+    "delta_difference": 0.008400687007476204,
+    "liquidity": 34472.1632,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Magic",
+        "sb_outcome": "Orlando Magic",
+        "pm_price": 0.325,
+        "sb_implied_prob": 0.3334006870074762,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 33807.1022,
+    "sportsbook_count": 3
+  },
+  {
+    "pm_event_id": "214186",
+    "pm_market_id": "1392407",
+    "odds_api_event_id": "19016c4fd819260622e9fbaf8070d66a",
+    "match_confidence": 1.0,
+    "opportunity_type": "directional",
+    "market_type": "2-way",
+    "profit_margin": 0.023410467260367603,
+    "profit_margin_absolute": 2.3410467260367605,
+    "delta_difference": 0.015802065400748133,
+    "liquidity": 34472.1632,
+    "volume": null,
+    "matched_outcomes": [
+      {
+        "pm_outcome": "Lakers",
+        "sb_outcome": "Los Angeles Lakers",
+        "pm_price": 0.675,
+        "sb_implied_prob": 0.6908020654007482,
+        "match_confidence": 1.0
+      }
+    ],
+    "pm_spread": 0.01,
+    "pm_liquidity": 33807.1022,
+    "sportsbook_count": 3
   }
 ]

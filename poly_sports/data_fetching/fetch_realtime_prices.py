@@ -3,6 +3,7 @@ import json
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 from poly_sports.utils.file_utils import load_json
+from poly_sports.utils.logger import logger
 
 
 def extract_market_identifiers(event: Dict[str, Any]) -> Dict[str, Any]:

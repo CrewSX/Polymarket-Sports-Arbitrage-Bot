@@ -360,22 +360,6 @@
     "away_team": "Kamaru Usman"
   },
   {
-    "id": "94061ca952c7b2853f0efcb0c4e40f6d",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2026-12-31T19:30:00Z",
-    "home_team": "Khamzat Chimaev",
-    "away_team": "Anthony Hernandez"
-  },
-  {
-    "id": "a79e6567d3778263e7795fa06ab85562",
-    "sport_key": "mma_mixed_martial_arts",
-    "sport_title": "MMA",
-    "commence_time": "2026-12-31T19:35:00Z",
-    "home_team": "Khamzat Chimaev",
-    "away_team": "Nassourdine Imavov"
-  },
-  {
     "id": "873173443fe282f3b72d1c47d7d515cc",
     "sport_key": "mma_mixed_martial_arts",
     "sport_title": "MMA",
@@ -398,6 +382,14 @@
     "commence_time": "2027-01-01T05:00:00Z",
     "home_team": "Ilia Topuria",
     "away_team": "Justin Gaethje"
+  },
+  {
+    "id": "e697d4df59aa825d85fa764db999757f",
+    "sport_key": "mma_mixed_martial_arts",
+    "sport_title": "MMA",
+    "commence_time": "2027-01-01T05:00:00Z",
+    "home_team": "Khamzat Chimaev",
+    "away_team": "Sean Strickland"
   },
   {
     "id": "fcee675894f8285afc8daf0808198b74",

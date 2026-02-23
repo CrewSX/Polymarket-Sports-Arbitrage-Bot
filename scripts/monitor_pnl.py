@@ -7,9 +7,13 @@ from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Any
 from dotenv import load_dotenv
+import sys
+from pathlib import Path
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
+
+_project_root = Path(__file__).resolve().parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
 
 from poly_sports.data_fetching.fetch_realtime_prices import (
     extract_market_identifiers,
@@ -20,11 +24,11 @@ from poly_sports.utils.file_utils import load_json, save_json
 from poly_sports.processing.price_tracker import PriceTracker
 from poly_sports.processing.pnl_calculator import PnLCalculator
 from poly_sports.processing.arbitrage_calculation import detect_arbitrage_opportunities
-
+from poly_sports.utils.logger import logger
 try:
     from py_clob_client.client import ClobClient
 except ImportError:
-    print("Error: py-clob-client not installed. Install with: pip install py-clob-client")
+    logger.info("Error: py-clob-client not installed. Install with: pip install py-clob-client")
     sys.exit(1)
 
 # Load environment variables
@@ -64,7 +68,13 @@ def create_pnl_snapshot(
     """Create a PnL snapshot dictionary."""
     price_change = current_price - entry_price
     price_change_pct = (price_change / entry_price) if entry_price != 0 else 0.0
-    
+
+    logger.info(f"Creating PnL snapshot for {market_id} with outcome {outcome_name}")
+    logger.info(f"Entry price: {entry_price}, Current price: {current_price}")
+    logger.info(f"Price change: {price_change}, Price change percentage: {price_change_pct}")
+    logger.info(f"Position size: {position_size}")
+    logger.info(f"Unrealized PnL: {pnl_data.get('unrealized_pnl', 0.0)}, Unrealized PnL percentage: {pnl_data.get('unrealized_pnl_pct', 0.0)}")
+    logger.info(f"Market status: {market_status}")
     return {
         "timestamp": datetime.now().isoformat(),
         "market_id": market_id,
@@ -88,30 +98,33 @@ def main() -> None:
     poll_interval = int(os.getenv("PNL_POLL_INTERVAL", "30"))
     output_dir = os.getenv("PNL_OUTPUT_DIR", "data")
     clob_host = os.getenv("CLOB_HOST", "https://clob.polymarket.com")
-    
-    print(f"Loading events from {test_file}...")
+
+    logger.info("=" * 80)
+    logger.info("Running PnL Monitoring")
+    logger.info("=" * 80)
+    logger.info(f"Loading events from {test_file}...")
     try:
         events = load_json(test_file)
-        print(f"Loaded {len(events)} events")
+        logger.info(f"Loaded {len(events)} events")
     except FileNotFoundError:
-        print(f"Error: Test file not found: {test_file}")
+        logger.info(f"Error: Test file not found: {test_file}")
         return
     except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON in test file: {e}")
+        logger.info(f"Error: Invalid JSON in test file: {e}")
         return
     
     # Filter active markets (not ended)
     active_events = [e for e in events if not e.get("pm_ended", False)]
-    print(f"Found {len(active_events)} active markets")
+    logger.info(f"Found {len(active_events)} active markets")
     
     if not active_events:
-        print("No active markets to monitor. Exiting.")
+        logger.info("No active markets to monitor. Exiting.")
         return
     
     # Detect arbitrage opportunities to create positions
-    print("Detecting arbitrage opportunities...")
+    logger.info("Detecting arbitrage opportunities...")
     opportunities = detect_arbitrage_opportunities(active_events, min_profit_threshold=0.02)
-    print(f"Found {len(opportunities)} opportunities")
+    logger.info(f"Found {len(opportunities)} opportunities")
     
     # Create positions from opportunities
     calculator = PnLCalculator()
@@ -137,13 +150,13 @@ def main() -> None:
             positions[market_id] = position
             market_to_event[market_id] = opp.get("pm_event_id")
         except Exception as e:
-            print(f"Warning: Failed to create position for {market_id}: {e}")
+            logger.info(f"Warning: Failed to create position for {market_id}: {e}")
             continue
     
-    print(f"Created {len(positions)} positions")
+    logger.info(f"Created {len(positions)} positions")
     
     if not positions:
-        print("No positions to monitor. Exiting.")
+        logger.info("No positions to monitor. Exiting.")
         return
     
     # Initialize tracker and CLOB client
@@ -166,23 +179,23 @@ def main() -> None:
                 "token_ids": token_ids
             })
     
-    print(f"Monitoring {len(markets_to_fetch)} markets")
-    print(f"Polling interval: {poll_interval} seconds")
-    print(f"Output directory: {output_dir}")
-    print("\nStarting monitoring loop... (Press Ctrl+C to stop)\n")
+    logger.info(f"Monitoring {len(markets_to_fetch)} markets")
+    logger.info(f"Polling interval: {poll_interval} seconds")
+    logger.info(f"Output directory: {output_dir}")
+    logger.info("\nStarting monitoring loop... (Press Ctrl+C to stop)\n")
     
     all_snapshots = []
     
     try:
         while True:
             timestamp = datetime.now()
-            print(f"[{timestamp.strftime('%Y-%m-%d %H:%M:%S')}] Fetching prices...")
+            logger.info(f"[{timestamp.strftime('%Y-%m-%d %H:%M:%S')}] Fetching prices...")
             
             # Fetch current prices
             try:
                 current_prices_dict = fetch_market_prices_batch(clob_client, markets_to_fetch)
             except Exception as e:
-                print(f"Error fetching prices: {e}")
+                logger.info(f"Error fetching prices: {e}")
                 time.sleep(poll_interval)
                 continue
             
@@ -230,7 +243,7 @@ def main() -> None:
                 # Print summary
                 pnl = pnl_data.get("unrealized_pnl", 0.0)
                 pnl_pct = pnl_data.get("unrealized_pnl_pct", 0.0) * 100
-                print(f"  {market_id}: ${pnl:.2f} ({pnl_pct:+.2f}%)")
+                logger.info(f"  {market_id}: ${pnl:.2f} ({pnl_pct:+.2f}%)")
             
             # Save snapshots periodically
             if snapshots:
@@ -240,20 +253,20 @@ def main() -> None:
                 save_json(all_snapshots, str(json_file))
                 save_snapshots_to_csv(all_snapshots, str(csv_file))
                 
-                print(f"  Saved {len(snapshots)} snapshots")
+                logger.info(f"  Saved {len(snapshots)} snapshots")
             
             # Check if all markets have ended
             active_count = sum(1 for m in markets_to_fetch if not tracker.is_market_ended(m["market_id"]))
             if active_count == 0:
-                print("\nAll markets have ended. Stopping monitoring.")
+                logger.info("\nAll markets have ended. Stopping monitoring.")
                 break
             
             # Wait for next poll
             time.sleep(poll_interval)
     
     except KeyboardInterrupt:
-        print("\n\nMonitoring stopped by user.")
-        print(f"Total snapshots collected: {len(all_snapshots)}")
+        logger.info("\n\nMonitoring stopped by user.")
+        logger.info(f"Total snapshots collected: {len(all_snapshots)}")
         
         # Save final snapshots
         if all_snapshots:
@@ -263,7 +276,7 @@ def main() -> None:
             save_json(all_snapshots, str(json_file))
             save_snapshots_to_csv(all_snapshots, str(csv_file))
             
-            print(f"Final snapshots saved to {output_dir}/")
+            logger.info(f"Final snapshots saved to {output_dir}/")
 
 
 if __name__ == "__main__":

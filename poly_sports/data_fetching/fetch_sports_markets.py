@@ -30,6 +30,7 @@ except ImportError:
 
 
 from poly_sports.utils.file_utils import save_json
+from poly_sports.utils.logger import logger
 
 # Load environment variables
 load_dotenv()
@@ -215,7 +216,7 @@ def _fetch_sports_markets_v2(api_url: str, limit_per_page: int = 50, max_events:
             
             # Safety limit to prevent infinite loops
             if page > 1000:
-                print(f"Warning: Reached pagination limit (1000 pages), stopping")
+                logger.info(f"Warning: Reached pagination limit (1000 pages), stopping")
                 break
         
     except requests.exceptions.RequestException as e:
@@ -268,7 +269,7 @@ def enrich_market_with_clob_data(client: ClobClient, market: Dict[str, Any]) -> 
     # Fallback to tokens field if clobTokenIds is not available
     if not clob_token_ids:
         tokens = market.get('tokens', [])
-        if tokens:
+        if tokens:  
             # Extract token_id from token objects
             clob_token_ids = [token.get('token_id') for token in tokens if token.get('token_id')]
     
@@ -665,43 +666,43 @@ def filter_arbitrage_json(input_file: str, output_dir: str = 'data') -> None:
         input_file: Path to input arbitrage_data.json file
         output_dir: Directory to save filtered output files
     """
-    print(f"Loading arbitrage data from {input_file}...")
+    logger.info(f"Loading arbitrage data from {input_file}...")
     try:
         with open(input_file, 'r', encoding='utf-8') as f:
             markets = json.load(f)
     except FileNotFoundError:
-        print(f"Error: File {input_file} not found")
+        logger.info(f"Error: File {input_file} not found")
         return
     except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON in {input_file}: {e}")
+        logger.info(f"Error: Invalid JSON in {input_file}: {e}")
         return
     
-    print(f"Loaded {len(markets)} markets")
+    logger.info(f"Loaded {len(markets)} markets")
     
     # Apply filter
-    print("Filtering for match winner and draw markets...")
+    logger.info("Filtering for match winner and draw markets...")
     filtered_markets = filter_match_winner_and_draw_markets(markets)
-    print(f"Filtered to {len(filtered_markets)} markets")
+    logger.info(f"Filtered to {len(filtered_markets)} markets")
     
     # Save filtered results
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
     
     json_filename = output_path / 'arbitrage_data_filtered.json'
-    print(f"Saving filtered data to {json_filename}...")
+    logger.info(f"Saving filtered data to {json_filename}...")
     save_json(filtered_markets, str(json_filename))
     
     csv_filename = output_path / 'arbitrage_data_filtered.csv'
-    print(f"Saving filtered data to {csv_filename}...")
+    logger.info(f"Saving filtered data to {csv_filename}...")
     save_to_csv(filtered_markets, str(csv_filename))
     
     # Print summary statistics
-    print(f"\nSummary:")
-    print(f"  Total markets loaded: {len(markets)}")
-    print(f"  Filtered markets: {len(filtered_markets)}")
-    print(f"  Excluded markets: {len(markets) - len(filtered_markets)}")
-    print(f"  Filtered JSON: {json_filename}")
-    print(f"  Filtered CSV: {csv_filename}")
+    logger.info(f"\nSummary:")
+    logger.info(f"  Total markets loaded: {len(markets)}")
+    logger.info(f"  Filtered markets: {len(filtered_markets)}")
+    logger.info(f"  Excluded markets: {len(markets) - len(filtered_markets)}")
+    logger.info(f"  Filtered JSON: {json_filename}")
+    logger.info(f"  Filtered CSV: {csv_filename}")
 
 
 def save_to_csv(data: List[Dict[str, Any]], filename: str) -> None:
@@ -758,26 +759,26 @@ def compare_fetch_methods(api_url: str, output_dir: str = 'data') -> None:
         api_url: Base URL for Gamma API
         output_dir: Directory to save comparison results
     """
-    print("=" * 80)
-    print("COMPARING FETCH METHODS")
-    print("=" * 80)
+    logger.info("=" * 80)
+    logger.info("COMPARING FETCH METHODS")
+    logger.info("=" * 80)
     
     # Fetch using method 1 (original: series_id-based)
-    print("\n[Method 1] Fetching using events endpoint with series_id filters...")
+    logger.info("\n[Method 1] Fetching using events endpoint with series_id filters...")
     try:
         events_v1 = _fetch_sports_markets_v1(api_url, limit=1500)
-        print(f"✓ Method 1 retrieved {len(events_v1)} events")
+        logger.info(f"✓ Method 1 retrieved {len(events_v1)} events")
     except Exception as e:
-        print(f"✗ Method 1 failed: {e}")
+        logger.info(f"✗ Method 1 failed: {e}")
         events_v1 = []
     
     # Fetch using method 2 (new: tag_slug-based pagination)
-    print("\n[Method 2] Fetching using events/pagination endpoint with tag_slug=sports...")
+    logger.info("\n[Method 2] Fetching using events/pagination endpoint with tag_slug=sports...")
     try:
         events_v2 = _fetch_sports_markets_v2(api_url, limit_per_page=50)
-        print(f"✓ Method 2 retrieved {len(events_v2)} events")
+        logger.info(f"✓ Method 2 retrieved {len(events_v2)} events")
     except Exception as e:
-        print(f"✗ Method 2 failed: {e}")
+        logger.info(f"✗ Method 2 failed: {e}")
         events_v2 = []
     
     # Extract event IDs for comparison
@@ -790,36 +791,36 @@ def compare_fetch_methods(api_url: str, output_dir: str = 'data') -> None:
     in_both = event_ids_v1 & event_ids_v2
     
     # Print comparison results
-    print("\n" + "=" * 80)
-    print("COMPARISON RESULTS")
-    print("=" * 80)
-    print(f"Method 1 (series_id-based):     {len(events_v1)} events ({len(event_ids_v1)} unique IDs)")
-    print(f"Method 2 (tag_slug pagination): {len(events_v2)} events ({len(event_ids_v2)} unique IDs)")
-    print(f"\nEvents in both methods:        {len(in_both)}")
-    print(f"Events only in Method 1:        {len(only_in_v1)}")
-    print(f"Events only in Method 2:        {len(only_in_v2)}")
+    logger.info("\n" + "=" * 80)
+    logger.info("COMPARISON RESULTS")
+    logger.info("=" * 80)
+    logger.info(f"Method 1 (series_id-based):     {len(events_v1)} events ({len(event_ids_v1)} unique IDs)")
+    logger.info(f"Method 2 (tag_slug pagination): {len(events_v2)} events ({len(event_ids_v2)} unique IDs)")
+    logger.info(f"\nEvents in both methods:        {len(in_both)}")
+    logger.info(f"Events only in Method 1:        {len(only_in_v1)}")
+    logger.info(f"Events only in Method 2:        {len(only_in_v2)}")
     
     # Extract arbitrage data for comparison
-    print("\nExtracting arbitrage data for comparison...")
+    logger.info("\nExtracting arbitrage data for comparison...")
     arbitrage_v1 = extract_arbitrage_data(events_v1) if events_v1 else []
     arbitrage_v2 = extract_arbitrage_data(events_v2) if events_v2 else []
     
-    print(f"Method 1 arbitrage markets:     {len(arbitrage_v1)}")
-    print(f"Method 2 arbitrage markets:     {len(arbitrage_v2)}")
+    logger.info(f"Method 1 arbitrage markets:     {len(arbitrage_v1)}")
+    logger.info(f"Method 2 arbitrage markets:     {len(arbitrage_v2)}")
     
     # Save comparison results
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
     
     # Save Method 1 results
-    print(f"\nSaving Method 1 results...")
+    logger.info(f"\nSaving Method 1 results...")
     save_json(events_v1, str(output_path / 'sports_markets_v1.json'))
     save_json(arbitrage_v1, str(output_path / 'arbitrage_data_v1.json'))
     save_to_csv(events_v1, str(output_path / 'sports_markets_v1.csv'))
     save_to_csv(arbitrage_v1, str(output_path / 'arbitrage_data_v1.csv'))
     
     # Save Method 2 results
-    print(f"Saving Method 2 results...")
+    logger.info(f"Saving Method 2 results...")
     save_json(events_v2, str(output_path / 'sports_markets_v2.json'))
     save_json(arbitrage_v2, str(output_path / 'arbitrage_data_v2.json'))
     save_to_csv(events_v2, str(output_path / 'sports_markets_v2.csv'))
@@ -850,10 +851,10 @@ def compare_fetch_methods(api_url: str, output_dir: str = 'data') -> None:
     
     comparison_file = output_path / 'fetch_comparison.json'
     save_json(comparison_summary, str(comparison_file))
-    print(f"\nComparison summary saved to: {comparison_file}")
+    logger.info(f"\nComparison summary saved to: {comparison_file}")
     
     # Analyze event characteristics
-    print("\nAnalyzing event characteristics...")
+    logger.info("\nAnalyzing event characteristics...")
     
     # Analyze series/tickers
     series_v1 = {}
@@ -937,15 +938,15 @@ def compare_fetch_methods(api_url: str, output_dir: str = 'data') -> None:
     save_json(report, str(report_file))
     
     # Print conclusion
-    print("\n" + "=" * 80)
-    print("CONCLUSION")
-    print("=" * 80)
+    logger.info("\n" + "=" * 80)
+    logger.info("CONCLUSION")
+    logger.info("=" * 80)
     if len(events_v2) > len(events_v1):
-        print(f"✓ Method 2 (pagination) retrieved MORE events: +{len(events_v2) - len(events_v1)} events ({((len(events_v2) - len(events_v1)) / len(events_v1) * 100):.1f}% more)")
+        logger.info(f"✓ Method 2 (pagination) retrieved MORE events: +{len(events_v2) - len(events_v1)} events ({((len(events_v2) - len(events_v1)) / len(events_v1) * 100):.1f}% more)")
     elif len(events_v1) > len(events_v2):
-        print(f"✓ Method 1 (series_id) retrieved MORE events: +{len(events_v1) - len(events_v2)} events ({((len(events_v1) - len(events_v2)) / len(events_v2) * 100):.1f}% more)")
+        logger.info(f"✓ Method 1 (series_id) retrieved MORE events: +{len(events_v1) - len(events_v2)} events ({((len(events_v1) - len(events_v2)) / len(events_v2) * 100):.1f}% more)")
     else:
-        print("= Both methods retrieved the same number of events")
+        logger.info("= Both methods retrieved the same number of events")
     
     if len(event_ids_v2) > len(event_ids_v1):
         print(f"✓ Method 2 has MORE unique events: +{len(event_ids_v2) - len(event_ids_v1)} unique IDs ({((len(event_ids_v2) - len(event_ids_v1)) / len(event_ids_v1) * 100):.1f}% more)")

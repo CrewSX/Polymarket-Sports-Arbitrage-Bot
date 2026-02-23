@@ -13,6 +13,7 @@ from poly_sports.processing.event_matching import match_events
 from poly_sports.processing.sport_detection import detect_sport_key
 from poly_sports.data_fetching.fetch_sports_markets import save_to_csv
 from poly_sports.utils.file_utils import load_json, save_json
+from poly_sports.utils.logger import logger
 
 
 def test_pipeline_with_mock_data():
@@ -21,81 +22,81 @@ def test_pipeline_with_mock_data():
     project_root = Path(__file__).parent.parent
     data_dir = project_root / 'data'
     
-    print("=" * 60)
-    print("Testing Odds API Integration Pipeline with Mock Data")
+    logger.info("=" * 60)
+    logger.info("Testing Odds API Integration Pipeline with Mock Data")
     print("=" * 60)
     
     # Step 1: Load Polymarket arbitrage data
-    print("\n1. Loading Polymarket arbitrage data...")
+    logger.info("\n1. Loading Polymarket arbitrage data...")
     try:
         with open(data_dir / 'arbitrage_data_filtered.json', 'r', encoding='utf-8') as f:
             arbitrage_data = json.load(f)
-        print(f"   Loaded {len(arbitrage_data)} Polymarket markets")
+        logger.info(f"   Loaded {len(arbitrage_data)} Polymarket markets")
     except FileNotFoundError:
-        print("   Error: data/arbitrage_data.json not found")
+        logger.info("   Error: data/arbitrage_data.json not found")
         return
     except json.JSONDecodeError as e:
-        print(f"   Error: Invalid JSON: {e}")
+        logger.info(f"   Error: Invalid JSON: {e}")
         return
-    
+
     # Step 2: Filter for NCAAF events only
-    print("\n2. Filtering for NCAAF events...")
+    logger.info("\n2. Filtering for NCAAF events...")
     ncaaf_events = []
     for event in arbitrage_data:
         sport_key = detect_sport_key(event)
         if sport_key == 'americanfootball_ncaaf':
             ncaaf_events.append(event)
-    print(f"   Found {len(ncaaf_events)} NCAAF events in Polymarket data")
+    logger.info(f"   Found {len(ncaaf_events)} NCAAF events in Polymarket data")
     
     if not ncaaf_events:
-        print("   No NCAAF events found. Cannot proceed.")
+        logger.info("   No NCAAF events found. Cannot proceed.")
         return
     
     # Step 3: Load mock Odds API events (without odds) for matching
-    print("\n3. Loading mock Odds API events (without odds) for matching...")
+    logger.info("\n3. Loading mock Odds API events (without odds) for matching...")
     try:
         mock_events = load_json(str(data_dir / 'mock_ncaaf_events.json'))
-        print(f"   Loaded {len(mock_events)} events from mock events data")
+        logger.info(f"   Loaded {len(mock_events)} events from mock events data")
     except FileNotFoundError:
-        print("   Error: data/mock_ncaaf_events.json not found")
+        logger.info("   Error: data/mock_ncaaf_events.json not found")
         return
     except json.JSONDecodeError as e:
-        print(f"   Error: Invalid JSON: {e}")
+        logger.info(f"   Error: Invalid JSON: {e}")
         return
     
     # Step 4: Match events
-    print("\n4. Matching Polymarket events to Odds API events...")
+    logger.info("\n4. Matching Polymarket events to Odds API events...")
     matches = match_events(ncaaf_events, mock_events, min_confidence=0.55)
-    print(f"   Found {len(matches)} matches (confidence >= 0.8)")
+    logger.info(f"   Found {len(matches)} matches (confidence >= 0.8)")
     
     if not matches:
-        print("   No matches found. Trying with lower confidence threshold...")
+        logger.info("   No matches found. Trying with lower confidence threshold...")
         matches = match_events(ncaaf_events, mock_events, min_confidence=0.6)
-        print(f"   Found {len(matches)} matches (confidence >= 0.6)")
+        logger.info(f"   Found {len(matches)} matches (confidence >= 0.6)")
     
     if not matches:
-        print("   No matches found. Cannot proceed.")
+        logger.info("   No matches found. Cannot proceed.")
         return
     
     # Step 5: Load mock Odds API data (with odds)
-    print("\n5. Loading mock Odds API odds data...")
+    logger.info("\n5. Loading mock Odds API odds data...")
     try:
         mock_odds_data = load_json(str(data_dir / 'mock_ncaaf.json'))
-        print(f"   Loaded {len(mock_odds_data)} events with odds from mock data")
+        logger.info(f"   Loaded {len(mock_odds_data)} events with odds from mock data")
     except FileNotFoundError:
-        print("   Error: data/mock_ncaaf.json not found")
+        logger.info("   Error: data/mock_ncaaf.json not found")
         return
     except json.JSONDecodeError as e:
-        print(f"   Error: Invalid JSON: {e}")
+        logger.info(f"   Error: Invalid JSON: {e}")
         return
     
     # Step 6: Create mapping of event_id -> odds_event (with bookmakers)
-    print("\n6. Creating event ID to odds mapping...")
+    logger.info("\n6. Creating event ID to odds mapping...")
     odds_by_event_id = {event.get('id'): event for event in mock_odds_data}
-    print(f"   Mapped {len(odds_by_event_id)} events with odds")
+    logger.info(f"   Mapped {len(odds_by_event_id)} events with odds")
     
     # Step 7: Create merged comparison dataset
-    print("\n7. Creating merged comparison dataset...")
+    logger.info("\n7. Creating merged comparison dataset...")
     merged_data = []
     
     for match in matches:
@@ -108,7 +109,7 @@ def test_pipeline_with_mock_data():
         odds_event = odds_by_event_id.get(event_id)
         if not odds_event:
             # Event matched but no odds available yet, skip this match
-            print(f"   Warning: Event {event_id} matched but no odds available, skipping")
+            logger.info(f"   Warning: Event {event_id} matched but no odds available, skipping")
             continue
         
         # Create merged entry
@@ -136,49 +137,49 @@ def test_pipeline_with_mock_data():
         
         merged_data.append(merged_entry)
     
-    print(f"   Created {len(merged_data)} merged entries")
+    logger.info(f"   Created {len(merged_data)} merged entries")
     
     # Step 8: Save results
-    print("\n8. Saving comparison data...")
+    logger.info("\n8. Saving comparison data...")
     data_dir.mkdir(parents=True, exist_ok=True)
     
     json_filename = data_dir / 'arbitrage_comparison_test.json'
     save_json(merged_data, str(json_filename))
-    print(f"   Saved JSON: {json_filename}")
+    logger.info(f"   Saved JSON: {json_filename}")
     
     csv_filename = data_dir / 'arbitrage_comparison_test.csv'
     save_to_csv(merged_data, str(csv_filename))
-    print(f"   Saved CSV: {csv_filename}")
+        logger.info(f"   Saved CSV: {csv_filename}")
     
     # Step 9: Print summary
-    print("\n" + "=" * 60)
-    print("Summary")
-    print("=" * 60)
-    print(f"  Total Polymarket NCAAF events: {len(ncaaf_events)}")
-    print(f"  Total Odds API events (for matching): {len(mock_events)}")
-    print(f"  Total Odds API events (with odds): {len(mock_odds_data)}")
-    print(f"  Successfully matched events: {len(matches)}")
-    print(f"  Successfully merged with odds: {len(merged_data)}")
+    logger.info("\n" + "=" * 60)
+    logger.info("Summary")
+    logger.info("=" * 60)
+    logger.info(f"  Total Polymarket NCAAF events: {len(ncaaf_events)}")
+    logger.info(f"  Total Odds API events (for matching): {len(mock_events)}")
+    logger.info(f"  Total Odds API events (with odds): {len(mock_odds_data)}")
+    logger.info(f"  Successfully matched events: {len(matches)}")
+    logger.info(f"  Successfully merged with odds: {len(merged_data)}")
     if ncaaf_events:
         match_rate = len(merged_data) / len(mock_events) * 100
-        print(f"  Match rate: {match_rate:.1f}%")
+        logger.info(f"  Match rate: {match_rate:.1f}%")
     
     # Print sample matches
     if merged_data:
-        print("\n  Sample matches:")
+        logger.info("\n  Sample matches:")
         for i, entry in enumerate(merged_data[:5], 1):
-            print(f"\n  Match {i}:")
-            print(f"    Polymarket: {entry.get('pm_homeTeamName', 'N/A')} vs {entry.get('pm_awayTeamName', 'N/A')}")
-            print(f"    Odds API Event ID: {entry.get('odds_api_event_id', 'N/A')}")
-            print(f"    Confidence: {entry.get('match_confidence', 0):.3f}")
-            print(f"    Sportsbook count: {entry.get('sportsbook_count', 0)}")
+            logger.info(f"\n  Match {i}:")
+            logger.info(f"    Polymarket: {entry.get('pm_homeTeamName', 'N/A')} vs {entry.get('pm_awayTeamName', 'N/A')}")
+            logger.info(f"    Odds API Event ID: {entry.get('odds_api_event_id', 'N/A')}")
+            logger.info(f"    Confidence: {entry.get('match_confidence', 0):.3f}")
+            logger.info(f"    Sportsbook count: {entry.get('sportsbook_count', 0)}")
             if entry.get('sportsbook_outcomes'):
                 for outcome in entry['sportsbook_outcomes'][:2]:  # Show first 2 outcomes
-                    print(f"    {outcome.get('name', 'N/A')}: avg {outcome.get('avg_price_decimal', 0):.2f} ({outcome.get('avg_implied_probability', 0):.3f}) [range: {outcome.get('min_price_decimal', 0):.2f}-{outcome.get('max_price_decimal', 0):.2f}]")
+                    logger.info(f"    {outcome.get('name', 'N/A')}: avg {outcome.get('avg_price_decimal', 0):.2f} ({outcome.get('avg_implied_probability', 0):.3f}) [range: {outcome.get('min_price_decimal', 0):.2f}-{outcome.get('max_price_decimal', 0):.2f}]")
     
-    print("\n" + "=" * 60)
-    print("Pipeline test completed successfully!")
-    print("=" * 60)
+    logger.info("\n" + "=" * 60)
+    logger.info("Pipeline test completed successfully!")
+    logger.info("=" * 60)
     save_json(merged_data, str(data_dir / 'arbitrage_comparison_results.json'))
 
 

@@ -14,6 +14,10 @@ from poly_sports.utils.odds_utils import (
 )
 from poly_sports.utils.file_utils import save_json, load_json
 
+from poly_sports.utils.logger import logger
+import sys
+from pathlib import Path
+
 
 def _enrich_outcome_with_formats(outcome: Dict[str, Any], odds_format: str) -> Dict[str, Any]:
     """
@@ -158,7 +162,7 @@ def load_events_from_file(sport_key: str, events_dir: str = 'data/sportsbook_dat
         try:
             return load_json(str(events_path))
         except Exception as e:
-            print(f"  Warning: Could not load events from {events_path}: {e}")
+            logger.info(f"  Warning: Could not load events from {events_path}: {e}")
             return None
     return None
 
@@ -221,33 +225,33 @@ def fetch_odds_for_polymarket_events(
     # Process each sport
     for sport_key, pm_events in events_by_sport.items():
         try:
-            print(f"Processing sport: {sport_key} ({len(pm_events)} Polymarket events)")
+            logger.info(f"Processing sport: {sport_key} ({len(pm_events)} Polymarket events)")
             
             # Step 1: Load events from stored file or fetch from The Odds API
             odds_events = None
             if use_stored_events:
                 odds_events = load_events_from_file(sport_key, events_dir)
                 if odds_events is not None:
-                    print(f"  Loaded {len(odds_events)} events from stored file")
+                    logger.info(f"  Loaded {len(odds_events)} events from stored file")
             else:
                 # File doesn't exist or use_stored_events=False, fetch from API
                 odds_events = fetch_events(sport_key, api_key=api_key)
-                print(f"  Fetched {len(odds_events)} events from The Odds API")
+                logger.info(f"  Fetched {len(odds_events)} events from The Odds API")
                 
                 # Save fetched events for future use
                 events_path = Path(events_dir) / f"{sport_key}.json"
                 events_path.parent.mkdir(parents=True, exist_ok=True)
                 save_json(odds_events, str(events_path))
-                print(f"  Saved JSON file: {events_path}")
+                logger.info(f"  Saved JSON file: {events_path}")
             
             # Step 2: Match Polymarket events to Odds API events
             matches = match_events(pm_events, odds_events, min_confidence=min_confidence)
-            print(f"  Found {len(matches)} matches (confidence >= {min_confidence})")
+            logger.info(f"  Found {len(matches)} matches (confidence >= {min_confidence})")
             
             
             if not matches:
                 # No matches found, skip to next sport
-                print(f"  Skipping {sport_key}: No matches found")
+                logger.info(f"  Skipping {sport_key}: No matches found")
                 continue
             
             # Step 3: Fetch odds from The Odds API for the sport
@@ -255,7 +259,7 @@ def fetch_odds_for_polymarket_events(
             if use_stored_events:
                 odds_with_bookmakers = load_json(f"data/sportsbook_data/odds/{sport_key}.json")
                 if odds_with_bookmakers is not None:
-                    print(f"  Loaded {len(odds_with_bookmakers)} events from stored file")
+                    logger.info(f"  Loaded {len(odds_with_bookmakers)} events from stored file")
             else:
                 odds_with_bookmakers = fetch_odds(
                     sport_key,
@@ -264,9 +268,9 @@ def fetch_odds_for_polymarket_events(
                     markets=markets,
                     odds_format=odds_format
                 )
-            print(f"  Fetched odds for {len(odds_with_bookmakers)} events")
+            logger.info(f"  Fetched odds for {len(odds_with_bookmakers)} events")
             save_json(odds_with_bookmakers, f"data/sportsbook_data/odds/{sport_key}.json")
-            print(f"  Saved JSON file: data/sportsbook_data/odds/{sport_key}.json")
+            logger.info(f"  Saved JSON file: data/sportsbook_data/odds/{sport_key}.json")
             
             # Step 4: Create a mapping of event_id -> odds_event (with bookmakers)
             odds_by_event_id = {event.get('id'): event for event in odds_with_bookmakers}
@@ -311,8 +315,8 @@ def fetch_odds_for_polymarket_events(
         
         except Exception as e:
             # Log error but continue with other sports
-            print(f"  Error processing sport {sport_key}: {e}")
-            print(f"  Traceback: {traceback.format_exc()}")
+            logger.info(f"  Error processing sport {sport_key}: {e}")
+            logger.info(f"  Traceback: {traceback.format_exc()}")
             continue
     
     return merged_data

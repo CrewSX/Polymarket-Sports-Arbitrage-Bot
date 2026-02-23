@@ -1,171 +1,67 @@
 [
   {
-    "id": "75ee57ed91ef51db156c1f7fc56704d2",
+    "id": "2b71f7ebc09f551b93f5b178dd9a551e",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T17:00:00Z",
-    "home_team": "Lafayette Leopards",
-    "away_team": "American Eagles"
+    "commence_time": "2026-02-24T00:00:00Z",
+    "home_team": "Lamar Cardinals",
+    "away_team": "Nicholls St Colonels"
   },
   {
-    "id": "91993f6f30ff0096b3f0fd1435f13c8a",
+    "id": "5d3911c69e7101602dccb70cb2ec7bdc",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T17:00:00Z",
-    "home_team": "Lehigh Mountain Hawks",
-    "away_team": "Boston Univ. Terriers"
+    "commence_time": "2026-02-24T00:00:00Z",
+    "home_team": "North Carolina Tar Heels",
+    "away_team": "Louisville Cardinals"
   },
   {
-    "id": "cec35de4c6fa1eb1937c5bca5fd8c028",
+    "id": "4fa796430c80b3e2730db4ab5711cad0",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T17:00:00Z",
-    "home_team": "Bucknell Bison",
-    "away_team": "Holy Cross Crusaders"
+    "commence_time": "2026-02-24T00:00:00Z",
+    "home_team": "SE Louisiana Lions",
+    "away_team": "Texas A&M-CC Islanders"
   },
   {
-    "id": "e0b3d40b1d5b4990b3b6afd606225c0f",
+    "id": "00c9e8124927ed480f42af1509d36016",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T17:00:00Z",
-    "home_team": "Memphis Tigers",
-    "away_team": "UAB Blazers"
+    "commence_time": "2026-02-24T00:30:00Z",
+    "home_team": "East Texas A&M Lions",
+    "away_team": "Houston Christian Huskies"
   },
   {
-    "id": "af8c3d18322e1befbae3204c2426e1b4",
+    "id": "4cbfd7c25e8652fb480c05fb1f5ec731",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T18:00:00Z",
-    "home_team": "Detroit Mercy Titans",
-    "away_team": "Green Bay Phoenix"
+    "commence_time": "2026-02-24T00:30:00Z",
+    "home_team": "Northwestern St Demons",
+    "away_team": "Incarnate Word Cardinals"
   },
   {
-    "id": "538626a9b6ad1c9de274acb1ebeae5ef",
+    "id": "680de68669514db0c7a2312442afc2a5",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T18:00:00Z",
-    "home_team": "Merrimack Warriors",
-    "away_team": "Iona Gaels"
+    "commence_time": "2026-02-24T00:30:00Z",
+    "home_team": "McNeese Cowboys",
+    "away_team": "UT Rio Grande Valley Vaqueros"
   },
   {
-    "id": "efb744274660d2e381b3a37afe1a2ff2",
+    "id": "0b9ed0a5fe66bb03bb7c311ef417db68",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T18:00:00Z",
-    "home_team": "Michigan St Spartans",
-    "away_team": "Ohio State Buckeyes"
+    "commence_time": "2026-02-24T00:30:00Z",
+    "home_team": "Stephen F. Austin Lumberjacks",
+    "away_team": "New Orleans Privateers"
   },
   {
-    "id": "351bfb6acec8164f863d7c95b4c798aa",
+    "id": "8d4d14df09c6317fbb819c3e57877b99",
     "sport_key": "basketball_ncaab",
     "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Mt. St. Mary's Mountaineers",
-    "away_team": "Canisius Golden Griffins"
-  },
-  {
-    "id": "98c3921dbe8b93428e6d1b5079d28e0d",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Cleveland St Vikings",
-    "away_team": "Fort Wayne Mastodons"
-  },
-  {
-    "id": "d00397e587ea54dedbc92d7522bef62b",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Drexel Dragons",
-    "away_team": "Towson Tigers"
-  },
-  {
-    "id": "20a278f76224a762bb2c4129794bde64",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Quinnipiac Bobcats",
-    "away_team": "Fairfield Stags"
-  },
-  {
-    "id": "dcd2eb74917fc85146873e7e47f3a2e5",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Marist Red Foxes",
-    "away_team": "Sacred Heart Pioneers"
-  },
-  {
-    "id": "d5e5b988fb1f03bcf54de8357cf98e20",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Rider Broncs",
-    "away_team": "Niagara Purple Eagles"
-  },
-  {
-    "id": "04f8a1220bc3a92015516e1a363e42f8",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Youngstown St Penguins",
-    "away_team": "Northern Kentucky Norse"
-  },
-  {
-    "id": "17bc4a66fa9fdd15c16bb9f40b3359dc",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Tulane Green Wave",
-    "away_team": "Rice Owls"
-  },
-  {
-    "id": "dc1530f0d0e6c4d1496ad12f090fd196",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Wright St Raiders",
-    "away_team": "Robert Morris Colonials"
-  },
-  {
-    "id": "ccc49d1792ae6a2a305bfe46f34d5268",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T19:00:00Z",
-    "home_team": "Siena Saints",
-    "away_team": "Saint Peter's Peacocks"
-  },
-  {
-    "id": "555e06ca00a570f6d87a4d3b52235ef8",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T20:00:00Z",
-    "home_team": "Oakland Golden Grizzlies",
-    "away_team": "Milwaukee Panthers"
-  },
-  {
-    "id": "c8d041b8755357be4bcc3fc6947d6c71",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T21:00:00Z",
-    "home_team": "North Texas Mean Green",
-    "away_team": "Florida Atlantic Owls"
-  },
-  {
-    "id": "d3822211a7e69cbc14f125b7ed3f427c",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T21:00:00Z",
-    "home_team": "Wisconsin Badgers",
-    "away_team": "Iowa Hawkeyes"
-  },
-  {
-    "id": "bee2b3a1219bd749286290bccab51cad",
-    "sport_key": "basketball_ncaab",
-    "sport_title": "NCAAB",
-    "commence_time": "2026-02-22T21:00:00Z",
-    "home_team": "Tulsa Golden Hurricane",
-    "away_team": "UTSA Roadrunners"
+    "commence_time": "2026-02-24T01:00:00Z",
+    "home_team": "Grambling St Tigers",
+    "away_team": "Miss Valley St Delta Devils"
   },
   {
     "id": "9f85e2454738cc1bc6a24c4fa35ae3f6",
