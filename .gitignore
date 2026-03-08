@@ -4,6 +4,10 @@ credentials.json
 .env.*
 positions/
 
+data/
+models/
+.venv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
