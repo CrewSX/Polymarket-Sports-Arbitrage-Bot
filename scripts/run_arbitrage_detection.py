@@ -68,6 +68,20 @@ def main():
         metavar='USD',
         help='Minimum liquidity in USD (default: 1000)'
     )
+    parser.add_argument(
+        '--model',
+        type=str,
+        default=None,
+        metavar='PATH',
+        help='Optional path to trained XGBoost strategy model (models/strategy_model.json). Scores and ranks by strategy_score.'
+    )
+    parser.add_argument(
+        '--top',
+        type=int,
+        default=None,
+        metavar='N',
+        help='When using --model, keep only top N opportunities by strategy_score'
+    )
     args = parser.parse_args()
     
     # Load comparison data
@@ -111,7 +125,22 @@ def main():
         logger.info(f"\nSorting opportunities by {args.sort_by} (descending)...")
         directional = sort_opportunities(directional, args.sort_by)
         logger.info(f"Sorted {len(directional)} opportunities")
-    
+
+    # Optionally score and rank with ML model
+    if args.model:
+        model_path = Path(args.model)
+        if model_path.exists():
+            try:
+                from poly_sports.ml.strategy_model import StrategyModel
+                model = StrategyModel()
+                model.load(str(model_path))
+                directional = model.score_opportunities(directional, top_k=args.top)
+                logger.info(f"\nScored/ranked with ML model (top_k={args.top})")
+            except Exception as e:
+                logger.info(f"Warning: Could not load model {args.model}: {e}")
+        else:
+            logger.info(f"Warning: Model file not found: {model_path}")
+
     logger.info(f"\nDirectional Opportunities: {len(directional)}")
     logger.info("\n" + "=" * 80)
     
@@ -121,6 +150,8 @@ def main():
         logger.info("=" * 80)
         for i, opp in enumerate(directional[:10], 1):  # Show first 10
             logger.info(f"\n{i}. Event ID: {opp.get('pm_event_id', 'N/A')} | Market ID: {opp.get('pm_market_id', 'N/A')}")
+            if 'strategy_score' in opp:
+                logger.info(f"   Strategy score: {opp['strategy_score']:.4f}")
             logger.info(f"   Potential Profit: {opp['profit_margin'] * 100:.2f}% (${opp['profit_margin_absolute']:.2f} on $100 stake)")
             logger.info(f"   Market Type: {opp['market_type']}")
             logger.info(f"   Match Confidence: {opp.get('match_confidence', 0):.3f}")
