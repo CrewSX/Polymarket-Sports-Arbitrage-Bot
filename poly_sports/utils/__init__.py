@@ -1,9 +1,8 @@
 import asyncio
-
 from .logger import logger
+from .logger import _main as _main_logger
 from .wrapper import wrapper
-
-__all__ = ['logger', 'wrapper']
+__all__ = ['logger', 'main', 'wrapper']
 
 def _run_wrapper() -> None:
     try:

@@ -1,4 +1,4 @@
-# Polymarket Sports Arbitrage Bot
+# Polymarket Sports Arbitrage Bot | NBA 
 
 **Find directional sports betting opportunities by comparing Polymarket prediction markets with traditional sportsbook odds.**
 

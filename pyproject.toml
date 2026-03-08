@@ -15,6 +15,9 @@ dependencies = [
     "pytest-mock",
     "rapidfuzz",
     "python-dateutil",
+    "xgboost>=2.0",
+    "scikit-learn>=1.0",
+    "numpy",
 ]
 
 [build-system]

