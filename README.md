@@ -1,6 +1,6 @@
-# Polymarket Sports Arbitrage Bot
+# Polymarket Sports Arbitrage Bot - Polymarket Sport Trading Bot
 
-**Find directional sports betting opportunities by comparing Polymarket prediction markets with traditional sportsbook odds.**
+**Polymarket Sport Trading bot Find directional sports betting opportunities by comparing Polymarket prediction markets with traditional sportsbook odds.**
 
 The **Polymarket-Sports-Arbitrage-Bot** is a Python toolkit for **Polymarket sports betting** analysis. It fetches sports markets from the Polymarket Gamma API, matches them with odds from The Odds API, and surfaces opportunities where Polymarket prices diverge from sportsbook-implied probabilities—so you can identify undervalued outcomes and track potential edge.
 
