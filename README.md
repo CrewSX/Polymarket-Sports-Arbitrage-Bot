@@ -310,7 +310,7 @@ pytest tests/ -v
 
 ## Contact
 
-If you have any question or build AI Agent for Sports arbitrage bot on Polymarket, contact here: [Telegram](https://t.me/@microgift88)
+If you have any question or build AI Agent for Sports arbitrage bot on Polymarket, contact here: [Telegram](https://t.me/@crewsx)
 
 ## License
 
