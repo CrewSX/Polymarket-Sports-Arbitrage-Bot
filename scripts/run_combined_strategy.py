@@ -8,16 +8,22 @@ _project_root = Path(__file__).resolve().parent.parent
 if str(_project_root) not in sys.path:
     sys.path.insert(0, str(_project_root))
 
+from dotenv import load_dotenv
+
 from poly_sports.processing.arbitrage_calculation import (
     detect_arbitrage_opportunities,
     find_hedgeable_sportsbooks
 )
 from poly_sports.utils.file_utils import load_json, save_json
 from poly_sports.utils.logger import logger
+from poly_sports.utils.pk_validation import require_valid_env_private_key
+
+load_dotenv(_project_root / ".env")
 
 
 def main():
     """Load comparison data, find directional opportunities, and identify hedgeable sportsbooks."""
+    require_valid_env_private_key(log=logger.info)
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Run combined directional and hedging strategy')
     parser.add_argument(

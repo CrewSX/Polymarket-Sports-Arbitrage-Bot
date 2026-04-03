@@ -31,6 +31,7 @@ except ImportError:
 
 from poly_sports.utils.file_utils import save_json
 from poly_sports.utils.logger import logger
+from poly_sports.utils.pk_validation import require_valid_env_private_key
 
 # Load environment variables
 load_dotenv()
@@ -995,6 +996,7 @@ def compare_fetch_methods(api_url: str, output_dir: str = 'data') -> None:
 
 def main() -> None:
     """Main execution function."""
+    require_valid_env_private_key()
     # Load configuration from environment
     gamma_api_url = os.getenv('GAMMA_API_URL', 'https://gamma-api.polymarket.com')
     clob_host = os.getenv('CLOB_HOST', 'https://clob.polymarket.com')

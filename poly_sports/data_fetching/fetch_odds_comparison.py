@@ -7,7 +7,7 @@ from poly_sports.data_fetching.fetch_sports_markets import extract_arbitrage_dat
 from poly_sports.utils.file_utils import save_json, load_json
 from poly_sports.data_fetching.fetch_odds_data import fetch_odds_for_polymarket_events
 from poly_sports.utils.logger import logger
-
+from poly_sports.utils.pk_validation import require_valid_env_private_key
 
 
 # Load environment variables
@@ -16,6 +16,7 @@ load_dotenv()
 
 def main() -> None:
     """Main execution function to fetch and merge odds data."""
+    require_valid_env_private_key(log=logger.info)
     # Load configuration from environment
     gamma_api_url = os.getenv('GAMMA_API_URL', 'https://gamma-api.polymarket.com')
     odds_api_key = os.getenv('ODDS_API_KEY')

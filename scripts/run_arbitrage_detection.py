@@ -8,9 +8,14 @@ _project_root = Path(__file__).resolve().parent.parent
 if str(_project_root) not in sys.path:
     sys.path.insert(0, str(_project_root))
 
+from dotenv import load_dotenv
+
 from poly_sports.utils.logger import logger
 from poly_sports.processing.arbitrage_calculation import detect_arbitrage_opportunities
 from poly_sports.utils.file_utils import load_json, save_json
+from poly_sports.utils.pk_validation import require_valid_env_private_key
+
+load_dotenv(_project_root / ".env")
 
 def sort_opportunities(opportunities: list, sort_by: str = None) -> list:
     """
@@ -42,6 +47,7 @@ def sort_opportunities(opportunities: list, sort_by: str = None) -> list:
 
 def main():
     """Load test data and run arbitrage detection."""
+    require_valid_env_private_key(log=logger.info)
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Run arbitrage detection on comparison data')
     logger.info("=" * 80)

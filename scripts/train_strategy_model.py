@@ -22,13 +22,18 @@ if str(_project_root) not in sys.path:
     sys.path.insert(0, str(_project_root))
 
 import numpy as np
+from dotenv import load_dotenv
 
 from poly_sports.utils.file_utils import load_json, save_json
 from poly_sports.utils.logger import logger
+from poly_sports.utils.pk_validation import require_valid_env_private_key
 from poly_sports.ml.strategy_model import StrategyModel
+
+load_dotenv(_project_root / ".env")
 
 
 def main():
+    require_valid_env_private_key(log=logger.info)
     parser = argparse.ArgumentParser(description="Train XGBoost strategy model on arbitrage opportunities")
     parser.add_argument("--data", type=str, default="data/directional_arbitrage.json", help="Path to opportunities JSON")
     parser.add_argument("--out", type=str, default="models/strategy_model.json", help="Output model path")

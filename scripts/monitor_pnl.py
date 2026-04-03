@@ -25,6 +25,7 @@ from poly_sports.processing.price_tracker import PriceTracker
 from poly_sports.processing.pnl_calculator import PnLCalculator
 from poly_sports.processing.arbitrage_calculation import detect_arbitrage_opportunities
 from poly_sports.utils.logger import logger
+from poly_sports.utils.pk_validation import require_valid_env_private_key
 try:
     from py_clob_client.client import ClobClient
 except ImportError:
@@ -93,6 +94,7 @@ def create_pnl_snapshot(
 
 def main() -> None:
     """Main monitoring function."""
+    require_valid_env_private_key(log=logger.info)
     # Load configuration
     test_file = os.getenv("PNL_TEST_FILE", "data/arbitrage_comparison_test.json")
     poll_interval = int(os.getenv("PNL_POLL_INTERVAL", "30"))

@@ -7,13 +7,19 @@ _project_root = Path(__file__).resolve().parent.parent
 if str(_project_root) not in sys.path:
     sys.path.insert(0, str(_project_root))
 
+from dotenv import load_dotenv
+
 from poly_sports.processing.arbitrage_calculation import find_max_delta_by_sportsbook
 from poly_sports.utils.file_utils import load_json, save_json
 from poly_sports.utils.logger import logger
+from poly_sports.utils.pk_validation import require_valid_env_private_key
+
+load_dotenv(_project_root / ".env")
 
 
 def main():
     """Load comparison data and run max delta analysis."""
+    require_valid_env_private_key(log=logger.info)
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Find sportsbooks with largest delta_difference')
     parser.add_argument(
